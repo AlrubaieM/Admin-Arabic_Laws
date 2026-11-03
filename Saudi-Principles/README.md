@@ -49,6 +49,10 @@ volumes:
 
 - `sources`: `file`، `kind` ∈ {index, principle}، `heading_locations`، `text_locations`، `reference_locations`، `number_locations`، `note_locations`، `extraction` ∈ {`text_layer_repaired`, `ocr`}: الأولى تعني أن النص قُرئ من طبقة النص بعد إصلاح المحارف المعيبة وفق إعداد المجلد، والثانية أن قرارًا نشر قراءة التعرف الضوئي.
 
+- `index_file` و`details_file`: مساران نسبيان إلى فهرس المجلد وبيانات المجلد. داخل `index_facets`: `shared_with` (معرّفات الأرقام المشاركة في مدخل واحد) و`pairing_basis` ∈ {`positional`, `confirmed_by_body`} و`heading_location` و`text_location` (مواقع المصدر). داخل `related_principles`: `principle_id` و`title_ar` (صيغة الاستشهاد المختصرة للهدف) و`path` (المسار النسبي لملف الهدف)، أو `target_held: true` عندما يكون الهدف محجوزًا للمراجعة بلا ملف.
+
+- في فهرس المجلد: `principle_count` (الملفات المنشورة) و`principles_with_body` و`principles_held` (أرقام محجوزة للمراجعة بلا ملف) و`letters` (الشجرة الهجائية بمعرّفاتها). في بيانات المجلد: `cataloging` (`deposit_number`, `isbn`, `extent_ar`, `reading_basis` كما طُبعت) و`extraction_summary` (الخطوط وحالة طبقة النص وعدد الإصلاحات وإحصاء المحارف والضمّات) و`year_gregorian_computed` (نطاق السنة الهجرية ميلاديًا، محسوب).
+
 ## مواقع المصدر
 
 - `page[P]` صفحة فعلية (1-based)؛ `:r<i>:c<j>` صف وعمود الجدول (العمود 0 هو الأيمن: «المبدأ»، ثم «الرقم»، ثم «ص»)؛ `:L<k>` سطر داخل الخلية (0-based) قبل ضم الأسطر الملتفة.

@@ -8,22 +8,28 @@ volume_number: "6"
 year_hijri: "1443"
 publisher_ar: "ديوان المظالم"
 publisher_unit_ar: "مكتب الشؤون الفنية"
+cataloging:
+  deposit_number: "1440/1447"
+  isbn: "978-603-8286-63-0"
+  extent_ar: "215 ص ؛ ..سم"
+  reading_basis: "right-to-left groups as printed; the ISBN is one left-to-right string (reader.page_overrides)"
 source_origin: "Official Board of Grievances principle collections"
 sources:
 - file: "Indexes-1443-v6.pdf"
   kind: "index"
   sha256_recorded_in: "config/volumes/Admin-principles-1443-v6.yaml"
   page_classes:
-    image_page:
+    cover:
     - 1
-    - 4
-    - 5
-    - 6
     cataloging:
     - 2
-    blank:
+    basmala:
     - 3
-    - 17
+    half_title:
+    - 4
+    - 6
+    divider:
+    - 5
     index_summary:
     - 7
     index_detailed:
@@ -36,6 +42,8 @@ sources:
     - 14
     - 15
     - 16
+    blank:
+    - 17
   extraction: "text_layer_repaired"
 extraction_summary:
   fonts:
@@ -56,13 +64,12 @@ extraction_summary:
     cmap: 8993
     cmap_shared: 99
     compose: 312
-    drop: 1216
+    drop: 1218
     repair: 1567
-    space: 2012
+    space: 2010
     symbol_digit: 36
   wrap_joins: 106
-  gap_spaces: 0
-  ocr_confirmation: "blocked: tesseract not available in the active execution profile"
+  geometry_spaces: 0
 year_gregorian_computed:
   start: "2021-08-09"
   end: "2022-07-29"
@@ -105,6 +112,8 @@ date_conversion_method: "hijridate (Umm al-Qura), year span only; no dates in pr
 رقم الإيداع : 1440/1447
 
 ردمك:978-603-8286-63-0
+
+> ملاحظة المستودع: علامة حقوق النشر (ح) المرسومة داخل دائرة في أعلى الصفحة رسمٌ لا نص، فلم تُنقل.
 
 ## الفهارس المزوّدة
 

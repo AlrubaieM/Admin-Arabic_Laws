@@ -16,6 +16,25 @@ folder_name: "Admin-principles-1443-v6"
 name_source_location: "page[2]:L2-L4 (cataloging block; the cover title is an image)"
 identity_basis: "cataloging_page"
 
+# Cataloging block of page[2], as printed (reader output of 03/11/2026). The deposit number is read as the
+# page prints it right to left (1440 beside the colon, then 1447), the same convention as the ruling references.
+cataloging:
+  deposit_number: "1440/1447"
+  isbn: "978-603-8286-63-0"
+  extent_ar: "215 ص ؛ ..سم"
+  reading_basis: "right-to-left groups as printed; the ISBN is one left-to-right string (reader.page_overrides)"
+  note_ar: "علامة حقوق النشر (ح) المرسومة داخل دائرة في أعلى الصفحة رسمٌ لا نص، فلم تُنقل."
+
+# Pages without a text layer take their class from this declaration (master prompt section 5, PAGE CLASSES);
+# the build checks that a cover, half-title or divider carries an image or a drawing and that a blank page carries none.
+page_classes:
+  "1": "cover"
+  "3": "basmala"
+  "4": "half_title"
+  "5": "divider"
+  "6": "half_title"
+  "17": "blank"
+
 source_files:
   - original_name: "Indexes-____________________________________________________1443.pdf"
     stored_name: "Indexes-1443-v6.pdf"

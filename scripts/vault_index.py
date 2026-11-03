@@ -128,6 +128,8 @@ class IndexParse:
     summary_tables: dict[int, list[list[list[str]]]]
     page_labels: dict[int, str]
     issues: list[dict]
+    glyph_status: dict[str, int] = field(default_factory=dict)
+    unresolved_glyphs: list = field(default_factory=list)
 
 
 def _strip_bullet(text: str) -> str:
@@ -141,15 +143,27 @@ def _ends_with_colon(text: str) -> bool:
     return text.rstrip().endswith(":")
 
 
-def classify_page(table: ps.Table | None, lines: list[ps.Line]) -> str:
+PAGE_CLASSES = {"cover", "cataloging", "basmala", "half_title", "divider", "blank", "index_summary", "index_detailed", "principle", "other"}
+
+
+def classify_page(table: ps.Table | None, lines: list[ps.Line], declared: str | None = None, has_images: bool = False,
+                  has_drawings: bool = False) -> str:
+    """Page class of the fixed vocabulary (master prompt, section 5).  A page without
+    a text layer (only a hidden folio at most) takes the class declared for it in the
+    configuration, checked against what the page carries: a cover or half-title or
+    divider must carry an image or a drawing, a blank page neither."""
     texts = [l.text for l in lines]
     if table is None:
-        if not texts:
-            return "blank"
         if any("رقم الإيداع" in t or "ردمك" in t for t in texts):
             return "cataloging"
         if all(t.isdigit() for t in texts):
-            return "image_page"  # cover, half-title or divider carrying only a hidden folio
+            if declared in ("cover", "basmala", "half_title", "divider") and (has_images or has_drawings):
+                return declared
+            if declared == "blank" and not (has_images or has_drawings):
+                return declared
+            if declared is None and not texts and not has_images and not has_drawings:
+                return "blank"
+            return "other"
         return "other"
     first_cells = [c.text_lines for r in table.rows[:1] for c in r.cells]
     header = {t for cell in first_cells for t in cell}
@@ -159,13 +173,20 @@ def classify_page(table: ps.Table | None, lines: list[ps.Line]) -> str:
         any(RE_LETTER.match(t) for t in r.cells[0].text_lines) for r in table.rows if any(c.lines for c in r.cells)
     ):
         return "index_summary"
+    # a detailed page whose header row is not repeated: three columns with numeric number cells
+    entry_rows = [r for r in table.rows if len(r.cells) == 3 and r.cells[1].lines]
+    if entry_rows and all(RE_NUMBER_LIST.match(" ".join(r.cells[1].text_lines)) for r in entry_rows):
+        return "index_detailed"
     if any("رقم الإيداع" in t or "ردمك" in t for t in texts):
         return "cataloging"
     return "other"
 
 
 def parse_index_file(doc: pymupdf.Document, file_name: str, fm: ps.FontMaps, repairs, settings: ps.ReaderSettings,
-                     page_label_offset: int | None) -> IndexParse:
+                     page_label_offset: int | None, declared_classes: dict[int, str] | None = None) -> IndexParse:
+    declared_classes = declared_classes or {}
+    glyph_status: dict[str, int] = {}
+    unresolved_glyphs: list = []
     page_classes: dict[int, str] = {}
     all_lines: list[SourceLine] = []
     letters: list[LetterRecord] = []
@@ -183,12 +204,21 @@ def parse_index_file(doc: pymupdf.Document, file_name: str, fm: ps.FontMaps, rep
         issues.append({"issue_type": kind, "location": loc, "observed": text, "note": note})
 
     for pno in range(1, len(doc) + 1):
+        page = doc[pno - 1]
         glyphs = ps.page_glyphs(doc, pno, fm, repairs, settings)
-        rulings = ps.merge_rulings(ps.page_rulings(doc[pno - 1]))
+        for g in glyphs:
+            key = g.status.split(":")[0]
+            glyph_status[key] = glyph_status.get(key, 0) + 1
+            if g.unresolved:
+                unresolved_glyphs.append(g)
+        rulings = ps.merge_rulings(ps.page_rulings(page))
         table = ps.segment_table(pno, rulings, glyphs, settings)
         page_lines = table.outside if table is not None else ps.form_lines(glyphs, settings)
-        cls = classify_page(table, page_lines if table is None else [l for r in table.rows for c in r.cells for l in c.lines] + table.outside)
+        cls = classify_page(table, page_lines if table is None else [l for r in table.rows for c in r.cells for l in c.lines] + table.outside,
+                            declared_classes.get(pno), bool(page.get_images()), bool(page.get_drawings()))
         page_classes[pno] = cls
+        if cls == "other":
+            issue("other", f"page[{pno}]", "", "page class could not be established; declare it in the configuration (page_classes)")
         # page furniture outside the frame: folio numbers
         for k, l in enumerate(page_lines):
             sl = SourceLine(pno, None, None, k, l.text, l.bold_ratio, l.gap_spaces, l.unresolved)
@@ -196,9 +226,11 @@ def parse_index_file(doc: pymupdf.Document, file_name: str, fm: ps.FontMaps, rep
                 sl.cls = "apparatus:page_number" if cls.startswith("index") else "apparatus:hidden_folio"
                 if cls.startswith("index"):
                     page_labels[pno] = l.text
+                    if page_label_offset is not None and int(l.text) != pno - int(page_label_offset):
+                        issue("number", sl.loc, l.text, f"printed page label does not equal the physical page minus the configured offset {page_label_offset}")
             elif cls == "cataloging":
                 sl.cls = "cataloging_text"
-            elif cls in ("blank", "image_page"):
+            elif cls in ("blank", "cover", "basmala", "half_title", "divider"):
                 sl.cls = "apparatus:" + cls
             else:
                 sl.cls = "review"
@@ -252,6 +284,7 @@ def parse_index_file(doc: pymupdf.Document, file_name: str, fm: ps.FontMaps, rep
                         all_lines.append(SourceLine(pno, r.index, c.col, k, l.text, l.bold_ratio, l.gap_spaces, l.unresolved, "header_row"))
                 continue
             if r.full_width:
+                first_entry_on_page = False  # a titleless block after a topic row is not a continuation
                 # letter / topic / outline lines
                 for k, l in enumerate(r.cells[0].lines):
                     sl = SourceLine(pno, r.index, 0, k, l.text, l.bold_ratio, l.gap_spaces, l.unresolved)
@@ -394,7 +427,8 @@ def parse_index_file(doc: pymupdf.Document, file_name: str, fm: ps.FontMaps, rep
             blocks.append(block)
         if blocks and blocks[-1].page == pno:
             last_block_prev_page = blocks[-1]
-    return IndexParse(file_name, page_classes, all_lines, letters, blocks, summary_rows, detailed_tables, summary_tables, page_labels, issues)
+    return IndexParse(file_name, page_classes, all_lines, letters, blocks, summary_rows, detailed_tables, summary_tables, page_labels, issues,
+                      glyph_status, unresolved_glyphs)
 
 
 def _split_numbers(text: str) -> list[str]:

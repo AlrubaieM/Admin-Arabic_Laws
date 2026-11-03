@@ -320,9 +320,25 @@ def page_glyphs(doc: pymupdf.Document, pno: int, fm: FontMaps, repairs: dict[tup
             glyphs.append(Glyph(pno, seq, font, gid, uni, text, float(bbox[0]), float(bbox[1]), float(bbox[2]),
                                 float(bbox[3]), float(origin[0]), float(origin[1]), size, int(span["bidi_lvl"]), status))
     _drop_continuations(glyphs)
+    _drop_overlapping_spaces(glyphs)
     _compose_hamza(glyphs, settings)
     _drop_tails(glyphs, settings)
     return glyphs
+
+
+def _drop_overlapping_spaces(glyphs: list[Glyph]) -> None:
+    """Two space glyphs drawn over each other on one baseline are one space (a
+    typesetting artifact of the sample: the second starts inside the first)."""
+    spaces = [g for g in glyphs if g.text == " "]
+    spaces.sort(key=lambda g: (round(g.oy, 1), g.x0))
+    prev: Glyph | None = None
+    for g in spaces:
+        if prev is not None and abs(prev.oy - g.oy) <= 1.0 and g.x0 < prev.x1 - 0.05:
+            g.text = ""
+            g.status = "drop:duplicate_space"
+            g.note = f"overlaps the space glyph {prev.seq}"
+            continue
+        prev = g
 
 
 def _drop_continuations(glyphs: list[Glyph]) -> None:
@@ -332,7 +348,8 @@ def _drop_continuations(glyphs: list[Glyph]) -> None:
     for i, g in enumerate(glyphs):
         if g.gid == -1 and g.is_zero_width and i > 0:
             prev = glyphs[i - 1]
-            if len(prev.text) >= 2 and chr(g.raw_uni) in prev.text[1:]:
+            raw = chr(g.raw_uni) if 0 <= g.raw_uni < 0x110000 else ""
+            if raw and len(prev.text) >= 2 and raw in prev.text[1:]:
                 g.text = ""
                 g.status = "drop:ligature_continuation"
                 g.note = f"continuation of gid {prev.gid} {prev.text!r}"
@@ -533,7 +550,7 @@ def form_lines(glyphs: list[Glyph], settings: ReaderSettings | None = None, cell
             for m in attached.get(t.seq, []):
                 pieces.append(m.text)
                 logical.append(m)
-        text = re.sub(r"[  ]+", " ", "".join(pieces)).strip()
+        text = "".join(pieces).replace("\u00a0", " ").strip()  # NBSP -> space and trimming only (section 4)
         fonts: dict[str, int] = {}
         for g in cluster:
             if g.text != " ":

@@ -132,7 +132,8 @@ def facet_hierarchy_line(f) -> str:
     return " / ".join(parts)
 
 
-def principle_front(cfg: dict, p: Principle, file_name: str, extraction: str) -> dict:
+def principle_front(cfg: dict, p: Principle, file_name: str, extraction: str, held: set | None = None) -> dict:
+    held = held or set()
     vid = cfg["volume_id"]
     front: dict = {
         "volume_id": vid,
@@ -171,10 +172,11 @@ def principle_front(cfg: dict, p: Principle, file_name: str, extraction: str) ->
             if r.principle_number is not None:
                 d["principle_id"] = principle_id(vid, r.principle_number)
                 d["title_ar"] = citation_ar(cfg, r.principle_number)
-                d["path"] = principle_filename(r.principle_number)
+                if r.principle_number in held:
+                    d["target_held"] = True  # the target is held from publication: no working path
+                else:
+                    d["path"] = principle_filename(r.principle_number)
             d["relation"] = r.relation
-            if r.facet is not None:
-                d["target_facet"] = r.facet
             if not r.target_supplied:
                 d["target_supplied"] = False
                 d["target_citation_ar"] = r.target_citation_ar
@@ -241,13 +243,14 @@ def _loc_range(locs: list[str]) -> str:
     return f"{first}-{last}"
 
 
-def principle_body(cfg: dict, p: Principle, principles: dict[str, Principle]) -> list[str]:
+def principle_body(cfg: dict, p: Principle, principles: dict[str, Principle], held: set | None = None) -> list[str]:
+    held = held or set()
     vid = cfg["volume_id"]
     lines: list[str] = [f"# {citation_ar(cfg, p.number)}", ""]
     lines += ["## العنوان", "", md_escape(p.title_ar or ""), ""]
     single = len(p.facets) == 1
     for f in p.facets:
-        head = "## صيغة المبدأ في الفهرس" if single else f"## صيغة المبدأ في الفهرس — الموضع {f.facet}: {f.title_ar or ''}"
+        head = "## صيغة المبدأ في الفهرس" if single else f"## صيغة المبدأ في الفهرس — الموضع {f.facet}: {md_escape(f.title_ar or '')}"
         lines += [head, ""]
         hl = facet_hierarchy_line(f)
         if hl:
@@ -260,7 +263,9 @@ def principle_body(cfg: dict, p: Principle, principles: dict[str, Principle]) ->
             if f.see_also_target:
                 tn, tf = f.see_also_target["principle_number"], f.see_also_target["facet"]
                 if tn == p.number:
-                    lines += [md_link("المدخل المُحال إليه (موضع آخر من هذا المبدأ)", f"#{principle_id(vid, tn)}:f{tf}"), ""]
+                    lines += [md_link("المدخل المُحال إليه (موضع آخر من هذا المبدأ)", f"../index.md#{principle_id(vid, tn)}:f{tf}"), ""]
+                elif tn in held:
+                    lines += [f"المدخل المُحال إليه: {md_escape(citation_ar(cfg, tn))} (محجوز للمراجعة)", ""]
                 else:
                     lines += [md_link(f"المدخل المُحال إليه: {citation_ar(cfg, tn)}", f"{principle_filename(tn)}"), ""]
             else:
@@ -278,7 +283,10 @@ def principle_body(cfg: dict, p: Principle, principles: dict[str, Principle]) ->
             continue
         label = {"shared_index_entry": "مدخل مشترك", "sibling_under_title": "صيغة أخرى تحت العنوان نفسه", "see_also": "إحالة إلى",
                  "referenced_by_see_also": "محال إليه من", "same_ruling_reference": "المرجع نفسه"}[r.relation]
-        lines.append(f"- {label}: {md_link(citation_ar(cfg, r.principle_number), principle_filename(r.principle_number))}")
+        if r.principle_number in held:
+            lines.append(f"- {label}: {md_escape(citation_ar(cfg, r.principle_number))} (محجوز للمراجعة)")
+        else:
+            lines.append(f"- {label}: {md_link(citation_ar(cfg, r.principle_number), principle_filename(r.principle_number))}")
     lines.append(f"- {md_link('بيانات المجلد', '../volume-details.md')}")
     lines.append(f"- {md_link('دليل القارئ', '../../README.md')}")
     return lines
@@ -289,15 +297,17 @@ def principle_body(cfg: dict, p: Principle, principles: dict[str, Principle]) ->
 # ----------------------------------------------------------------------------
 
 
-def volume_index(cfg: dict, parse: IndexParse, principles: dict[str, Principle], anomalies: list[dict]) -> str:
+def volume_index(cfg: dict, parse: IndexParse, principles: dict[str, Principle], anomalies: list[dict], held_items: dict | None = None) -> str:
     vid = cfg["volume_id"]
+    held_items = held_items or {}
     letters_yaml = []
     body: list[str] = []
     title = f"{cfg['collection_name_ar']} لعام {cfg['year_hijri']}هـ — {cfg['volume_ordinal_ar']}"
     body += [f"# {title}", ""]
-    count = len(principles)
-    with_body = sum(1 for p in principles.values() if False)
-    body += [f"يعرض فهرس المجلد المزوّد {count} رقم مبدأ؛ ولا يتضمن أيٌّ منها ملف المبدأ الكامل بعد ({with_body} مبادئ بملف).", ""]
+    count = len(principles) - len(held_items)
+    with_body = 0  # bodies come from principle files; none are supplied in this revision
+    held_line = f"؛ و{len(held_items)} أرقام محجوزة للمراجعة" if held_items else ""
+    body += [f"يعرض فهرس المجلد المزوّد {len(principles)} رقم مبدأ، منها {count} بملف منشور و{with_body} بنص كامل من ملف المبدأ{held_line}.", ""]
     body += ["الرمز p يسبق رقم المبدأ كما طُبع في المجلد؛ انظر " + md_link("دليل القارئ", "../README.md") + ".", ""]
     body += ["- " + md_link("بيانات المجلد", "volume-details.md"),
              "- " + md_link("الفهرس الهجائي الإجمالي كما ورد", "Indexes/summary-index.md"),
@@ -330,16 +340,25 @@ def volume_index(cfg: dict, parse: IndexParse, principles: dict[str, Principle],
                         if body and body[-1] != "":
                             body.append("")
                         body += [f'<a id="{sid}"></a>', f"#### {md_escape((sub[0] + ' ' + sub[1]).strip())}", ""]
-                body.append(_index_entry_line(cfg, principles, n, f))
-            body.append("")
+                body.append(_index_entry_line(cfg, principles, n, f, n in held_items))
+            if body and body[-1] != "":
+                body.append("")
             topics_yaml.append({"topic_id": tid, "title_ar": T.title_ar, "subtopics": subs_yaml})
         letters_yaml.append({"letter_id": lid, "letter_ar": L.letter, "topics": topics_yaml})
     body += ["## المبادئ حسب الرقم", ""]
     for n in sorted(principles, key=lambda x: int(x)):
         p = principles[n]
         extra = f" — {len(p.facets)} مواضع" if len(p.facets) > 1 else ""
-        body.append(f"- {md_link(f'المبدأ رقم ({int(n)})', 'Principles/' + principle_filename(n))}: {md_escape(p.title_ar or '')}{extra}")
+        if n in held_items:
+            body.append(f"- المبدأ رقم ({int(n)}): {md_escape(p.title_ar or '')}{extra} (محجوز للمراجعة: {', '.join(held_items[n]) or 'see work/review'})")
+        else:
+            body.append(f"- {md_link(f'المبدأ رقم ({int(n)})', 'Principles/' + principle_filename(n))}: {md_escape(p.title_ar or '')}{extra}")
     body.append("")
+    if held_items:
+        body += ["## مبادئ محجوزة للمراجعة", "", f"{NOTE_PREFIX} لم يُنشر ملف لهذه الأرقام حتى تُحل بنود المراجعة المذكورة (work/review).", ""]
+        for n in sorted(held_items, key=int):
+            body.append(f"- المبدأ رقم ({int(n)}): {', '.join(held_items[n])}")
+        body.append("")
     if anomalies:
         body += ["## ملاحظات على نص المصدر", ""]
         for a in anomalies:
@@ -348,7 +367,7 @@ def volume_index(cfg: dict, parse: IndexParse, principles: dict[str, Principle],
     front = {
         "volume_id": vid, "collection_name_ar": cfg["collection_name_ar"], "collection_name_en": cfg["collection_name_en"],
         "year_hijri": str(cfg["year_hijri"]), "volume_number": str(cfg["volume_number"]), "principle_count": count,
-        "principles_with_body": with_body, "letters": letters_yaml,
+        "principles_with_body": with_body, "principles_held": len(held_items), "letters": letters_yaml,
     }
     return rtl_file(front, body)
 
@@ -365,11 +384,11 @@ def _subtopic_of(f):
     return None
 
 
-def _index_entry_line(cfg: dict, principles: dict[str, Principle], n: str, f) -> str:
+def _index_entry_line(cfg: dict, principles: dict[str, Principle], n: str, f, held: bool = False) -> str:
     vid = cfg["volume_id"]
     pid = principle_id(vid, n)
     anchor = f'<a id="{pid}:f{f.facet}"></a>'
-    parts = [md_link(f"المبدأ رقم ({int(n)})", "Principles/" + principle_filename(n))]
+    parts = [f"المبدأ رقم ({int(n)}) (محجوز للمراجعة)" if held else md_link(f"المبدأ رقم ({int(n)})", "Principles/" + principle_filename(n))]
     if f.title_ar:
         parts.append(md_escape(f.title_ar))
     if f.page_label:
@@ -388,9 +407,9 @@ def _index_entry_line(cfg: dict, principles: dict[str, Principle], n: str, f) ->
         flags.append("مدخل مشترك: " + " ↔ ".join([pid] + [principle_id(vid, o) for o in f.shared_with]))
     if f.entry_kind in ("sibling", "continuation"):
         flags.append("صيغة أخرى تحت العنوان نفسه")
-    others = len(principles[n].facets) - 1
+    others = [o for o in principles[n].facets if o.facet != f.facet]
     if others:
-        flags.append(f"مواضع أخرى: {others}")
+        flags.append("مواضع أخرى: " + "، ".join(md_link(f"الموضع {o.facet}", f"#{pid}:f{o.facet}") for o in others))
     return "- " + anchor + " " + " — ".join(parts) + " (" + "؛ ".join(flags) + ")"
 
 
@@ -440,7 +459,7 @@ def _cell_escape(text: str) -> str:
 
 
 def volume_details(cfg: dict, parse: IndexParse, cataloging_lines: list[str], extraction_summary: dict, anomalies: list[dict],
-                   year_span: dict | None, file_entry: dict) -> str:
+                   year_span: dict | None, file_entry: dict, held_count: int = 0) -> str:
     vid = cfg["volume_id"]
     title = f"# {cfg['collection_name_ar']} لعام {cfg['year_hijri']}هـ — {cfg['volume_ordinal_ar']}: بيانات المجلد"
     body: list[str] = [title, ""]
@@ -453,6 +472,9 @@ def volume_details(cfg: dict, parse: IndexParse, cataloging_lines: list[str], ex
     if cataloging_lines:
         for l in cataloging_lines:
             body += [md_escape(l), ""]
+        note = (cfg.get("cataloging") or {}).get("note_ar")
+        if note:
+            body += [f"{NOTE_PREFIX} {note}", ""]
     else:
         body += [NOTES["empty"], ""]
     body += ["## الفهارس المزوّدة", ""]
@@ -466,6 +488,8 @@ def volume_details(cfg: dict, parse: IndexParse, cataloging_lines: list[str], ex
     body += ["## الملفات المزوّدة", ""]
     body += ["| الملف | النوع | عدد الصفحات | أرقام المبادئ | الاستخراج |", "| --- | --- | --- | --- | --- |"]
     body += [f"| {file_entry['file']} | {file_entry['kind']} | {file_entry['pages']} | {file_entry['numbers']} | {file_entry['extraction']} |", ""]
+    if held_count:
+        body += [f"{NOTE_PREFIX} {held_count} من أرقام المبادئ محجوزة للمراجعة ولم يُنشر لها ملف؛ انظر فهرس المجلد.", ""]
     body += ["## ملاحظات على نص المصدر", ""]
     vol_anoms = [a for a in anomalies if not a.get("principle")]
     if vol_anoms:
@@ -480,7 +504,7 @@ def volume_details(cfg: dict, parse: IndexParse, cataloging_lines: list[str], ex
         "volume_number": str(cfg["volume_number"]), "year_hijri": str(cfg["year_hijri"]), "publisher_ar": cfg["publisher_ar"],
         "publisher_unit_ar": cfg.get("publisher_unit_ar", ""),
     }
-    cat = cfg.get("cataloging") or {}
+    cat = {k: v for k, v in (cfg.get("cataloging") or {}).items() if k in ("deposit_number", "isbn", "extent_ar", "reading_basis")}
     if cat:
         front["cataloging"] = cat
     front["source_origin"] = SOURCE_ORIGIN
@@ -522,6 +546,8 @@ def collection_readme(volumes: list[dict]) -> str:
         "- `related_principles`: `relation` ∈ {`shared_index_entry`, `sibling_under_title`, `see_also`, `referenced_by_see_also`, `same_ruling_reference`}؛ روابط «راجع» هي إحالات الفهرس نفسه. `target_supplied: false` مع `target_citation_ar` عند تعذر العثور على المحال إليه في الفهرس المزوّد.", "",
         "- `see_also_ar`: نص الإحالة كما ورد. `source_anomalies: true` عند تسجيل ملاحظة على نص المصدر لهذا المبدأ. `open_issues`: بنود المراجعة غير المحلولة.", "",
         "- `sources`: `file`، `kind` ∈ {index, principle}، `heading_locations`، `text_locations`، `reference_locations`، `number_locations`، `note_locations`، `extraction` ∈ {`text_layer_repaired`, `ocr`}: الأولى تعني أن النص قُرئ من طبقة النص بعد إصلاح المحارف المعيبة وفق إعداد المجلد، والثانية أن قرارًا نشر قراءة التعرف الضوئي.", "",
+        "- `index_file` و`details_file`: مساران نسبيان إلى فهرس المجلد وبيانات المجلد. داخل `index_facets`: `shared_with` (معرّفات الأرقام المشاركة في مدخل واحد) و`pairing_basis` ∈ {`positional`, `confirmed_by_body`} و`heading_location` و`text_location` (مواقع المصدر). داخل `related_principles`: `principle_id` و`title_ar` (صيغة الاستشهاد المختصرة للهدف) و`path` (المسار النسبي لملف الهدف)، أو `target_held: true` عندما يكون الهدف محجوزًا للمراجعة بلا ملف.", "",
+        "- في فهرس المجلد: `principle_count` (الملفات المنشورة) و`principles_with_body` و`principles_held` (أرقام محجوزة للمراجعة بلا ملف) و`letters` (الشجرة الهجائية بمعرّفاتها). في بيانات المجلد: `cataloging` (`deposit_number`, `isbn`, `extent_ar`, `reading_basis` كما طُبعت) و`extraction_summary` (الخطوط وحالة طبقة النص وعدد الإصلاحات وإحصاء المحارف والضمّات) و`year_gregorian_computed` (نطاق السنة الهجرية ميلاديًا، محسوب).", "",
         "## مواقع المصدر", "",
         "- `page[P]` صفحة فعلية (1-based)؛ `:r<i>:c<j>` صف وعمود الجدول (العمود 0 هو الأيمن: «المبدأ»، ثم «الرقم»، ثم «ص»)؛ `:L<k>` سطر داخل الخلية (0-based) قبل ضم الأسطر الملتفة.", "",
         "## ملاحظات", "",

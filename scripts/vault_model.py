@@ -167,9 +167,6 @@ def build_principles(parse: IndexParse, volume_id: str) -> tuple[dict[str, Princ
             p = principles.setdefault(number, Principle(number))
             facet.facet = len(p.facets) + 1
             p.facets.append(facet)
-        if len(block.labels) != len(numbers) and block.labels:
-            review.append({"issue_type": "number", "location": block.loc, "observed": f"numbers {numbers} labels {block.labels}",
-                           "note": "page labels could not be paired with the numbers positionally"})
         if len(numbers) > 1 and len(block.references) not in (len(numbers), 0):
             review.append({"issue_type": "reference", "location": block.loc, "observed": " ".join(r.ref_ar for r in block.references),
                            "note": "reference count differs from the number count; references recorded unpaired"})
@@ -178,19 +175,18 @@ def build_principles(parse: IndexParse, volume_id: str) -> tuple[dict[str, Princ
         p = principles[number]
         if len(labels) > 1:
             item = {"issue_type": "number", "location": ", ".join(f.number_locations[0] for f in p.facets if f.number_locations),
-                    "observed": f"number {number} printed with page labels {sorted(labels)}", "note": "page label differs between facets"}
+                    "observed": f"number {number} printed with page labels {sorted(labels)}", "note": "page label differs between facets",
+                    "affected_ids": [principle_id(volume_id, number)]}
             review.append(item)
             p.open_issues.append(item)
-        elif labels and any(f.pairing_basis == "positional" for f in p.facets) and len(p.facets) > 1:
-            for f in p.facets:
-                if f.pairing_basis == "positional":
-                    f.pairing_basis = "positional_confirmed_by_other_facet"
+        # several positional readings that agree do not validate each other: pairing_basis stays positional
     # facets of one number must share the ruling number and year
     for number, p in principles.items():
         keys = {(r.number, r.year_hijri) for f in p.facets for r in f.references}
         if len(keys) > 1:
             item = {"issue_type": "identity", "location": ", ".join(f.reference_locations[0] for f in p.facets if f.reference_locations),
-                    "observed": f"number {number} cited with rulings {sorted(keys)}", "note": "facets of one number disagree on the ruling number or year"}
+                    "observed": f"number {number} cited with rulings {sorted(keys)}", "note": "facets of one number disagree on the ruling number or year",
+                    "affected_ids": [principle_id(volume_id, number)]}
             review.append(item)
             p.open_issues.append(item)
     _resolve_relations(principles, parse, review)
