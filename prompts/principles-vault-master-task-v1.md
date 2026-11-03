@@ -82,7 +82,7 @@ EXECUTION PROFILES (choose by the observed OS; a mismatch with the declaration a
   Run with:
   uv run --no-project --no-managed-python --no-python-downloads --no-sync --python .venv/bin/python scripts/pipeline.py <arguments>
   Install only missing packages with the targeted --no-deps template (python path .venv/bin/python). If Tesseract or its Arabic data is absent in this profile, state it, run every stage that does not need OCR, hold the OCR-dependent verification as blocked, and request the local handoff.
-- Files the user uploads into the session are the supplied sources. Copy each byte for byte into Input/ under its original filename without any upload prefix (e.g. b3077b54-Indexes-…1443.pdf → Indexes-…1443.pdf), confirm equal SHA-256, and record the upload name once in work/.
+- Files the user uploads into the session are the supplied sources. Copy each byte for byte into Input/ under its original filename without any upload prefix (e.g. b3077b54-Indexes-…1443.pdf → Indexes-…1443.pdf), confirm equal SHA-256, and record the upload name once in work/. When the upload has mangled the original name (Arabic replaced by underscores), the user chooses the stored name (decision recorded in the configuration's source_files as stored_name with the upload name as original_name); the vault's sources then cite the stored name.
 - Name the active profile in the final report.
 
 FIRST IMPLEMENTATION ACTION:
@@ -452,7 +452,7 @@ index_facets:
     heading_location: "page[8]:r3:c0:L0"
     text_location: "page[8]:r3:c0:L1-L3"
 sources:
-  - file: "Indexes-____________________________________________________1443.pdf"
+  - file: "Indexes-1443-v6.pdf"
     kind: "index"
     heading_locations:
       - "page[8]:r3:c0:L0"
@@ -704,7 +704,7 @@ UV EXECUTION:
 
 ### APPENDIX A — REVIEWED SAMPLE FACTS (fixture values; never parser constants)
 
-Reviewed file: Indexes-____________________________________________________1443.pdf (the upload name carried the prefix b3077b54-; SHA-256 a19f3ccf4c01d5d2191fc898375c612c135b566b1d35dedfef2ce93e00c12680; 17 physical pages; producer Foxit PDF Editor; page size 481.89 × 680.315 pt). Facts marked [image] were read from the rendered pages during review and must be confirmed by extraction before they enter the fixture; facts marked [text layer] were observed in the extracted layer.
+Reviewed file: Indexes-1443-v6.pdf (renamed by decision of the user on 03/11/2026 from the upload name Indexes-____________________________________________________1443.pdf, whose Arabic part the upload had replaced by underscores; the upload name carried the prefix b3077b54-; SHA-256 a19f3ccf4c01d5d2191fc898375c612c135b566b1d35dedfef2ce93e00c12680; 17 physical pages; producer Foxit PDF Editor; page size 481.89 × 680.315 pt). Facts marked [image] were read from the rendered pages during review and must be confirmed by extraction before they enter the fixture; facts marked [text layer] were observed in the extracted layer.
 
 - Page classes: page[1] cover (publisher block «المملكة العربية السعودية / ديوان المظالم / مكتب الشؤون الفنية», calligraphic title, «لعام 1443هـ», «المجلد السادس»); page[2] cataloging; page[3] basmala; page[4] half_title; page[5] divider «الفهارس»; page[6] half_title; page[7] index_summary (printed label 3); page[8]–page[16] index_detailed (printed labels 4–12); page[17] blank. page_label_offset for this extract: 4. [image]
 - Cataloging page [image]: «ديوان المظالم، 1447هـ» (copyright line with ح), «ديوان المظالم / مجموعة المبادئ التي قررتها المحكمة الإدارية العليا لعام 1443هـ المجلد السادس. / ديوان المظالم – الرياض 1447هـ», an extent line «… ص ؛ … سم», «رقم الإيداع: 1447/1440» (reading order of the two groups to be confirmed), «ردمك: 978-603-8286-63-0». Preserve verbatim; confirm every digit against the crop.
