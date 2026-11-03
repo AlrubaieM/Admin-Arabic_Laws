@@ -82,7 +82,7 @@ EXECUTION PROFILES (choose by the observed OS; a mismatch with the declaration a
   Run with:
   uv run --no-project --no-managed-python --no-python-downloads --no-sync --python .venv/bin/python scripts/pipeline.py <arguments>
   Install only missing packages with the targeted --no-deps template (python path .venv/bin/python). If Tesseract or its Arabic data is absent in this profile, state it, run every stage that does not need OCR, hold the OCR-dependent verification as blocked, and request the local handoff.
-- Files the user uploads into the session are the supplied sources. Copy each byte for byte into input/ under its original filename without any upload prefix (e.g. b3077b54-Indexes-…1443.pdf → Indexes-…1443.pdf), confirm equal SHA-256, and record the upload name once in work/.
+- Files the user uploads into the session are the supplied sources. Copy each byte for byte into Input/ under its original filename without any upload prefix (e.g. b3077b54-Indexes-…1443.pdf → Indexes-…1443.pdf), confirm equal SHA-256, and record the upload name once in work/.
 - Name the active profile in the final report.
 
 FIRST IMPLEMENTATION ACTION:
@@ -254,11 +254,11 @@ Keep project tooling separate from the legal reading collection.
 
 Project-level paths:
 - .venv/ — project environment.
-- input/ — untouched original PDF files, one folder per volume (input/<volume_id>/).
+- Input/ — untouched original PDF files, one folder per volume (Input/<volume_id>/); committed to the repository by decision of the user (03/11/2026), so the GIT rule below does not ignore it.
 - config/volumes/<volume_id>.yaml — per-volume configuration and decisions (§2, §14).
 - scripts/pipeline.py — small reusable workflow (build, verify, crosscheck); scripts/pdf_source.py — the glyph-geometry reader and OCR confirmation.
 - tests/fixtures/<volume_id>.expected.yaml — expected values for reviewed samples (§14).
-- tests/fixtures/samples/ — the reviewed sample sources, their volume configurations (configs/), and their Appendix A expected values (expected/), listed in samples.yaml; read only by the tests, which copy a sample into a temporary project root. config/volumes/, input/, work/, and Saudi-Principles/ hold real volumes only.
+- tests/fixtures/samples/ — the reviewed sample sources, their volume configurations (configs/), and their Appendix A expected values (expected/), listed in samples.yaml; read only by the tests, which copy a sample into a temporary project root. config/volumes/, Input/, work/, and Saudi-Principles/ hold real volumes only.
 - work/ — internal extraction records, staging, recovery copies, anomalies, review queue (work/review/, with crops under work/review/crops/), ID ledger (work/ledger/), and reports (work/reports/).
 - Saudi-Principles/ — final legal Markdown collection.
 
@@ -288,7 +288,7 @@ Do not create separate current/, previous/, or versions/ trees, and no per-lette
 GIT:
 - Create .gitignore (.venv/, work/staging/, work/recovery/, work/review/crops/, __pycache__/) and .gitattributes ("* text=auto eol=lf", "*.pdf binary", "*.png binary").
 - Track config/, scripts/, tests/, work/ledger/, work/review/*.yaml, work/anomalies/, and Saudi-Principles/.
-- Commit input/ originals only if the user confirms. Otherwise ignore input/ and keep each original's SHA-256 in the configuration.
+- Track Input/ originals (user decision of 03/11/2026) and keep each original's SHA-256 in the configuration.
 - Read git output with -c core.quotepath=false.
 - Do not commit or push unless the user asks.
 
@@ -643,7 +643,7 @@ REVIEW QUEUE AND DECISIONS:
 ID LEDGER AND RE-INGESTION:
 - Keep a committed work/ledger/<volume_id>.yaml listing every published principle_id with the SHA-256 of its normalized wording(s) and the run that first published it. Never reuse, renumber, or drop a ledger ID.
 - When a principle file arrives for a number that was published from the index alone, the file's text_basis changes to principle_file (or index_and_body_identical), the index wording stays, and the change is reported.
-- When a newer source file replaces an earlier one, keep the earlier original in input/ and process both. Wording published earlier but absent from the newer source stays in the file under "## صيغة أخرى واردة في ملف آخر — {file}" with its sources and gets a review item; never delete it silently.
+- When a newer source file replaces an earlier one, keep the earlier original in Input/ and process both. Wording published earlier but absent from the newer source stays in the file under "## صيغة أخرى واردة في ملف آخر — {file}" with its sources and gets a review item; never delete it silently.
 - When any input hash changes, write work/reports/<volume_id>-changes-<run>.md listing added, removed, and reworded principles (with diff), changed relations, and changed page labels. Summarize it in the final report.
 
 Source/output comparison establishes fidelity; matching hashes alone does not. If an automated validator claims to detect corruption, verify it rejects an intentionally altered temporary output copy. Never alter originals or accepted files for that check.
@@ -692,7 +692,7 @@ ENGLISH NAMES ONLY:
 - Volume folder = volume_id (e.g. Saudi-Principles/Admin-principles-1443-v6/).
 - Fixed vault folders: Principles for the principle files and Indexes for the preserved index tables.
 - File names stay as defined: p383.md, p101-dup2.md, index.md, volume-details.md, summary-index.md, detailed-index.md, README.md.
-- Arabic collection, publisher, and volume names stay unchanged as values in YAML and headings, copied from the source; only folder and file names are English. input/ keeps the supplied original filenames unchanged, whatever characters they hold.
+- Arabic collection, publisher, and volume names stay unchanged as values in YAML and headings, copied from the source; only folder and file names are English. Input/ keeps the supplied original filenames unchanged, whatever characters they hold.
 
 CODE IN ENGLISH, VALUES IN ARABIC:
 - Scripts, configuration keys, identifiers, comments, docstrings, log and error messages, report text, and review-queue messages are English only. open_issues entries are {item_id, issue} with an English issue.
