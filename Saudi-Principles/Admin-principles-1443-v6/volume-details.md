@@ -12,12 +12,10 @@ cataloging:
   deposit_number: "1440/1447"
   isbn: "978-603-8286-63-0"
   extent_ar: "215 ص ؛ ..سم"
-  reading_basis: "right-to-left groups as printed; the ISBN is one left-to-right string (reader.page_overrides)"
 source_origin: "Official Board of Grievances principle collections"
 sources:
 - file: "Indexes-1443-v6.pdf"
   kind: "index"
-  sha256_recorded_in: "config/volumes/Admin-principles-1443-v6.yaml"
   page_classes:
     cover:
     - 1
@@ -60,19 +58,10 @@ extraction_summary:
     text_layer: "reliable"
     glyph_repairs: 0
   text_layer: "defective"
-  glyphs_by_status:
-    cmap: 8993
-    cmap_shared: 99
-    compose: 312
-    drop: 1218
-    repair: 1567
-    space: 2010
-    symbol_digit: 36
-  wrap_joins: 106
-  geometry_spaces: 0
+  glyph_repairs_applied: 1879
 year_gregorian_computed:
-  start: "2021-08-09"
-  end: "2022-07-29"
+  start: "09/08/2021"
+  end: "29/07/2022"
   last_day_of_year: 30
   basis: "computed (hijridate, Umm al-Qura)"
 date_format: "DD/MM/YYYY"
@@ -85,13 +74,15 @@ date_conversion_method: "hijridate (Umm al-Qura), year span only; no dates in pr
 
 ## بيانات المجلد كما وردت في الغلاف
 
-> ملاحظة المستودع: الغلاف صورة بلا طبقة نصية؛ أُخذت بيانات التعريف من صفحة الفهرسة (identity_basis: cataloging_page).
+المملكة العربية السعودية
 
 ديوان المظالم
 
 مكتب الشؤون الفنية
 
-مجموعة المبادئ التي قررتها المحكمة الإدارية العليا
+مجموعة المبادئ
+
+التي قررتها المحكمة الإدارية العليا
 
 لعام 1443هـ
 
@@ -109,11 +100,10 @@ date_conversion_method: "hijridate (Umm al-Qura), year span only; no dates in pr
 
 215 ص ؛ ..سم
 
-رقم الإيداع : 1440/1447
-
-ردمك:978-603-8286-63-0
-
-> ملاحظة المستودع: علامة حقوق النشر (ح) المرسومة داخل دائرة في أعلى الصفحة رسمٌ لا نص، فلم تُنقل.
+| البيان | القيمة |
+| --- | --- |
+| رقم الإيداع | 1440/1447 |
+| ردمك | 978-603-8286-63-0 |
 
 ## الفهارس المزوّدة
 

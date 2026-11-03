@@ -70,8 +70,36 @@ def nfkc_presentation_forms(text: str) -> str:
     return "".join(out)
 
 
+PERSIAN_FORMS = {"\u06a9": "\u0643", "\u06cc": "\u064a", "\u06c0": "\u0629", "\u06be": "\u0647", "\u06d5": "\u0629"}
+
+
+def map_persian_forms(text: str) -> str:
+    return "".join(PERSIAN_FORMS.get(c, c) for c in text)
+
+
 def normalize_text(text: str) -> str:
-    return unicodedata.normalize("NFC", western_digits(nfkc_presentation_forms(text)))
+    return unicodedata.normalize("NFC", western_digits(map_persian_forms(nfkc_presentation_forms(text))))
+
+
+_ARABIC_LETTER = "[\u0621-\u063a\u0641-\u064a]"
+_TATWEEL_RUN = re.compile(rf"(?<={_ARABIC_LETTER})\u0640+(?={_ARABIC_LETTER})")
+
+
+def strip_decorative_tatweel(text: str) -> tuple[str, int]:
+    """Section 4: remove a run of U+0640 only between two Arabic letters, unless the
+    run follows a «ه» that is preceded by a digit, a space, a slash, or the line start
+    (the Hijri abbreviation «هـ»).  Returns the text and the number of runs removed."""
+    removed = 0
+
+    def repl(m):
+        nonlocal removed
+        start = m.start()
+        if text[start - 1] == "\u0647" and (start - 1 == 0 or text[start - 2] in " /0123456789"):
+            return m.group(0)
+        removed += 1
+        return ""
+
+    return _TATWEEL_RUN.sub(repl, text), removed
 
 
 def is_pua(text: str) -> bool:
@@ -234,6 +262,7 @@ class ReaderSettings:
     hamza_x_tolerance: float = 0.6
     head_tail_tolerance: float = 0.8
     page_overrides: tuple = ()  # ({pages: [..], digit_run_joiners: [..]}, ...)
+    drop_overlapping_spaces: bool = True  # two space glyphs drawn over each other are one space (configured correction)
 
     @classmethod
     def from_config(cls, cfg: dict | None) -> "ReaderSettings":
@@ -245,6 +274,7 @@ class ReaderSettings:
             hamza_x_tolerance=float(cfg.get("hamza_x_tolerance", 0.6)),
             head_tail_tolerance=float(cfg.get("head_tail_tolerance", 0.8)),
             page_overrides=tuple(cfg.get("page_overrides", []) or []),
+            drop_overlapping_spaces=bool(cfg.get("drop_overlapping_spaces", True)),
         )
 
     def for_page(self, pno: int) -> "ReaderSettings":
@@ -254,7 +284,7 @@ class ReaderSettings:
             if pno in (ov.get("pages") or []):
                 out = ReaderSettings(out.space_gap_ratio, out.baseline_tolerance_ratio,
                                      tuple(ov.get("digit_run_joiners", out.digit_run_joiners)),
-                                     out.hamza_x_tolerance, out.head_tail_tolerance, ())
+                                     out.hamza_x_tolerance, out.head_tail_tolerance, (), out.drop_overlapping_spaces)
         return out
 
 
@@ -320,7 +350,8 @@ def page_glyphs(doc: pymupdf.Document, pno: int, fm: FontMaps, repairs: dict[tup
             glyphs.append(Glyph(pno, seq, font, gid, uni, text, float(bbox[0]), float(bbox[1]), float(bbox[2]),
                                 float(bbox[3]), float(origin[0]), float(origin[1]), size, int(span["bidi_lvl"]), status))
     _drop_continuations(glyphs)
-    _drop_overlapping_spaces(glyphs)
+    if settings.drop_overlapping_spaces:
+        _drop_overlapping_spaces(glyphs)
     _compose_hamza(glyphs, settings)
     _drop_tails(glyphs, settings)
     return glyphs
@@ -415,6 +446,7 @@ class Line:
     unresolved: int = 0
     gap_spaces: int = 0  # spaces inserted from geometry (no explicit space glyph)
     cell: tuple[int, int] | None = None
+    tatweel_removed: int = 0
 
     @property
     def bold_ratio(self) -> float:
@@ -447,7 +479,9 @@ def _is_word_glyph(g: Glyph) -> bool:
 
 
 def _is_digit_glyph(g: Glyph) -> bool:
-    return g.text != "" and all(c in DIGITS for c in western_digits(g.text))
+    """A glyph of a left-to-right run: a digit or a Latin letter (section 5: digit and Latin runs put back in reading order)."""
+    t = western_digits(g.text)
+    return t != "" and all(c in DIGITS or ("A" <= c <= "Z") or ("a" <= c <= "z") for c in t)
 
 
 def _line_tokens(cluster: list[Glyph], settings: ReaderSettings) -> list[Glyph | None]:
@@ -461,7 +495,7 @@ def _line_tokens(cluster: list[Glyph], settings: ReaderSettings) -> list[Glyph |
             gap = prev.x0 - g.x1
             # typographic spacing around punctuation is not a word space: a space is inserted from
             # geometry only between two word glyphs (letters or digits)
-            if gap > settings.space_gap_ratio * max(g.size, prev.size) and _is_word_glyph(g) and _is_word_glyph(prev):
+            if gap > settings.space_gap_ratio * max(g.size, prev.size) and _is_word_glyph(g) and (_is_word_glyph(prev) or prev.text in ":،؛.)"):
                 tokens.append(None)
         if g.text != "":
             tokens.append(g)
@@ -551,6 +585,7 @@ def form_lines(glyphs: list[Glyph], settings: ReaderSettings | None = None, cell
                 pieces.append(m.text)
                 logical.append(m)
         text = "".join(pieces).replace("\u00a0", " ").strip()  # NBSP -> space and trimming only (section 4)
+        text, tatweel_removed = strip_decorative_tatweel(text)
         fonts: dict[str, int] = {}
         for g in cluster:
             if g.text != " ":
@@ -558,7 +593,7 @@ def form_lines(glyphs: list[Glyph], settings: ReaderSettings | None = None, cell
         unresolved = sum(1 for g in logical if g.unresolved) + sum(1 for m in cluster_marks.get(k, []) if m.unresolved)
         lines.append(Line(cluster[0].page, logical, normalize_text(text), min(g.x0 for g in cluster), min(g.y0 for g in cluster),
                           max(g.x1 for g in cluster), max(g.y1 for g in cluster), baselines[k], max(g.size for g in cluster),
-                          fonts, unresolved, gap_spaces, cell))
+                          fonts, unresolved, gap_spaces, cell, tatweel_removed))
     lines.sort(key=lambda l: (l.baseline, -l.x1))
     return lines
 

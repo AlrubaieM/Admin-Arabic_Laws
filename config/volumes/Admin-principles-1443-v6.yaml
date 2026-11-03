@@ -22,8 +22,24 @@ cataloging:
   deposit_number: "1440/1447"
   isbn: "978-603-8286-63-0"
   extent_ar: "215 ص ؛ ..سم"
-  reading_basis: "right-to-left groups as printed; the ISBN is one left-to-right string (reader.page_overrides)"
-  note_ar: "علامة حقوق النشر (ح) المرسومة داخل دائرة في أعلى الصفحة رسمٌ لا نص، فلم تُنقل."
+  # reading basis (not published): right-to-left groups as printed; the ISBN is one left-to-right string (reader.page_overrides)
+
+# Cover text lines, read by the reviewer from the cover image on 02/11/2026 (the cover has no text layer; identity_basis: cataloging_page).
+cover_lines_ar:
+  - "المملكة العربية السعودية"
+  - "ديوان المظالم"
+  - "مكتب الشؤون الفنية"
+  - "مجموعة المبادئ"
+  - "التي قررتها المحكمة الإدارية العليا"
+  - "لعام 1443هـ"
+  - "المجلد السادس"
+
+# Reading questions the reviewer could not settle from the page (open review items until decided).
+reading_questions:
+  - location: "page[2]:r2:c0:L0"
+    observed: "رقم الإيداع : 1440/1447"
+    note: "the deposit number prints 1447 left and 1440 right (nearest the colon); the vault reads the groups right to left like the ruling references (1440/1447); the serial/year order the library intends is not stated on the page"
+    options: ["keep 1440/1447 (as read right to left)", "decision: read as one left-to-right string 1447/1440"]
 
 # Pages without a text layer take their class from this declaration (master prompt section 5, PAGE CLASSES);
 # the build checks that a cover, half-title or divider carries an image or a drawing and that a blank page carries none.

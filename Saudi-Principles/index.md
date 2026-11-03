@@ -8,6 +8,7 @@ volumes:
   folder: "Admin-principles-1443-v6"
   principle_count: 37
   principles_with_body: 0
+  principles_held: 0
 ---
 
 <div dir="rtl">
@@ -16,6 +17,6 @@ volumes:
 
 انظر [دليل القارئ](README.md).
 
-- [مجموعة المبادئ التي قررتها المحكمة الإدارية العليا لعام 1443هـ — المجلد السادس](Admin-principles-1443-v6/index.md) — `Admin-principles-1443-v6` — 37 مبدأ، منها 0 بملف.
+- [مجموعة المبادئ التي قررتها المحكمة الإدارية العليا لعام 1443هـ — المجلد السادس](Admin-principles-1443-v6/index.md) — `Admin-principles-1443-v6` — 37 مبدأ منشور، منها 0 بملف.
 
 </div>

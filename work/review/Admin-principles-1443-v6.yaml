@@ -1,2 +1,166 @@
 volume_id: "Admin-principles-1443-v6"
-items: []
+items:
+- item_id: "33919ba61fcf"
+  issue_type: "link"
+  location: "page[10]:r5:c0:L1"
+  affected_ids:
+  - "Admin-principles-1443-v6:p204"
+  observed: "حرف م/ ملكية فكرية - علامة تجارية - المختص بنظر الدعاوى المتعلقة بالعلامات التجارية"
+  note: "see-also target not found among the supplied index pages (left unresolved)"
+  options:
+  - "supply the index pages that hold the target"
+  - "keep unresolved"
+  status: "open"
+- item_id: "106ac6939a0e"
+  issue_type: "link"
+  location: "page[10]:r6:c0:L1"
+  affected_ids:
+  - "Admin-principles-1443-v6:p217"
+  observed: "حرف م/ ملكية فكرية - حقوق المؤلف - المختص بنظر الدعاوى المتعلقة بحماية حقوق المؤلف"
+  note: "see-also target not found among the supplied index pages (left unresolved)"
+  options:
+  - "supply the index pages that hold the target"
+  - "keep unresolved"
+  status: "open"
+- item_id: "67487797d899"
+  issue_type: "link"
+  location: "page[10]:r1:c0:L1"
+  affected_ids:
+  - "Admin-principles-1443-v6:p079"
+  observed: "حرف ص/ صحة - الأخطاء الصحية - الأخطاء المهنية - المختص بنظر دعوى التعويض عنها"
+  note: "see-also target not found among the supplied index pages (left unresolved)"
+  options:
+  - "supply the index pages that hold the target"
+  - "keep unresolved"
+  status: "open"
+- item_id: "6754e698d7fe"
+  issue_type: "link"
+  location: "page[10]:r2:c0:L1"
+  affected_ids:
+  - "Admin-principles-1443-v6:p079"
+  observed: "حرف ص/ صحة - الأخطاء الصحية - الأخطاء غير المهنية - المختص بنظر دعوى التعويض عنها"
+  note: "see-also target not found among the supplied index pages (left unresolved)"
+  options:
+  - "supply the index pages that hold the target"
+  - "keep unresolved"
+  status: "open"
+- item_id: "26338956a777"
+  issue_type: "link"
+  location: "page[10]:r3:c0:L2"
+  affected_ids:
+  - "Admin-principles-1443-v6:p054"
+  observed: "حرف ع/ عقد - الدعاوى المتعلقة بالعقود التي تبرمها الهيئة السعودية للتخصصات الصحية"
+  note: "see-also target not found among the supplied index pages (left unresolved)"
+  options:
+  - "supply the index pages that hold the target"
+  - "keep unresolved"
+  status: "open"
+- item_id: "c275fdb64ae9"
+  issue_type: "link"
+  location: "page[10]:r7:c0:L1"
+  affected_ids:
+  - "Admin-principles-1443-v6:p279"
+  observed: "حرف ع/ عقار - الدعاوى المتعلقة بالعقار - ولاية المحاكم الإدارية حيال الدعاوى المتعلقة بالعقار"
+  note: "see-also target not found among the supplied index pages (left unresolved)"
+  options:
+  - "supply the index pages that hold the target"
+  - "keep unresolved"
+  status: "open"
+- item_id: "3a6496a9cf46"
+  issue_type: "link"
+  location: "page[10]:r8:c0:L1"
+  affected_ids:
+  - "Admin-principles-1443-v6:p009"
+  observed: "حرف ع/ عقار - النزاع حول ملكية العقارات - خروج النزاع حول ملكية العقارات عن ولاية المحاكم الإدارية"
+  note: "see-also target not found among the supplied index pages (left unresolved)"
+  options:
+  - "supply the index pages that hold the target"
+  - "keep unresolved"
+  status: "open"
+- item_id: "90ee80d19e88"
+  issue_type: "link"
+  location: "page[11]:r1:c0:L1"
+  affected_ids:
+  - "Admin-principles-1443-v6:p311"
+  observed: "حرف ع/ عقار - النزاع حول صحة صك الملكية - خروج النزاع حول صحة صك الملكية عن ولاية المحاكم الإدارية"
+  note: "see-also target not found among the supplied index pages (left unresolved)"
+  options:
+  - "supply the index pages that hold the target"
+  - "keep unresolved"
+  status: "open"
+- item_id: "15fa6338ae8a"
+  issue_type: "link"
+  location: "page[11]:r2:c0:L1"
+  affected_ids:
+  - "Admin-principles-1443-v6:p255"
+  observed: "حرف ع/ عقار - المنازعة في حق الارتفاق - المختص بنظر المنازعة في حق الارتفاق"
+  note: "see-also target not found among the supplied index pages (left unresolved)"
+  options:
+  - "supply the index pages that hold the target"
+  - "keep unresolved"
+  status: "open"
+- item_id: "c2fa97d556c0"
+  issue_type: "link"
+  location: "page[11]:r3:c0:L1"
+  affected_ids:
+  - "Admin-principles-1443-v6:p205"
+  observed: "حرف ع/ عقار - منح الأراضي - استبدال المنح - ولاية المحاكم الإدارية حياله"
+  note: "see-also target not found among the supplied index pages (left unresolved)"
+  options:
+  - "supply the index pages that hold the target"
+  - "keep unresolved"
+  status: "open"
+- item_id: "90baaa584318"
+  issue_type: "link"
+  location: "page[11]:r4:c0:L1"
+  affected_ids:
+  - "Admin-principles-1443-v6:p176"
+  observed: "حرف ت/ تعويض - التعويض عن عدم اتخاذ الإجراءات النظامية لإيقاف المدين ومنعه من السفر"
+  note: "see-also target not found among the supplied index pages (left unresolved)"
+  options:
+  - "supply the index pages that hold the target"
+  - "keep unresolved"
+  status: "open"
+- item_id: "66ec367f745d"
+  issue_type: "link"
+  location: "page[11]:r6:c0:L1"
+  affected_ids:
+  - "Admin-principles-1443-v6:p114"
+  observed: "حرف خ/ خدمة مدنية - الشؤون الوظيفية - المختص بنظر الدعوى الوظيفية للمتعاقدين غير السعوديين على الوظائف العامة"
+  note: "see-also target not found among the supplied index pages (left unresolved)"
+  options:
+  - "supply the index pages that hold the target"
+  - "keep unresolved"
+  status: "open"
+- item_id: "6ae18c624947"
+  issue_type: "link"
+  location: "page[13]:r2:c0:L1"
+  affected_ids:
+  - "Admin-principles-1443-v6:p080"
+  observed: "حرف ت/ تنفيذ - تنفيذ الأحكام القضائية - المختص بإجراءات التنفيذ"
+  note: "see-also target not found among the supplied index pages (left unresolved)"
+  options:
+  - "supply the index pages that hold the target"
+  - "keep unresolved"
+  status: "open"
+- item_id: "36170252cea6"
+  issue_type: "link"
+  location: "page[13]:r4:c0:L1"
+  affected_ids:
+  - "Admin-principles-1443-v6:p264"
+  observed: "حرف ط/ طلبات قضائية - التماس إعادة النظر -  المختص بنظر التماس إعادة النظر"
+  note: "see-also target not found among the supplied index pages (left unresolved)"
+  options:
+  - "supply the index pages that hold the target"
+  - "keep unresolved"
+  status: "open"
+- item_id: "9d17cb2e51ba"
+  issue_type: "other"
+  location: "page[2]:r2:c0:L0"
+  affected_ids: []
+  observed: "رقم الإيداع : 1440/1447"
+  note: "the deposit number prints 1447 left and 1440 right (nearest the colon); the vault reads the groups right to left like the ruling references (1440/1447); the serial/year order the library intends is not stated on the page"
+  options:
+  - "keep 1440/1447 (as read right to left)"
+  - "decision: read as one left-to-right string 1447/1440"
+  status: "open"

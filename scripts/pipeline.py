@@ -91,6 +91,10 @@ def item_id(vid: str, location: str, issue_type: str) -> str:
     return hashlib.sha256(f"{vid}|{location}|{issue_type}".encode("utf-8")).hexdigest()[:12]
 
 
+def ddmmyyyy(d) -> str:
+    return f"{d.day:02d}/{d.month:02d}/{d.year:04d}"
+
+
 # ----------------------------------------------------------------------------
 # Extraction of one volume
 # ----------------------------------------------------------------------------
@@ -105,19 +109,20 @@ class VolumeBuild:
         self.vid = cfg["volume_id"]
         self.settings = ps.ReaderSettings.from_config(cfg.get("reader"))
         self.repairs = ps.build_repairs(cfg.get("fonts") or [])
-        self.parse: vi.IndexParse | None = None
+        self.parse: vi.IndexParse | None = None  # the index file ranked first
+        self.parses: list[tuple[dict, vi.IndexParse]] = []
         self.principles: dict[str, vm.Principle] = {}
-        self.held: set[str] = set()  # principle numbers held from publication
+        self.held: set[str] = set()  # principle keys held from publication
         self.review: list[dict] = []
         self.anomalies: list[dict] = []
         self.extraction_summary: dict = {}
+        self.extraction_details: dict = {}
         self.cataloging_lines: list[str] = []
         self.file_entries: list[dict] = []
-        self.doc_path: Path | None = None
+        self.year_span_value: dict | None = None
 
     def source_path(self, entry: dict) -> Path:
-        name = entry.get("stored_name") or entry["original_name"]
-        return self.project.input_dir / self.vid / name
+        return self.project.input_dir / self.vid / (entry.get("stored_name") or entry["original_name"])
 
     def add_review(self, issue_type: str, location: str, observed: str, note: str, affected_ids: list[str] | None = None,
                    options: list[str] | None = None, crop: str | None = None) -> dict:
@@ -132,56 +137,106 @@ class VolumeBuild:
         self.review.append(item)
         return item
 
+    # ------------------------------------------------------------------
     def extract(self) -> None:
-        index_files = [e for e in self.cfg.get("source_files", []) if e.get("kind") == "index"]
+        entries = sorted([e for e in self.cfg.get("source_files", []) if e.get("kind") == "index"], key=lambda e: int(e.get("rank", 1)))
         principle_files = [e for e in self.cfg.get("source_files", []) if e.get("kind") == "principle"]
         if principle_files:
             self.add_review("other", "config:source_files", ", ".join(e.get("stored_name") or e["original_name"] for e in principle_files),
                             "principle files are configured but no body_sections calibration exists; principle bodies are not published in this revision",
                             options=["calibrate the first principle file (Appendix B) and record body_sections"])
-        if not index_files:
+        if not entries:
             raise SystemExit(f"{self.vid}: no index file configured")
-        if len(index_files) > 1:
-            raise SystemExit(f"{self.vid}: more than one index file is not supported in this revision")
-        entry = index_files[0]
-        path = self.source_path(entry)
-        if not path.exists():
-            raise SystemExit(f"{self.vid}: source file missing: {path}")
-        digest = sha256_file(path)
-        if digest != entry.get("sha256"):
-            raise SystemExit(f"{self.vid}: SHA-256 of {path.name} is {digest}, configuration says {entry.get('sha256')}")
-        self.doc_path = path
-        doc = pymupdf.open(str(path))
-        fm = ps.load_font_maps(doc)
         declared = {int(k): v for k, v in (self.cfg.get("page_classes") or {}).items()}
-        self.parse = vi.parse_index_file(doc, path.name, fm, self.repairs, self.settings, entry.get("page_label_offset"), declared)
-        for i in self.parse.issues:
-            self.add_review(i["issue_type"], i["location"], i["observed"], i["note"], options=i.get("options"))
-        self.principles, review, anomalies = vm.build_principles(self.parse, self.vid)
-        for i in review:
-            self.add_review(i["issue_type"], i["location"], i["observed"], i["note"], affected_ids=i.get("affected_ids"))
-        self.anomalies.extend(anomalies)
-        # unresolved glyphs: review item with a crop; the principle whose block holds the line is held
+        for entry in entries:
+            path = self.source_path(entry)
+            if not path.exists():
+                raise SystemExit(f"{self.vid}: source file missing: {path}")
+            digest = sha256_file(path)
+            if digest != entry.get("sha256"):
+                raise SystemExit(f"{self.vid}: SHA-256 of {path.name} is {digest}, configuration says {entry.get('sha256')}")
+            doc = pymupdf.open(str(path))
+            fm = ps.load_font_maps(doc)
+            parse = vi.parse_index_file(doc, path.name, fm, self.repairs, self.settings, entry.get("page_label_offset"), declared)
+            self.parses.append((entry, parse))
+            if not parse.detailed_tables and not parse.summary_tables:
+                self.add_review("other", f"file:{path.name}", "", "configured as an index file but no page of the index classes was found",
+                                options=["check the file kind in the configuration"])
+            self._glyph_items(doc, parse)
+            numbers = sorted({int(n) for b in parse.blocks for n in b.numbers if n.isdigit()})
+            page_classes: dict[str, list[int]] = {}
+            for pno, cls in parse.page_classes.items():
+                page_classes.setdefault(cls, []).append(pno)
+            self.file_entries.append({"file": path.name, "kind": "index", "pages": len(doc),
+                                      "numbers": f"{numbers[0]}–{numbers[-1]} ({len(numbers)})" if numbers else "", "extraction": "text_layer_repaired",
+                                      "page_classes": page_classes})
+            doc.close()
+        self.parse = self.parses[0][1]
+        self._build_principles()
+        self.cataloging_lines = [l.text for l in self.parse.lines if l.cls == "cataloging_text"]
+        self._summaries()
+
+    def _glyph_items(self, doc, parse: vi.IndexParse) -> None:
         crops_dir = self.project.work / "review" / "crops" / self.vid
-        for g in self.parse.unresolved_glyphs:
-            loc = f"page[{g.page}] x={g.x0:.1f} y={g.oy:.1f}"
+        for g in parse.unresolved_glyphs:
+            loc = f"{parse.file}:page[{g.page}] x={g.x0:.1f} y={g.oy:.1f}"
             crop = crops_dir / f"{item_id(self.vid, loc, 'glyph')}.png"
             crop.parent.mkdir(parents=True, exist_ok=True)
             ps.render_crop(doc, g.page, (g.x0 - 20, g.y0 - 3, g.x1 + 20, g.y1 + 3), crop, dpi=500)
             self.add_review("glyph", loc, f"font {g.font} gid {g.gid} ({g.status})", "glyph without a resolved text; its line and principle are held",
                             options=["add a glyph repair for this (font, gid) to the configuration"], crop=str(crop.relative_to(self.project.root)))
-        for number, p in self.principles.items():
+
+    def _build_principles(self) -> None:
+        assert self.parse is not None
+        primary_entry, primary = self.parses[0]
+        for i in primary.issues:
+            self.add_review(i["issue_type"], i["location"], i["observed"], i["note"], options=i.get("options"))
+        self.principles, review = vm.build_principles(primary, self.vid)
+        for i in review:
+            self.add_review(i["issue_type"], i["location"], i["observed"], i["note"], affected_ids=i.get("affected_ids"), options=i.get("options"))
+        # further index files (section 2): identical wording -> one output with both files in sources;
+        # different wording -> the first-ranked file's wording is published, the variant is recorded and shown, review item
+        for entry, parse in self.parses[1:]:
+            for i in parse.issues:
+                self.add_review(i["issue_type"], f"{parse.file}:{i['location']}", i["observed"], i["note"], options=i.get("options"))
+            others, review2 = vm.build_principles(parse, self.vid)
+            for i in review2:
+                self.add_review(i["issue_type"], f"{parse.file}:{i['location']}", i["observed"], i["note"], affected_ids=i.get("affected_ids"))
+            for key, q in others.items():
+                if key not in self.principles:
+                    self.principles[key] = q
+                    self.add_review("other", f"{parse.file}:{parse.blocks[q.facets[0].block_index].loc}", str(q.number),
+                                    "principle number present only in a lower-ranked index file; published from that file",
+                                    affected_ids=[vm.principle_id(self.vid, key)])
+                    continue
+                p = self.principles[key]
+                if _wording_key(p) == _wording_key(q):
+                    p.extra_source_files.append(parse.file)
+                else:
+                    p.alt_wordings.append(vm.AltWording(parse.file, [para for f in q.facets for para in f.wording_paragraphs],
+                                                        " ".join(f.reference_line for f in q.facets if f.reference_line),
+                                                        [l for f in q.facets for l in f.text_locations]))
+                    item = self.add_review("wording", f"{parse.file}:{parse.blocks[q.facets[0].block_index].loc}", _wording_key(q)[:80],
+                                           "wording differs between the supplied index files; the first-ranked file's wording is published and the variant is shown",
+                                           affected_ids=[vm.principle_id(self.vid, key)], options=["decision keep (first-ranked file)", "decision prefer:<file>"])
+                    p.open_issues.append(item)
+        self._apply_decisions()
+        for i in vm.resolve_relations(self.principles, primary, self.vid):
+            self.add_review(i["issue_type"], i["location"], i["observed"], i["note"], affected_ids=i.get("affected_ids"), options=i.get("options"))
+        # held principles: a line with an unresolved glyph, or an entry without wording
+        for key, p in self.principles.items():
             for f in p.facets:
-                block = self.parse.blocks[f.block_index]
+                block = primary.blocks[f.block_index] if f.file == primary.file else None
+                if block is None:
+                    continue
                 bad = [l for l in block.opener_lines + block.title_lines + block.wording_lines + block.reference_lines if l.unresolved or "�" in l.text]
                 if bad:
-                    self.held.add(number)
+                    self.held.add(key)
                     self.add_review("wording", bad[0].loc, bad[0].text, "line with an unresolved glyph; principle held",
-                                    affected_ids=[vm.principle_id(self.vid, number)], options=["repair the glyph in the configuration", "decision ocr: publish the OCR reading"])
+                                    affected_ids=[vm.principle_id(self.vid, key)], options=["repair the glyph in the configuration", "decision ocr: publish the OCR reading"])
                 if not block.wording_paragraphs:
-                    self.held.add(number)
-                    self.add_review("wording", block.loc, "", "entry block without wording; principle held", affected_ids=[vm.principle_id(self.vid, number)])
-        # reviewer-recorded source anomalies from the configuration
+                    self.held.add(key)
+                    self.add_review("wording", block.loc, "", "entry block without wording; principle held", affected_ids=[vm.principle_id(self.vid, key)])
         for a in self.cfg.get("source_anomalies") or []:
             rec = dict(a)
             self.anomalies.append(rec)
@@ -189,30 +244,22 @@ class VolumeBuild:
                 p = self.principles.get(str(int(rec["principle"])))
                 if p is not None:
                     p.anomalies.append(rec)
+        for q in self.cfg.get("reading_questions") or []:
+            self.add_review("other", q["location"], q.get("observed", ""), q.get("note", "reading question"), options=q.get("options"))
         for p in self.principles.values():
             for issue in p.open_issues:
                 issue.setdefault("item_id", item_id(self.vid, issue["location"], issue["issue_type"]))
         self._apply_decisions()
-        self.cataloging_lines = [l.text for l in self.parse.lines if l.cls == "cataloging_text"]
-        page_classes: dict[str, list[int]] = {}
-        for pno, cls in self.parse.page_classes.items():
-            page_classes.setdefault(cls, []).append(pno)
-        numbers = sorted({int(n) for n in self.principles})
-        self.file_entries.append({"file": path.name, "kind": "index", "pages": len(doc),
-                                  "numbers": f"{numbers[0]}–{numbers[-1]} ({len(numbers)})" if numbers else "",
-                                  "extraction": "text_layer_repaired", "page_classes": page_classes})
-        self.extraction_summary = {
-            "fonts": [{"name": f["name"], "text_layer": f.get("text_layer", "unknown"), "glyph_repairs": len(f.get("glyph_repairs") or {})}
-                      for f in self.cfg.get("fonts") or []],
-            "text_layer": "defective" if any(f.get("text_layer") == "defective" for f in self.cfg.get("fonts") or []) else "reliable",
-            "glyphs_by_status": dict(sorted(self.parse.glyph_status.items())),
-            "wrap_joins": sum(len(b.wrap_joins) for b in self.parse.blocks),
-            "geometry_spaces": sum(l.gap_spaces for l in self.parse.lines),
-        }
-        doc.close()
+        self._ocr_items()
+        for problem in vm.validate_ids(self.vid, self.principles, primary.letters):
+            self.add_review("identity", "ids", problem, "generated identifier outside the ID grammar")
 
     def _apply_decisions(self) -> None:
         decisions = self.cfg.get("decisions") or {}
+        created = vm.apply_split_decisions(self.principles, decisions, self.vid, lambda loc, t: item_id(self.vid, loc, t))
+        for key in created:
+            self.add_review("identity", f"split:{key}", key, "published under a -dupN suffix by a decided split", affected_ids=[vm.principle_id(self.vid, key)])
+            self.review[-1]["status"] = "decided"
         applied: set[str] = set()
         for item in self.review:
             d = decisions.get(item["item_id"])
@@ -224,12 +271,52 @@ class VolumeBuild:
         for p in self.principles.values():
             p.open_issues = [i for i in p.open_issues if i.get("item_id") not in applied]
         for iid in decisions:
-            if iid not in applied:
+            if iid not in applied and not any(i["item_id"] == iid for i in self.review):
                 self.review.append({"item_id": iid, "issue_type": "other", "location": "config:decisions", "affected_ids": [], "observed": iid,
                                     "note": "decision whose item no longer occurs", "options": [], "status": "stale"})
 
+    def _ocr_items(self) -> None:
+        """Unacknowledged OCR disagreements recorded by ocr-confirm join the review queue."""
+        path = self.project.work / "review" / f"ocr-{self.vid}.yaml"
+        if not path.exists():
+            return
+        data = read_yaml(path)
+        decisions = self.cfg.get("decisions") or {}
+        for it in data.get("items") or []:
+            if it["item_id"] in decisions:
+                continue
+            self.add_review("wording", it["location"], it.get("published", ""), f"OCR disagrees: {it.get('ocr', '')!r}", options=it.get("options"), crop=it.get("crop"))
+            self.review[-1]["item_id"] = it["item_id"]
+
+    def _summaries(self) -> None:
+        assert self.parse is not None
+        ocr_path = self.project.work / "review" / f"ocr-{self.vid}.yaml"
+        summary: dict = {
+            "fonts": [{"name": f["name"], "text_layer": f.get("text_layer", "unknown"), "glyph_repairs": len(f.get("glyph_repairs") or {})}
+                      for f in self.cfg.get("fonts") or []],
+            "text_layer": "defective" if any(f.get("text_layer") == "defective" for f in self.cfg.get("fonts") or []) else "reliable",
+            "glyph_repairs_applied": sum(v for k, v in self.parse.glyph_status.items() if k in ("repair", "compose")),
+        }
+        if ocr_path.exists():
+            data = read_yaml(ocr_path)
+            summary["ocr_confirmed_lines"] = int(data.get("confirmed", 0))
+            summary["ocr_disagreements"] = int(data.get("disagreeing", 0))
+        self.extraction_summary = summary
+        self.extraction_details = {
+            "glyphs_by_status": dict(sorted(self.parse.glyph_status.items())),
+            "wrap_joins": sum(len(b.wrap_joins) for b in self.parse.blocks),
+            "reference_separations": sum(len(b.reference_separations) for b in self.parse.blocks),
+            "geometry_spaces": sum(l.gap_spaces for l in self.parse.lines),
+            "tatweel_runs_removed": self.parse.tatweel_removed,
+            "duplicate_space_glyphs_dropped": self.parse.glyph_status.get("drop:duplicate_space", 0),
+            "font_objects": self.parse.font_objects,
+            "page_apparatus": {str(k): v for k, v in self.parse.page_apparatus.items()},
+            "summary_coverage": self.parse.summary_coverage,
+        }
+        self.year_span_value = self.year_span()
+
     # ------------------------------------------------------------------
-    def year_span(self) -> dict:
+    def year_span(self) -> dict | None:
         try:
             from hijridate import Hijri
         except ImportError as exc:
@@ -237,13 +324,14 @@ class VolumeBuild:
         y = int(self.cfg["year_hijri"])
         try:
             start = Hijri(y, 1, 1).to_gregorian()
-        except Exception as exc:  # outside the converter's range
-            raise SystemExit(f"{self.vid}: year {y} AH is outside the range of hijridate: {exc}") from exc
+        except Exception as exc:  # outside the converter's range: omit and flag (section 12)
+            self.add_review("date", "config:year_hijri", str(y), f"year outside the range of hijridate ({exc}); year_gregorian_computed omitted")
+            return None
         try:
             end, last_day = Hijri(y, 12, 30).to_gregorian(), 30
         except Exception:
             end, last_day = Hijri(y, 12, 29).to_gregorian(), 29
-        return {"start": start.isoformat(), "end": end.isoformat(), "last_day_of_year": last_day, "basis": "computed (hijridate, Umm al-Qura)"}
+        return {"start": ddmmyyyy(start), "end": ddmmyyyy(end), "last_day_of_year": last_day, "basis": "computed (hijridate, Umm al-Qura)"}
 
     # ------------------------------------------------------------------
     def emit(self) -> dict[str, str]:
@@ -251,39 +339,44 @@ class VolumeBuild:
         assert self.parse is not None
         cfg = self.cfg
         files: dict[str, str] = {}
-        file_name = self.file_entries[0]["file"]
-        for number in sorted(self.principles, key=int):
-            if number in self.held:
+        for key in sorted(self.principles, key=vm.key_sort):
+            if key in self.held:
                 continue
-            p = self.principles[number]
-            front = em.principle_front(cfg, p, file_name, "text_layer_repaired", self.held)
-            body = em.principle_body(cfg, p, self.principles, self.held)
-            files[f"Principles/{vm.principle_filename(number)}"] = em.rtl_file(front, body)
-        held_items = {n: [i["item_id"] for i in self.review if vm.principle_id(self.vid, n) in i.get("affected_ids", [])] for n in self.held}
+            p = self.principles[key]
+            files[f"Principles/{vm.principle_filename(key)}"] = em.rtl_file(em.principle_front(cfg, p, self.held), em.principle_body(cfg, p, self.principles, self.held))
+        held_items = {k: [i["item_id"] for i in self.review if vm.principle_id(self.vid, k) in i.get("affected_ids", [])] for k in self.held}
         files["index.md"] = em.volume_index(cfg, self.parse, self.principles, self.anomalies, held_items)
         files["Indexes/summary-index.md"] = em.preserved_table(cfg, self.parse, "summary")
         files["Indexes/detailed-index.md"] = em.preserved_table(cfg, self.parse, "detailed")
         files["volume-details.md"] = em.volume_details(cfg, self.parse, self.cataloging_lines, self.extraction_summary, self.anomalies,
-                                                       self.year_span(), self.file_entries[0], len(self.held))
+                                                       self.year_span_value, self.file_entries, len(self.held))
         return files
 
     def records(self) -> dict:
         assert self.parse is not None
         return {
             "volume_id": self.vid,
+            "files": [fe["file"] for fe in self.file_entries],
             "page_classes": {str(k): v for k, v in self.parse.page_classes.items()},
             "page_labels": {str(k): v for k, v in self.parse.page_labels.items()},
-            "held_principles": sorted(self.held, key=int),
-            "lines": [{"loc": l.loc, "class": l.cls, "text": l.text, "bold": round(l.bold, 2), "gap_spaces": l.gap_spaces, "unresolved": l.unresolved}
-                      for l in self.parse.lines],
+            "held_principles": sorted(self.held, key=vm.key_sort),
+            "extraction": self.extraction_details,
+            "lines": [{"loc": l.loc, "class": l.cls, "text": l.text, "bold": round(l.bold, 2), "gap_spaces": l.gap_spaces, "unresolved": l.unresolved,
+                       "tatweel_removed": l.tatweel_removed} for l in self.parse.lines],
             "blocks": [
                 {"loc": b.loc, "kind": b.kind, "numbers": b.numbers, "labels": b.labels, "references": [r.ref_ar for r in b.references],
                  "title_ar": b.title_ar, "title_basis": b.title_basis, "hierarchy": vars(b.hierarchy), "paragraphs": b.wording_paragraphs,
-                 "wrap_joins": b.wrap_joins, "continues_block": b.continues_block}
+                 "wrap_joins": b.wrap_joins, "reference_separations": b.reference_separations, "continues_block": b.continues_block}
                 for b in self.parse.blocks
             ],
             "summary_rows": self.parse.summary_rows,
+            "relations": {vm.principle_id(self.vid, k): [{"principle_id": vm.principle_id(self.vid, r.principle_key) if r.principle_key else None,
+                                                          "relation": r.relation} for r in p.relations] for k, p in self.principles.items()},
         }
+
+
+def _wording_key(p: vm.Principle) -> str:
+    return "\n".join(para for f in p.facets for para in f.wording_paragraphs) + "\n" + " ".join(f.reference_line for f in p.facets)
 
 
 # ----------------------------------------------------------------------------
@@ -309,11 +402,7 @@ def manifest(files: dict[str, str]) -> dict[str, str]:
     return {k: hashlib.sha256(v.encode("utf-8")).hexdigest() for k, v in sorted(files.items())}
 
 
-def cmd_build(project: Project, volume_ids: list[str]) -> int:
-    builds: dict[str, tuple[VolumeBuild, dict[str, str]]] = {}
-    for vid in volume_ids:
-        builds[vid] = build_volume_files(project, vid)
-    # collection files from every configured volume (second pass)
+def collection_files(project: Project, builds: dict[str, tuple[VolumeBuild, dict[str, str]]]) -> dict[str, str]:
     summaries = []
     for vid in project.volume_ids():
         if vid in builds:
@@ -328,8 +417,14 @@ def cmd_build(project: Project, volume_ids: list[str]) -> int:
                 count, held = int(front.get("principle_count", 0)), int(front.get("principles_held", 0))
             summaries.append(volume_summary(cfg, count, 0, held))
     summaries.sort(key=lambda s: s["volume_id"])
-    collection = {"README.md": em.collection_readme(summaries), "index.md": em.collection_registry(summaries)}
-    # staging, recovery, replace
+    return {"README.md": em.collection_readme(summaries), "index.md": em.collection_registry(summaries)}
+
+
+def cmd_build(project: Project, volume_ids: list[str]) -> int:
+    import vault_verify as vv  # noqa: E402
+
+    builds: dict[str, tuple[VolumeBuild, dict[str, str]]] = {vid: build_volume_files(project, vid) for vid in volume_ids}
+    collection = collection_files(project, builds)
     staging = project.work / "staging"
     if staging.exists():
         shutil.rmtree(staging)
@@ -338,12 +433,15 @@ def cmd_build(project: Project, volume_ids: list[str]) -> int:
             write_text(staging / vid / rel, content)
     for rel, content in collection.items():
         write_text(staging / rel, content)
+    # validate the staged files before anything published is replaced (section 14)
+    for vid, (vb, files) in builds.items():
+        rep = vv.content_checks(vb, files, staging, vid)
+        if not rep.ok:
+            raise SystemExit(f"{vid}: staged files fail the content checks; nothing replaced: " + "; ".join(rep.failures()[:3]))
     for vid, (vb, files) in builds.items():
         published = project.vault / vid
         previous: dict[str, str] = {}
         if published.exists():
-            import vault_verify as vv  # noqa: E402
-
             previous = vv.published_files(published)
             recovery = project.work / "recovery" / vid
             if recovery.exists():
@@ -351,10 +449,10 @@ def cmd_build(project: Project, volume_ids: list[str]) -> int:
             shutil.copytree(published, recovery)
             shutil.rmtree(published)
         shutil.copytree(staging / vid, published)
+        run = update_ledger(project, vb, files, previous)
         write_yaml(project.work / "records" / f"{vid}.yaml", vb.records())
         write_yaml(project.work / "review" / f"{vid}.yaml", {"volume_id": vid, "items": vb.review})
         write_yaml(project.work / "anomalies" / f"{vid}.yaml", {"volume_id": vid, "items": vb.anomalies})
-        run = update_ledger(project, vb, files, previous)
         write_text(project.work / "reports" / f"{vid}-build-r{run}.md", build_report(vb, files, run))
     for rel, content in collection.items():
         write_text(project.vault / rel, content)
@@ -362,6 +460,7 @@ def cmd_build(project: Project, volume_ids: list[str]) -> int:
     manifests = read_yaml(mpath) if mpath.exists() else {}
     for vid, (vb, files) in builds.items():
         manifests[vid] = manifest(files)
+    manifests["collection"] = manifest(collection)
     write_yaml(mpath, manifests)
     for vid, (vb, files) in builds.items():
         open_items = [i for i in vb.review if i.get("status") == "open"]
@@ -382,34 +481,47 @@ def update_ledger(project: Project, vb: VolumeBuild, files: dict[str, str], prev
     ledger = read_yaml(path) if path.exists() else {"volume_id": vb.vid, "run_counter": 0, "principles": {}}
     ledger["run_counter"] = int(ledger.get("run_counter", 0)) + 1
     run = ledger["run_counter"]
-    added, removed, reworded = [], [], []
+    old_sources = {s.get("file"): s.get("sha256") for s in ledger.get("sources") or []}
+    new_sources = {(e.get("stored_name") or e["original_name"]): e.get("sha256") for e in vb.cfg.get("source_files", [])}
+    inputs_changed = bool(old_sources) and old_sources != new_sources
+    added, removed, reworded, relabelled, related = [], [], [], [], []
     seen: set[str] = set()
-    for number, p in vb.principles.items():
-        pid = vm.principle_id(vb.vid, number)
+    for key, p in vb.principles.items():
+        pid = vm.principle_id(vb.vid, key)
         seen.add(pid)
-        wording = "\n".join(para for f in p.facets for para in f.wording_paragraphs)
-        digest = hashlib.sha256(wording.encode("utf-8")).hexdigest()
+        digest = hashlib.sha256(p.wording_signature.encode("utf-8")).hexdigest()
+        labels = list(p.page_labels)
+        rel_sig = sorted(f"{r.relation}:{vm.principle_id(vb.vid, r.principle_key) if r.principle_key else r.target_citation_ar}" for r in p.relations)
         rec = ledger["principles"].get(pid)
         if rec is None:
-            ledger["principles"][pid] = {"first_run": run, "wording_sha256": digest, "facets": len(p.facets), "held": number in vb.held}
-            if ledger["run_counter"] > 1:
+            ledger["principles"][pid] = {"first_run": run, "wording_sha256": digest, "facets": len(p.facets), "held": key in vb.held,
+                                         "page_labels": labels, "relations": rel_sig}
+            if run > 1:
                 added.append(pid)
         else:
             if rec.get("wording_sha256") != digest:
                 rec.setdefault("history", []).append({"run": run, "previous_wording_sha256": rec.get("wording_sha256")})
                 rec["wording_sha256"] = digest
                 reworded.append(pid)
-            rec["facets"] = len(p.facets)
-            rec["held"] = number in vb.held
+            if rec.get("page_labels") is not None and rec.get("page_labels") != labels:
+                relabelled.append(f"{pid}: {rec.get('page_labels')} -> {labels}")
+            if rec.get("relations") is not None and rec.get("relations") != rel_sig:
+                related.append(f"{pid}: {sorted(set(rec.get('relations')) ^ set(rel_sig))}")
+            rec.update({"facets": len(p.facets), "held": key in vb.held, "page_labels": labels, "relations": rel_sig})
     for pid, rec in ledger["principles"].items():
         if pid not in seen and not rec.get("absent_since"):
             rec["absent_since"] = run  # ledger IDs are never dropped
             removed.append(pid)
-    ledger["sources"] = [{"file": e.get("stored_name") or e["original_name"], "sha256": e.get("sha256")} for e in vb.cfg.get("source_files", [])]
+    ledger["sources"] = [{"file": f, "sha256": h} for f, h in new_sources.items()]
     write_yaml(path, ledger)
-    if added or removed or reworded:
-        lines = [f"# Changes — {vb.vid} (run {run})", "", f"- added: {', '.join(added) or '0'}", f"- removed from the sources (kept in the ledger): {', '.join(removed) or '0'}",
-                 f"- reworded: {', '.join(reworded) or '0'}", ""]
+    if inputs_changed or added or removed or reworded or relabelled or related:
+        lines = [f"# Changes — {vb.vid} (run {run})", "",
+                 f"- input hashes changed: {'yes' if inputs_changed else 'no'}",
+                 f"- added: {', '.join(added) or '0'}",
+                 f"- removed from the sources (kept in the ledger): {', '.join(removed) or '0'}",
+                 f"- reworded: {', '.join(reworded) or '0'}",
+                 f"- page labels changed: {'; '.join(relabelled) or '0'}",
+                 f"- relations changed: {'; '.join(related) or '0'}", ""]
         for pid in reworded:
             rel = f"Principles/{pid.split(':')[-1]}.md"
             old = _wording_of_file(previous[rel]) if rel in previous else []
@@ -428,12 +540,18 @@ def build_report(vb: VolumeBuild, files: dict[str, str], run: int) -> str:
     ocr = vb.project.work / "review" / f"ocr-{vb.vid}.yaml"
     ocr_line = f"recorded in {ocr.relative_to(vb.project.root)}" if ocr.exists() else (
         "not run in this environment (tesseract absent)" if shutil.which("tesseract") is None else "not run yet (pipeline.py ocr-confirm)")
+    apparatus = {str(p): {"images": len(a["images"]), "drawings": a["drawings"]} for p, a in vb.parse.page_apparatus.items() if a["images"] or a["drawings"]}
     lines = [f"# Build report — {vb.vid} (run {run})", "",
+             f"- source files: {', '.join(fe['file'] for fe in vb.file_entries)}",
              f"- principle files: {len(vb.principles) - len(vb.held)}; held: {len(vb.held)}; facets: {sum(len(p.facets) for p in vb.principles.values())}; vault files: {len(files)}",
              f"- page classes: {dict(sorted(collections.Counter(vb.parse.page_classes.values()).items()))}",
              f"- line classes: {dict(sorted(classes.items()))}",
-             f"- glyphs by status: {vb.extraction_summary.get('glyphs_by_status')}",
-             f"- wrap joins: {vb.extraction_summary.get('wrap_joins')}; geometry-inserted spaces: {vb.extraction_summary.get('geometry_spaces')}",
+             f"- apparatus excluded per page (images, non-ruling drawings): {apparatus}",
+             f"- glyphs by status: {vb.extraction_details.get('glyphs_by_status')}",
+             f"- wrap joins: {vb.extraction_details.get('wrap_joins')}; reference separations: {vb.extraction_details.get('reference_separations')}; "
+             f"geometry-inserted spaces: {vb.extraction_details.get('geometry_spaces')}; tatweel runs removed: {vb.extraction_details.get('tatweel_runs_removed')}; "
+             f"duplicate space glyphs dropped: {vb.extraction_details.get('duplicate_space_glyphs_dropped')}",
+             f"- summary-index coverage: {vb.extraction_details.get('summary_coverage')}",
              f"- review items: {len(vb.review)} (open: {sum(1 for i in vb.review if i.get('status') == 'open')})",
              f"- anomalies: {len(vb.anomalies)}",
              f"- OCR confirmation: {ocr_line}",
@@ -449,33 +567,35 @@ def build_report(vb: VolumeBuild, files: dict[str, str], run: int) -> str:
 def cmd_calibrate(project: Project, volume_id: str) -> int:
     cfg = project.load_config(volume_id)
     vb = VolumeBuild(project, cfg)
-    entry = [e for e in cfg.get("source_files", []) if e.get("kind") == "index"][0]
-    path = vb.source_path(entry)
-    doc = pymupdf.open(str(path))
-    fm = ps.load_font_maps(doc)
+    entries = [e for e in cfg.get("source_files", []) if e.get("kind") in ("index", "principle")]
     out = project.work / "calibration" / volume_id
     crops = out / "crops"
     crops.mkdir(parents=True, exist_ok=True)
-    inventory: dict[tuple[str, int], dict] = {}
-    for pno in range(1, len(doc) + 1):
-        for g in ps.page_glyphs(doc, pno, fm, vb.repairs, vb.settings):
-            key = (g.font, g.gid)
-            rec = inventory.setdefault(key, {"font": g.font, "gid": g.gid, "text": g.text, "status": g.status, "count": 0, "first": None})
-            rec["count"] += 1
-            if rec["first"] is None:
-                rec["first"] = {"page": pno, "x0": round(g.x0, 1), "y0": round(g.y0, 1), "x1": round(g.x1, 1), "y1": round(g.y1, 1)}
-                if g.unresolved or g.status.startswith("repair") or len(g.text) > 1:
-                    name = f"{g.font}_{g.gid}_p{pno}.png"
-                    ps.render_crop(doc, pno, (g.x0 - 20, g.y0 - 3, g.x1 + 20, g.y1 + 3), crops / name, dpi=500)
-                    rec["crop"] = f"crops/{name}"
-    fonts = [{"xref": f.xref, "name": f.full_name, "base": f.base, "encoding": f.encoding, "kind": f.kind, "cmap_entries": len(f.cmap), "pages": f.pages}
-             for f in fm.fonts.values()]
-    pages = []
-    for pno in range(1, len(doc) + 1):
-        page = doc[pno - 1]
-        pages.append({"page": pno, "text_chars": len(page.get_text("text").strip()), "images": len(page.get_images()), "drawings": len(page.get_drawings())})
-    write_yaml(out / "glyphs.yaml", {"volume_id": volume_id, "fonts": fonts, "pages": pages,
-                                     "glyphs": sorted(inventory.values(), key=lambda r: (r["font"], r["gid"]))})
+    inventory: dict[tuple[str, str, int], dict] = {}
+    fonts_all = []
+    pages_all = []
+    for entry in entries:
+        path = vb.source_path(entry)
+        doc = pymupdf.open(str(path))
+        fm = ps.load_font_maps(doc)
+        for pno in range(1, len(doc) + 1):
+            page = doc[pno - 1]
+            pages_all.append({"file": path.name, "page": pno, "text_chars": len(page.get_text("text").strip()), "images": len(page.get_images()),
+                              "drawings": len(page.get_drawings())})
+            for g in ps.page_glyphs(doc, pno, fm, vb.repairs, vb.settings):
+                key = (path.name, g.font, g.gid)
+                rec = inventory.setdefault(key, {"file": path.name, "font": g.font, "gid": g.gid, "text": g.text, "status": g.status, "count": 0, "first": None})
+                rec["count"] += 1
+                if rec["first"] is None:
+                    rec["first"] = {"page": pno, "x0": round(g.x0, 1), "y0": round(g.y0, 1), "x1": round(g.x1, 1), "y1": round(g.y1, 1)}
+                    if g.unresolved or g.status.startswith("repair") or len(g.text) > 1:
+                        name = f"{g.font}_{g.gid}_p{pno}.png"
+                        ps.render_crop(doc, pno, (g.x0 - 20, g.y0 - 3, g.x1 + 20, g.y1 + 3), crops / name, dpi=500)
+                        rec["crop"] = f"crops/{name}"
+        fonts_all += [{"file": path.name, "xref": f.xref, "name": f.full_name, "base": f.base, "encoding": f.encoding, "kind": f.kind,
+                       "cmap_entries": len(f.cmap), "pages": f.pages} for f in fm.fonts.values()]
+    write_yaml(out / "glyphs.yaml", {"volume_id": volume_id, "fonts": fonts_all, "pages": pages_all,
+                                     "glyphs": sorted(inventory.values(), key=lambda r: (r["file"], r["font"], r["gid"]))})
     unresolved = [r for r in inventory.values() if r["status"].startswith("unresolved")]
     print(f"{volume_id}: {len(inventory)} glyph keys, {len(unresolved)} unresolved; inventory at {out / 'glyphs.yaml'}")
     return 0

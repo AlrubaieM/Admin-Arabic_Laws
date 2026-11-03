@@ -3,5 +3,3 @@ __pycache__/
 work/staging/
 work/recovery/
 work/review/crops/
-work/calibration/*/crops/
-work/review/renders/
