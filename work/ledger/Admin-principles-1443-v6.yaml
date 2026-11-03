@@ -1,0 +1,163 @@
+volume_id: "Admin-principles-1443-v6"
+run_counter: 4
+principles:
+  Admin-principles-1443-v6:p383:
+    first_run: 1
+    wording_sha256: "cfe47f492979c180000db00a924effcd22ab7b0f659204fc394988d2b0c3ddd7"
+    facets: 1
+  Admin-principles-1443-v6:p151:
+    first_run: 1
+    wording_sha256: "8e0d8239e0d0bf82d2aa230eb7fcef2e94094dda185f65529076faa6929ebafc"
+    facets: 1
+  Admin-principles-1443-v6:p138:
+    first_run: 1
+    wording_sha256: "bcd1747b3a6197ed8ae25b2c07f8005a9ade3f5c393ebfaa6b0ea1e912a4dda2"
+    facets: 1
+  Admin-principles-1443-v6:p101:
+    first_run: 1
+    wording_sha256: "9c5c1c6983e41071a002e45f54067782693fb7698d14abf2b7ce4642a64af0ab"
+    facets: 2
+  Admin-principles-1443-v6:p232:
+    first_run: 1
+    wording_sha256: "98c56d004af56f12cef1d44e95523c6755d2c9ce39598d1e8e914f48f372fe4c"
+    facets: 2
+  Admin-principles-1443-v6:p204:
+    first_run: 1
+    wording_sha256: "be46ae49dd8b99560a3f5071d65c1e5efde60e1b8be8991c099dec9fa0777e64"
+    facets: 3
+  Admin-principles-1443-v6:p217:
+    first_run: 1
+    wording_sha256: "58ae1d5fb257c4c310bed4e7ed9bbe186d327481b29231fee534ec742eeaf585"
+    facets: 3
+  Admin-principles-1443-v6:p327:
+    first_run: 1
+    wording_sha256: "7cf3d1e6f736f5df7c6a72572c4ed5f3a7110f7615443ca12279f90972e4619f"
+    facets: 1
+    history:
+    - run: 3
+      previous_wording_sha256: "b29f8890ac657cc848a91628b43e99662955f0091a81b50d8ee42ce6ecb78bf3"
+  Admin-principles-1443-v6:p370:
+    first_run: 1
+    wording_sha256: "7cf3d1e6f736f5df7c6a72572c4ed5f3a7110f7615443ca12279f90972e4619f"
+    facets: 1
+    history:
+    - run: 3
+      previous_wording_sha256: "b29f8890ac657cc848a91628b43e99662955f0091a81b50d8ee42ce6ecb78bf3"
+  Admin-principles-1443-v6:p079:
+    first_run: 1
+    wording_sha256: "8b286ed61c969e0a00e47796bfd3093161662057209f0d5327dcbb907a6bd627"
+    facets: 2
+    history:
+    - run: 3
+      previous_wording_sha256: "ec33d9d9f35859ba2340ee69721e23888ab81c287422fb15ffca3fd3c28433b8"
+  Admin-principles-1443-v6:p054:
+    first_run: 1
+    wording_sha256: "d798404c9ff76a9579d8bc2cb0a0e17d8501bdc34f01ec5493178e777e824cd6"
+    facets: 1
+  Admin-principles-1443-v6:p165:
+    first_run: 1
+    wording_sha256: "a62bb1d612b089e1153249d50f66b8e45446f8e56aafa51ce2d6455a25a6c7df"
+    facets: 1
+  Admin-principles-1443-v6:p279:
+    first_run: 1
+    wording_sha256: "628616fbb16484788a34c7b1bcfb74526c250d578d05413d424de1e01d2e2a53"
+    facets: 1
+  Admin-principles-1443-v6:p009:
+    first_run: 1
+    wording_sha256: "e246939e214766cccd977442835931aafd8e04d4bdd6b708384bde0a70cbaa1b"
+    facets: 1
+  Admin-principles-1443-v6:p308:
+    first_run: 1
+    wording_sha256: "e246939e214766cccd977442835931aafd8e04d4bdd6b708384bde0a70cbaa1b"
+    facets: 1
+  Admin-principles-1443-v6:p311:
+    first_run: 1
+    wording_sha256: "4f69374286aec2b678f6ea92c90b589852f288a91924857de72932f872c925fc"
+    facets: 1
+  Admin-principles-1443-v6:p255:
+    first_run: 1
+    wording_sha256: "e387f87fdac5db3485d6ccd951474327bafac2ae3185e78e717e20ed74bb0c69"
+    facets: 1
+  Admin-principles-1443-v6:p205:
+    first_run: 1
+    wording_sha256: "c88cbae7a4304014abc90e415a690bd8a20804e333a16183dec2bf90a42ad49b"
+    facets: 1
+  Admin-principles-1443-v6:p176:
+    first_run: 1
+    wording_sha256: "a934181d850ba02cc414c4e0efd993650c3896cc4deef54e9f9b653942d7f9ff"
+    facets: 1
+  Admin-principles-1443-v6:p260:
+    first_run: 1
+    wording_sha256: "37425a4b19f2ec23024833b0f05819732ce2c885e4ada47e50228dde58169016"
+    facets: 1
+  Admin-principles-1443-v6:p114:
+    first_run: 1
+    wording_sha256: "062c31d8bf7c6da3222f2644aebc3ab3982a0c36eb9099f7e7af481960b73e66"
+    facets: 1
+  Admin-principles-1443-v6:p315:
+    first_run: 1
+    wording_sha256: "062c31d8bf7c6da3222f2644aebc3ab3982a0c36eb9099f7e7af481960b73e66"
+    facets: 1
+  Admin-principles-1443-v6:p033:
+    first_run: 1
+    wording_sha256: "ab8af55ea31924fc392383648bd78d566bf069d3fd622ef0784322b0768ef9f4"
+    facets: 3
+  Admin-principles-1443-v6:p123:
+    first_run: 1
+    wording_sha256: "285f2a229ea853e05a3f84e6b4f1402435e19ec0149833653f60dfc4cba5da39"
+    facets: 1
+  Admin-principles-1443-v6:p163:
+    first_run: 1
+    wording_sha256: "a9da34c41f5e6d37c0afd857a804553d3d1a61a9d20f8ed0d5ff71df8ed010fa"
+    facets: 1
+  Admin-principles-1443-v6:p180:
+    first_run: 1
+    wording_sha256: "9a6fd0259479b69f860b99f32c3f2fdd37a53ec219ab55151fdc340fd85fc54a"
+    facets: 1
+  Admin-principles-1443-v6:p080:
+    first_run: 1
+    wording_sha256: "2ba950ef2f4e8566d34a325687784b2c5d7d7994b45f03c10e4c931182e314c6"
+    facets: 1
+  Admin-principles-1443-v6:p264:
+    first_run: 1
+    wording_sha256: "009f69a3c6158a622aee122ac64332c106dd52f3009d0ba827d6f1aaf9f71b33"
+    facets: 2
+  Admin-principles-1443-v6:p120:
+    first_run: 1
+    wording_sha256: "f510ab000bbd99ed6511e0f2cb680a2c7b7f31cd283c9b070350d7afc1dc3fad"
+    facets: 2
+  Admin-principles-1443-v6:p041:
+    first_run: 1
+    wording_sha256: "63faabf7a27a8e4ac278e94a9ed4ca3ea29a99e97a17f2992564d9931e72ebf3"
+    facets: 3
+  Admin-principles-1443-v6:p039:
+    first_run: 1
+    wording_sha256: "dca52c22499f614da933f456536bffeb087ff424a99d7d8cd4da9de0b1d73d56"
+    facets: 3
+  Admin-principles-1443-v6:p096:
+    first_run: 1
+    wording_sha256: "f17c0662b70d0504b12914331f7bbb3bdd0b566c3deb6facd394abf57e01f4ca"
+    facets: 1
+  Admin-principles-1443-v6:p333:
+    first_run: 1
+    wording_sha256: "c5e6f000747a10666cf1266d7322a0c0369961516e5b48c3b5e0f4b5b4db87c8"
+    facets: 1
+  Admin-principles-1443-v6:p040:
+    first_run: 1
+    wording_sha256: "101df1b387522a88c95b8bff9da3dc5afd9a74fcdb504ddac6af947710ee8a06"
+    facets: 1
+  Admin-principles-1443-v6:p016:
+    first_run: 1
+    wording_sha256: "df11a878838aa881a70c659ea516a546cc4817dc2ea62721188060ea87f07e13"
+    facets: 1
+  Admin-principles-1443-v6:p083:
+    first_run: 1
+    wording_sha256: "246b2ff3a28f61025358e487a6a5b9dd872d5002d6618c0458fd0be65ff462bc"
+    facets: 3
+  Admin-principles-1443-v6:p364:
+    first_run: 1
+    wording_sha256: "eea53fc266ff18bd9013a2dd7029d991f6338056a910c2d978580f88153f1654"
+    facets: 1
+sources:
+- file: "Indexes-1443-v6.pdf"
+  sha256: "a19f3ccf4c01d5d2191fc898375c612c135b566b1d35dedfef2ce93e00c12680"

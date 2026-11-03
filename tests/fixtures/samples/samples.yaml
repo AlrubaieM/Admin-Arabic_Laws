@@ -1,0 +1,8 @@
+# Reviewed samples read by the tests. Paths are relative to the project root.
+# The sample PDF is the copy kept in samples/ (byte-identical to the Input/ copy; SHA-256 recorded in the configuration).
+samples:
+  - volume_id: "Admin-principles-1443-v6"
+    source: "samples/Indexes-1443-v6.pdf"
+    stored_name: "Indexes-1443-v6.pdf"
+    config: "config/volumes/Admin-principles-1443-v6.yaml"
+    expected: "tests/fixtures/Admin-principles-1443-v6.expected.yaml"

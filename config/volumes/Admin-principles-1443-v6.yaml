@@ -1,0 +1,111 @@
+# Volume configuration: identity, source files, reader calibration, and decisions.
+# Read by scripts/pipeline.py; nothing volume-specific is hard-coded in the scripts.
+volume_id: "Admin-principles-1443-v6"
+collection_name_ar: "مجموعة المبادئ التي قررتها المحكمة الإدارية العليا"
+collection_name_en: "Principles Decided by the Supreme Administrative Court"
+collection_name_en_basis: "descriptive"
+volume_ordinal_ar: "المجلد السادس"
+volume_number: "6"
+year_hijri: "1443"
+publisher_ar: "ديوان المظالم"
+publisher_en: "Board of Grievances"
+publisher_en_basis: "descriptive"
+publisher_unit_ar: "مكتب الشؤون الفنية"
+publisher_unit_basis: "cover image read by the reviewer on 02/11/2026; the cover carries no text layer"
+folder_name: "Admin-principles-1443-v6"
+name_source_location: "page[2]:L2-L4 (cataloging block; the cover title is an image)"
+identity_basis: "cataloging_page"
+
+source_files:
+  - original_name: "Indexes-____________________________________________________1443.pdf"
+    stored_name: "Indexes-1443-v6.pdf"
+    upload_prefix: "7812d75c-"
+    rename_basis: "user decision of 03/11/2026 (the upload replaced the Arabic part of the name by underscores)"
+    sha256: "a19f3ccf4c01d5d2191fc898375c612c135b566b1d35dedfef2ce93e00c12680"
+    kind: "index"
+    rank: 1
+    page_label_offset: 4
+
+# Reader calibration (master prompt section 5, TEXT LAYER PROTOCOL).
+# Repairs are keyed by glyph id of the base font; subsets of one font share glyph ids.
+# Every repair below was established from a 600 dpi crop of a rendered occurrence
+# read by the reviewer on 03/11/2026 (work/calibration/<volume_id>/crops).
+reader:
+  space_gap_ratio: 0.3
+  baseline_tolerance_ratio: 0.25
+  # Digit groups are read right to left as separate numbers, each in its own reading order
+  # ("(ب/1752/1443)" prints 1752 beside the letter; "(أ/2771-2893/1442)" prints 2771 beside the slash).
+  digit_run_joiners: []
+  # The cataloging page prints Latin-style number strings left to right as a whole (ISBN "978-603-8286-63-0").
+  page_overrides:
+    - pages: [2]
+      digit_run_joiners: ["-"]
+      reason: "ISBN on the cataloging page is one left-to-right string (crop p2 'ردمك')"
+  hamza_x_tolerance: 0.6
+  head_tail_tolerance: 0.8
+
+fonts:
+  - name: "AXtManal"
+    role: "body"
+    text_layer: "defective"
+    glyph_repairs:
+      42: {text: "ا", role: "alef_body", basis: "alef glyph used as the body of hamza letters (crop p8 'أتعاب')"}
+      176: {text: "لا", role: "lam_alef", basis: "lam-alef ligature mapped to a bare lam (crops p8 'ولاية', 'الإدارية')"}
+      54: {text: "س", role: "head", basis: "head of seen, initial/medial form (crop p9 'سائر')"}
+      122: {text: "س", role: "head", basis: "head of seen, second form (crop p8 'السير')"}
+      55: {text: "ش", role: "head", basis: "head of sheen (crop p9 'ناشئة')"}
+      123: {text: "ش", role: "head", basis: "head of sheen, second form (crop p8 'لشخصية')"}
+      56: {text: "ص", role: "head", basis: "head of sad (crop p7 'اختصاص')"}
+      124: {text: "ص", role: "head", basis: "head of sad, second form (crop p7 'اختصاص')"}
+      57: {text: "ض", role: "head", basis: "head of dad (crop p7 'الأراضي')"}
+      166: {text: "ض", role: "head", basis: "head of dad, second form (crop p7 'القضية')"}
+      126: {text: "", role: "tail", basis: "shared tail glyph of seen/sheen/sad/dad; the letter is carried by the head glyph"}
+      127: {text: "", role: "tail", basis: "shared tail glyph of seen/sheen/sad/dad; the letter is carried by the head glyph"}
+  - name: "AXtManalBold"
+    role: "heading"
+    text_layer: "defective"
+    glyph_repairs:
+      42: {text: "ا", role: "alef_body", basis: "as AXtManal (CMap of the index subset maps it to U+FFFD)"}
+      176: {text: "لا", role: "lam_alef", basis: "as AXtManal (crop p2 'الإدارية')"}
+      54: {text: "س", role: "head", basis: "crop p12 'المؤسسة'"}
+      122: {text: "س", role: "head", basis: "crop p2 'السادس'"}
+      55: {text: "ش", role: "head", basis: "as AXtManal"}
+      123: {text: "ش", role: "head", basis: "as AXtManal"}
+      56: {text: "ص", role: "head", basis: "crop p9 'اختصاص'"}
+      124: {text: "ص", role: "head", basis: "crop p9 'اختصاص'"}
+      57: {text: "ض", role: "head", basis: "crop p15 'الأراضي'"}
+      166: {text: "ض", role: "head", basis: "crop p8 'القضية'"}
+      126: {text: "", role: "tail", basis: "as AXtManal"}
+      127: {text: "", role: "tail", basis: "as AXtManal"}
+      # glyphs used only by the cataloging page's symbol-encoded subset
+      64: {text: "ـ", role: "punctuation", basis: "tatweel of 'هـ' (crop p2 '1447 هـ')"}
+      30: {text: "؛", role: "punctuation", basis: "Arabic semicolon (crop p2 '215 ص ؛')"}
+      97: {text: "ئ", role: "letter", basis: "yeh with hamza (crop p2 'المبادئ')"}
+  - name: "HacenTunisiaLt"
+    role: "other"
+    text_layer: "reliable"
+    note: "page numbers of the running footer only"
+  - name: "MinionPro-Regular"
+    role: "digits"
+    text_layer: "reliable"
+
+ruling_reference_components: null  # meaning of (prefix letter / number / year) not asserted
+
+body_sections: {}  # established on the first principle file (Appendix B); none supplied yet
+
+# Suspected source anomalies recorded by the reviewer (master prompt section 4); the wording is never corrected.
+source_anomalies:
+  - principle: "205"
+    location: "page[11]:r3:c0:L0"
+    observed: "• الدعاوى المتعلقة باستبدال منح الأرضي:"
+    suspected_reading: "باستبدال منح الأراضي"
+    reason: "the see-also text of the same entry (page[11]:r3:c0:L1) writes «منح الأراضي»; 400 dpi crop reviewed on 03/11/2026 confirms the printed «الأرضي»"
+    note_ar: "ورد في عنوان المدخل «منح الأرضي» بينما ورد في نص الإحالة نفسه «منح الأراضي»؛ أُثبت العنوان كما طُبع."
+  - principle: "83"
+    location: "page[16]:r3:c0:L0"
+    observed: "رابعاً/ مناط تحقق السلبية فيه توزيع الأراضي البور:"
+    suspected_reading: "مناط تحقق السلبية في توزيع الأراضي البور"
+    reason: "the topic outline (page[15]:r5:c0:L4) writes «في توزيع»; 400 dpi crop reviewed on 03/11/2026 confirms the printed «فيه»"
+    note_ar: "ورد في سطر الفرع «السلبية فيه توزيع» بينما ورد في قائمة الموضوع «السلبية في توزيع»؛ أُثبت كلٌّ منهما كما طُبع."
+
+decisions: {}
