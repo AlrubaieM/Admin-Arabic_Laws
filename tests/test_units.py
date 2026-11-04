@@ -212,21 +212,21 @@ class VerifierNegativePathTest(unittest.TestCase):
     def test_frontmatter_change_is_rejected(self):
         key, rel, front, body = self._first()
         mutated = dict(self.files)
-        mutated[rel] = "---\n" + front.replace('page_label: "', 'page_label: "9', 1) + "---\n" + body
+        mutated[rel] = "---\n" + front.replace('page_id: "', 'page_id: "G9', 1) + "---\n" + body
         self.assertTrue(any(f.startswith("frontmatter equals the records") for f in self._fails(mutated)))
 
     def test_duplicate_key_is_rejected(self):
         key, rel, front, body = self._first()
         mutated = dict(self.files)
-        mutated[rel] = "---\n" + front + 'volume_id: "x"\n' + "---\n" + body
+        mutated[rel] = "---\n" + front + 'principle_id: "x"\n' + "---\n" + body
         self.assertTrue(any(f.startswith("YAML parses") for f in self._fails(mutated)))
 
-    def test_heading_number_change_is_rejected(self):
+    def test_heading_change_is_rejected(self):
         key, rel, front, body = self._first()
-        h1 = f"# {vm.citation_ar(self.vb.cfg, key)}"
+        h1 = "# " + em.md_escape(self.vb.principles[key].title_ar or "")
         mutated = dict(self.files)
         mutated[rel] = "---\n" + front + "---\n" + body.replace(h1, h1 + "9", 1)
-        self.assertTrue(any(f.startswith("body heading equals citation_ar") for f in self._fails(mutated)))
+        self.assertTrue(any(f.startswith("body heading equals principle_title_ar") for f in self._fails(mutated)))
 
     def test_missing_repair_holds_the_principle(self):
         cfg = em.load_yaml((self.tmp / "config" / "volumes" / f"{self.vid}.yaml").read_text(encoding="utf-8"))
@@ -269,9 +269,7 @@ class VerifierNegativePathTest(unittest.TestCase):
             vb, files = pipeline.build_volume_files(project, self.vid)
             key = sorted(vb.principles, key=vm.key_sort)[0]
             self.assertEqual(vb.principles[key].extra_source_files, ["Indexes-copy.pdf"])
-            front = em.load_yaml(vv.split_front(files[f"Principles/{vm.principle_filename(key)}"])[0])
-            self.assertEqual([s["file"] for s in front["sources"]], [self.sample["stored_name"], "Indexes-copy.pdf"])
-            self.assertTrue(front["sources"][1].get("identical_wording"))
+            self.assertNotIn("صيغة أخرى", files[f"Principles/{vm.principle_filename(key)}"])
             self.assertFalse(any(i["issue_type"] == "wording" for i in vb.review))
         finally:
             shutil.rmtree(root, ignore_errors=True)

@@ -1,22 +1,16 @@
 ---
 volumes:
 - volume_id: "Admin-principles-1443-v6"
-  collection_name_ar: "مجموعة المبادئ التي قررتها المحكمة الإدارية العليا"
-  collection_name_en: "Principles Decided by the Supreme Administrative Court"
-  year_hijri: "1443"
-  volume_number: "6"
   folder: "Admin-principles-1443-v6"
   principle_count: 37
-  principles_with_body: 0
-  principles_held: 0
 ---
 
 <div dir="rtl">
 
-# سجل مجلدات المستودع
+# مستودع مبادئ المحكمة الإدارية العليا
 
-انظر [دليل القارئ](README.md).
+مجلد لكل مجلد مطبوع؛ فهرس كل مجلد في index.md داخله، وملف لكل مبدأ تحت Principles/.
 
-- [مجموعة المبادئ التي قررتها المحكمة الإدارية العليا لعام 1443هـ — المجلد السادس](Admin-principles-1443-v6/index.md) — `Admin-principles-1443-v6` — 37 مبدأ منشور، منها 0 بملف.
+- [مجموعة المبادئ التي قررتها المحكمة الإدارية العليا — المجلد السادس](Admin-principles-1443-v6/index.md) — 37 مبدأ
 
 </div>
