@@ -1,78 +1,25 @@
 ---
-volume_id: "Admin-principles-1443-v6"
-collection_name_ar: "مجموعة المبادئ التي قررتها المحكمة الإدارية العليا"
-collection_name_en: "Principles Decided by the Supreme Administrative Court"
-collection_name_en_basis: "descriptive"
-volume_ordinal_ar: "المجلد السادس"
+collection_name_ar: "مجموعة المبادئ التي قررتها المحكمة الإدارية العليا عام 1443"
+collection_name_en: "Principles Decided by the Supreme Administrative Court year 1443"
 volume_number: "6"
+volume_id: "Admin-principles-1443-v6"
+volume_ordinal_ar: "المجلد السادس"
 year_hijri: "1443"
 publisher_ar: "ديوان المظالم"
-publisher_unit_ar: "مكتب الشؤون الفنية"
 cataloging:
   deposit_number: "1440/1447"
   isbn: "978-603-8286-63-0"
   extent_ar: "215 ص ؛ ..سم"
 source_origin: "Official Board of Grievances principle collections"
-sources:
-- file: "Indexes-1443-v6.pdf"
-  kind: "index"
-  page_classes:
-    cover:
-    - 1
-    cataloging:
-    - 2
-    basmala:
-    - 3
-    half_title:
-    - 4
-    - 6
-    divider:
-    - 5
-    index_summary:
-    - 7
-    index_detailed:
-    - 8
-    - 9
-    - 10
-    - 11
-    - 12
-    - 13
-    - 14
-    - 15
-    - 16
-    blank:
-    - 17
-  extraction: "text_layer_repaired"
-extraction_summary:
-  fonts:
-  - name: "AXtManal"
-    text_layer: "defective"
-    glyph_repairs: 12
-  - name: "AXtManalBold"
-    text_layer: "defective"
-    glyph_repairs: 15
-  - name: "HacenTunisiaLt"
-    text_layer: "reliable"
-    glyph_repairs: 0
-  - name: "MinionPro-Regular"
-    text_layer: "reliable"
-    glyph_repairs: 0
-  text_layer: "defective"
-  glyph_repairs_applied: 1879
-year_gregorian_computed:
-  start: "09/08/2021"
-  end: "29/07/2022"
-  last_day_of_year: 30
-  basis: "computed (hijridate, Umm al-Qura)"
-date_format: "DD/MM/YYYY"
-date_conversion_method: "hijridate (Umm al-Qura), year span only; no dates in principle files"
+source_files:
+- "Indexes-1443-v6.pdf"
 ---
 
 <div dir="rtl">
 
-# مجموعة المبادئ التي قررتها المحكمة الإدارية العليا لعام 1443هـ — المجلد السادس: بيانات المجلد
+# مجموعة المبادئ التي قررتها المحكمة الإدارية العليا عام 1443 — المجلد السادس: بيانات المجلد
 
-## بيانات المجلد كما وردت في الغلاف
+## الغلاف
 
 المملكة العربية السعودية
 
@@ -88,7 +35,7 @@ date_conversion_method: "hijridate (Umm al-Qura), year span only; no dates in pr
 
 المجلد السادس
 
-## بيانات الفهرسة كما وردت في المصدر
+## بيانات الفهرسة
 
 ديوان المظالم، 1447 هـ
 
@@ -105,19 +52,14 @@ date_conversion_method: "hijridate (Umm al-Qura), year span only; no dates in pr
 | رقم الإيداع | 1440/1447 |
 | ردمك | 978-603-8286-63-0 |
 
-## الفهارس المزوّدة
+## الملفات المصدر
 
-- [الفهرس الهجائي الإجمالي](Indexes/summary-index.md): page[7]–page[7]، الصفحات المطبوعة 3–3
-- [الفهرس الهجائي التفصيلي](Indexes/detailed-index.md): page[8]–page[16]، الصفحات المطبوعة 4–12
-
-## الملفات المزوّدة
-
-| الملف | النوع | عدد الصفحات | أرقام المبادئ | الاستخراج |
-| --- | --- | --- | --- | --- |
-| Indexes-1443-v6.pdf | index | 17 | 9–383 (37) | text_layer_repaired |
+Indexes-1443-v6.pdf: 17 صفحة، المبادئ 9–383 (37)
 
 ## ملاحظات على نص المصدر
 
-> ملاحظة المستودع: لا يوجد في المصدر المزوّد.
+page\[11\]:r3:c0:L0: • الدعاوى المتعلقة باستبدال منح الأرضي: — ورد في عنوان المدخل «منح الأرضي» بينما ورد في نص الإحالة نفسه «منح الأراضي»؛ أُثبت العنوان كما طُبع.
+
+page\[16\]:r3:c0:L0: رابعاً/ مناط تحقق السلبية فيه توزيع الأراضي البور: — ورد في سطر الفرع «السلبية فيه توزيع» بينما ورد في قائمة الموضوع «السلبية في توزيع»؛ أُثبت كلٌّ منهما كما طُبع.
 
 </div>

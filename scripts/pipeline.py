@@ -346,8 +346,6 @@ class VolumeBuild:
             files[f"Principles/{vm.principle_filename(key)}"] = em.rtl_file(em.principle_front(cfg, p, self.held), em.principle_body(cfg, p, self.principles, self.held))
         held_items = {k: [i["item_id"] for i in self.review if vm.principle_id(self.vid, k) in i.get("affected_ids", [])] for k in self.held}
         files["index.md"] = em.volume_index(cfg, self.parse, self.principles, self.anomalies, held_items)
-        files["Indexes/summary-index.md"] = em.preserved_table(cfg, self.parse, "summary")
-        files["Indexes/detailed-index.md"] = em.preserved_table(cfg, self.parse, "detailed")
         files["volume-details.md"] = em.volume_details(cfg, self.parse, self.cataloging_lines, self.extraction_summary, self.anomalies,
                                                        self.year_span_value, self.file_entries, len(self.held))
         return files
