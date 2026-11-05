@@ -10,7 +10,7 @@ A memory vault of the judicial principles decided by the Saudi Supreme Administr
 - `scripts/` — the pipeline: `pipeline.py` (build, verify, crosscheck, calibrate, ocr-confirm), `pdf_source.py` (glyph-geometry reader), `vault_index.py` (index parser), `vault_model.py` (facets, relations, identifiers), `vault_emit.py` (files), `vault_verify.py` (checks), `review_crop.py` (500 dpi crops of a source line for visual review).
 - `tests/` — unit tests (`test_units.py`: reader heuristics, parser rules, the verifier's negative paths, the held-principle path) and the sample build test (`test_pipeline.py`), with `tests/fixtures/<volume_id>.expected.yaml` and the frozen sample copies under `tests/fixtures/samples/` (`samples.yaml`, `configs/`, `expected/`).
 - `work/` — internal records (`records/`), review queue (`review/<volume_id>.yaml`, `review/visual-<volume_id>.yaml`), anomalies, ledger (`ledger/<volume_id>.yaml`, `ledger/manifest.yaml`), calibration inventory (`calibration/<volume_id>/glyphs.yaml`) and reports (`reports/<volume_id>-build-r<run>.md`, `-verify.md`, `-crosscheck-r<run>.md`, `-changes-r<run>.md`, `-final-report.md`). Staging, recovery copies, crops and page renders are ignored by git.
-- `prompts/principles-vault-master-task-v1.md` — the master task prompt the pipeline implements; `prompts/archive/law-vault-master-task-v14.md` — the earlier prompt for compiled laws.
+- `prompts/principles-vault-master-task-v1.md` — the master task prompt the pipeline implements; `prompts/archive/` — the earlier prompts (the long 03/11/2026 revision of this prompt and the prompt for compiled laws).
 - `samples/Indexes-1443-v6.pdf` — the reviewed sample (byte-identical to the Input copy), read by the tests.
 
 ## Running the pipeline
