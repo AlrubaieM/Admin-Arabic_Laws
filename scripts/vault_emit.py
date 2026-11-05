@@ -123,7 +123,9 @@ def p_id(key: str) -> str:
 
 
 def g_id(label: str | None) -> str:
-    return f"G{int(label):04d}" if label and label.isdigit() else ""
+    if not label:
+        return ""
+    return f"G{int(label):04d}" if label.isdigit() else f"G{label}"
 
 
 def gi_id(page: int) -> str:
@@ -174,7 +176,7 @@ def principle_front(cfg: dict, p: Principle, held: set | None = None) -> dict:
 
 
 def principle_body(cfg: dict, p: Principle, principles: dict[str, Principle] | None = None, held: set | None = None) -> list[str]:
-    lines: list[str] = [f"# {md_escape(p.title_ar or '')}", ""]
+    lines: list[str] = [f"# {md_escape(p.title_ar or f'Principle {p.number}')}", ""]
     for i, f in enumerate(p.facets):
         if i > 0:
             lines += [f"## {md_escape(f.title_ar or '')}", ""]
@@ -212,7 +214,6 @@ def volume_index(cfg: dict, parse: IndexParse, principles: dict[str, Principle],
     held_items = held_items or {}
     body: list[str] = [f"# {collection_name_ar(cfg)} — {cfg['volume_ordinal_ar']}", ""]
     published = len(principles) - len(held_items)
-    body += [f"{published} مبدأ، ملف لكل مبدأ تحت Principles/. المعرّفات: P رقم المبدأ، G الصفحة المطبوعة في المجلد، GI الصفحة في ملف الفهرس.", ""]
     if parse.summary_rows:
         body += ["## موضوعات المجلد", ""]
         for row in parse.summary_rows:
@@ -227,7 +228,7 @@ def volume_index(cfg: dict, parse: IndexParse, principles: dict[str, Principle],
             rows = [(k, f) for k, f in facet_rows if _topic_of(f) == (L.letter, T.title_ar)]
             if not rows:
                 continue
-            body += ["| المبدأ | P | G | GI |", "| --- | --- | --- | --- |"]
+            body += ["| الكلمات المفتاحية | P | G | GI |", "| --- | --- | --- | --- |"]
             for k, f in rows:
                 keywords = " — ".join(x for x in (_subtopic_of(f), f.title_ar if f.title_basis == "bullet_title" else None) if x)
                 label = _cell(keywords or f.title_ar or "")
@@ -272,14 +273,6 @@ def volume_details(cfg: dict, parse: IndexParse, cataloging_lines: list[str], ex
                 body += [md_escape(l), ""]
         if rows:
             body += ["| البيان | القيمة |", "| --- | --- |"] + [f"| {_cell(a)} | {_cell(b)} |" for a, b in rows] + [""]
-    body += ["## الملفات المصدر", ""]
-    for fe in file_entries:
-        body += [md_escape(f"{fe['file']}: {fe['pages']} صفحة، المبادئ {fe['numbers']}"), ""]
-    vol_anoms = anomalies or []
-    if vol_anoms:
-        body += ["## ملاحظات على نص المصدر", ""]
-        for a in vol_anoms:
-            body += [md_escape(f"{a['location']}: {a['observed']} — {a.get('note_ar') or a.get('note', '')}"), ""]
     front: dict = {
         "collection_name_ar": collection_name_ar(cfg), "collection_name_en": collection_name_en(cfg), "volume_number": str(cfg["volume_number"]),
         "volume_id": cfg["volume_id"], "volume_ordinal_ar": cfg["volume_ordinal_ar"], "year_hijri": str(cfg["year_hijri"]),
@@ -299,7 +292,7 @@ def volume_details(cfg: dict, parse: IndexParse, cataloging_lines: list[str], ex
 
 
 def collection_registry(volumes: list[dict]) -> str:
-    body = ["# مستودع مبادئ المحكمة الإدارية العليا", "", "مجلد لكل مجلد مطبوع؛ فهرس كل مجلد في index.md داخله، وملف لكل مبدأ تحت Principles/.", ""]
+    body = ["# مستودع مبادئ المحكمة الإدارية العليا", ""]
     for v in volumes:
         body.append(f"- {md_link(v['collection_name_ar'] + ' — ' + v['volume_ordinal_ar'], v['folder'] + '/index.md')} — {v['principle_count']} مبدأ")
     body.append("")
