@@ -29,14 +29,16 @@ import pymupdf
 
 import pdf_source as ps
 import vault_emit as em
+import vault_index as vi
 import vault_model as vm
 
-REQUIRED_PRINCIPLE_KEYS = ["collection_name_ar", "collection_name_en", "volume_number", "principle_id", "principle_number", "principle_title_ar",
+# volume_number is present only when the source prints a volume ordinal
+REQUIRED_PRINCIPLE_KEYS = ["collection_name_ar", "collection_name_en", "principle_id", "principle_number", "principle_title_ar",
                            "principle_title_en", "index_page_id"]
 KEY_ORDER = ["collection_name_ar", "collection_name_en", "volume_number", "principle_id", "principle_number", "principle_title_ar", "principle_title_en",
              "index_letter", "page_id", "index_page_id", "ruling_references"]
 CONTENT_CLASSES = {"index_wording", "title", "subtopic_opener", "outline", "letter", "topic", "number", "page_label", "ruling_reference",
-                   "summary_letter", "summary_topics", "cataloging_text"}
+                   "summary_letter", "summary_topics", "cataloging_text", "table_heading", "table_header", "table_cell"}
 STRUCTURAL_CLASSES = {"header_row"}  # the source table's own header row: structure, listed as an exclusion
 # body places where a source line may legitimately appear (section 14, COVERAGE CHECK)
 GENERATED_LINE = re.compile(r"^(#{1,6} |<a id=|\||- |\[|<div|</div)")
@@ -153,11 +155,11 @@ def check_vault_files(files: dict[str, str], rep: Report, vault_root: Path | Non
                 id_errors.append(f"{rel}: {pid}")
             if Path(rel).name != pid.split(":")[-1] + ".md":
                 id_errors.append(f"{rel}: filename does not match principle_id")
-            try:
-                if int(front.get("principle_number", -1)) != int(re.sub(r"\D.*$", "", pid.split(":p")[-1]) or -2):
-                    id_errors.append(f"{rel}: principle_number does not match principle_id")
-            except ValueError:
-                id_errors.append(f"{rel}: principle_number is not a number")
+            # principle_number is the number as printed ("364", or «قرار (1)» for a decision): it must name the same key
+            code = pid.split(":")[-1].split("-dup")[0]
+            key = (code[0] if code[:1] != "p" else "") + str(int(code[1:])) if re.fullmatch(r"[a-z][0-9]+", code) else None
+            if key is None or vm.number_key(str(front.get("principle_number", ""))) != key:
+                id_errors.append(f"{rel}: principle_number does not match principle_id")
             h1 = next((l for l in inner if l.startswith("# ")), "")
             if em.md_unescape(h1[2:]) != str(front.get("principle_title_ar", "")):
                 h1_errors.append(rel)
@@ -294,6 +296,9 @@ def check_coverage(vb, rep: Report, files: dict[str, str]) -> None:
     bodies = {rel: body_lines(t) for rel, t in files.items() if rel.startswith("Principles/")}
     index_text = em.md_unescape(split_front(files["index.md"])[1].replace("\\|", "|")) if "index.md" in files else ""
     details = em.md_unescape(split_front(files["volume-details.md"])[1].replace("\\|", "|")).replace(" | ", " ") if "volume-details.md" in files else ""
+    # the other index tables: every cell line must appear in the published table files
+    tables_text = " ".join(em.md_unescape(split_front(t)[1]).replace("\\|", "|") for rel, t in files.items()
+                           if rel in em.TABLE_INDEX_FILES.values())
     unmapped = []
     for l in vb.parse.lines:
         if l.cls not in CONTENT_CLASSES or not l.text or l.loc in held_locs:
@@ -306,19 +311,23 @@ def check_coverage(vb, rep: Report, files: dict[str, str]) -> None:
             # a wording line that ends with its reference is published as wording paragraph + reference line
             parts = [t]
             if l.cls == "index_wording":
-                refs = re.findall(r"\([^()]+/[0-9][0-9\-]*/[0-9]+\)", t)
-                head = re.sub(r"(\s*\([^()]+/[0-9][0-9\-]*/[0-9]+\))+\s*$", "", t)
+                refs = [m.group(0).strip() for m in vi.RE_REF.finditer(t)]
+                head = vi.RE_REF.sub("", t).rstrip()
                 parts = ([head] if head else []) + refs
             # the outline of a topic is published under the topic heading of the index
             ok = all(any(x in para for paras in bodies.values() for para in paras) for x in parts)
         elif l.cls in ("title", "subtopic_opener"):
-            core = re.sub(r"^•\s*", "", t).rstrip(":").strip()
-            core = re.sub(r"^[^/]{2,10}/\s*", "", core) if l.cls == "subtopic_opener" else core
+            core = re.sub(r"^\s*(?:•|[-–])\s*", "", t).rstrip(":").strip()  # the title marker is structure, not text
+            if l.cls == "subtopic_opener":
+                m = vi.RE_ORDINAL_LINE.match(core)
+                core = m.group("rest").strip() if m else core
             ok = any(core in para or core in " ".join(paras) for paras in bodies.values() for para in paras) or core in index_text
         elif l.cls == "outline":
             ok = t in index_text
+        elif l.cls in ("table_heading", "table_header", "table_cell"):
+            ok = t in tables_text
         elif l.cls == "number":
-            ok = all(f"P{int(x):04d}" in index_text for x in re.split(r"[،,]", t) if x.strip().isdigit())
+            ok = all(em.p_id(k) in index_text for k in (vm.number_key(x) for x in re.split(r"[،,]", t)) if k)
         elif l.cls == "page_label":
             ok = all(f"G{int(x):04d}" in index_text for x in re.split(r"[،,]", t) if x.strip().isdigit())
         else:  # letter, topic, summary_letter, summary_topics
@@ -328,22 +337,31 @@ def check_coverage(vb, rep: Report, files: dict[str, str]) -> None:
     excluded = [l for l in vb.parse.lines if l.cls.startswith("apparatus") or l.cls in STRUCTURAL_CLASSES]
     rep.add("every content line maps to at least one output location", not unmapped,
             "; ".join(unmapped[:3]) or f"{sum(1 for l in vb.parse.lines if l.cls in CONTENT_CLASSES)} content lines mapped; {len(excluded)} apparatus/structural lines are listed exclusions")
+    # a wording may appear exactly in the files of the principles whose listings print it (a shared entry, or the
+    # same text printed under several numbers, e.g. one «راجع» path)
+    expected_files: dict[str, set[str]] = {}
+    for key, p in vb.principles.items():
+        if key in vb.held:
+            continue
+        for f in p.facets:
+            for t in f.wording_paragraphs:
+                expected_files.setdefault(t, set()).add(f"Principles/{vm.principle_filename(key)}")
     duplicates, forbidden = [], []
     for b in vb.parse.blocks:
-        n = len([x for x in b.numbers if x.isdigit()])
         for t in b.wording_paragraphs:
             hits = [rel for rel, paras in bodies.items() if t in paras]
             if len(hits) > 1:
                 duplicates.append(f"{b.loc}: {len(hits)} files")
-            if len(hits) > max(1, n):
-                forbidden.append(f"{b.loc}: {t[:30]!r} in {hits}")
+            extra = sorted(set(hits) - expected_files.get(t, set()))
+            if extra:
+                forbidden.append(f"{b.loc}: {t[:30]!r} in {extra}")
     rep.add("intentional duplicates are listed and permitted", not forbidden,
             "; ".join(forbidden[:3]) or f"{len(duplicates)} wordings appear in more than one principle file (shared entries)")
     review_lines = [l for l in vb.parse.lines if l.cls == "review"]
     rep.add("lines held as review items", True, f"{len(review_lines)}")
-    numbers = {int(x) for b in vb.parse.blocks for x in b.numbers if x.isdigit()}
-    published = {vm.key_number(n) for n in vb.principles if n not in vb.held}
-    held = {vm.key_number(n) for n in vb.held}
+    numbers = {vm.number_key(x) for b in vb.parse.blocks for x in b.numbers if vm.number_key(x)}
+    published = {vm.base_key(n) for n in vb.principles if n not in vb.held}
+    held = {vm.base_key(n) for n in vb.held}
     rep.add("every index number has exactly one principle file or is held", numbers == published | held,
             f"{len(numbers)} numbers, {len(published)} files, {len(held)} held")
     no_wording = [n for n, p in vb.principles.items() if n not in vb.held and not any(f.wording_paragraphs for f in p.facets)]
@@ -583,7 +601,14 @@ def second_reader_confirms(published: str, page_text: str) -> bool:
     # three adjacent tokens joined are candidates too; every letter must still agree
     page_words = set(tokens) | {a + b for a, b in zip(tokens, tokens[1:])} | {a + b + c for a, b, c in zip(tokens, tokens[1:], tokens[2:])}
     page_sorted = {"".join(sorted(w)) for w in page_words}
-    return all(w in page_words or "".join(sorted(w)) in page_sorted for w in words)
+    # the second reader may also run adjacent words together («تقديرهللبينات»): a word of at least
+    # RUN_TOGETHER_MIN_LETTERS letters is found inside one of its tokens; a shorter word needs a token of its own
+    joined = " ".join(tokens)
+    return all(w in page_words or "".join(sorted(w)) in page_sorted
+               or (len(w) >= RUN_TOGETHER_MIN_LETTERS and w in joined) for w in words)
+
+
+RUN_TOGETHER_MIN_LETTERS = 4
 
 
 def cmd_crosscheck(project, volume_ids: list[str]) -> int:
@@ -604,7 +629,7 @@ def cmd_crosscheck(project, volume_ids: list[str]) -> int:
         failed = False
         page_text: dict[str, dict[int, str]] = {}
         for entry in entries:
-            path = project.input_dir / vid / (entry.get("stored_name") or entry["original_name"])
+            path = project.source_path(vid, entry)
             if not path.exists():
                 lines += [f"- {path.name}: missing"]
                 failed = True
@@ -763,12 +788,13 @@ def cmd_ocr_confirm(project, volume_ids: list[str], build_volume_files) -> int:
                         cells_by_page.setdefault((f.file, sl.page), set()).add((sl.row, sl.col))
         docs: dict[str, pymupdf.Document] = {}
         fmaps: dict = {}
+        paths = {Path(project.source_path(vid, e)).name: project.source_path(vid, e) for e in cfg.get("source_files") or []}
         jobs: list[tuple[str, Path, str, bool, str, int]] = []
         with tempfile.TemporaryDirectory() as tmp:
             for (file_name, pno) in sorted(cells_by_page):
                 if file_name not in docs:
-                    docs[file_name] = pymupdf.open(str(project.input_dir / vid / file_name))
-                    fmaps[file_name] = vb.font_maps(docs[file_name], project.input_dir / vid / file_name)
+                    docs[file_name] = pymupdf.open(str(paths[file_name]))
+                    fmaps[file_name] = vb.font_maps(docs[file_name], paths[file_name])
                 doc = docs[file_name]
                 fm, repairs = fmaps[file_name]
                 glyphs = ps.page_glyphs(doc, pno, fm, repairs, vb.settings)
@@ -809,7 +835,7 @@ def cmd_ocr_confirm(project, volume_ids: list[str], build_volume_files) -> int:
                 # decision when the independent second reader confirms every number and word of the line on its page
                 if second is not None:
                     if (file_name, pno) not in second_pages:
-                        second_pages[(file_name, pno)] = pdftotext_page(second, project.input_dir / vid / file_name, pno)
+                        second_pages[(file_name, pno)] = pdftotext_page(second, paths[file_name], pno)
                     if second_reader_confirms(pub, second_pages[(file_name, pno)]):
                         auto_kept += 1
                         item["resolution"] = "auto_keep"

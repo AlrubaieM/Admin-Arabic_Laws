@@ -1,0 +1,92 @@
+# Volume configuration: identity, source files, reader calibration, and decisions.
+# Read by scripts/pipeline.py; nothing volume-specific is hard-coded in the scripts.
+volume_id: "Admin-principles-1442"
+collection_name_ar: "مجموعة المبادئ التي قررتها المحكمة الإدارية العليا"
+collection_name_en: "Principles Decided by the Supreme Administrative Court"
+collection_name_en_basis: "descriptive"
+# The supplied file prints no volume ordinal (its first pages are the «الفهارس» divider and the half-title);
+# volume_ordinal_ar and volume_number are therefore not set, and the volume_id carries the years only.
+year_hijri: "1442"
+publisher_ar: "ديوان المظالم"
+publisher_en: "Board of Grievances"
+publisher_en_basis: "descriptive"
+folder_name: "Admin-principles-1442"
+identity_basis: "half_title"
+name_source_location: "page[2] (half-title image, read by the reviewer on 06/11/2026; the page has no text layer)"
+
+# Half-title text lines, read by the reviewer from the page image on 06/11/2026.
+cover_lines_ar:
+  - "مجموعة المبادئ"
+  - "التي قررتها المحكمة الإدارية العليا"
+  - "لعام 1442هـ"
+
+page_classes:
+  "1": "divider"
+  "2": "half_title"
+
+source_files:
+  - original_name: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1442.pdf"
+    path: "مجموعة مبادئ وقرارات المحكمة الادارية العليا/مجموعة أعوام 1442/Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1442.pdf"
+    sha256: "f3fecc9c4d43e611907f2ecec82f44c8d381516a1a5b24cd765064907ae813f1"
+    kind: "index"
+    rank: 1
+
+reader:
+  space_gap_ratio: 0.3
+  baseline_tolerance_ratio: 0.25
+  digit_run_joiners: []
+  hamza_x_tolerance: 0.6
+  head_tail_tolerance: 0.8
+  reference_fonts: true
+
+# The AXtManal family of the other volumes, in subsets of their own glyph numbering: each glyph takes its text and
+# repairs from the identical outline in another verified source (pdf_source.discover_references).
+fonts:
+  - {name: "AXtManal", role: "body", text_layer: "defective"}
+  - {name: "AXtManalBold", role: "heading", text_layer: "defective"}
+  - name: "MinionPro-Regular"
+    role: "digits"
+    text_layer: "reliable"
+    glyph_repairs:
+      3: {text: "–", role: "punctuation", basis: "en dash of a see-also path, drawn once in a subset that maps no glyph (crop page[64] «دعوى – القصور», 06/11/2026); gid 3 occurs only there in this file"}
+  - name: "GESSTextUltraLight-UltraLight"
+    role: "other"
+    text_layer: "defective"
+    note: "page numbers of the running footer; no ToUnicode entries; each digit read from a 500 dpi render of the glyph alone (06/11/2026)"
+    glyph_repairs:
+      1: {text: "0", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٠"}
+      2: {text: "8", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٨"}
+      3: {text: "7", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٧"}
+      4: {text: "6", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٦"}
+      5: {text: "5", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٥"}
+      6: {text: "3", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٣"}
+      7: {text: "2", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٢"}
+      8: {text: "9", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٩"}
+      9: {text: "4", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٤"}
+      10: {text: "1", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ١"}
+  - name: "DecoType-ProfessionalNaskhSupplement5Phrases"
+    role: "other"
+    text_layer: "defective"
+    glyph_repairs:
+      119: {text: "صلى الله عليه وسلم", role: "letter", basis: "phrase glyph of the honorific (U+FDFA) drawn after «لرسول»; crop p136 (06/11/2026)"}
+
+# Titles of the volume's other indexes, printed as banner images (read by the reviewer on 06/11/2026).
+table_index_titles:
+  rulings: "فهرس الأحكام"
+  instruments: "فهرس مستند الحكم"
+
+ruling_reference_components: null  # meaning of (prefix letter / number / year) not asserted
+
+body_sections: {}  # established on the first principle file (Appendix B); none supplied yet
+
+source_anomalies: []
+
+decisions:
+  "06d76ad71f5d":
+    resolution: "keep"
+    decided_on: "06/11/2026"
+    note: "page[14]:r5:c0:L0: crop compared by the reviewer; the published reading matches the page; OCR misread the «في» ligature"
+  "b66f4d49e335":
+    resolution: "keep"
+    decided_on: "06/11/2026"
+    note: "page[53]:r4:c0:L2: crop compared by the reviewer; the published reading matches the page; OCR misread «نتيجته» and the reference digits"

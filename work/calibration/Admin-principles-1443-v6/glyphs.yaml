@@ -1,6 +1,7 @@
 volume_id: "Admin-principles-1443-v6"
 fonts:
-- xref: 11
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  xref: 34760
   name: "NGDBVN+HacenTunisiaLt"
   base: "HacenTunisiaLt"
   encoding: "Identity-H"
@@ -21,7 +22,211 @@ fonts:
   - 14
   - 15
   - 16
-- xref: 48
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+  - 54
+  - 55
+  - 56
+  - 57
+  - 58
+  - 59
+  - 60
+  - 61
+  - 62
+  - 63
+  - 64
+  - 65
+  - 66
+  - 67
+  - 68
+  - 69
+  - 70
+  - 71
+  - 72
+  - 73
+  - 74
+  - 75
+  - 76
+  - 77
+  - 78
+  - 79
+  - 80
+  - 81
+  - 82
+  - 83
+  - 84
+  - 85
+  - 86
+  - 87
+  - 88
+  - 89
+  - 90
+  - 91
+  - 92
+  - 93
+  - 94
+  - 95
+  - 96
+  - 97
+  - 98
+  - 99
+  - 100
+  - 101
+  - 102
+  - 103
+  - 104
+  - 105
+  - 106
+  - 107
+  - 108
+  - 109
+  - 110
+  - 111
+  - 112
+  - 113
+  - 114
+  - 115
+  - 116
+  - 117
+  - 118
+  - 119
+  - 120
+  - 121
+  - 122
+  - 123
+  - 124
+  - 125
+  - 126
+  - 127
+  - 128
+  - 129
+  - 130
+  - 131
+  - 132
+  - 133
+  - 134
+  - 135
+  - 136
+  - 137
+  - 138
+  - 139
+  - 140
+  - 141
+  - 142
+  - 143
+  - 144
+  - 145
+  - 146
+  - 147
+  - 148
+  - 149
+  - 150
+  - 151
+  - 152
+  - 153
+  - 154
+  - 155
+  - 156
+  - 157
+  - 158
+  - 159
+  - 160
+  - 161
+  - 162
+  - 163
+  - 164
+  - 165
+  - 166
+  - 167
+  - 168
+  - 169
+  - 170
+  - 171
+  - 172
+  - 173
+  - 174
+  - 175
+  - 176
+  - 177
+  - 178
+  - 179
+  - 180
+  - 181
+  - 182
+  - 183
+  - 184
+  - 185
+  - 186
+  - 187
+  - 188
+  - 189
+  - 190
+  - 191
+  - 192
+  - 193
+  - 194
+  - 195
+  - 196
+  - 197
+  - 198
+  - 199
+  - 200
+  - 201
+  - 202
+  - 203
+  - 204
+  - 205
+  - 206
+  - 207
+  - 208
+  - 209
+  - 210
+  - 211
+  - 212
+  - 213
+  - 214
+  - 215
+  - 216
+  - 217
+  - 218
+  - 219
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  xref: 678
   name: "YHQPTR+AXtManalBold"
   base: "AXtManalBold"
   encoding: "Identity-H"
@@ -29,7 +234,8 @@ fonts:
   cmap_entries: 62
   pages:
   - 2
-- xref: 81
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  xref: 698
   name: "YHQPTR+AXtManalBold"
   base: "AXtManalBold"
   encoding: "Identity-H"
@@ -46,7 +252,196 @@ fonts:
   - 14
   - 15
   - 16
-- xref: 82
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+  - 54
+  - 55
+  - 56
+  - 57
+  - 58
+  - 59
+  - 60
+  - 61
+  - 62
+  - 63
+  - 64
+  - 65
+  - 66
+  - 67
+  - 68
+  - 69
+  - 70
+  - 71
+  - 72
+  - 73
+  - 74
+  - 75
+  - 76
+  - 77
+  - 78
+  - 79
+  - 80
+  - 81
+  - 82
+  - 83
+  - 84
+  - 85
+  - 86
+  - 87
+  - 88
+  - 89
+  - 90
+  - 91
+  - 92
+  - 93
+  - 94
+  - 95
+  - 96
+  - 97
+  - 98
+  - 99
+  - 100
+  - 101
+  - 102
+  - 103
+  - 104
+  - 105
+  - 106
+  - 107
+  - 108
+  - 109
+  - 110
+  - 111
+  - 112
+  - 113
+  - 114
+  - 115
+  - 116
+  - 117
+  - 118
+  - 119
+  - 120
+  - 121
+  - 122
+  - 123
+  - 124
+  - 125
+  - 126
+  - 127
+  - 128
+  - 129
+  - 130
+  - 131
+  - 132
+  - 133
+  - 134
+  - 135
+  - 136
+  - 137
+  - 138
+  - 139
+  - 140
+  - 141
+  - 142
+  - 143
+  - 144
+  - 145
+  - 146
+  - 147
+  - 148
+  - 149
+  - 150
+  - 151
+  - 152
+  - 153
+  - 154
+  - 155
+  - 156
+  - 157
+  - 158
+  - 159
+  - 160
+  - 161
+  - 162
+  - 163
+  - 164
+  - 165
+  - 166
+  - 167
+  - 168
+  - 169
+  - 170
+  - 171
+  - 172
+  - 173
+  - 174
+  - 175
+  - 176
+  - 177
+  - 178
+  - 179
+  - 180
+  - 181
+  - 182
+  - 183
+  - 184
+  - 185
+  - 186
+  - 187
+  - 188
+  - 189
+  - 190
+  - 191
+  - 192
+  - 193
+  - 194
+  - 195
+  - 196
+  - 197
+  - 198
+  - 199
+  - 200
+  - 201
+  - 202
+  - 203
+  - 204
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  xref: 699
   name: "UJLMPZ+AXtManal"
   base: "AXtManal"
   encoding: "Identity-H"
@@ -63,7 +458,211 @@ fonts:
   - 14
   - 15
   - 16
-- xref: 97
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+  - 54
+  - 55
+  - 56
+  - 57
+  - 58
+  - 59
+  - 60
+  - 61
+  - 62
+  - 63
+  - 64
+  - 65
+  - 66
+  - 67
+  - 68
+  - 69
+  - 70
+  - 71
+  - 72
+  - 73
+  - 74
+  - 75
+  - 76
+  - 77
+  - 78
+  - 79
+  - 80
+  - 81
+  - 82
+  - 83
+  - 84
+  - 85
+  - 86
+  - 87
+  - 88
+  - 89
+  - 90
+  - 91
+  - 92
+  - 93
+  - 94
+  - 95
+  - 96
+  - 97
+  - 98
+  - 99
+  - 100
+  - 101
+  - 102
+  - 103
+  - 104
+  - 105
+  - 106
+  - 107
+  - 108
+  - 109
+  - 110
+  - 111
+  - 112
+  - 113
+  - 114
+  - 115
+  - 116
+  - 117
+  - 118
+  - 119
+  - 120
+  - 121
+  - 122
+  - 123
+  - 124
+  - 125
+  - 126
+  - 127
+  - 128
+  - 129
+  - 130
+  - 131
+  - 132
+  - 133
+  - 134
+  - 135
+  - 136
+  - 137
+  - 138
+  - 139
+  - 140
+  - 141
+  - 142
+  - 143
+  - 144
+  - 145
+  - 146
+  - 147
+  - 148
+  - 149
+  - 150
+  - 151
+  - 152
+  - 153
+  - 154
+  - 155
+  - 156
+  - 157
+  - 158
+  - 159
+  - 160
+  - 161
+  - 162
+  - 163
+  - 164
+  - 165
+  - 166
+  - 167
+  - 168
+  - 169
+  - 170
+  - 171
+  - 172
+  - 173
+  - 174
+  - 175
+  - 176
+  - 177
+  - 178
+  - 179
+  - 180
+  - 181
+  - 182
+  - 183
+  - 184
+  - 185
+  - 186
+  - 187
+  - 188
+  - 189
+  - 190
+  - 191
+  - 192
+  - 193
+  - 194
+  - 195
+  - 196
+  - 197
+  - 198
+  - 199
+  - 200
+  - 201
+  - 202
+  - 203
+  - 204
+  - 205
+  - 206
+  - 207
+  - 208
+  - 209
+  - 210
+  - 211
+  - 212
+  - 213
+  - 214
+  - 215
+  - 216
+  - 217
+  - 218
+  - 219
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  xref: 708
   name: "BMYXJL+MinionPro-Regular"
   base: "MinionPro-Regular"
   encoding: "Identity-H"
@@ -79,500 +678,1729 @@ fonts:
   - 14
   - 15
   - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  - 32
+  - 33
+  - 34
+  - 35
+  - 36
+  - 37
+  - 38
+  - 39
+  - 40
+  - 41
+  - 42
+  - 43
+  - 44
+  - 45
+  - 46
+  - 47
+  - 48
+  - 49
+  - 50
+  - 51
+  - 52
+  - 53
+  - 54
+  - 55
+  - 56
+  - 57
+  - 58
+  - 59
+  - 60
+  - 61
+  - 62
+  - 63
+  - 64
+  - 65
+  - 66
+  - 67
+  - 68
+  - 69
+  - 70
+  - 71
+  - 72
+  - 73
+  - 76
+  - 77
+  - 78
+  - 80
+  - 81
+  - 82
+  - 83
+  - 84
+  - 85
+  - 86
+  - 87
+  - 89
+  - 90
+  - 91
+  - 104
+  - 105
+  - 106
+  - 107
+  - 108
+  - 109
+  - 110
+  - 111
+  - 112
+  - 113
+  - 114
+  - 115
+  - 116
+  - 117
+  - 118
+  - 119
+  - 120
+  - 121
+  - 122
+  - 123
+  - 124
+  - 125
+  - 126
+  - 127
+  - 128
+  - 129
+  - 130
+  - 132
+  - 133
+  - 134
+  - 135
+  - 136
+  - 137
+  - 138
+  - 139
+  - 140
+  - 141
+  - 142
+  - 143
+  - 144
+  - 146
+  - 147
+  - 148
+  - 149
+  - 150
+  - 151
+  - 152
+  - 153
+  - 154
+  - 155
+  - 156
+  - 157
+  - 158
+  - 159
+  - 160
+  - 161
+  - 162
+  - 163
+  - 164
+  - 165
+  - 166
+  - 167
+  - 168
+  - 169
+  - 170
+  - 171
+  - 172
+  - 173
+  - 174
+  - 175
+  - 176
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  xref: 717
+  name: "BMYXJL+MinionPro-Regular"
+  base: "MinionPro-Regular"
+  encoding: "WinAnsiEncoding"
+  kind: "simple"
+  cmap_entries: 2
+  pages:
+  - 105
 pages:
-- page: 1
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 1
   text_chars: 4
   images: 3
   drawings: 0
-- page: 2
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 2
   text_chars: 204
   images: 0
   drawings: 4
-- page: 3
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 3
   text_chars: 0
   images: 0
   drawings: 1
-- page: 4
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 4
   text_chars: 4
   images: 4
   drawings: 0
-- page: 5
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 5
   text_chars: 1
   images: 3
   drawings: 0
-- page: 6
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 6
   text_chars: 1
   images: 5
   drawings: 0
-- page: 7
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 7
   text_chars: 437
   images: 3
   drawings: 101
-- page: 8
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 8
   text_chars: 1160
   images: 5
   drawings: 41
-- page: 9
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 9
   text_chars: 1591
   images: 2
   drawings: 56
-- page: 10
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 10
   text_chars: 1463
   images: 3
   drawings: 66
-- page: 11
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 11
   text_chars: 1572
   images: 2
   drawings: 59
-- page: 12
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 12
   text_chars: 1613
   images: 3
   drawings: 58
-- page: 13
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 13
   text_chars: 1665
   images: 2
   drawings: 52
-- page: 14
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 14
   text_chars: 1736
   images: 3
   drawings: 45
-- page: 15
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 15
   text_chars: 1696
   images: 2
   drawings: 50
-- page: 16
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 16
   text_chars: 1571
   images: 3
   drawings: 43
-- page: 17
-  text_chars: 0
-  images: 0
-  drawings: 0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 17
+  text_chars: 1537
+  images: 2
+  drawings: 43
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 18
+  text_chars: 1408
+  images: 3
+  drawings: 50
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 19
+  text_chars: 1306
+  images: 2
+  drawings: 36
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 20
+  text_chars: 1832
+  images: 3
+  drawings: 57
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 21
+  text_chars: 1424
+  images: 2
+  drawings: 97
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 22
+  text_chars: 1743
+  images: 3
+  drawings: 90
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 23
+  text_chars: 1660
+  images: 2
+  drawings: 71
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 24
+  text_chars: 1481
+  images: 3
+  drawings: 71
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 25
+  text_chars: 1457
+  images: 2
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 26
+  text_chars: 1647
+  images: 3
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 27
+  text_chars: 1536
+  images: 2
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 28
+  text_chars: 1575
+  images: 3
+  drawings: 50
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 29
+  text_chars: 1763
+  images: 2
+  drawings: 52
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 30
+  text_chars: 1584
+  images: 3
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 31
+  text_chars: 1138
+  images: 2
+  drawings: 53
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 32
+  text_chars: 1641
+  images: 3
+  drawings: 58
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 33
+  text_chars: 1510
+  images: 2
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 34
+  text_chars: 1323
+  images: 3
+  drawings: 60
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 35
+  text_chars: 1486
+  images: 2
+  drawings: 75
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 36
+  text_chars: 1694
+  images: 3
+  drawings: 65
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 37
+  text_chars: 1834
+  images: 2
+  drawings: 38
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 38
+  text_chars: 1508
+  images: 3
+  drawings: 57
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 39
+  text_chars: 1715
+  images: 2
+  drawings: 38
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 40
+  text_chars: 1388
+  images: 3
+  drawings: 44
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 41
+  text_chars: 1595
+  images: 2
+  drawings: 31
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 42
+  text_chars: 1845
+  images: 3
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 43
+  text_chars: 1401
+  images: 2
+  drawings: 50
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 44
+  text_chars: 1673
+  images: 3
+  drawings: 78
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 45
+  text_chars: 1445
+  images: 2
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 46
+  text_chars: 1479
+  images: 3
+  drawings: 51
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 47
+  text_chars: 1606
+  images: 2
+  drawings: 31
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 48
+  text_chars: 984
+  images: 3
+  drawings: 22
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 49
+  text_chars: 1556
+  images: 2
+  drawings: 77
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 50
+  text_chars: 1278
+  images: 3
+  drawings: 44
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 51
+  text_chars: 1593
+  images: 2
+  drawings: 31
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 52
+  text_chars: 1539
+  images: 3
+  drawings: 52
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 53
+  text_chars: 1633
+  images: 2
+  drawings: 58
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 54
+  text_chars: 1709
+  images: 3
+  drawings: 59
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 55
+  text_chars: 1477
+  images: 2
+  drawings: 59
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 56
+  text_chars: 1363
+  images: 3
+  drawings: 71
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 57
+  text_chars: 1895
+  images: 2
+  drawings: 43
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 58
+  text_chars: 1587
+  images: 3
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 59
+  text_chars: 1582
+  images: 2
+  drawings: 31
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 60
+  text_chars: 1796
+  images: 3
+  drawings: 44
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 61
+  text_chars: 1538
+  images: 2
+  drawings: 58
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 62
+  text_chars: 1493
+  images: 3
+  drawings: 43
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 63
+  text_chars: 1647
+  images: 2
+  drawings: 50
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 64
+  text_chars: 1727
+  images: 3
+  drawings: 37
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 65
+  text_chars: 1608
+  images: 2
+  drawings: 38
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 66
+  text_chars: 1241
+  images: 3
+  drawings: 52
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 67
+  text_chars: 1905
+  images: 2
+  drawings: 44
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 68
+  text_chars: 1512
+  images: 3
+  drawings: 64
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 69
+  text_chars: 1462
+  images: 2
+  drawings: 58
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 70
+  text_chars: 1614
+  images: 3
+  drawings: 52
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 71
+  text_chars: 1576
+  images: 2
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 72
+  text_chars: 1611
+  images: 3
+  drawings: 64
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 73
+  text_chars: 1672
+  images: 2
+  drawings: 89
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 74
+  text_chars: 1771
+  images: 3
+  drawings: 69
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 75
+  text_chars: 1900
+  images: 2
+  drawings: 82
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 76
+  text_chars: 1722
+  images: 3
+  drawings: 89
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 77
+  text_chars: 1493
+  images: 2
+  drawings: 70
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 78
+  text_chars: 752
+  images: 3
+  drawings: 43
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 79
+  text_chars: 1216
+  images: 2
+  drawings: 30
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 80
+  text_chars: 1598
+  images: 3
+  drawings: 57
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 81
+  text_chars: 1687
+  images: 2
+  drawings: 52
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 82
+  text_chars: 1551
+  images: 3
+  drawings: 83
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 83
+  text_chars: 1627
+  images: 2
+  drawings: 65
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 84
+  text_chars: 1638
+  images: 3
+  drawings: 71
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 85
+  text_chars: 1654
+  images: 2
+  drawings: 72
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 86
+  text_chars: 1414
+  images: 3
+  drawings: 59
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 87
+  text_chars: 1900
+  images: 2
+  drawings: 121
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 88
+  text_chars: 1922
+  images: 3
+  drawings: 69
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 89
+  text_chars: 1865
+  images: 2
+  drawings: 89
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 90
+  text_chars: 1814
+  images: 3
+  drawings: 89
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 91
+  text_chars: 1592
+  images: 2
+  drawings: 128
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 92
+  text_chars: 1974
+  images: 3
+  drawings: 82
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 93
+  text_chars: 1936
+  images: 2
+  drawings: 121
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 94
+  text_chars: 1439
+  images: 3
+  drawings: 56
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 95
+  text_chars: 1672
+  images: 2
+  drawings: 56
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 96
+  text_chars: 2020
+  images: 3
+  drawings: 69
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 97
+  text_chars: 1829
+  images: 2
+  drawings: 69
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 98
+  text_chars: 1950
+  images: 3
+  drawings: 82
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 99
+  text_chars: 1824
+  images: 2
+  drawings: 69
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 100
+  text_chars: 1438
+  images: 3
+  drawings: 56
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 101
+  text_chars: 1666
+  images: 2
+  drawings: 56
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 102
+  text_chars: 1628
+  images: 3
+  drawings: 82
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 103
+  text_chars: 1649
+  images: 2
+  drawings: 95
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 104
+  text_chars: 1694
+  images: 3
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 105
+  text_chars: 1464
+  images: 2
+  drawings: 38
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 106
+  text_chars: 1473
+  images: 3
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 107
+  text_chars: 1636
+  images: 2
+  drawings: 64
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 108
+  text_chars: 1646
+  images: 3
+  drawings: 83
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 109
+  text_chars: 1782
+  images: 2
+  drawings: 58
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 110
+  text_chars: 1715
+  images: 3
+  drawings: 70
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 111
+  text_chars: 1288
+  images: 2
+  drawings: 52
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 112
+  text_chars: 1510
+  images: 3
+  drawings: 38
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 113
+  text_chars: 1596
+  images: 2
+  drawings: 52
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 114
+  text_chars: 1774
+  images: 3
+  drawings: 90
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 115
+  text_chars: 1791
+  images: 2
+  drawings: 91
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 116
+  text_chars: 1623
+  images: 3
+  drawings: 52
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 117
+  text_chars: 1647
+  images: 2
+  drawings: 78
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 118
+  text_chars: 1576
+  images: 3
+  drawings: 71
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 119
+  text_chars: 1603
+  images: 2
+  drawings: 52
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 120
+  text_chars: 1612
+  images: 3
+  drawings: 85
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 121
+  text_chars: 1588
+  images: 2
+  drawings: 66
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 122
+  text_chars: 1813
+  images: 3
+  drawings: 64
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 123
+  text_chars: 1630
+  images: 2
+  drawings: 38
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 124
+  text_chars: 1653
+  images: 3
+  drawings: 51
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 125
+  text_chars: 1878
+  images: 2
+  drawings: 71
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 126
+  text_chars: 1482
+  images: 3
+  drawings: 50
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 127
+  text_chars: 1562
+  images: 2
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 128
+  text_chars: 1486
+  images: 3
+  drawings: 51
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 129
+  text_chars: 1910
+  images: 2
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 130
+  text_chars: 1816
+  images: 3
+  drawings: 38
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 131
+  text_chars: 1702
+  images: 2
+  drawings: 43
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 132
+  text_chars: 1091
+  images: 3
+  drawings: 43
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 133
+  text_chars: 1530
+  images: 2
+  drawings: 58
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 134
+  text_chars: 1609
+  images: 3
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 135
+  text_chars: 1342
+  images: 2
+  drawings: 75
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 136
+  text_chars: 1733
+  images: 3
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 137
+  text_chars: 1497
+  images: 2
+  drawings: 56
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 138
+  text_chars: 1580
+  images: 3
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 139
+  text_chars: 1455
+  images: 2
+  drawings: 48
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 140
+  text_chars: 1691
+  images: 3
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 141
+  text_chars: 1565
+  images: 2
+  drawings: 71
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 142
+  text_chars: 1603
+  images: 3
+  drawings: 50
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 143
+  text_chars: 1446
+  images: 2
+  drawings: 65
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 144
+  text_chars: 358
+  images: 3
+  drawings: 17
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 145
+  text_chars: 885
+  images: 2
+  drawings: 15
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 146
+  text_chars: 1386
+  images: 3
+  drawings: 52
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 147
+  text_chars: 1359
+  images: 2
+  drawings: 59
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 148
+  text_chars: 1504
+  images: 3
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 149
+  text_chars: 1556
+  images: 2
+  drawings: 52
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 150
+  text_chars: 1838
+  images: 3
+  drawings: 44
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 151
+  text_chars: 1530
+  images: 2
+  drawings: 71
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 152
+  text_chars: 1812
+  images: 3
+  drawings: 59
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 153
+  text_chars: 1573
+  images: 2
+  drawings: 77
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 154
+  text_chars: 1770
+  images: 3
+  drawings: 57
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 155
+  text_chars: 1507
+  images: 2
+  drawings: 52
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 156
+  text_chars: 1389
+  images: 3
+  drawings: 58
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 157
+  text_chars: 1570
+  images: 2
+  drawings: 38
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 158
+  text_chars: 1590
+  images: 3
+  drawings: 57
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 159
+  text_chars: 1719
+  images: 2
+  drawings: 38
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 160
+  text_chars: 1449
+  images: 3
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 161
+  text_chars: 1789
+  images: 2
+  drawings: 38
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 162
+  text_chars: 1639
+  images: 3
+  drawings: 51
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 163
+  text_chars: 1846
+  images: 2
+  drawings: 38
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 164
+  text_chars: 1889
+  images: 3
+  drawings: 71
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 165
+  text_chars: 1503
+  images: 2
+  drawings: 71
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 166
+  text_chars: 1308
+  images: 3
+  drawings: 38
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 167
+  text_chars: 1693
+  images: 2
+  drawings: 36
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 168
+  text_chars: 1400
+  images: 3
+  drawings: 43
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 169
+  text_chars: 1610
+  images: 2
+  drawings: 52
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 170
+  text_chars: 1804
+  images: 3
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 171
+  text_chars: 1201
+  images: 2
+  drawings: 55
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 172
+  text_chars: 1455
+  images: 3
+  drawings: 43
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 173
+  text_chars: 1357
+  images: 2
+  drawings: 69
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 174
+  text_chars: 1855
+  images: 3
+  drawings: 64
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 175
+  text_chars: 1647
+  images: 2
+  drawings: 77
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 176
+  text_chars: 1086
+  images: 4
+  drawings: 38
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 177
+  text_chars: 584
+  images: 4
+  drawings: 139
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 178
+  text_chars: 681
+  images: 3
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 179
+  text_chars: 689
+  images: 2
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 180
+  text_chars: 695
+  images: 3
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 181
+  text_chars: 691
+  images: 2
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 182
+  text_chars: 696
+  images: 3
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 183
+  text_chars: 697
+  images: 2
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 184
+  text_chars: 708
+  images: 3
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 185
+  text_chars: 710
+  images: 2
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 186
+  text_chars: 709
+  images: 3
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 187
+  text_chars: 706
+  images: 2
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 188
+  text_chars: 708
+  images: 3
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 189
+  text_chars: 708
+  images: 2
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 190
+  text_chars: 714
+  images: 3
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 191
+  text_chars: 724
+  images: 2
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 192
+  text_chars: 726
+  images: 3
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 193
+  text_chars: 724
+  images: 2
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 194
+  text_chars: 728
+  images: 3
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 195
+  text_chars: 725
+  images: 2
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 196
+  text_chars: 730
+  images: 3
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 197
+  text_chars: 725
+  images: 2
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 198
+  text_chars: 725
+  images: 3
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 199
+  text_chars: 730
+  images: 2
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 200
+  text_chars: 723
+  images: 3
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 201
+  text_chars: 722
+  images: 2
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 202
+  text_chars: 719
+  images: 3
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 203
+  text_chars: 730
+  images: 2
+  drawings: 157
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 204
+  text_chars: 641
+  images: 3
+  drawings: 139
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 205
+  text_chars: 1101
+  images: 4
+  drawings: 94
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 206
+  text_chars: 1315
+  images: 3
+  drawings: 101
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 207
+  text_chars: 797
+  images: 2
+  drawings: 38
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 208
+  text_chars: 1274
+  images: 3
+  drawings: 24
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 209
+  text_chars: 1317
+  images: 2
+  drawings: 94
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 210
+  text_chars: 1277
+  images: 3
+  drawings: 73
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 211
+  text_chars: 1223
+  images: 2
+  drawings: 80
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 212
+  text_chars: 1342
+  images: 3
+  drawings: 59
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 213
+  text_chars: 1130
+  images: 2
+  drawings: 59
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 214
+  text_chars: 1201
+  images: 3
+  drawings: 45
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 215
+  text_chars: 1198
+  images: 2
+  drawings: 66
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 216
+  text_chars: 1335
+  images: 3
+  drawings: 66
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 217
+  text_chars: 1317
+  images: 2
+  drawings: 73
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 218
+  text_chars: 1298
+  images: 3
+  drawings: 52
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  page: 219
+  text_chars: 1329
+  images: 2
+  drawings: 66
 glyphs:
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: -1
   text: ""
   status: "drop:ligature_continuation"
-  count: 361
+  count: 8304
   first:
     page: 7
     x0: 258.2
-    y0: 172.9
+    y0: 172.8
     x1: 258.2
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 3
   text: " "
   status: "space"
-  count: 1619
+  count: 36027
   first:
     page: 7
     x0: 116.3
-    y0: 172.9
+    y0: 172.8
     x1: 118.6
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 8
+  text: "%"
+  status: "cmap"
+  count: 9
+  first:
+    page: 32
+    x0: 293.8
+    y0: 447.3
+    x1: 299.0
+    y1: 461.3
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 11
   text: ")"
   status: "cmap"
-  count: 76
+  count: 1369
   first:
     page: 8
     x0: 219.6
     y0: 184.7
     x1: 224.6
     y1: 198.7
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 12
   text: "("
   status: "cmap"
-  count: 76
+  count: 1369
   first:
     page: 8
     x0: 227.3
     y0: 184.7
     x1: 232.3
     y1: 198.7
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 15
   text: "،"
   status: "cmap"
-  count: 58
+  count: 2169
   first:
     page: 8
     x0: 284.6
     y0: 267.1
     x1: 287.9
     y1: 281.1
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 16
   text: "-"
   status: "cmap"
-  count: 50
+  count: 302
   first:
     page: 7
     x0: 152.3
-    y0: 172.9
+    y0: 172.8
     x1: 157.9
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 17
   text: "."
   status: "cmap"
-  count: 48
+  count: 983
   first:
     page: 8
     x0: 154.2
     y0: 218.3
     x1: 157.4
     y1: 232.3
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 18
   text: "/"
   status: "cmap"
-  count: 134
+  count: 2730
   first:
     page: 8
     x0: 302.3
     y0: 218.3
     x1: 307.6
     y1: 232.3
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 19
   text: "0"
   status: "cmap"
-  count: 36
+  count: 1532
   first:
     page: 8
     x0: 377.0
     y0: 483.8
     x1: 381.9
     y1: 497.8
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 20
   text: "1"
   status: "cmap"
-  count: 162
+  count: 5823
   first:
     page: 8
     x0: 347.5
     y0: 317.5
     x1: 352.4
     y1: 331.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 21
   text: "2"
   status: "cmap"
-  count: 116
+  count: 4152
   first:
     page: 8
     x0: 386.8
     y0: 317.5
     x1: 391.6
     y1: 331.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 22
   text: "3"
   status: "cmap"
-  count: 59
+  count: 2654
   first:
     page: 8
     x0: 362.1
     y0: 317.5
     x1: 366.9
     y1: 331.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 23
   text: "4"
   status: "cmap"
-  count: 178
+  count: 6305
   first:
     page: 8
     x0: 352.4
     y0: 317.5
     x1: 357.2
     y1: 331.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 24
   text: "5"
   status: "cmap"
-  count: 37
+  count: 1679
   first:
     page: 8
     x0: 381.9
     y0: 317.5
     x1: 386.8
     y1: 331.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 25
   text: "6"
   status: "cmap"
-  count: 40
+  count: 1506
   first:
     page: 8
     x0: 76.4
     y0: 408.2
     x1: 81.2
     y1: 422.2
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 26
   text: "7"
   status: "cmap"
-  count: 43
+  count: 1661
   first:
     page: 8
     x0: 377.0
     y0: 317.5
     x1: 381.9
     y1: 331.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 27
   text: "8"
   status: "cmap"
-  count: 39
+  count: 1554
   first:
     page: 8
     x0: 128.0
     y0: 283.9
     x1: 132.8
     y1: 297.9
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 28
   text: "9"
   status: "cmap"
-  count: 39
+  count: 1634
   first:
     page: 8
     x0: 81.2
     y0: 408.2
     x1: 86.1
     y1: 422.2
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 29
   text: ":"
   status: "cmap"
-  count: 15
+  count: 72
   first:
     page: 9
     x0: 195.7
     y0: 214.1
     x1: 198.6
     y1: 228.1
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 30
   text: "؛"
   status: "cmap"
-  count: 20
+  count: 590
   first:
     page: 8
     x0: 271.3
     y0: 283.9
     x1: 274.3
     y1: 297.9
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 36
   text: "ء"
   status: "cmap"
-  count: 26
+  count: 627
   first:
     page: 8
     x0: 232.1
     y0: 399.8
     x1: 236.2
     y1: 413.8
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 37
   text: ""
   status: "drop:hamza_mark"
-  count: 5
+  count: 56
   first:
     page: 8
     x0: 271.6
     y0: 467.0
     x1: 271.6
     y1: 481.0
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 38
   text: ""
   status: "drop:hamza_mark"
-  count: 145
+  count: 3186
   first:
     page: 7
     x0: 141.3
-    y0: 172.9
+    y0: 172.8
     x1: 141.3
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 39
   text: ""
   status: "drop:hamza_mark"
-  count: 7
+  count: 252
   first:
     page: 10
     x0: 259.9
     y0: 446.6
     x1: 259.9
     y1: 460.6
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 40
   text: ""
   status: "drop:hamza_mark"
-  count: 105
+  count: 2352
   first:
     page: 7
     x0: 163.4
-    y0: 226.4
+    y0: 226.3
     x1: 163.4
-    y1: 241.4
-- font: "AXtManal"
+    y1: 241.5
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 41
   text: "ئ"
   status: "cmap"
-  count: 34
+  count: 506
   first:
     page: 7
     x0: 151.1
-    y0: 331.1
+    y0: 331.0
     x1: 154.7
-    y1: 346.1
-- font: "AXtManal"
+    y1: 346.2
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 42
   text: "ا"
   status: "repair:alef_body"
-  count: 906
+  count: 17454
   first:
     page: 7
     x0: 113.4
-    y0: 172.9
+    y0: 172.8
     x1: 116.3
-    y1: 187.9
+    y1: 188.0
   crop: "crops/AXtManal_42_p7.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 43
   text: "ب"
   status: "cmap"
-  count: 111
+  count: 2405
   first:
     page: 8
     x0: 335.2
     y0: 267.1
     x1: 338.4
     y1: 281.1
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 44
   text: "ة"
   status: "cmap"
-  count: 38
+  count: 791
   first:
     page: 7
     x0: 242.6
-    y0: 172.9
+    y0: 172.8
     x1: 246.8
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 45
   text: "ت"
   status: "cmap"
-  count: 102
+  count: 1869
   first:
     page: 7
     x0: 287.8
-    y0: 172.9
+    y0: 172.8
     x1: 291.1
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 46
   text: "ث"
   status: "cmap"
-  count: 13
+  count: 377
   first:
     page: 8
     x0: 268.4
     y0: 235.1
     x1: 271.5
     y1: 249.1
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 47
   text: "ج"
   status: "cmap"
-  count: 44
+  count: 837
   first:
     page: 7
     x0: 222.5
-    y0: 172.9
+    y0: 172.8
     x1: 229.5
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 48
   text: "ح"
   status: "cmap"
-  count: 55
+  count: 814
   first:
     page: 8
     x0: 247.5
     y0: 184.7
     x1: 253.8
     y1: 198.7
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 49
   text: "خ"
   status: "cmap"
-  count: 66
+  count: 652
   first:
     page: 7
     x0: 188.5
-    y0: 172.9
+    y0: 172.8
     x1: 195.4
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 50
   text: "د"
   status: "cmap"
-  count: 88
+  count: 1900
   first:
     page: 7
     x0: 302.2
-    y0: 199.5
+    y0: 199.3
     x1: 306.8
     y1: 214.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 51
   text: "ذ"
   status: "cmap"
-  count: 23
+  count: 441
   first:
     page: 8
     x0: 401.4
     y0: 267.1
     x1: 406.3
     y1: 281.1
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 52
   text: "ر"
   status: "cmap"
-  count: 156
+  count: 2715
   first:
     page: 7
     x0: 98.5
-    y0: 172.9
+    y0: 172.8
     x1: 102.8
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 53
   text: "ز"
   status: "cmap"
-  count: 45
+  count: 314
   first:
     page: 9
     x0: 192.5
     y0: 560.2
     x1: 196.6
     y1: 574.2
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 54
   text: "س"
   status: "repair:head"
-  count: 21
+  count: 1290
   first:
     page: 9
     x0: 235.7
@@ -580,11 +2408,12 @@ glyphs:
     x1: 239.6
     y1: 228.1
   crop: "crops/AXtManal_54_p9.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 55
   text: "ش"
   status: "repair:head"
-  count: 8
+  count: 306
   first:
     page: 9
     x0: 332.5
@@ -592,233 +2421,353 @@ glyphs:
     x1: 336.4
     y1: 327.2
   crop: "crops/AXtManal_55_p9.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 56
   text: "ص"
   status: "repair:head"
-  count: 71
+  count: 768
   first:
     page: 7
     x0: 165.8
-    y0: 172.9
+    y0: 172.8
     x1: 171.8
-    y1: 187.9
+    y1: 188.0
   crop: "crops/AXtManal_56_p7.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 57
   text: "ض"
   status: "repair:head"
-  count: 35
+  count: 645
   first:
     page: 7
     x0: 127.8
-    y0: 172.9
+    y0: 172.8
     x1: 134.1
-    y1: 187.9
+    y1: 188.0
   crop: "crops/AXtManal_57_p7.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 58
   text: "ط"
   status: "cmap"
-  count: 14
+  count: 233
   first:
     page: 7
     x0: 216.3
-    y0: 359.3
+    y0: 359.2
     x1: 223.4
-    y1: 374.3
-- font: "AXtManal"
+    y1: 374.4
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 59
   text: "ظ"
   status: "cmap"
-  count: 10
+  count: 199
   first:
     page: 9
     x0: 375.8
     y0: 330.0
     x1: 382.4
     y1: 344.0
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 60
   text: "ع"
   status: "cmap"
-  count: 153
+  count: 3212
   first:
     page: 7
     x0: 148.9
-    y0: 199.5
+    y0: 199.3
     x1: 154.8
     y1: 214.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 61
   text: "غ"
   status: "cmap"
-  count: 6
+  count: 286
   first:
     page: 7
     x0: 205.1
     y0: 415.5
     x1: 211.0
     y1: 430.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 64
   text: "ـ"
   status: "cmap"
-  count: 1
+  count: 1057
   first:
     page: 10
     x0: 301.3
     y0: 165.3
     x1: 302.6
     y1: 179.3
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 65
   text: "ف"
   status: "cmap"
-  count: 43
+  count: 1203
   first:
     page: 7
     x0: 191.6
     y0: 499.5
     x1: 196.0
     y1: 514.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 66
   text: "ق"
   status: "cmap"
-  count: 57
+  count: 1318
   first:
     page: 7
     x0: 91.4
-    y0: 199.5
+    y0: 199.3
     x1: 95.9
     y1: 214.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 67
   text: "ك"
   status: "cmap"
-  count: 51
+  count: 496
   first:
     page: 8
     x0: 261.8
     y0: 218.3
     x1: 266.2
     y1: 232.3
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 68
   text: "ل"
   status: "cmap"
-  count: 359
+  count: 8600
   first:
     page: 7
     x0: 110.2
-    y0: 172.9
+    y0: 172.8
     x1: 113.4
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 69
   text: "م"
   status: "cmap"
-  count: 161
+  count: 3268
   first:
     page: 7
     x0: 249.9
-    y0: 172.9
+    y0: 172.8
     x1: 255.1
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 70
   text: "ن"
   status: "cmap"
-  count: 62
+  count: 1254
   first:
     page: 7
     x0: 216.1
-    y0: 172.9
+    y0: 172.8
     x1: 219.4
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 71
   text: "ه"
   status: "cmap"
-  count: 31
+  count: 1622
   first:
     page: 8
     x0: 195.6
     y0: 283.9
     x1: 201.2
     y1: 297.9
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 72
   text: "و"
   status: "cmap"
-  count: 146
+  count: 3675
   first:
     page: 8
     x0: 296.6
     y0: 218.3
     x1: 300.2
     y1: 232.3
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 73
   text: "ى"
   status: "cmap"
-  count: 32
+  count: 636
   first:
     page: 7
     x0: 185.9
-    y0: 275.4
+    y0: 275.3
     x1: 192.5
-    y1: 290.4
-- font: "AXtManal"
+    y1: 290.5
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 74
   text: "ي"
   status: "cmap"
-  count: 166
+  count: 3310
   first:
     page: 7
     x0: 187.7
-    y0: 199.5
+    y0: 199.3
     x1: 191.1
     y1: 214.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 75
   text: "ً"
   status: "cmap"
-  count: 35
+  count: 897
   first:
     page: 8
     x0: 307.9
     y0: 216.5
     x1: 307.9
     y1: 230.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 76
+  text: "ٌ"
+  status: "cmap"
+  count: 6
+  first:
+    page: 17
+    x0: 164.5
+    y0: 409.1
+    x1: 164.5
+    y1: 423.1
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 77
   text: "ٍ"
   status: "cmap"
-  count: 5
+  count: 49
   first:
     page: 9
     x0: 287.5
     y0: 332.2
     x1: 287.5
     y1: 346.2
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 78
+  text: "َ"
+  status: "cmap"
+  count: 22
+  first:
+    page: 18
+    x0: 274.2
+    y0: 334.4
+    x1: 274.2
+    y1: 348.4
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 79
   text: "ُ"
   status: "cmap"
-  count: 2
+  count: 40
   first:
     page: 8
     x0: 263.4
     y0: 395.8
     x1: 263.4
     y1: 409.8
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 80
+  text: "ِ"
+  status: "cmap"
+  count: 19
+  first:
+    page: 18
+    x0: 309.6
+    y0: 335.6
+    x1: 309.6
+    y1: 349.6
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 81
+  text: "ّ"
+  status: "cmap"
+  count: 30
+  first:
+    page: 36
+    x0: 380.3
+    y0: 274.6
+    x1: 380.3
+    y1: 288.6
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 82
+  text: "ْ"
+  status: "cmap"
+  count: 10
+  first:
+    page: 47
+    x0: 176.6
+    y0: 347.4
+    x1: 176.6
+    y1: 361.4
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 83
+  text: "َّ"
+  status: "cmap"
+  count: 7
+  first:
+    page: 67
+    x0: 393.5
+    y0: 525.0
+    x1: 393.5
+    y1: 539.0
+  crop: "crops/AXtManal_83_p67.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 84
+  text: "ُّ"
+  status: "cmap"
+  count: 2
+  first:
+    page: 172
+    x0: 143.5
+    y0: 215.5
+    x1: 143.5
+    y1: 229.5
+  crop: "crops/AXtManal_84_p172.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 85
+  text: "ِّ"
+  status: "cmap"
+  count: 1
+  first:
+    page: 160
+    x0: 162.3
+    y0: 353.2
+    x1: 162.3
+    y1: 367.2
+  crop: "crops/AXtManal_85_p160.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 87
   text: "ٌّ"
   status: "cmap"
-  count: 3
+  count: 4
   first:
     page: 9
     x0: 227.6
@@ -826,287 +2775,349 @@ glyphs:
     x1: 227.6
     y1: 558.5
   crop: "crops/AXtManal_87_p9.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 93
   text: "د"
   status: "cmap"
-  count: 139
+  count: 3891
   first:
     page: 7
     x0: 143.7
-    y0: 199.5
+    y0: 199.3
     x1: 148.9
     y1: 214.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 95
   text: "ئ"
   status: "cmap"
-  count: 6
+  count: 293
   first:
     page: 9
     x0: 371.3
     y0: 577.0
     x1: 374.3
     y1: 591.0
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 96
   text: "ئ"
   status: "cmap"
-  count: 1
+  count: 23
   first:
     page: 12
     x0: 236.5
     y0: 280.2
     x1: 242.6
     y1: 294.2
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 97
+  text: "ئ"
+  status: "cmap"
+  count: 2
+  first:
+    page: 125
+    x0: 332.9
+    y0: 342.4
+    x1: 339.3
+    y1: 356.4
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 98
   text: "ا"
   status: "cmap"
-  count: 546
+  count: 11106
   first:
     page: 7
     x0: 171.8
-    y0: 172.9
+    y0: 172.8
     x1: 174.9
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 99
   text: "ب"
   status: "cmap"
-  count: 62
+  count: 1677
   first:
     page: 7
     x0: 106.6
-    y0: 172.9
+    y0: 172.8
     x1: 110.2
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 100
   text: "ب"
   status: "cmap"
-  count: 18
+  count: 597
   first:
     page: 7
     x0: 208.5
-    y0: 172.9
+    y0: 172.8
     x1: 216.1
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 101
   text: "ب"
   status: "cmap"
-  count: 19
+  count: 570
   first:
     page: 7
     x0: 272.7
-    y0: 172.9
+    y0: 172.8
     x1: 280.5
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 102
   text: "ة"
   status: "cmap"
-  count: 247
+  count: 4454
   first:
     page: 7
     x0: 78.8
-    y0: 226.4
+    y0: 226.3
     x1: 83.1
-    y1: 241.4
-- font: "AXtManal"
+    y1: 241.5
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 103
   text: "ت"
   status: "cmap"
-  count: 186
+  count: 3886
   first:
     page: 7
     x0: 185.4
-    y0: 172.9
+    y0: 172.8
     x1: 188.5
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 104
   text: "ت"
   status: "cmap"
-  count: 11
+  count: 309
   first:
     page: 8
     x0: 261.8
     y0: 267.1
     x1: 268.9
     y1: 281.1
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 105
   text: "ت"
   status: "cmap"
-  count: 42
+  count: 819
   first:
     page: 7
     x0: 111.4
-    y0: 226.4
+    y0: 226.3
     x1: 119.0
-    y1: 241.4
-- font: "AXtManal"
+    y1: 241.5
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 106
   text: "ث"
   status: "cmap"
-  count: 12
+  count: 193
   first:
     page: 9
     x0: 275.9
     y0: 182.1
     x1: 278.7
     y1: 196.1
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 107
   text: "ث"
   status: "cmap"
-  count: 1
+  count: 146
   first:
     page: 10
     x0: 317.2
     y0: 328.4
     x1: 324.2
     y1: 342.4
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 108
+  text: "ث"
+  status: "cmap"
+  count: 25
+  first:
+    page: 19
+    x0: 302.1
+    y0: 261.7
+    x1: 309.3
+    y1: 275.7
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 109
   text: "ج"
   status: "cmap"
-  count: 9
+  count: 418
   first:
     page: 8
     x0: 399.6
     y0: 561.7
     x1: 406.0
     y1: 575.7
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 110
   text: "ج"
   status: "cmap"
-  count: 2
+  count: 13
   first:
     page: 12
     x0: 187.9
     y0: 348.5
     x1: 193.4
     y1: 362.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 111
   text: "ج"
   status: "cmap"
-  count: 14
+  count: 235
   first:
     page: 9
     x0: 201.3
     y0: 543.4
     x1: 206.7
     y1: 557.4
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 112
   text: "ح"
   status: "cmap"
-  count: 73
+  count: 1232
   first:
     page: 7
     x0: 190.4
-    y0: 301.8
+    y0: 301.7
     x1: 197.3
-    y1: 316.8
-- font: "AXtManal"
+    y1: 316.9
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 113
   text: "ح"
   status: "cmap"
-  count: 5
+  count: 104
   first:
     page: 8
     x0: 377.9
     y0: 416.6
     x1: 383.4
     y1: 430.6
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 114
+  text: "ح"
+  status: "cmap"
+  count: 20
+  first:
+    page: 36
+    x0: 246.6
+    y0: 408.7
+    x1: 251.8
+    y1: 422.7
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 115
   text: "خ"
   status: "cmap"
-  count: 35
+  count: 355
   first:
     page: 8
     x0: 174.2
     y0: 283.9
     x1: 180.6
     y1: 297.9
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 116
   text: "خ"
   status: "cmap"
-  count: 1
+  count: 201
   first:
     page: 8
     x0: 337.5
     y0: 544.9
     x1: 342.6
     y1: 558.9
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 117
   text: "خ"
   status: "cmap"
-  count: 3
+  count: 13
   first:
     page: 8
     x0: 384.7
     y0: 467.0
     x1: 389.8
     y1: 481.0
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 119
   text: "ذ"
   status: "cmap"
-  count: 28
+  count: 466
   first:
     page: 7
     x0: 113.2
-    y0: 199.5
+    y0: 199.3
     x1: 118.6
     y1: 214.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 120
   text: "ر"
   status: "cmap"
-  count: 164
+  count: 2930
   first:
     page: 7
     x0: 238.6
-    y0: 199.5
+    y0: 199.3
     x1: 243.6
     y1: 214.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 121
   text: "ز"
   status: "cmap"
-  count: 27
+  count: 390
   first:
     page: 7
     x0: 219.8
     y0: 527.0
     x1: 225.0
     y1: 542.0
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 122
   text: "س"
   status: "repair:head"
-  count: 43
+  count: 1529
   first:
     page: 7
     x0: 99.4
-    y0: 226.4
+    y0: 226.3
     x1: 103.3
-    y1: 241.4
+    y1: 241.5
   crop: "crops/AXtManal_122_p7.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 123
   text: "ش"
   status: "repair:head"
-  count: 16
+  count: 490
   first:
     page: 8
     x0: 328.6
@@ -1114,431 +3125,518 @@ glyphs:
     x1: 332.2
     y1: 314.7
   crop: "crops/AXtManal_123_p8.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 124
   text: "ص"
   status: "repair:head"
-  count: 94
+  count: 1256
   first:
     page: 7
     x0: 178.0
-    y0: 172.9
+    y0: 172.8
     x1: 185.4
-    y1: 187.9
+    y1: 188.0
   crop: "crops/AXtManal_124_p7.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 126
   text: ""
   status: "drop:tail"
-  count: 244
+  count: 6104
   first:
     page: 7
     x0: 124.7
-    y0: 172.9
+    y0: 172.8
     x1: 127.8
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 127
   text: ""
   status: "drop:tail"
-  count: 74
+  count: 1117
   first:
     page: 7
     x0: 160.2
-    y0: 172.9
+    y0: 172.8
     x1: 165.8
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 128
   text: "ط"
   status: "cmap"
-  count: 24
+  count: 727
   first:
     page: 8
     x0: 287.3
     y0: 300.7
     x1: 293.9
     y1: 314.7
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 129
   text: "ط"
   status: "cmap"
-  count: 5
+  count: 51
   first:
     page: 7
     x0: 170.7
-    y0: 331.1
+    y0: 331.0
     x1: 179.2
-    y1: 346.1
-- font: "AXtManal"
+    y1: 346.2
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 130
   text: "ط"
   status: "cmap"
-  count: 5
+  count: 115
   first:
     page: 9
     x0: 328.8
     y0: 577.0
     x1: 336.6
     y1: 591.0
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 131
   text: "ظ"
   status: "cmap"
-  count: 61
+  count: 902
   first:
     page: 7
     x0: 172.7
     y0: 527.0
     x1: 179.8
     y1: 542.0
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 132
+  text: "ظ"
+  status: "cmap"
+  count: 6
+  first:
+    page: 26
+    x0: 339.0
+    y0: 313.8
+    x1: 346.8
+    y1: 327.8
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 133
+  text: "ظ"
+  status: "cmap"
+  count: 2
+  first:
+    page: 114
+    x0: 257.6
+    y0: 248.1
+    x1: 265.5
+    y1: 262.1
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 134
   text: "ع"
   status: "cmap"
-  count: 139
+  count: 3768
   first:
     page: 7
     x0: 283.6
-    y0: 172.9
+    y0: 172.8
     x1: 287.8
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 135
   text: "ع"
   status: "cmap"
-  count: 45
+  count: 521
   first:
     page: 7
     x0: 222.2
-    y0: 226.4
+    y0: 226.3
     x1: 226.7
-    y1: 241.4
-- font: "AXtManal"
+    y1: 241.5
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 136
   text: "ع"
   status: "cmap"
-  count: 35
+  count: 471
   first:
     page: 7
     x0: 215.3
     y0: 527.0
     x1: 219.8
     y1: 542.0
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 137
   text: "غ"
   status: "cmap"
-  count: 5
+  count: 246
   first:
     page: 11
     x0: 374.9
     y0: 391.6
     x1: 378.7
     y1: 405.6
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 138
+  text: "غ"
+  status: "cmap"
+  count: 35
+  first:
+    page: 17
+    x0: 383.2
+    y0: 410.6
+    x1: 387.4
+    y1: 424.6
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 139
+  text: "غ"
+  status: "cmap"
+  count: 31
+  first:
+    page: 39
+    x0: 163.4
+    y0: 281.6
+    x1: 167.4
+    y1: 295.6
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 140
   text: "ف"
   status: "cmap"
-  count: 58
+  count: 1189
   first:
     page: 7
     x0: 121.9
-    y0: 199.5
+    y0: 199.3
     x1: 126.4
     y1: 214.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 141
   text: "ف"
   status: "cmap"
-  count: 8
+  count: 266
   first:
     page: 7
     x0: 79.4
-    y0: 199.5
+    y0: 199.3
     x1: 88.1
     y1: 214.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 142
   text: "ف"
   status: "cmap"
-  count: 27
+  count: 445
   first:
     page: 8
     x0: 234.4
     y0: 184.7
     x1: 242.9
     y1: 198.7
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 143
   text: "ق"
   status: "cmap"
-  count: 114
+  count: 2461
   first:
     page: 7
     x0: 157.9
-    y0: 199.5
+    y0: 199.3
     x1: 162.5
     y1: 214.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 144
   text: "ق"
   status: "cmap"
-  count: 22
+  count: 461
   first:
     page: 8
     x0: 340.2
     y0: 267.1
     x1: 345.7
     y1: 281.1
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 145
   text: "ق"
   status: "cmap"
-  count: 8
+  count: 164
   first:
     page: 8
     x0: 363.7
     y0: 383.0
     x1: 369.2
     y1: 397.0
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 146
   text: "ك"
   status: "cmap"
-  count: 84
+  count: 2015
   first:
     page: 7
     x0: 91.5
-    y0: 226.4
+    y0: 226.3
     x1: 96.2
-    y1: 241.4
-- font: "AXtManal"
+    y1: 241.5
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 147
   text: "ك"
   status: "cmap"
-  count: 21
+  count: 316
   first:
     page: 8
     x0: 232.6
     y0: 283.9
     x1: 240.2
     y1: 297.9
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 148
   text: "ك"
   status: "cmap"
-  count: 1
+  count: 21
   first:
     page: 9
     x0: 290.0
     y0: 543.4
     x1: 297.6
     y1: 557.4
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 149
   text: "ل"
   status: "cmap"
-  count: 128
+  count: 2961
   first:
     page: 7
     x0: 213.7
-    y0: 359.3
+    y0: 359.2
     x1: 216.3
-    y1: 374.3
-- font: "AXtManal"
+    y1: 374.4
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 150
   text: "ل"
   status: "cmap"
-  count: 43
+  count: 825
   first:
     page: 8
     x0: 392.9
     y0: 283.9
     x1: 397.8
     y1: 297.9
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 151
   text: "ل"
   status: "cmap"
-  count: 21
+  count: 616
   first:
     page: 8
     x0: 208.8
     y0: 218.3
     x1: 214.0
     y1: 232.3
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 152
   text: "م"
   status: "cmap"
-  count: 61
+  count: 1509
   first:
     page: 7
     x0: 261.4
-    y0: 226.4
+    y0: 226.3
     x1: 266.4
-    y1: 241.4
-- font: "AXtManal"
+    y1: 241.5
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 153
   text: "م"
   status: "cmap"
-  count: 40
+  count: 1327
   first:
     page: 8
     x0: 256.4
     y0: 218.3
     x1: 261.8
     y1: 232.3
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 154
   text: "م"
   status: "cmap"
-  count: 48
+  count: 2117
   first:
     page: 7
     x0: 201.2
-    y0: 226.4
+    y0: 226.3
     x1: 206.6
-    y1: 241.4
-- font: "AXtManal"
+    y1: 241.5
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 155
   text: "ن"
   status: "cmap"
-  count: 153
+  count: 2373
   first:
     page: 7
     x0: 126.4
-    y0: 199.5
+    y0: 199.3
     x1: 130.1
     y1: 214.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 156
   text: "ن"
   status: "cmap"
-  count: 54
+  count: 1323
   first:
     page: 9
     x0: 300.9
     y0: 214.1
     x1: 306.8
     y1: 228.1
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 157
   text: "ن"
   status: "cmap"
-  count: 56
+  count: 1360
   first:
     page: 7
     x0: 199.0
     y0: 472.0
     x1: 204.8
     y1: 487.0
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 158
   text: "ه"
   status: "cmap"
-  count: 81
+  count: 1845
   first:
     page: 7
     x0: 122.1
-    y0: 226.4
+    y0: 226.3
     x1: 126.8
-    y1: 241.4
-- font: "AXtManal"
+    y1: 241.5
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 159
   text: "ه"
   status: "cmap"
-  count: 38
+  count: 1319
   first:
     page: 8
     x0: 297.6
     y0: 383.0
     x1: 301.7
     y1: 397.0
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 160
   text: "ه"
   status: "cmap"
-  count: 10
+  count: 236
   first:
     page: 8
     x0: 161.0
     y0: 300.7
     x1: 164.1
     y1: 314.7
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 161
   text: "و"
   status: "cmap"
-  count: 188
+  count: 3574
   first:
     page: 7
     x0: 102.8
-    y0: 172.9
+    y0: 172.8
     x1: 106.6
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 162
   text: "ى"
   status: "cmap"
-  count: 33
+  count: 838
   first:
     page: 8
     x0: 282.0
     y0: 383.0
     x1: 287.9
     y1: 397.0
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 163
   text: "ي"
   status: "cmap"
-  count: 151
+  count: 3507
   first:
     page: 7
     x0: 88.1
-    y0: 199.5
+    y0: 199.3
     x1: 91.4
     y1: 214.5
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 164
   text: "ي"
   status: "cmap"
-  count: 68
+  count: 1197
   first:
     page: 7
     x0: 118.6
-    y0: 172.9
+    y0: 172.8
     x1: 124.7
-    y1: 187.9
-- font: "AXtManal"
+    y1: 188.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 165
   text: "ي"
   status: "cmap"
-  count: 14
+  count: 261
   first:
     page: 7
     x0: 202.4
-    y0: 331.1
+    y0: 331.0
     x1: 209.2
-    y1: 346.1
-- font: "AXtManal"
+    y1: 346.2
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 166
   text: "ض"
   status: "repair:head"
-  count: 30
+  count: 937
   first:
     page: 7
     x0: 181.6
-    y0: 199.5
+    y0: 199.3
     x1: 187.7
     y1: 214.5
   crop: "crops/AXtManal_166_p7.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 167
   text: "بم"
   status: "cmap"
-  count: 3
+  count: 80
   first:
     page: 11
     x0: 331.9
@@ -1546,11 +3644,12 @@ glyphs:
     x1: 339.4
     y1: 422.4
   crop: "crops/AXtManal_167_p11.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 169
   text: "تج"
   status: "cmap"
-  count: 1
+  count: 40
   first:
     page: 10
     x0: 261.4
@@ -1558,11 +3657,25 @@ glyphs:
     x1: 270.7
     y1: 407.9
   crop: "crops/AXtManal_169_p10.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 170
+  text: "تج"
+  status: "cmap"
+  count: 2
+  first:
+    page: 22
+    x0: 212.0
+    y0: 378.6
+    x1: 220.1
+    y1: 392.6
+  crop: "crops/AXtManal_170_p22.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 171
   text: "تح"
   status: "cmap"
-  count: 3
+  count: 100
   first:
     page: 8
     x0: 176.9
@@ -1570,11 +3683,12 @@ glyphs:
     x1: 186.3
     y1: 314.7
   crop: "crops/AXtManal_171_p8.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 173
   text: "تم"
   status: "cmap"
-  count: 4
+  count: 51
   first:
     page: 15
     x0: 224.2
@@ -1582,11 +3696,12 @@ glyphs:
     x1: 232.0
     y1: 452.2
   crop: "crops/AXtManal_173_p15.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 174
   text: "تم"
   status: "cmap"
-  count: 1
+  count: 15
   first:
     page: 8
     x0: 389.3
@@ -1594,11 +3709,12 @@ glyphs:
     x1: 396.8
     y1: 397.0
   crop: "crops/AXtManal_174_p8.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 175
   text: "في"
   status: "cmap"
-  count: 52
+  count: 1218
   first:
     page: 8
     x0: 185.1
@@ -1606,23 +3722,25 @@ glyphs:
     x1: 192.9
     y1: 281.1
   crop: "crops/AXtManal_175_p8.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 176
   text: "لأ"
   status: "compose"
-  count: 152
+  count: 2566
   first:
     page: 7
     x0: 141.3
-    y0: 172.9
+    y0: 172.8
     x1: 147.1
-    y1: 187.9
+    y1: 188.0
   crop: "crops/AXtManal_176_p7.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 177
   text: "لج"
   status: "cmap"
-  count: 11
+  count: 364
   first:
     page: 7
     x0: 207.8
@@ -1630,11 +3748,12 @@ glyphs:
     x1: 218.0
     y1: 487.0
   crop: "crops/AXtManal_177_p7.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 178
   text: "لح"
   status: "cmap"
-  count: 5
+  count: 866
   first:
     page: 8
     x0: 301.3
@@ -1642,11 +3761,12 @@ glyphs:
     x1: 310.8
     y1: 430.6
   crop: "crops/AXtManal_178_p8.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 179
   text: "لخ"
   status: "cmap"
-  count: 7
+  count: 232
   first:
     page: 9
     x0: 335.3
@@ -1654,11 +3774,12 @@ glyphs:
     x1: 344.6
     y1: 261.7
   crop: "crops/AXtManal_179_p9.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 180
   text: "لم"
   status: "cmap"
-  count: 154
+  count: 2622
   first:
     page: 8
     x0: 178.2
@@ -1666,11 +3787,12 @@ glyphs:
     x1: 182.1
     y1: 232.3
   crop: "crops/AXtManal_180_p8.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 181
   text: "لم"
   status: "cmap"
-  count: 17
+  count: 167
   first:
     page: 8
     x0: 237.5
@@ -1678,11 +3800,12 @@ glyphs:
     x1: 244.9
     y1: 481.0
   crop: "crops/AXtManal_181_p8.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 182
   text: "لى"
   status: "cmap"
-  count: 4
+  count: 203
   first:
     page: 11
     x0: 227.9
@@ -1690,11 +3813,12 @@ glyphs:
     x1: 236.7
     y1: 405.6
   crop: "crops/AXtManal_182_p11.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 183
   text: "لي"
   status: "cmap"
-  count: 2
+  count: 32
   first:
     page: 16
     x0: 157.9
@@ -1702,11 +3826,12 @@ glyphs:
     x1: 166.6
     y1: 167.1
   crop: "crops/AXtManal_183_p16.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 184
   text: "مج"
   status: "cmap"
-  count: 2
+  count: 81
   first:
     page: 12
     x0: 292.1
@@ -1714,23 +3839,25 @@ glyphs:
     x1: 303.4
     y1: 570.7
   crop: "crops/AXtManal_184_p12.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 185
   text: "مح"
   status: "cmap"
-  count: 11
+  count: 188
   first:
     page: 7
     x0: 258.2
-    y0: 172.9
+    y0: 172.8
     x1: 270.4
-    y1: 187.9
+    y1: 188.0
   crop: "crops/AXtManal_185_p7.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 186
   text: "مخ"
   status: "cmap"
-  count: 6
+  count: 222
   first:
     page: 10
     x0: 340.6
@@ -1738,11 +3865,25 @@ glyphs:
     x1: 352.1
     y1: 359.2
   crop: "crops/AXtManal_186_p10.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 187
+  text: "مم"
+  status: "cmap"
+  count: 35
+  first:
+    page: 23
+    x0: 347.5
+    y0: 462.9
+    x1: 358.2
+    y1: 476.9
+  crop: "crops/AXtManal_187_p23.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 189
   text: "نج"
   status: "cmap"
-  count: 1
+  count: 14
   first:
     page: 16
     x0: 164.9
@@ -1750,11 +3891,12 @@ glyphs:
     x1: 175.3
     y1: 303.4
   crop: "crops/AXtManal_189_p16.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 191
   text: "نم"
   status: "cmap"
-  count: 3
+  count: 49
   first:
     page: 8
     x0: 323.9
@@ -1762,11 +3904,12 @@ glyphs:
     x1: 331.8
     y1: 481.0
   crop: "crops/AXtManal_191_p8.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 193
   text: "ني"
   status: "cmap"
-  count: 15
+  count: 41
   first:
     page: 9
     x0: 200.3
@@ -1774,11 +3917,12 @@ glyphs:
     x1: 209.2
     y1: 196.1
   crop: "crops/AXtManal_193_p9.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 194
   text: "يم"
   status: "cmap"
-  count: 1
+  count: 39
   first:
     page: 16
     x0: 252.7
@@ -1786,23 +3930,51 @@ glyphs:
     x1: 260.5
     y1: 234.3
   crop: "crops/AXtManal_194_p16.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 195
+  text: "يم"
+  status: "cmap"
+  count: 37
+  first:
+    page: 27
+    x0: 372.2
+    y0: 300.9
+    x1: 380.1
+    y1: 314.9
+  crop: "crops/AXtManal_195_p27.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 196
   text: "بر"
   status: "cmap"
-  count: 5
+  count: 69
   first:
     page: 7
     x0: 250.6
-    y0: 251.4
+    y0: 251.3
     x1: 259.2
     y1: 266.4
   crop: "crops/AXtManal_196_p7.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
+  gid: 197
+  text: "بن"
+  status: "cmap"
+  count: 1
+  first:
+    page: 98
+    x0: 357.5
+    y0: 330.5
+    x1: 365.9
+    y1: 344.5
+  crop: "crops/AXtManal_197_p98.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 198
   text: "تر"
   status: "cmap"
-  count: 4
+  count: 308
   first:
     page: 9
     x0: 239.8
@@ -1810,11 +3982,12 @@ glyphs:
     x1: 247.4
     y1: 475.1
   crop: "crops/AXtManal_198_p9.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 200
   text: "ثر"
   status: "cmap"
-  count: 6
+  count: 12
   first:
     page: 9
     x0: 226.6
@@ -1822,11 +3995,12 @@ glyphs:
     x1: 234.1
     y1: 278.5
   crop: "crops/AXtManal_200_p9.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 201
   text: "لا"
   status: "cmap"
-  count: 14
+  count: 478
   first:
     page: 8
     x0: 373.7
@@ -1834,11 +4008,12 @@ glyphs:
     x1: 381.0
     y1: 575.7
   crop: "crops/AXtManal_201_p8.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 204
   text: "ير"
   status: "cmap"
-  count: 6
+  count: 247
   first:
     page: 8
     x0: 345.6
@@ -1846,11 +4021,12 @@ glyphs:
     x1: 353.3
     y1: 464.2
   crop: "crops/AXtManal_204_p8.png"
-- font: "AXtManal"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManal"
   gid: 205
   text: "ين"
   status: "cmap"
-  count: 20
+  count: 477
   first:
     page: 8
     x0: 270.6
@@ -1858,98 +4034,107 @@ glyphs:
     x1: 278.6
     y1: 314.7
   crop: "crops/AXtManal_205_p8.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: -1
   text: ""
   status: "drop:ligature_continuation"
-  count: 115
+  count: 1863
   first:
     page: 8
     x0: 286.3
-    y0: 165.1
+    y0: 165.0
     x1: 286.3
     y1: 180.1
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 3
   text: " "
   status: "space"
-  count: 354
+  count: 5529
   first:
     page: 2
     x0: 273.0
     y0: 117.3
     x1: 275.8
     y1: 136.2
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 11
   text: ")"
   status: "cmap"
-  count: 14
+  count: 16
   first:
     page: 7
     x0: 355.5
-    y0: 173.6
+    y0: 173.5
     x1: 359.5
     y1: 188.6
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 12
   text: "("
   status: "cmap"
-  count: 14
+  count: 16
   first:
     page: 7
     x0: 362.0
-    y0: 173.6
+    y0: 173.5
     x1: 367.1
     y1: 188.6
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 15
   text: "،"
   status: "cmap_shared"
-  count: 1
+  count: 5
   first:
     page: 2
     x0: 303.1
     y0: 117.3
     x1: 306.3
     y1: 136.2
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 16
   text: "-"
   status: "cmap_shared"
-  count: 8
+  count: 418
   first:
     page: 2
     x0: 227.2
     y0: 334.8
     x1: 231.9
     y1: 349.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 17
   text: "."
   status: "cmap_shared"
-  count: 4
+  count: 5
   first:
     page: 2
     x0: 331.6
     y0: 231.5
     x1: 335.4
     y1: 248.8
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 18
   text: "/"
   status: "cmap_shared"
-  count: 12
+  count: 124
   first:
     page: 2
     x0: 245.1
     y0: 320.4
     x1: 250.1
     y1: 335.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 19
   text: "0"
-  status: "symbol_digit"
+  status: "cmap_reference"
   count: 3
   first:
     page: 2
@@ -1957,10 +4142,11 @@ glyphs:
     y0: 320.4
     x1: 268.8
     y1: 335.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 20
   text: "1"
-  status: "symbol_digit"
+  status: "cmap_reference"
   count: 6
   first:
     page: 2
@@ -1968,10 +4154,11 @@ glyphs:
     y0: 117.3
     x1: 281.9
     y1: 136.2
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 21
   text: "2"
-  status: "symbol_digit"
+  status: "cmap_reference"
   count: 2
   first:
     page: 2
@@ -1979,10 +4166,11 @@ glyphs:
     y0: 231.5
     x1: 371.4
     y1: 248.8
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 22
   text: "3"
-  status: "symbol_digit"
+  status: "cmap_reference"
   count: 3
   first:
     page: 2
@@ -1990,10 +4178,11 @@ glyphs:
     y0: 334.8
     x1: 245.9
     y1: 349.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 23
   text: "4"
-  status: "symbol_digit"
+  status: "cmap_reference"
   count: 10
   first:
     page: 2
@@ -2001,10 +4190,11 @@ glyphs:
     y0: 117.3
     x1: 288.0
     y1: 136.2
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 24
   text: "5"
-  status: "symbol_digit"
+  status: "cmap_reference"
   count: 1
   first:
     page: 2
@@ -2012,10 +4202,11 @@ glyphs:
     y0: 231.5
     x1: 382.6
     y1: 248.8
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 25
   text: "6"
-  status: "symbol_digit"
+  status: "cmap_reference"
   count: 3
   first:
     page: 2
@@ -2023,10 +4214,11 @@ glyphs:
     y0: 334.8
     x1: 236.6
     y1: 349.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 26
   text: "7"
-  status: "symbol_digit"
+  status: "cmap_reference"
   count: 4
   first:
     page: 2
@@ -2034,10 +4226,11 @@ glyphs:
     y0: 117.3
     x1: 300.2
     y1: 136.2
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 27
   text: "8"
-  status: "symbol_digit"
+  status: "cmap_reference"
   count: 3
   first:
     page: 2
@@ -2045,10 +4238,11 @@ glyphs:
     y0: 334.8
     x1: 227.2
     y1: 349.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 28
   text: "9"
-  status: "symbol_digit"
+  status: "cmap_reference"
   count: 1
   first:
     page: 2
@@ -2056,18 +4250,20 @@ glyphs:
     y0: 334.8
     x1: 217.8
     y1: 349.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 29
   text: ":"
   status: "cmap_shared"
-  count: 52
+  count: 748
   first:
     page: 2
     x0: 271.0
     y0: 320.4
     x1: 275.0
     y1: 335.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 30
   text: "؛"
   status: "repair:punctuation"
@@ -2079,66 +4275,84 @@ glyphs:
     x1: 346.4
     y1: 248.8
   crop: "crops/AXtManalBold_30_p2.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 36
   text: "ء"
   status: "cmap"
-  count: 8
+  count: 137
   first:
     page: 8
     x0: 268.6
     y0: 350.1
     x1: 272.7
     y1: 364.1
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 37
+  text: ""
+  status: "drop:hamza_mark"
+  count: 7
+  first:
+    page: 25
+    x0: 299.8
+    y0: 240.7
+    x1: 299.8
+    y1: 254.7
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 38
   text: ""
   status: "drop:hamza_mark"
-  count: 33
+  count: 588
   first:
     page: 7
     x0: 359.5
-    y0: 173.6
+    y0: 173.5
     x1: 359.5
     y1: 188.6
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 39
   text: ""
   status: "drop:hamza_mark"
-  count: 4
+  count: 59
   first:
     page: 10
     x0: 274.6
     y0: 430.4
     x1: 274.6
     y1: 444.4
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 40
   text: ""
   status: "drop:hamza_mark"
-  count: 13
+  count: 414
   first:
     page: 2
     x0: 293.2
     y0: 320.4
     x1: 293.2
     y1: 335.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 41
   text: "ئ"
   status: "cmap"
-  count: 10
+  count: 89
   first:
     page: 9
     x0: 331.0
     y0: 197.9
     x1: 334.6
     y1: 211.9
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 42
   text: "ا"
   status: "repair:alef_body"
-  count: 292
+  count: 4160
   first:
     page: 2
     x0: 335.7
@@ -2146,121 +4360,144 @@ glyphs:
     x1: 338.9
     y1: 136.2
   crop: "crops/AXtManalBold_42_p2.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 43
   text: "ب"
   status: "cmap"
-  count: 27
+  count: 356
   first:
     page: 8
     x0: 372.6
     y0: 350.1
     x1: 375.9
     y1: 364.1
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 44
   text: "ة"
   status: "cmap"
-  count: 7
+  count: 155
   first:
     page: 8
     x0: 212.7
     y0: 202.2
     x1: 216.2
     y1: 216.2
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 45
   text: "ت"
   status: "cmap_shared"
-  count: 18
+  count: 312
   first:
     page: 2
     x0: 268.4
     y0: 175.7
     x1: 272.9
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 46
   text: "ث"
   status: "cmap"
-  count: 6
+  count: 111
   first:
     page: 8
     x0: 405.0
     y0: 333.3
     x1: 409.1
     y1: 347.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 47
   text: "ج"
   status: "cmap"
-  count: 4
+  count: 133
   first:
     page: 8
     x0: 238.8
     y0: 506.6
     x1: 245.6
     y1: 520.6
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 48
   text: "ح"
   status: "cmap"
-  count: 21
+  count: 137
   first:
     page: 7
     x0: 383.2
-    y0: 173.6
+    y0: 173.5
     x1: 390.4
     y1: 188.6
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 49
   text: "خ"
   status: "cmap"
-  count: 22
+  count: 157
   first:
     page: 9
     x0: 251.0
     y0: 132.3
     x1: 257.5
     y1: 146.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 50
   text: "د"
   status: "cmap_shared"
-  count: 22
+  count: 319
   first:
     page: 2
     x0: 363.4
     y0: 117.3
     x1: 368.5
     y1: 136.2
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 51
+  text: "ذ"
+  status: "cmap"
+  count: 7
+  first:
+    page: 24
+    x0: 289.1
+    y0: 492.2
+    x1: 292.9
+    y1: 506.2
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 52
   text: "ر"
   status: "cmap_shared"
-  count: 45
+  count: 515
   first:
     page: 2
     x0: 314.5
     y0: 320.4
     x1: 318.5
     y1: 335.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 53
   text: "ز"
   status: "cmap"
-  count: 11
+  count: 60
   first:
     page: 11
     x0: 390.9
     y0: 539.5
     x1: 394.7
     y1: 553.5
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 54
   text: "س"
   status: "repair:head"
-  count: 13
+  count: 363
   first:
     page: 2
     x0: 327.1
@@ -2268,11 +4505,12 @@ glyphs:
     x1: 331.6
     y1: 248.8
   crop: "crops/AXtManalBold_54_p2.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 55
   text: "ش"
   status: "repair:head"
-  count: 3
+  count: 68
   first:
     page: 12
     x0: 287.7
@@ -2280,11 +4518,12 @@ glyphs:
     x1: 291.5
     y1: 227.7
   crop: "crops/AXtManalBold_55_p12.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 56
   text: "ص"
   status: "repair:head"
-  count: 32
+  count: 286
   first:
     page: 2
     x0: 355.9
@@ -2292,11 +4531,12 @@ glyphs:
     x1: 363.3
     y1: 248.8
   crop: "crops/AXtManalBold_56_p2.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 57
   text: "ض"
   status: "repair:head"
-  count: 9
+  count: 147
   first:
     page: 2
     x0: 172.1
@@ -2304,51 +4544,56 @@ glyphs:
     x1: 179.3
     y1: 213.8
   crop: "crops/AXtManalBold_57_p2.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 58
   text: "ط"
   status: "cmap"
-  count: 1
+  count: 39
   first:
     page: 16
     x0: 236.7
     y0: 437.7
     x1: 243.7
     y1: 451.7
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 59
   text: "ظ"
   status: "cmap"
-  count: 5
+  count: 35
   first:
     page: 11
     x0: 205.6
     y0: 470.7
     x1: 212.9
     y1: 484.7
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 60
   text: "ع"
   status: "cmap_shared"
-  count: 61
+  count: 757
   first:
     page: 2
     x0: 348.7
     y0: 175.7
     x1: 355.3
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 61
   text: "غ"
   status: "cmap"
-  count: 2
+  count: 90
   first:
     page: 10
     x0: 264.0
     y0: 181.1
     x1: 269.8
     y1: 195.1
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 64
   text: "ـ"
   status: "repair:punctuation"
@@ -2360,150 +4605,262 @@ glyphs:
     x1: 265.5
     y1: 136.2
   crop: "crops/AXtManalBold_64_p2.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 65
   text: "ف"
   status: "cmap"
-  count: 7
+  count: 164
   first:
     page: 8
     x0: 326.6
     y0: 366.9
     x1: 331.2
     y1: 380.9
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 66
   text: "ق"
   status: "cmap_shared"
-  count: 26
+  count: 456
   first:
     page: 2
     x0: 309.7
     y0: 320.4
     x1: 314.5
     y1: 335.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 67
   text: "ك"
   status: "cmap"
-  count: 3
+  count: 47
   first:
     page: 8
     x0: 348.7
     y0: 250.9
     x1: 353.1
     y1: 264.9
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 68
   text: "ل"
   status: "cmap_shared"
-  count: 132
+  count: 1674
   first:
     page: 2
     x0: 155.3
     y0: 175.7
     x1: 159.8
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 69
   text: "م"
   status: "cmap_shared"
-  count: 47
+  count: 568
   first:
     page: 2
     x0: 304.9
     y0: 334.8
     x1: 310.6
     y1: 349.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 70
   text: "ن"
   status: "cmap"
-  count: 11
+  count: 224
   first:
     page: 8
     x0: 399.0
     y0: 333.3
     x1: 402.5
     y1: 347.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 71
   text: "ه"
   status: "cmap_shared"
-  count: 3
+  count: 46
   first:
     page: 2
     x0: 265.5
     y0: 117.3
     x1: 273.0
     y1: 136.2
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 72
   text: "و"
   status: "cmap"
-  count: 36
+  count: 344
   first:
     page: 8
     x0: 385.0
     y0: 250.9
     x1: 389.2
     y1: 264.9
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 73
   text: "ى"
   status: "cmap"
-  count: 17
+  count: 183
   first:
     page: 8
     x0: 341.7
     y0: 366.9
     x1: 349.1
     y1: 380.9
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 74
   text: "ي"
   status: "cmap_shared"
-  count: 31
+  count: 439
   first:
     page: 2
     x0: 358.4
     y0: 117.3
     x1: 363.4
     y1: 136.2
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 75
   text: "ً"
   status: "cmap"
-  count: 11
+  count: 108
   first:
     page: 8
     x0: 396.3
     y0: 249.3
     x1: 396.3
     y1: 263.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 77
+  text: "ٍ"
+  status: "cmap"
+  count: 1
+  first:
+    page: 164
+    x0: 359.0
+    y0: 227.7
+    x1: 359.0
+    y1: 241.7
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 78
+  text: "َ"
+  status: "cmap"
+  count: 4
+  first:
+    page: 18
+    x0: 277.4
+    y0: 301.3
+    x1: 277.4
+    y1: 315.3
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 79
+  text: "ُ"
+  status: "cmap"
+  count: 3
+  first:
+    page: 56
+    x0: 255.5
+    y0: 536.1
+    x1: 255.5
+    y1: 550.1
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 80
+  text: "ِ"
+  status: "cmap"
+  count: 3
+  first:
+    page: 18
+    x0: 313.8
+    y0: 302.1
+    x1: 313.8
+    y1: 316.1
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 82
+  text: "ْ"
+  status: "cmap"
+  count: 1
+  first:
+    page: 120
+    x0: 376.0
+    y0: 426.6
+    x1: 376.0
+    y1: 440.6
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 83
+  text: "َّ"
+  status: "cmap"
+  count: 2
+  first:
+    page: 50
+    x0: 296.7
+    y0: 227.3
+    x1: 296.7
+    y1: 241.3
+  crop: "crops/AXtManalBold_83_p50.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 84
+  text: "ُّ"
+  status: "cmap"
+  count: 2
+  first:
+    page: 172
+    x0: 163.8
+    y0: 248.1
+    x1: 163.8
+    y1: 262.1
+  crop: "crops/AXtManalBold_84_p172.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 93
   text: "د"
   status: "cmap_shared"
-  count: 58
+  count: 936
   first:
     page: 2
     x0: 284.0
     y0: 320.4
     x1: 289.3
     y1: 335.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 95
   text: "ئ"
   status: "cmap"
-  count: 2
+  count: 84
   first:
     page: 10
     x0: 244.5
     y0: 229.8
     x1: 247.9
     y1: 243.8
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 96
+  text: "ئ"
+  status: "cmap"
+  count: 1
+  first:
+    page: 139
+    x0: 390.6
+    y0: 242.6
+    x1: 396.2
+    y1: 256.6
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 97
   text: "ئ"
   status: "repair:letter"
@@ -2515,117 +4872,152 @@ glyphs:
     x1: 321.2
     y1: 193.0
   crop: "crops/AXtManalBold_97_p2.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 98
   text: "ا"
   status: "cmap_shared"
-  count: 182
+  count: 1918
   first:
     page: 2
     x0: 318.3
     y0: 117.3
     x1: 321.8
     y1: 136.2
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 99
   text: "ب"
   status: "cmap_shared"
-  count: 27
+  count: 552
   first:
     page: 2
     x0: 329.0
     y0: 175.7
     x1: 333.4
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 100
   text: "ب"
   status: "cmap"
-  count: 3
+  count: 181
   first:
     page: 8
     x0: 225.4
     y0: 506.6
     x1: 232.8
     y1: 520.6
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 101
   text: "ب"
   status: "cmap"
-  count: 2
+  count: 82
   first:
     page: 8
     x0: 241.4
     y0: 202.2
     x1: 247.9
     y1: 216.2
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 102
   text: "ة"
   status: "cmap_shared"
-  count: 71
+  count: 1063
   first:
     page: 2
     x0: 188.8
     y0: 175.7
     x1: 194.1
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 103
   text: "ت"
   status: "cmap_shared"
-  count: 67
+  count: 743
   first:
     page: 2
     x0: 299.2
     y0: 175.7
     x1: 303.4
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 104
   text: "ت"
   status: "cmap"
-  count: 1
+  count: 11
   first:
     page: 16
     x0: 161.6
     y0: 437.7
     x1: 168.4
     y1: 451.7
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 105
   text: "ت"
   status: "cmap"
-  count: 20
+  count: 192
   first:
     page: 7
     x0: 357.3
-    y0: 200.1
+    y0: 200.0
     x1: 364.2
-    y1: 215.1
-- font: "AXtManalBold"
+    y1: 215.2
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 106
   text: "ث"
   status: "cmap"
-  count: 4
+  count: 45
   first:
     page: 9
     x0: 383.9
     y0: 493.7
     x1: 387.4
     y1: 507.7
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 107
+  text: "ث"
+  status: "cmap"
+  count: 15
+  first:
+    page: 26
+    x0: 391.0
+    y0: 384.7
+    x1: 398.0
+    y1: 398.7
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 108
+  text: "ث"
+  status: "cmap"
+  count: 12
+  first:
+    page: 33
+    x0: 383.2
+    y0: 232.7
+    x1: 390.3
+    y1: 246.7
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 109
   text: "ج"
   status: "cmap_shared"
-  count: 2
+  count: 47
   first:
     page: 2
     x0: 331.4
     y0: 196.5
     x1: 339.9
     y1: 213.8
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 110
   text: "ج"
   status: "cmap"
@@ -2636,110 +5028,132 @@ glyphs:
     y0: 332.3
     x1: 284.5
     y1: 346.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 111
   text: "ج"
   status: "cmap"
-  count: 2
+  count: 16
   first:
     page: 7
     x0: 358.3
-    y0: 227.1
+    y0: 227.0
     x1: 363.3
     y1: 242.1
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 112
   text: "ح"
   status: "cmap_shared"
-  count: 15
+  count: 243
   first:
     page: 2
     x0: 241.2
     y0: 175.7
     x1: 249.7
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 113
   text: "ح"
   status: "cmap"
-  count: 2
+  count: 15
   first:
     page: 11
     x0: 293.9
     y0: 230.3
     x1: 299.2
     y1: 244.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 114
+  text: "ح"
+  status: "cmap"
+  count: 1
+  first:
+    page: 162
+    x0: 201.6
+    y0: 470.7
+    x1: 206.2
+    y1: 484.7
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 115
   text: "خ"
   status: "cmap"
-  count: 5
+  count: 60
   first:
     page: 10
     x0: 184.1
     y0: 229.8
     x1: 191.0
     y1: 243.8
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 116
   text: "خ"
   status: "cmap"
-  count: 1
+  count: 27
   first:
     page: 8
     x0: 387.3
     y0: 528.8
     x1: 392.6
     y1: 542.8
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 117
   text: "خ"
   status: "cmap"
-  count: 1
+  count: 2
   first:
     page: 7
     x0: 358.3
-    y0: 252.1
+    y0: 252.0
     x1: 363.2
     y1: 267.1
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 119
   text: "ذ"
   status: "cmap"
-  count: 3
+  count: 43
   first:
     page: 12
     x0: 232.7
     y0: 332.3
     x1: 237.8
     y1: 346.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 120
   text: "ر"
   status: "cmap_shared"
-  count: 52
+  count: 690
   first:
     page: 2
     x0: 277.6
     y0: 175.7
     x1: 283.5
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 121
   text: "ز"
   status: "cmap"
-  count: 1
+  count: 50
   first:
     page: 16
     x0: 171.9
     y0: 437.7
     x1: 176.3
     y1: 451.7
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 122
   text: "س"
   status: "repair:head"
-  count: 15
+  count: 362
   first:
     page: 2
     x0: 306.8
@@ -2747,11 +5161,12 @@ glyphs:
     x1: 311.4
     y1: 213.8
   crop: "crops/AXtManalBold_122_p2.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 123
   text: "ش"
   status: "repair:head"
-  count: 2
+  count: 74
   first:
     page: 12
     x0: 263.0
@@ -2759,11 +5174,12 @@ glyphs:
     x1: 266.7
     y1: 346.3
   crop: "crops/AXtManalBold_123_p12.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 124
   text: "ص"
   status: "repair:head"
-  count: 32
+  count: 263
   first:
     page: 9
     x0: 241.8
@@ -2771,374 +5187,480 @@ glyphs:
     x1: 247.6
     y1: 146.3
   crop: "crops/AXtManalBold_124_p9.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 126
   text: ""
   status: "drop:tail"
-  count: 70
+  count: 1248
   first:
     page: 2
     x0: 323.6
     y0: 231.5
     x1: 327.1
     y1: 248.8
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 127
   text: ""
   status: "drop:tail"
-  count: 40
+  count: 494
   first:
     page: 2
     x0: 349.0
     y0: 231.5
     x1: 355.9
     y1: 248.8
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 128
   text: "ط"
   status: "cmap"
-  count: 3
+  count: 160
   first:
     page: 10
     x0: 312.2
     y0: 132.3
     x1: 319.5
     y1: 146.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 129
+  text: "ط"
+  status: "cmap"
+  count: 13
+  first:
+    page: 29
+    x0: 272.1
+    y0: 444.8
+    x1: 280.5
+    y1: 458.8
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 130
   text: "ط"
   status: "cmap"
-  count: 4
+  count: 53
   first:
     page: 7
     x0: 356.0
-    y0: 360.0
+    y0: 359.9
     x1: 365.5
-    y1: 375.0
-- font: "AXtManalBold"
+    y1: 375.1
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 131
   text: "ظ"
   status: "cmap_shared"
-  count: 16
+  count: 148
   first:
     page: 2
     x0: 321.8
     y0: 117.3
     x1: 331.0
     y1: 136.2
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 133
+  text: "ظ"
+  status: "cmap"
+  count: 1
+  first:
+    page: 114
+    x0: 267.3
+    y0: 232.0
+    x1: 275.8
+    y1: 246.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 134
   text: "ع"
   status: "cmap_shared"
-  count: 48
+  count: 554
   first:
     page: 2
     x0: 150.1
     y0: 175.7
     x1: 155.3
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 135
   text: "ع"
   status: "cmap"
-  count: 4
+  count: 50
   first:
     page: 16
     x0: 343.5
     y0: 137.0
     x1: 348.5
     y1: 151.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 136
   text: "ع"
   status: "cmap_shared"
-  count: 6
+  count: 83
   first:
     page: 2
     x0: 277.1
     y0: 320.4
     x1: 281.5
     y1: 335.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 137
   text: "غ"
   status: "cmap"
-  count: 2
+  count: 46
   first:
     page: 12
     x0: 256.0
     y0: 332.3
     x1: 260.2
     y1: 346.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 138
+  text: "غ"
+  status: "cmap"
+  count: 4
+  first:
+    page: 41
+    x0: 352.7
+    y0: 143.1
+    x1: 357.3
+    y1: 157.1
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 139
   text: "غ"
   status: "cmap"
-  count: 1
+  count: 10
   first:
     page: 7
     x0: 358.6
-    y0: 416.2
+    y0: 416.1
     x1: 362.9
-    y1: 431.2
-- font: "AXtManalBold"
+    y1: 431.3
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 140
   text: "ف"
   status: "cmap"
-  count: 18
+  count: 321
   first:
     page: 8
     x0: 386.8
     y0: 350.1
     x1: 391.3
     y1: 364.1
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 141
   text: "ف"
   status: "cmap"
-  count: 2
+  count: 75
   first:
     page: 10
     x0: 263.2
     y0: 430.4
     x1: 271.0
     y1: 444.4
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 142
   text: "ف"
   status: "cmap"
-  count: 16
+  count: 125
   first:
     page: 7
     x0: 369.4
-    y0: 173.6
+    y0: 173.5
     x1: 378.0
     y1: 188.6
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 143
   text: "ق"
   status: "cmap"
-  count: 40
+  count: 496
   first:
     page: 8
     x0: 376.1
     y0: 333.3
     x1: 380.6
     y1: 347.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 144
   text: "ق"
   status: "cmap"
-  count: 4
+  count: 60
   first:
     page: 11
     x0: 328.0
     y0: 181.6
     x1: 333.6
     y1: 195.6
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 145
   text: "ق"
   status: "cmap"
-  count: 4
+  count: 78
   first:
     page: 7
     x0: 357.7
-    y0: 445.3
+    y0: 445.1
     x1: 363.8
     y1: 460.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 146
   text: "ك"
   status: "cmap_shared"
-  count: 22
+  count: 450
   first:
     page: 2
     x0: 236.1
     y0: 175.7
     x1: 241.2
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 147
   text: "ك"
   status: "cmap_shared"
-  count: 5
+  count: 13
   first:
     page: 2
     x0: 296.8
     y0: 334.8
     x1: 304.9
     y1: 349.3
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 148
+  text: "ك"
+  status: "cmap"
+  count: 3
+  first:
+    page: 25
+    x0: 243.8
+    y0: 541.1
+    x1: 251.2
+    y1: 555.1
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 149
   text: "ل"
   status: "cmap_shared"
-  count: 42
+  count: 446
   first:
     page: 2
     x0: 169.9
     y0: 175.7
     x1: 173.6
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 150
   text: "ل"
   status: "cmap"
-  count: 4
+  count: 110
   first:
     page: 8
     x0: 299.5
     y0: 366.9
     x1: 304.9
     y1: 380.9
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 151
   text: "ل"
   status: "cmap"
-  count: 7
+  count: 177
   first:
     page: 7
     x0: 357.7
-    y0: 472.7
+    y0: 472.6
     x1: 363.8
-    y1: 487.7
-- font: "AXtManalBold"
+    y1: 487.8
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 152
   text: "م"
   status: "cmap_shared"
-  count: 15
+  count: 287
   first:
     page: 2
     x0: 229.8
     y0: 175.7
     x1: 236.1
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 153
   text: "م"
   status: "cmap_shared"
-  count: 13
+  count: 522
   first:
     page: 2
     x0: 317.4
     y0: 231.5
     x1: 323.6
     y1: 248.8
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 154
   text: "م"
   status: "cmap_shared"
-  count: 20
+  count: 253
   first:
     page: 2
     x0: 142.0
     y0: 175.7
     x1: 146.9
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 155
   text: "ن"
   status: "cmap"
-  count: 44
+  count: 470
   first:
     page: 9
     x0: 220.7
     y0: 379.4
     x1: 224.2
     y1: 393.4
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 156
   text: "ن"
   status: "cmap"
-  count: 13
+  count: 206
   first:
     page: 9
     x0: 233.3
     y0: 379.4
     x1: 239.6
     y1: 393.4
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 157
   text: "ن"
   status: "cmap_shared"
-  count: 8
+  count: 74
   first:
     page: 2
     x0: 341.7
     y0: 117.3
     x1: 349.3
     y1: 136.2
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 158
   text: "ه"
   status: "cmap_shared"
-  count: 11
+  count: 185
   first:
     page: 2
     x0: 262.7
     y0: 175.7
     x1: 268.4
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 159
   text: "ه"
   status: "cmap"
-  count: 6
+  count: 130
   first:
     page: 8
     x0: 305.4
     y0: 350.1
     x1: 309.7
     y1: 364.1
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 160
+  text: "ه"
+  status: "cmap"
+  count: 26
+  first:
+    page: 17
+    x0: 266.0
+    y0: 499.7
+    x1: 269.9
+    y1: 513.7
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 161
   text: "و"
   status: "cmap_shared"
-  count: 58
+  count: 684
   first:
     page: 2
     x0: 352.5
     y0: 117.3
     x1: 358.4
     y1: 136.2
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 162
   text: "ى"
   status: "cmap"
-  count: 10
+  count: 141
   first:
     page: 8
     x0: 200.2
     y0: 350.1
     x1: 206.2
     y1: 364.1
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 163
   text: "ي"
   status: "cmap_shared"
-  count: 36
+  count: 743
   first:
     page: 2
     x0: 165.6
     y0: 175.7
     x1: 169.9
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 164
   text: "ي"
   status: "cmap_shared"
-  count: 29
+  count: 126
   first:
     page: 2
     x0: 291.8
     y0: 175.7
     x1: 299.2
     y1: 193.0
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 165
+  text: "ي"
+  status: "cmap"
+  count: 38
+  first:
+    page: 17
+    x0: 336.3
+    y0: 225.0
+    x1: 343.0
+    y1: 239.0
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 166
   text: "ض"
   status: "repair:head"
-  count: 4
+  count: 179
   first:
     page: 8
     x0: 209.0
@@ -3146,11 +5668,12 @@ glyphs:
     x1: 215.2
     y1: 364.1
   crop: "crops/AXtManalBold_166_p8.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 167
   text: "بم"
   status: "cmap"
-  count: 1
+  count: 11
   first:
     page: 10
     x0: 329.4
@@ -3158,11 +5681,25 @@ glyphs:
     x1: 338.3
     y1: 549.8
   crop: "crops/AXtManalBold_167_p10.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 169
+  text: "تج"
+  status: "cmap"
+  count: 21
+  first:
+    page: 19
+    x0: 381.4
+    y0: 195.2
+    x1: 391.5
+    y1: 209.2
+  crop: "crops/AXtManalBold_169_p19.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 171
   text: "تح"
   status: "cmap"
-  count: 1
+  count: 25
   first:
     page: 16
     x0: 353.7
@@ -3170,11 +5707,12 @@ glyphs:
     x1: 363.6
     y1: 376.4
   crop: "crops/AXtManalBold_171_p16.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 173
   text: "تم"
   status: "cmap"
-  count: 3
+  count: 9
   first:
     page: 15
     x0: 310.4
@@ -3182,11 +5720,25 @@ glyphs:
     x1: 319.3
     y1: 538.9
   crop: "crops/AXtManalBold_173_p15.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 174
+  text: "تم"
+  status: "cmap"
+  count: 1
+  first:
+    page: 118
+    x0: 279.2
+    y0: 386.8
+    x1: 287.7
+    y1: 400.8
+  crop: "crops/AXtManalBold_174_p118.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 175
   text: "في"
   status: "cmap"
-  count: 6
+  count: 245
   first:
     page: 13
     x0: 322.7
@@ -3194,11 +5746,12 @@ glyphs:
     x1: 329.9
     y1: 146.8
   crop: "crops/AXtManalBold_175_p13.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 176
   text: "لإ"
   status: "compose"
-  count: 45
+  count: 629
   first:
     page: 2
     x0: 293.2
@@ -3206,11 +5759,12 @@ glyphs:
     x1: 299.8
     y1: 335.0
   crop: "crops/AXtManalBold_176_p2.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 177
   text: "لج"
   status: "cmap"
-  count: 4
+  count: 79
   first:
     page: 9
     x0: 177.0
@@ -3218,11 +5772,12 @@ glyphs:
     x1: 187.0
     y1: 507.7
   crop: "crops/AXtManalBold_177_p9.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 178
   text: "لح"
   status: "cmap"
-  count: 3
+  count: 241
   first:
     page: 8
     x0: 167.0
@@ -3230,11 +5785,12 @@ glyphs:
     x1: 177.0
     y1: 364.1
   crop: "crops/AXtManalBold_178_p8.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 179
   text: "لخ"
   status: "cmap"
-  count: 1
+  count: 68
   first:
     page: 14
     x0: 365.9
@@ -3242,11 +5798,12 @@ glyphs:
     x1: 375.8
     y1: 250.1
   crop: "crops/AXtManalBold_179_p14.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 180
   text: "لم"
   status: "cmap_shared"
-  count: 65
+  count: 653
   first:
     page: 2
     x0: 331.0
@@ -3254,11 +5811,12 @@ glyphs:
     x1: 335.7
     y1: 136.2
   crop: "crops/AXtManalBold_180_p2.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 181
   text: "لم"
   status: "cmap_shared"
-  count: 5
+  count: 8
   first:
     page: 2
     x0: 306.3
@@ -3266,11 +5824,38 @@ glyphs:
     x1: 318.3
     y1: 136.2
   crop: "crops/AXtManalBold_181_p2.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 182
+  text: "لى"
+  status: "cmap"
+  count: 22
+  first:
+    page: 28
+    x0: 174.1
+    y0: 379.6
+    x1: 183.4
+    y1: 393.6
+  crop: "crops/AXtManalBold_182_p28.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 183
+  text: "لي"
+  status: "cmap"
+  count: 4
+  first:
+    page: 17
+    x0: 355.6
+    y0: 360.8
+    x1: 364.9
+    y1: 374.8
+  crop: "crops/AXtManalBold_183_p17.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 184
   text: "مج"
   status: "cmap_shared"
-  count: 2
+  count: 7
   first:
     page: 2
     x0: 367.0
@@ -3278,11 +5863,12 @@ glyphs:
     x1: 382.6
     y1: 193.0
   crop: "crops/AXtManalBold_184_p2.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 185
   text: "مح"
   status: "cmap"
-  count: 2
+  count: 80
   first:
     page: 8
     x0: 226.8
@@ -3290,11 +5876,12 @@ glyphs:
     x1: 239.3
     y1: 216.2
   crop: "crops/AXtManalBold_185_p8.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 186
   text: "مخ"
   status: "cmap"
-  count: 5
+  count: 29
   first:
     page: 10
     x0: 255.3
@@ -3302,11 +5889,38 @@ glyphs:
     x1: 267.4
     y1: 309.4
   crop: "crops/AXtManalBold_186_p10.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 187
+  text: "مم"
+  status: "cmap"
+  count: 1
+  first:
+    page: 121
+    x0: 348.3
+    y0: 546.3
+    x1: 358.5
+    y1: 560.3
+  crop: "crops/AXtManalBold_187_p121.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 189
+  text: "نج"
+  status: "cmap"
+  count: 1
+  first:
+    page: 150
+    x0: 164.5
+    y0: 478.1
+    x1: 174.9
+    y1: 492.1
+  crop: "crops/AXtManalBold_189_p150.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 193
   text: "ني"
   status: "cmap"
-  count: 10
+  count: 17
   first:
     page: 13
     x0: 325.7
@@ -3314,11 +5928,12 @@ glyphs:
     x1: 335.5
     y1: 359.0
   crop: "crops/AXtManalBold_193_p13.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 194
   text: "يم"
   status: "cmap"
-  count: 1
+  count: 2
   first:
     page: 16
     x0: 269.5
@@ -3326,11 +5941,25 @@ glyphs:
     x1: 278.5
     y1: 468.5
   crop: "crops/AXtManalBold_194_p16.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 195
+  text: "يم"
+  status: "cmap"
+  count: 2
+  first:
+    page: 26
+    x0: 319.6
+    y0: 474.4
+    x1: 329.1
+    y1: 488.4
+  crop: "crops/AXtManalBold_195_p26.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 196
   text: "بر"
   status: "cmap"
-  count: 1
+  count: 10
   first:
     page: 10
     x0: 277.9
@@ -3338,11 +5967,38 @@ glyphs:
     x1: 286.8
     y1: 243.8
   crop: "crops/AXtManalBold_196_p10.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 198
+  text: "تر"
+  status: "cmap"
+  count: 115
+  first:
+    page: 17
+    x0: 182.2
+    y0: 241.8
+    x1: 191.5
+    y1: 255.8
+  crop: "crops/AXtManalBold_198_p17.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
+  gid: 200
+  text: "ثر"
+  status: "cmap"
+  count: 1
+  first:
+    page: 121
+    x0: 361.7
+    y0: 546.3
+    x1: 371.1
+    y1: 560.3
+  crop: "crops/AXtManalBold_200_p121.png"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 201
   text: "لا"
   status: "cmap"
-  count: 5
+  count: 87
   first:
     page: 9
     x0: 310.5
@@ -3350,11 +6006,12 @@ glyphs:
     x1: 318.5
     y1: 393.4
   crop: "crops/AXtManalBold_201_p9.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 204
   text: "ير"
   status: "cmap"
-  count: 4
+  count: 63
   first:
     page: 10
     x0: 255.2
@@ -3362,11 +6019,12 @@ glyphs:
     x1: 264.0
     y1: 195.1
   crop: "crops/AXtManalBold_204_p10.png"
-- font: "AXtManalBold"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "AXtManalBold"
   gid: 205
   text: "ين"
   status: "cmap"
-  count: 6
+  count: 67
   first:
     page: 8
     x0: 363.4
@@ -3374,132 +6032,144 @@ glyphs:
     x1: 372.6
     y1: 364.1
   crop: "crops/AXtManalBold_205_p8.png"
-- font: "HacenTunisiaLt"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "HacenTunisiaLt"
   gid: 153
   text: "0"
   status: "cmap"
-  count: 5
+  count: 45
   first:
     page: 1
     x0: 33.0
     y0: 643.6
     x1: 40.8
     y1: 657.6
-- font: "HacenTunisiaLt"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "HacenTunisiaLt"
   gid: 154
   text: "1"
   status: "cmap"
-  count: 8
+  count: 151
   first:
     page: 1
     x0: 28.5
     y0: 643.6
     x1: 33.0
     y1: 657.6
-- font: "HacenTunisiaLt"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "HacenTunisiaLt"
   gid: 155
   text: "2"
   status: "cmap"
-  count: 2
+  count: 58
   first:
     page: 6
     x0: 433.8
     y0: 642.2
     x1: 441.6
     y1: 656.2
-- font: "HacenTunisiaLt"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "HacenTunisiaLt"
   gid: 156
   text: "3"
   status: "cmap"
-  count: 1
+  count: 42
   first:
     page: 7
     x0: 36.9
     y0: 643.6
     x1: 44.8
     y1: 657.6
-- font: "HacenTunisiaLt"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "HacenTunisiaLt"
   gid: 157
   text: "4"
   status: "cmap"
-  count: 2
+  count: 43
   first:
     page: 4
     x0: 443.7
     y0: 642.2
     x1: 451.6
     y1: 656.2
-- font: "HacenTunisiaLt"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "HacenTunisiaLt"
   gid: 158
   text: "5"
   status: "cmap"
-  count: 1
+  count: 42
   first:
     page: 9
     x0: 36.9
     y0: 643.6
     x1: 44.8
     y1: 657.6
-- font: "HacenTunisiaLt"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "HacenTunisiaLt"
   gid: 159
   text: "6"
   status: "cmap"
-  count: 1
+  count: 41
   first:
     page: 10
     x0: 433.8
     y0: 642.2
     x1: 441.6
     y1: 656.2
-- font: "HacenTunisiaLt"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "HacenTunisiaLt"
   gid: 160
   text: "7"
   status: "cmap"
-  count: 1
+  count: 41
   first:
     page: 11
     x0: 36.9
     y0: 643.6
     x1: 44.8
     y1: 657.6
-- font: "HacenTunisiaLt"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "HacenTunisiaLt"
   gid: 161
   text: "8"
   status: "cmap"
-  count: 1
+  count: 41
   first:
     page: 12
     x0: 433.8
     y0: 642.2
     x1: 441.6
     y1: 656.2
-- font: "HacenTunisiaLt"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "HacenTunisiaLt"
   gid: 162
   text: "9"
   status: "cmap"
-  count: 1
+  count: 41
   first:
     page: 13
     x0: 36.9
     y0: 643.6
     x1: 44.8
     y1: 657.6
-- font: "MinionPro-Regular"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "MinionPro-Regular"
   gid: 1
   text: " "
   status: "space"
-  count: 39
+  count: 626
   first:
     page: 9
     x0: 406.1
     y0: 212.9
     x1: 409.3
     y1: 226.9
-- font: "MinionPro-Regular"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+  font: "MinionPro-Regular"
   gid: 116
   text: "•"
   status: "cmap"
-  count: 41
+  count: 624
   first:
     page: 8
     x0: 403.6

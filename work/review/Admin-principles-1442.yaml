@@ -1,0 +1,22 @@
+volume_id: "Admin-principles-1442"
+items:
+- item_id: "06d76ad71f5d"
+  issue_type: "other"
+  location: "config:decisions"
+  affected_ids: []
+  observed: "06d76ad71f5d"
+  note: "decision whose item no longer occurs"
+  options: []
+  status: "decided"
+  resolution: "keep"
+  decided_on: "06/11/2026"
+- item_id: "b66f4d49e335"
+  issue_type: "other"
+  location: "config:decisions"
+  affected_ids: []
+  observed: "b66f4d49e335"
+  note: "decision whose item no longer occurs"
+  options: []
+  status: "decided"
+  resolution: "keep"
+  decided_on: "06/11/2026"

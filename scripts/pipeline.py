@@ -18,6 +18,7 @@ import argparse
 import collections
 import difflib
 import hashlib
+import re
 import shutil
 import sys
 from pathlib import Path
@@ -46,6 +47,13 @@ class Project:
         self.input_dir = root / "Input"
         self.work = root / "work"
         self.vault = root / VAULT_DIR
+
+    def source_path(self, volume_id: str, entry: dict) -> Path:
+        """A configured source file: `path` relative to Input/ (any folder layout, e.g. one Arabic folder per
+        collection), else Input/<volume_id>/<stored or original name>."""
+        if entry.get("path"):
+            return self.input_dir / entry["path"]
+        return self.input_dir / volume_id / (entry.get("stored_name") or entry["original_name"])
 
     def volume_ids(self) -> list[str]:
         return sorted(p.stem for p in self.config_dir.glob("*.yaml"))
@@ -120,9 +128,10 @@ class VolumeBuild:
         self.cataloging_lines: list[str] = []
         self.file_entries: list[dict] = []
         self.year_span_value: dict | None = None
+        self.notes: list[str] = []  # findings printed as found (project rule 3): build-report notes, not review items
 
     def source_path(self, entry: dict) -> Path:
-        return self.project.input_dir / self.vid / (entry.get("stored_name") or entry["original_name"])
+        return self.project.source_path(self.vid, entry)
 
     def reference_candidates(self) -> list[ps.ReferenceCandidate]:
         """Every verified source PDF of every configured volume (present in Input/ with its configured SHA-256),
@@ -140,7 +149,7 @@ class VolumeBuild:
                     continue
                 repairs = ps.build_repairs(cfg.get("fonts") or [])
                 for entry in cfg.get("source_files") or []:
-                    path = self.project.input_dir / vid / (entry.get("stored_name") or entry["original_name"])
+                    path = self.project.source_path(vid, entry)
                     if path.exists() and sha256_file(path) == entry.get("sha256"):
                         self._candidates.append(ps.ReferenceCandidate(f"{vid}/{path.name}", str(path), repairs))
         return self._candidates
@@ -192,7 +201,7 @@ class VolumeBuild:
                 self.add_review("other", f"file:{path.name}", "", "configured as an index file but no page of the index classes was found",
                                 options=["check the file kind in the configuration"])
             self._glyph_items(doc, parse)
-            numbers = sorted({int(n) for b in parse.blocks for n in b.numbers if n.isdigit()})
+            numbers = sorted({int(n) for b in parse.blocks for n in b.numbers if n.isdigit()})  # plain principle numbers
             page_classes: dict[str, list[int]] = {}
             for pno, cls in parse.page_classes.items():
                 page_classes.setdefault(cls, []).append(pno)
@@ -228,17 +237,29 @@ class VolumeBuild:
         assert self.parse is not None
         primary_entry, primary = self.parses[0]
         for i in primary.issues:
+            if i.get("notice"):
+                self.notes.append(f"{i['location']}: {i['observed']} — {i['note']}")
+                continue
             self.add_review(i["issue_type"], i["location"], i["observed"], i["note"], options=i.get("options"))
         self.principles, review = vm.build_principles(primary, self.vid)
         for i in review:
+            if i.get("notice"):  # project rule 3: printed as found; a report note, not a review item
+                self.notes.append(f"{i['location']}: {i['observed']} — {i['note']}")
+                continue
             self.add_review(i["issue_type"], i["location"], i["observed"], i["note"], affected_ids=i.get("affected_ids"), options=i.get("options"))
         # further index files (section 2): identical wording -> one output with both files in sources;
         # different wording -> the first-ranked file's wording is published, the variant is recorded and shown, review item
         for entry, parse in self.parses[1:]:
             for i in parse.issues:
+                if i.get("notice"):
+                    self.notes.append(f"{parse.file}:{i['location']}: {i['observed']} — {i['note']}")
+                    continue
                 self.add_review(i["issue_type"], f"{parse.file}:{i['location']}", i["observed"], i["note"], options=i.get("options"))
             others, review2 = vm.build_principles(parse, self.vid)
             for i in review2:
+                if i.get("notice"):
+                    self.notes.append(f"{parse.file}:{i['location']}: {i['observed']} — {i['note']}")
+                    continue
                 self.add_review(i["issue_type"], f"{parse.file}:{i['location']}", i["observed"], i["note"], affected_ids=i.get("affected_ids"))
             for key, q in others.items():
                 if key not in self.principles:
@@ -283,7 +304,7 @@ class VolumeBuild:
                     p.anomalies.append(rec)
         # project rule 3 (extract and convert only): configured reading questions are report notes; the value is
         # published as the reader converts it (digit groups right to left as printed)
-        self.reading_notes = [f"{q['location']}: {q.get('observed', '')} — {q.get('note', '')}" for q in self.cfg.get("reading_questions") or []]
+        self.notes += [f"{q['location']}: {q.get('observed', '')} — {q.get('note', '')}" for q in self.cfg.get("reading_questions") or []]
         for p in self.principles.values():
             for issue in p.open_issues:
                 issue.setdefault("item_id", item_id(self.vid, issue["location"], issue["issue_type"]))
@@ -360,16 +381,17 @@ class VolumeBuild:
             from hijridate import Hijri
         except ImportError as exc:
             raise SystemExit("hijridate is required for the volume's computed Gregorian year span; install it into the project .venv") from exc
-        y = int(self.cfg["year_hijri"])
+        years = [int(x) for x in re.findall(r"[0-9]{4}", str(self.cfg["year_hijri"]))]
+        y, y_last = years[0], years[-1]
         try:
             start = Hijri(y, 1, 1).to_gregorian()
         except Exception as exc:  # outside the converter's range: omit and flag (section 12)
             self.add_review("date", "config:year_hijri", str(y), f"year outside the range of hijridate ({exc}); year_gregorian_computed omitted")
             return None
         try:
-            end, last_day = Hijri(y, 12, 30).to_gregorian(), 30
+            end, last_day = Hijri(y_last, 12, 30).to_gregorian(), 30
         except Exception:
-            end, last_day = Hijri(y, 12, 29).to_gregorian(), 29
+            end, last_day = Hijri(y_last, 12, 29).to_gregorian(), 29
         return {"start": ddmmyyyy(start), "end": ddmmyyyy(end), "last_day_of_year": last_day, "basis": "computed (hijridate, Umm al-Qura)"}
 
     # ------------------------------------------------------------------
@@ -387,6 +409,7 @@ class VolumeBuild:
         files["index.md"] = em.volume_index(cfg, self.parse, self.principles, self.anomalies, held_items)
         files["volume-details.md"] = em.volume_details(cfg, self.parse, self.cataloging_lines, self.extraction_summary, self.anomalies,
                                                        self.year_span_value, self.file_entries, len(self.held))
+        files.update(em.table_indexes(cfg, self.parse))  # the volume's other index tables, verbatim
         return files
 
     def records(self) -> dict:
@@ -423,7 +446,7 @@ def _wording_key(p: vm.Principle) -> str:
 
 def volume_summary(cfg: dict, principles_count: int, with_body: int, held: int) -> dict:
     return {"volume_id": cfg["volume_id"], "collection_name_ar": cfg["collection_name_ar"], "collection_name_en": cfg["collection_name_en"],
-            "year_hijri": str(cfg["year_hijri"]), "volume_number": str(cfg["volume_number"]), "volume_ordinal_ar": cfg["volume_ordinal_ar"],
+            "year_hijri": str(cfg["year_hijri"]), "volume_number": str(cfg.get("volume_number") or ""), "volume_ordinal_ar": cfg.get("volume_ordinal_ar") or "",
             "folder": cfg.get("folder_name") or cfg["volume_id"], "principle_count": principles_count, "principles_with_body": with_body,
             "principles_held": held}
 
@@ -599,7 +622,7 @@ def build_report(vb: VolumeBuild, files: dict[str, str], run: int) -> str:
                  for name, rows in sorted((vb.extraction_details.get('reference_fonts') or {}).items()) for r in rows) or "none"),
              f"- review items: {len(vb.review)} (open: {sum(1 for i in vb.review if i.get('status') == 'open')})",
              "- notes (not review items; project rule 3, extract and convert only):",
-             *[f"  - {n}" for n in getattr(vb, "reading_notes", [])],
+             *[f"  - {n}" for n in vb.notes],
              *[f"  - {n}" for _e, parse in vb.parses for n in (parse.summary_coverage or {}).get("notes", [])],
              *[f"  - see-also target not among the supplied pages: {vm.principle_id(vb.vid, k)}: {r.target_citation_ar}"
                for k, p in sorted(vb.principles.items(), key=lambda kv: vm.key_sort(kv[0])) for r in p.relations if r.relation == "see_also" and not r.target_supplied],

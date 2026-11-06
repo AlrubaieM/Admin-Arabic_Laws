@@ -27,7 +27,11 @@ import unicodedata
 from dataclasses import dataclass, field
 from typing import Iterable
 
+import logging
+
 import pymupdf
+
+logging.getLogger("fontTools").setLevel(logging.ERROR)  # embedded subsets carry odd header dates: not our concern
 
 # ----------------------------------------------------------------------------
 # Character classes
@@ -177,6 +181,16 @@ def font_base(name: str) -> str:
     """Font name without its PDF subset tag (exactly six capital letters and "+", e.g. "UJLMPZ+AXtManal").
     A re-printed PDF may name fonts "CIDFont+F4": that prefix is part of the name, not a subset tag."""
     return SUBSET_TAG.sub("", name)
+
+
+def page_font_name(fm: FontMaps, pno: int, trace_name: str) -> str:
+    """The page's own font name for a name reported by the text trace, which shortens long names (e.g. to 24
+    characters: «GESSTextUltraLight-Ultra» for «GESSTextUltraLight-UltraLight»): the one page font it begins."""
+    names = fm.by_page.get(pno, {})
+    if trace_name in names:
+        return trace_name
+    longer = [n for n in names if n.startswith(trace_name)]
+    return longer[0] if len(longer) == 1 else trace_name
 
 
 def load_font_maps(doc: pymupdf.Document, references: dict[str, dict[int, str]] | None = None) -> FontMaps:
@@ -331,14 +345,15 @@ def _candidate_fonts(cand: ReferenceCandidate) -> list[tuple[str, dict[int, str]
 
 
 def discover_references(doc: pymupdf.Document, candidates: list[ReferenceCandidate], min_glyphs: int = 10,
-                        min_ratio: float = 0.9) -> tuple[dict[str, dict[int, str]], dict[tuple[str, int], "RepairRule"], list[dict]]:
+                        min_ratio: float = 0.5) -> tuple[dict[str, dict[int, str]], dict[tuple[str, int], "RepairRule"], list[dict]]:
     """Find, for every embedded font of `doc`, the candidate fonts that are the same font program: at least
-    `min_glyphs` glyph ids drawn in both, and at least `min_ratio` of them with byte-identical outlines (a renamed
-    or re-subset copy, e.g. a re-printed extract). From those fonts, a glyph id with an identical outline takes the
-    candidate's CMap text, or its configured glyph repair. A glyph id whose candidates disagree is left out.
+    `min_glyphs` glyphs whose outlines (with advance width) are byte-identical, whatever their glyph ids, and at least
+    `min_ratio` of the smaller font's glyphs (a renamed, re-subset or renumbered copy: a re-printed extract, or an
+    export by another tool). Each glyph with an identical outline takes the candidate glyph's CMap text, or its
+    configured glyph repair. A glyph whose candidates disagree is left out.
 
     Returns (texts per base for FontMaps.reference, inherited repairs keyed like build_repairs, a summary per font).
-    Nothing is assumed about font names, page sizes or the producer: identity rests on the outlines alone."""
+    Nothing is assumed about font names, glyph numbering, page sizes or the producer: identity rests on the outlines."""
     refs: dict[str, dict[int, str]] = {}
     inherited: dict[tuple[str, int], RepairRule] = {}
     summary: list[dict] = []
@@ -352,20 +367,31 @@ def discover_references(doc: pymupdf.Document, candidates: list[ReferenceCandida
         rules: dict[int, set[tuple[str, str]]] = {}
         sources: list[str] = []
         for cand, cbase, ch, ce, ct in cand_fonts:
-            common = [g for g in own_h if g in ch]
-            same = [g for g in common if own_h[g] == ch[g]]
-            if len(common) < min_glyphs or len(same) < min_ratio * len(common):
-                continue
-            sources.append(f"{cand.label}:{cbase} ({len(same)}/{len(common)} identical outlines)")
-            for g in same:
-                rule = cand.repairs.get((cbase, g))
-                if rule is not None:
-                    rules.setdefault(g, set()).add((rule.text, rule.role))
-                elif g in ct:
-                    texts.setdefault(g, set()).add(ct[g])
-            for g, adv in own_e.items():  # a space glyph: same advance, inside a font proven identical above
-                if ce.get(g) == adv and ct.get(g, "x").strip() == "":
-                    texts.setdefault(g, set()).add(ct[g])
+            # identity by outline, whatever the glyph id: subsets made by different tools renumber their glyphs
+            by_hash: dict[str, list[int]] = {}
+            for cg, h in ch.items():
+                by_hash.setdefault(h, []).append(cg)
+            matched = {g: by_hash[h] for g, h in own_h.items() if h in by_hash}
+            same_gid = sum(1 for g, cgs in matched.items() if g in cgs)
+            if len(matched) < min_glyphs or len(matched) < min_ratio * min(len(own_h), len(ch)):
+                continue  # not the same font program: too few byte-identical outlines
+            sources.append(f"{cand.label}:{cbase} ({len(matched)}/{len(own_h)} identical outlines, {same_gid} at the same glyph id)")
+            for g, cgs in matched.items():
+                for cg in cgs:
+                    rule = cand.repairs.get((cbase, cg))
+                    if rule is not None:
+                        rules.setdefault(g, set()).add((rule.text, rule.role))
+                    elif cg in ct:
+                        texts.setdefault(g, set()).add(ct[cg])
+            # a space glyph has no outline: inside a font proven identical above, it takes the candidate's whitespace
+            # text when one candidate empty glyph of the same advance carries it
+            space_by_adv: dict[int, set[str]] = {}
+            for cg, adv in ce.items():
+                if ct.get(cg, "x").strip() == "":
+                    space_by_adv.setdefault(adv, set()).add(ct[cg])
+            for g, adv in own_e.items():
+                if len(space_by_adv.get(adv, ())) == 1:
+                    texts.setdefault(g, set()).add(next(iter(space_by_adv[adv])))
         if not sources:
             continue
         refs[base] = {g: next(iter(v)) for g, v in sorted(texts.items()) if len(v) == 1 and g not in rules}
@@ -487,6 +513,11 @@ def resolve_glyph_text(fm: FontMaps, pno: int, font: str, gid: int) -> tuple[str
     xrefs = fm.by_page.get(pno, {}).get(font, [])
     own = [fm.fonts[x] for x in xrefs]
     if len(own) > 1:
+        # two objects of one font on a page (e.g. two subsets): resolved when every object that maps the glyph
+        # gives the same usable text
+        found = {o.cmap.get(gid) for o in own} - {None}
+        if len(found) == 1 and not is_pua(next(iter(found))) and REPLACEMENT not in next(iter(found)):
+            return next(iter(found)), "cmap"
         return None, "unresolved:ambiguous_font_object"
     text = own[0].cmap.get(gid) if own else None
     if text is not None and not is_pua(text) and REPLACEMENT not in text:
@@ -517,7 +548,7 @@ def page_glyphs(doc: pymupdf.Document, pno: int, fm: FontMaps, repairs: dict[tup
     seen: set[tuple] = set()
     visible = page.cropbox
     for span in page.get_texttrace():
-        font = font_base(span["font"])
+        font = page_font_name(fm, pno, font_base(span["font"]))
         size = float(span["size"])
         for ch in span["chars"]:
             uni, gid, origin, bbox = ch
@@ -604,17 +635,28 @@ def _drop_overlapping_spaces(glyphs: list[Glyph]) -> None:
 
 
 def _drop_continuations(glyphs: list[Glyph]) -> None:
-    """A zero-width glyph with id -1 right after a multi-character glyph is the
-    text trace's continuation of that ligature: its letter is already in the
-    ligature's text."""
+    """A zero-width glyph with id -1 after a multi-character glyph is the text trace's continuation of that ligature:
+    its letter is already in the ligature's text. Walking back from the continuation, the first multi-character glyph
+    that holds its letter is the ligature; only marks drawn on it (e.g. a shadda) and its earlier continuations (a
+    ligature of three letters, «لله», has two) may stand between them."""
     for i, g in enumerate(glyphs):
         if g.gid == -1 and g.is_zero_width and i > 0:
-            prev = glyphs[i - 1]
             raw = chr(g.raw_uni) if 0 <= g.raw_uni < 0x110000 else ""
-            if raw and len(prev.text) >= 2 and raw in prev.text[1:]:
+            ligature = None
+            for j in range(i - 1, -1, -1):
+                cand = glyphs[j]
+                if raw and len(cand.text) >= 2 and raw in cand.text[1:]:
+                    ligature = cand
+                    break
+                if cand.status.startswith("repair:") and all(x.status == "drop:ligature_continuation" for x in glyphs[j + 1:i]):
+                    ligature = cand  # a repaired glyph's text is set by its rule; its continuations carry nothing more
+                    break
+                if not (cand.status == "drop:ligature_continuation" or (cand.is_zero_width and cand.is_mark)):
+                    break
+            if ligature is not None:
                 g.text = ""
                 g.status = "drop:ligature_continuation"
-                g.note = f"continuation of gid {prev.gid} {prev.text!r}"
+                g.note = f"continuation of gid {ligature.gid} {ligature.text!r}"
             elif g.unresolved:
                 g.note = "zero-width glyph without id"
 
@@ -960,6 +1002,9 @@ def segment_table(page_no: int, rulings: list[Ruling], glyphs: list[Glyph], sett
     for v in vs:
         if not col_x or abs(col_x[-1] - v.pos) > 2.0:
             col_x.append(v.pos)
+    # the outermost vertical rules bound the table too: a narrow edge column may have horizontal pieces shorter than
+    # the minimum ruling length (e.g. a «م» column of 18 pt)
+    x0, x1 = min(x0, col_x[0]), max(x1, col_x[-1])
     rows: list[Row] = []
     for i in range(len(hs) - 1):
         top, bottom = hs[i], hs[i + 1]

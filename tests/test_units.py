@@ -386,12 +386,121 @@ class SecondReaderConfirmationTest(unittest.TestCase):
         # «محاماة» rendered «حماماة» by the second reader: same letters in another order still confirms
         self.assertTrue(vv.second_reader_confirms("إذا كان النزاع متعلق بأتعاب محاماة", self.PAGE))
 
+    def test_words_the_second_reader_ran_together(self):
+        page = vv._norm_second_reader("الحكم تقديرهللبينات المقدمة النزاعيكون متعلقاً")
+        self.assertTrue(vv.second_reader_confirms("الحكم تقديره للبينات المقدمة", page))
+        self.assertTrue(vv.second_reader_confirms("النزاع يكون متعلقاً", page))
+        # a short word is never confirmed from inside a longer token
+        self.assertFalse(vv.second_reader_confirms("حمل", vv._norm_second_reader("تحمله الأعباء")))
+
     def test_a_missing_number_or_word_leaves_the_line_open(self):
         self.assertFalse(vv.second_reader_confirms("1778", self.PAGE))
         self.assertFalse(vv.second_reader_confirms("(ب/1752/1444)", self.PAGE))
         self.assertFalse(vv.second_reader_confirms("إذا كان الخلاف متعلق", self.PAGE))
         self.assertFalse(vv.second_reader_confirms("", self.PAGE))
         self.assertFalse(vv.second_reader_confirms("1777", ""))
+
+
+class LayoutVariantsTest(unittest.TestCase):
+    def test_ruling_references_with_a_two_letter_prefix(self):
+        for ref, prefix, num, year in (("(ب/1752/1443)", "ب", "1752", "1443"), ("(د/س 710/1436)", "د/س", "710", "1436"),
+                                       ("(أ/س2272/1437)", "أ/س", "2272", "1437"), ("(أ/2771-2893/1442)", "أ", "2771-2893", "1442")):
+            m = vi.RE_REF.search(f"نص {ref}")
+            self.assertIsNotNone(m, ref)
+            self.assertEqual((m.group("prefix").replace(" ", ""), m.group("num"), m.group("year")), (prefix, num, year))
+        self.assertEqual(vm.letter_slug_of_prefix("د/س"), "ds")
+        self.assertEqual(vm.letter_slug_of_prefix("هـ"), "h2")
+        self.assertEqual(vm.letter_slug_of_prefix("ه"), "h2")
+
+    def test_a_truncated_trace_font_name_is_the_page_font_it_begins(self):
+        fm = ps.FontMaps({}, {4: {"GESSTextUltraLight-UltraLight": [9], "AXtManal": [3]}})
+        self.assertEqual(ps.page_font_name(fm, 4, "GESSTextUltraLight-Ultra"), "GESSTextUltraLight-UltraLight")
+        self.assertEqual(ps.page_font_name(fm, 4, "AXtManal"), "AXtManal")
+        self.assertEqual(ps.page_font_name(fm, 4, "Other"), "Other")
+
+
+class LigatureContinuationTest(unittest.TestCase):
+    def test_every_continuation_of_a_three_letter_ligature_is_dropped(self):
+        def g(seq, gid, uni, text, x0, x1, status="cmap"):
+            return ps.Glyph(139, seq, "AXtManal", gid, uni, text, x0, 0, x1, 10, x0, 8, 12, 1, status)
+        glyphs = [g(1, 209, ord("ل"), "لله", 182.1, 190.2), g(2, -1, ord("ل"), "�", 182.1, 182.1, "unresolved:no_cmap_entry"),
+                  g(3, -1, ord("ه"), "�", 182.1, 182.1, "unresolved:no_cmap_entry")]
+        ps._drop_continuations(glyphs)
+        self.assertEqual([x.status for x in glyphs[1:]], ["drop:ligature_continuation"] * 2)
+
+    def test_continuations_of_a_repaired_glyph_are_absorbed_by_its_rule(self):
+        def g(seq, gid, uni, text, x0, x1, status="cmap"):
+            return ps.Glyph(100, seq, "AXtManalBold", gid, uni, text, x0, 0, x1, 10, x0, 8, 12, 1, status)
+        glyphs = [g(1, 85, 0x651, "ِّ", 336.2, 336.2, "repair:mark"),
+                  g(2, -1, 0x650, "�", 336.2, 336.2, "unresolved:no_cmap_entry"), g(3, -1, 0x631, "�", 336.2, 336.2, "unresolved:no_cmap_entry")]
+        ps._drop_continuations(glyphs)
+        self.assertEqual([x.status for x in glyphs[1:]], ["drop:ligature_continuation"] * 2)
+
+    def test_a_mark_between_a_ligature_and_its_continuation(self):
+        def g(seq, gid, uni, text, x0, x1, status="cmap"):
+            return ps.Glyph(100, seq, "AXtManalBold", gid, uni, text, x0, 0, x1, 10, x0, 8, 12, 1, status)
+        glyphs = [g(1, 85, 0x651, "ِّ", 336.2, 336.2, "repair:mark"), g(2, 204, ord("ي"), "ير", 331.1, 339.9),
+                  g(3, 79, 0x64F, "ُ", 343.6, 343.6, "mark"), g(4, -1, ord("ر"), "�", 339.9, 339.9, "unresolved:no_cmap_entry")]
+        glyphs = [glyphs[1], glyphs[0], glyphs[3]]  # ligature, its mark, then the continuation
+        ps._drop_continuations(glyphs)
+        self.assertEqual(glyphs[2].status, "drop:ligature_continuation")
+
+
+class LabelledNumberTest(unittest.TestCase):
+    def test_a_decision_listed_in_the_principles_index_gets_its_own_identifier(self):
+        self.assertEqual(vm.number_key("364"), "364")
+        self.assertEqual(vm.number_key("قرار (1)"), "d1")
+        self.assertIsNone(vm.number_key("مبدأ غير معروف (1)"))
+        vid = "Admin-principles-1439-1441"
+        self.assertEqual(vm.principle_id(vid, "d1"), "Admin-principles-1439-1441:d001")
+        self.assertEqual(vm.principle_filename("d1"), "d001.md")
+        self.assertEqual(vm.printed_number("d1"), "قرار (1)")
+        self.assertEqual(em.p_id("d1"), "D0001")
+        self.assertTrue(vm.RE_PRINCIPLE_ID.match("Admin-principles-1439-1441:d001"))
+        self.assertLess(vm.key_sort("383"), vm.key_sort("d1"))  # principles first, then decisions
+
+
+class EvidencePairingTest(unittest.TestCase):
+    def test_other_listings_decide_which_reference_a_number_takes(self):
+        refs = [("422", "1442"), ("4196", "1442")]
+        evidence = {"327": {("4196", "1442")}, "370": {("422", "1442")}}
+        self.assertEqual(vm._pair_by_evidence(["327", "370"], refs, evidence), [1, 0])
+        # no or ambiguous evidence: positional, as printed
+        self.assertEqual(vm._pair_by_evidence(["327", "370"], refs, {}), [0, 1])
+        self.assertEqual(vm._pair_by_evidence(["327", "370"], refs, {"327": {("422", "1442"), ("4196", "1442")}}), [0, 1])
+        self.assertEqual(vm._pair_by_evidence(["327", "370"], refs[:1], evidence), [0, 1])
+
+
+class OrdinalTest(unittest.TestCase):
+    def test_simple_compound_and_tens_ordinals_with_slash_or_colon(self):
+        for line in ("أولاً/ عقد المحاماة:", "عاشراً/ التعويض:", "حادي عشر/ التعويض عن وضع اليد على أملاك الغير:",
+                     "ثاني عشر/ التعويض عن حجز سيارة:", "تاسع عشر/ عقد الصيانة:", "ثانياً: تحديد الخبير:",
+                     "العشرون/ عقود التوريد:", "الحادي والعشرون/ الضمان:", "حادي وعشرين/ عقد الاستثمار:",
+                     "رابع وعشرين/ اللجنة المنصوص عليها في نظام المنافسات والمشتريات"):
+            self.assertIsNotNone(vi.RE_ORDINAL_LINE.match(line), line)
+        for line in ("ثانية الأحكام", "أول الأمر أن", "• تقدير التعويض:"):
+            self.assertIsNone(vi.RE_ORDINAL_LINE.match(line), line)
+
+
+class TableFrameTest(unittest.TestCase):
+    def test_a_narrow_column_beyond_the_horizontal_rules_is_inside_the_table(self):
+        # the rightmost column (x 394.7-412.8) has horizontal pieces shorter than the minimum ruling length:
+        # the outermost vertical rules bound the table
+        R = ps.Ruling
+        rulings = [R(89, "h", 200.5, 60.5, 394.7, False, 1.5, (0, 0, 0)), R(89, "h", 226.6, 60.5, 394.7, False, 1.5, (0, 0, 0)),
+                   R(89, "v", 61.3, 200.5, 226.6, False, 1.5, (0, 0, 0)), R(89, "v", 394.7, 200.5, 226.6, False, 1.5, (0, 0, 0)),
+                   R(89, "v", 412.8, 200.5, 226.6, False, 1.5, (0, 0, 0))]
+        glyph = ps.Glyph(89, 1, "AXtManal", 20, ord("1"), "1", 402.0, 208.0, 406.0, 220.0, 402.0, 218.0, 12.0, 0, "cmap")
+        table = ps.segment_table(89, rulings, [glyph])
+        self.assertEqual(table.outside, [])
+        self.assertEqual([c.text_lines for c in table.rows[0].cells][0], ["1"])  # column 0 is the rightmost
+
+
+class LetterLabelTest(unittest.TestCase):
+    def test_letter_label_with_or_without_a_colon(self):
+        for t in ("حرف (أ)", "حرف (أ):", "حرف ( ت ) :", "حرف (هـ)"):
+            self.assertIsNotNone(vi.RE_LETTER.match(t), t)
+        self.assertIsNone(vi.RE_LETTER.match("حرف (أ) أتعاب"))
 
 
 class PageClassTest(unittest.TestCase):
@@ -451,12 +560,20 @@ class ReferenceFontTest(unittest.TestCase):
     """A re-printed PDF ("Microsoft: Print To PDF") renames its fonts and drops most of their ToUnicode
     entries; a configured reference font with byte-identical outlines supplies the text."""
 
-    S1443 = ROOT / "samples" / "Indexes-1443-v6.pdf"
+    PDFS = ROOT / "tests" / "fixtures" / "samples" / "pdfs"
+    S1443 = PDFS / "Indexes-1443-v6.pdf"
 
     def test_font_base_strips_only_a_subset_tag(self):
         self.assertEqual(ps.font_base("UJLMPZ+AXtManal"), "AXtManal")
         self.assertEqual(ps.font_base("AXtManal"), "AXtManal")
         self.assertEqual(ps.font_base("CIDFont+F4"), "CIDFont+F4")  # "CIDFont" is not a six-capital subset tag
+
+    def test_two_objects_of_one_font_on_a_page_resolve_when_they_agree(self):
+        a = ps.FontObject(1, "MinionPro-Regular", "AAAAAA+MinionPro-Regular", "Identity-H", {3: " ", 5: "1"}, "identity", [64])
+        b = ps.FontObject(2, "MinionPro-Regular", "BBBBBB+MinionPro-Regular", "Identity-H", {3: " ", 5: "7"}, "identity", [64])
+        fm = ps.FontMaps({1: a, 2: b}, {64: {"MinionPro-Regular": [1, 2]}})
+        self.assertEqual(ps.resolve_glyph_text(fm, 64, "MinionPro-Regular", 3), (" ", "cmap"))
+        self.assertEqual(ps.resolve_glyph_text(fm, 64, "MinionPro-Regular", 5)[1], "unresolved:ambiguous_font_object")
 
     def test_reference_text_is_used_only_after_the_own_cmap(self):
         own = ps.FontObject(1, "CIDFont+F4", "CIDFont+F4", "Identity-H", {5: "ب"}, "identity", [7])
@@ -480,7 +597,7 @@ class ReferenceFontTest(unittest.TestCase):
 
     def test_text_drawn_outside_the_page_is_not_read(self):
         import pymupdf
-        doc = pymupdf.open(str(ROOT / "samples" / "pr year 1444 orginal export.pdf"))
+        doc = pymupdf.open(str(self.PDFS / "pr year 1444 orginal export.pdf"))
         # page 3 (the basmala) carries a copy of the cataloging text placed beyond the right edge of the page
         self.assertEqual(ps.page_glyphs(doc, 3, ps.load_font_maps(doc), {}, ps.ReaderSettings()), [])
         self.assertGreater(ps.off_page_glyphs(doc[2]), 100)
@@ -488,9 +605,9 @@ class ReferenceFontTest(unittest.TestCase):
 
     def test_vector_drawn_bullet_is_read_as_a_bullet(self):
         import pymupdf
-        reprint = next((ROOT / "samples").glob("Indexes-*1444*.pdf"))
+        reprint = self.PDFS / "reprint-1444-print-to-pdf.pdf"
         doc = pymupdf.open(str(reprint))
-        original = pymupdf.open(str(ROOT / "samples" / "pr year 1444 orginal export.pdf"))
+        original = pymupdf.open(str(self.PDFS / "pr year 1444 orginal export.pdf"))
         for pno in range(7, 14):
             glyphs = ps.page_glyphs(doc, pno, ps.load_font_maps(doc), {}, ps.ReaderSettings())
             bullets = [g for g in glyphs if g.status == "vector_bullet"]

@@ -49,14 +49,13 @@ page_classes:
   "4": "half_title"
   "5": "divider"
   "6": "half_title"
-  "17": "blank"
 
+# The full index volume supplied by the user on 06/11/2026 replaces the reviewed 17-page extract
+# (Indexes-1443-v6.pdf, SHA-256 a19f3ccf…12680, kept as a test fixture in tests/fixtures/samples/pdfs/).
 source_files:
-  - original_name: "Indexes-____________________________________________________1443.pdf"
-    stored_name: "Indexes-1443-v6.pdf"
-    upload_prefix: "7812d75c-"
-    rename_basis: "user decision of 03/11/2026 (the upload replaced the Arabic part of the name by underscores)"
-    sha256: "a19f3ccf4c01d5d2191fc898375c612c135b566b1d35dedfef2ce93e00c12680"
+  - original_name: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+    path: "مجموعة مبادئ وقرارات المحكمة الادارية العليا/مجموعة أعوام 1443/Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1443.pdf"
+    sha256: "4fc4f81701e03da09531e2304addcdc162eb85e629151799c331f6f1dd167dbd"
     kind: "index"
     rank: 1
     page_label_offset: 4
@@ -123,6 +122,11 @@ fonts:
   - name: "MinionPro-Regular"
     role: "digits"
     text_layer: "reliable"
+
+# Titles of the volume's other indexes, printed as banner images (read by the reviewer on 06/11/2026).
+table_index_titles:
+  rulings: "فهرس القضايا والأحكام"
+  instruments: "فهرس مستند الحكم"
 
 ruling_reference_components: null  # meaning of (prefix letter / number / year) not asserted
 

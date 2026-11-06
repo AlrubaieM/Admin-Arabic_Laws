@@ -19,7 +19,7 @@ cfg = em.load_yaml((ROOT / "config" / "volumes" / f"{vid}.yaml").read_text(encod
 entry = [e for e in cfg["source_files"] if e["kind"] == "index"][0]
 import pipeline  # noqa: E402
 
-src = ROOT / "Input" / vid / (entry.get("stored_name") or entry["original_name"])
+src = pipeline.Project(ROOT).source_path(vid, entry)
 doc = pymupdf.open(str(src))
 fm, rep = pipeline.VolumeBuild(pipeline.Project(ROOT), cfg).font_maps(doc, src)  # own CMaps, identical fonts, repairs
 st = ps.ReaderSettings.from_config(cfg.get("reader"))

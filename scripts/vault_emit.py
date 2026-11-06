@@ -14,7 +14,8 @@ import re
 import yaml
 
 from vault_index import IndexParse
-from vault_model import Principle, key_number, key_sort, principle_filename, principle_id
+from vault_model import (KIND_EN, Principle, fallback_title, key_kind, key_number, key_sort, principle_filename, principle_id,
+                         printed_number)
 
 SOURCE_ORIGIN = "Official Board of Grievances principle collections"
 RE_CATALOG_LABEL = re.compile(r"^(?P<label>[^:]{2,30}?)\s*:\s*(?P<value>\S.*)$")
@@ -122,7 +123,7 @@ def _cell(text: str) -> str:
 
 
 def p_id(key: str) -> str:
-    return f"P{key_number(key):04d}" + ("-" + key.split("-dup")[1] if "-dup" in key else "")
+    return f"{(key_kind(key) or 'p').upper()}{key_number(key):04d}" + ("-" + key.split("-dup")[1] if "-dup" in key else "")
 
 
 def g_id(label: str | None) -> str:
@@ -135,12 +136,31 @@ def gi_id(page: int) -> str:
     return f"GI{page:04d}"
 
 
+def _years(cfg: dict) -> list[str]:
+    return re.findall(r"[0-9]{4}", str(cfg["year_hijri"]))
+
+
 def collection_name_ar(cfg: dict) -> str:
-    return f"{cfg['collection_name_ar']} عام {cfg['year_hijri']}"
+    years = _years(cfg)
+    return f"{cfg['collection_name_ar']} {'أعوام' if len(years) > 1 else 'عام'} {cfg['year_hijri']}"
 
 
 def collection_name_en(cfg: dict) -> str:
-    return f"{cfg['collection_name_en']} year {cfg['year_hijri']}"
+    years = _years(cfg)
+    return f"{cfg['collection_name_en']} {'years' if len(years) > 1 else 'year'} {cfg['year_hijri']}"
+
+
+def volume_heading(cfg: dict) -> str:
+    """The collection name with the volume ordinal when the source prints one."""
+    ordinal = cfg.get("volume_ordinal_ar")
+    return f"{collection_name_ar(cfg)} — {ordinal}" if ordinal else collection_name_ar(cfg)
+
+
+def _identity_front(cfg: dict) -> dict:
+    front = {"collection_name_ar": collection_name_ar(cfg), "collection_name_en": collection_name_en(cfg)}
+    if cfg.get("volume_number") not in (None, ""):
+        front["volume_number"] = str(cfg["volume_number"])
+    return front
 
 
 # ----------------------------------------------------------------------------
@@ -151,13 +171,11 @@ def collection_name_en(cfg: dict) -> str:
 def principle_front(cfg: dict, p: Principle, held: set | None = None) -> dict:
     vid = cfg["volume_id"]
     front: dict = {
-        "collection_name_ar": collection_name_ar(cfg),
-        "collection_name_en": collection_name_en(cfg),
-        "volume_number": str(cfg["volume_number"]),
+        **_identity_front(cfg),
         "principle_id": principle_id(vid, p.key),
-        "principle_number": str(p.number),
+        "principle_number": printed_number(p.key),
         "principle_title_ar": p.display_title,
-        "principle_title_en": f"Principle {p.number}",
+        "principle_title_en": f"{KIND_EN[key_kind(p.key)]} {p.number}",
     }
     letters = []
     for f in p.facets:
@@ -182,7 +200,7 @@ def principle_body(cfg: dict, p: Principle, principles: dict[str, Principle] | N
     lines: list[str] = [f"# {md_escape(p.display_title)}", ""]
     for i, f in enumerate(p.facets):
         if i > 0:
-            lines += [f"## {md_escape(f.title_ar or '')}", ""]
+            lines += [f"## {md_escape(f.title_ar or fallback_title(f.wording_paragraphs))}", ""]
         for para in f.wording_paragraphs:
             lines += [md_escape(para), ""]
         if f.reference_line:
@@ -215,12 +233,16 @@ def volume_index(cfg: dict, parse: IndexParse, principles: dict[str, Principle],
                  held_items: dict | None = None) -> str:
     vid = cfg["volume_id"]
     held_items = held_items or {}
-    body: list[str] = [f"# {collection_name_ar(cfg)} — {cfg['volume_ordinal_ar']}", ""]
+    body: list[str] = [f"# {volume_heading(cfg)}", ""]
+    titles = cfg.get("table_index_titles") or {}
+    for kind in table_index_groups(parse):  # the volume's other index tables, published verbatim beside this index
+        body += [f"- {md_link(titles.get(kind) or TABLE_INDEX_FILES[kind], TABLE_INDEX_FILES[kind])}", ""]
     published = len(principles) - len(held_items)
     if parse.summary_rows:
         body += ["## موضوعات المجلد", ""]
         for row in parse.summary_rows:
-            body += [md_escape(f"{row['letter_label']}: {row['topics_text']}"), ""]
+            label = row["letter_label"] if row["letter_label"].rstrip().endswith(":") else row["letter_label"] + ":"  # as printed
+            body += [md_escape(f"{label} {row['topics_text']}"), ""]
     facet_rows = sorted(((k, f) for k, p in principles.items() for f in p.facets), key=lambda kf: (kf[1].block_index, key_sort(kf[0])))
     for L in parse.letters:
         body += [f"## {md_escape(L.label)}", ""]
@@ -238,8 +260,7 @@ def volume_index(cfg: dict, parse: IndexParse, principles: dict[str, Principle],
                 cell = f"{label} ({HELD_MARK})" if k in held_items else md_link(label, "Principles/" + principle_filename(k))
                 body.append(f"| {cell} | {p_id(k)} | {g_id(f.page_label)} | {gi_id(f.page)} |")
             body.append("")
-    front = {"collection_name_ar": collection_name_ar(cfg), "collection_name_en": collection_name_en(cfg), "volume_number": str(cfg["volume_number"]),
-             "volume_id": vid, "principle_count": published}
+    front = {**_identity_front(cfg), "volume_id": vid, "principle_count": published}
     if held_items:
         front["principles_held"] = len(held_items)
     return rtl_file(front, body)
@@ -259,9 +280,72 @@ def _catalog_rows(lines: list[str]) -> list[tuple[str, str]]:
     return rows
 
 
+# ----------------------------------------------------------------------------
+# Other index tables of the volume (rulings, decisions, instruments): verbatim tables
+# ----------------------------------------------------------------------------
+
+TABLE_INDEX_FILES = {"instruments": "instruments-index.md", "rulings": "rulings-index.md"}
+
+
+def table_index_kind(page: dict) -> str:
+    """The index a table page belongs to, from its own column header (Arabic vocabulary of the source)."""
+    header = " ".join(page.get("header") or [])
+    return "instruments" if "مستند" in header else "rulings"
+
+
+def table_index_groups(parse: IndexParse) -> dict[str, list[dict]]:
+    """Table pages grouped by index kind, in page order; a page without a header continues the previous page's index."""
+    groups: dict[str, list[dict]] = {}
+    kind = None
+    for page in parse.table_pages:
+        if page.get("header") or kind is None:
+            kind = table_index_kind(page)
+        groups.setdefault(kind, []).append(page)
+    return groups
+
+
+def table_indexes(cfg: dict, parse: IndexParse) -> dict[str, str]:
+    """One file per index kind. Each section heading printed above a table becomes a «##» heading; each table keeps
+    its header row as printed, its columns in the source order right to left (first Markdown column = rightmost);
+    rows continue across pages until a new heading or a different header. Cells are verbatim, wraps joined."""
+    titles = cfg.get("table_index_titles") or {}
+    out: dict[str, str] = {}
+    for kind, pages in table_index_groups(parse).items():
+        body: list[str] = [f"# {md_escape(titles.get(kind) or volume_heading(cfg))}", ""]
+        header: list[str] | None = None
+        open_table = False
+        for page in pages:
+            for h in page["headings"]:
+                if open_table:
+                    body.append("")
+                    open_table = False
+                body += [f"## {md_escape(h)}", ""]
+            new_header = page.get("header")
+            width = max([len(new_header or [])] + [len(r) for r in page["rows"]])
+            if new_header and (new_header != header or not open_table):
+                if open_table:
+                    body.append("")
+                header = new_header
+                body += ["| " + " | ".join(_cell(c) for c in header) + " |", "|" + " --- |" * len(header)]
+                open_table = True
+            elif not open_table:
+                header = [""] * width  # a table without a printed header row: an empty header keeps the GFM table valid
+                body += ["|" + "  |" * width, "|" + " --- |" * width]
+                open_table = True
+            for row in page["rows"]:
+                cells = row + [""] * (len(header) - len(row))
+                body.append("| " + " | ".join(_cell(c) for c in cells) + " |")
+        if open_table:
+            body.append("")
+        front = {**_identity_front(cfg), "volume_id": cfg["volume_id"], "index_kind": kind,
+                 "index_page_id": [gi_id(p["page"]) for p in pages]}
+        out[TABLE_INDEX_FILES[kind]] = rtl_file(front, body)
+    return out
+
+
 def volume_details(cfg: dict, parse: IndexParse, cataloging_lines: list[str], extraction_summary: dict | None, anomalies: list[dict],
                    year_span: dict | None, file_entries: list[dict], held_count: int = 0) -> str:
-    body: list[str] = [f"# {collection_name_ar(cfg)} — {cfg['volume_ordinal_ar']}: بيانات المجلد", ""]
+    body: list[str] = [f"# {volume_heading(cfg)}: بيانات المجلد", ""]
     cover_lines = cfg.get("cover_lines_ar") or []
     if cover_lines:
         body += ["## الغلاف", ""]
@@ -277,8 +361,8 @@ def volume_details(cfg: dict, parse: IndexParse, cataloging_lines: list[str], ex
         if rows:
             body += ["| البيان | القيمة |", "| --- | --- |"] + [f"| {_cell(a)} | {_cell(b)} |" for a, b in rows] + [""]
     front: dict = {
-        "collection_name_ar": collection_name_ar(cfg), "collection_name_en": collection_name_en(cfg), "volume_number": str(cfg["volume_number"]),
-        "volume_id": cfg["volume_id"], "volume_ordinal_ar": cfg["volume_ordinal_ar"], "year_hijri": str(cfg["year_hijri"]),
+        **_identity_front(cfg), "volume_id": cfg["volume_id"], **({"volume_ordinal_ar": cfg["volume_ordinal_ar"]} if cfg.get("volume_ordinal_ar") else {}),
+        "year_hijri": str(cfg["year_hijri"]),
         "publisher_ar": cfg["publisher_ar"],
     }
     cat = {k: v for k, v in (cfg.get("cataloging") or {}).items() if k in ("deposit_number", "isbn", "extent_ar")}
@@ -298,7 +382,8 @@ def collection_registry(volumes: list[dict]) -> str:
     body = ["# مستودع مبادئ المحكمة الإدارية العليا", ""]
     for v in volumes:
         # the year tells apart volumes of the same ordinal (e.g. «المجلد السادس» of 1443 and of 1444)
-        label = f"{v['collection_name_ar']} لعام {v['year_hijri']}هـ — {v['volume_ordinal_ar']}"
+        years = re.findall(r"[0-9]{4}", v["year_hijri"])
+        label = f"{v['collection_name_ar']} {'للأعوام' if len(years) > 1 else 'لعام'} {v['year_hijri']}هـ" + (f" — {v['volume_ordinal_ar']}" if v.get("volume_ordinal_ar") else "")
         body.append(f"- {md_link(label, v['folder'] + '/index.md')} — {v['principle_count']} مبدأ")
     body.append("")
     front = {"volumes": [{"volume_id": v["volume_id"], "folder": v["folder"], "principle_count": v["principle_count"]} for v in volumes]}

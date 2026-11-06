@@ -1,0 +1,79 @@
+# Volume configuration: identity, source files, reader calibration, and decisions.
+# Read by scripts/pipeline.py; nothing volume-specific is hard-coded in the scripts.
+volume_id: "Admin-principles-1439-1441"
+collection_name_ar: "مجموعة المبادئ التي قررتها المحكمة الإدارية العليا"
+collection_name_en: "Principles Decided by the Supreme Administrative Court"
+collection_name_en_basis: "descriptive"
+# The supplied file prints no volume ordinal (its first pages are the «الفهارس» divider and the half-title);
+# volume_ordinal_ar and volume_number are therefore not set, and the volume_id carries the years only.
+year_hijri: "1439-1440-1441"
+publisher_ar: "ديوان المظالم"
+publisher_en: "Board of Grievances"
+publisher_en_basis: "descriptive"
+folder_name: "Admin-principles-1439-1441"
+identity_basis: "half_title"
+name_source_location: "page[2] (half-title image, read by the reviewer on 06/11/2026; the page has no text layer)"
+
+# Half-title text lines, read by the reviewer from the page image on 06/11/2026.
+cover_lines_ar:
+  - "مجموعة المبادئ"
+  - "التي قررتها المحكمة الإدارية العليا"
+  - "للأعوام 1439-1440-1441هـ"
+
+page_classes:
+  "1": "divider"
+  "2": "half_title"
+
+source_files:
+  - original_name: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1439-1440-1441.pdf"
+    path: "مجموعة مبادئ وقرارات المحكمة الادارية العليا/مجموعة أعوام 1439-1440-1441/Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1439-1440-1441.pdf"
+    sha256: "f99644ee4cbed76ce381dabdc07bfe0f1b4759a7748bb9d22673827b9cc86082"
+    kind: "index"
+    rank: 1
+
+reader:
+  space_gap_ratio: 0.3
+  baseline_tolerance_ratio: 0.25
+  digit_run_joiners: []
+  hamza_x_tolerance: 0.6
+  head_tail_tolerance: 0.8
+  reference_fonts: true
+
+# The AXtManal family of the other volumes, in subsets of their own glyph numbering: each glyph takes its text and
+# repairs from the identical outline in another verified source (pdf_source.discover_references).
+fonts:
+  - {name: "AXtManal", role: "body", text_layer: "defective"}
+  - {name: "AXtManalBold", role: "heading", text_layer: "defective"}
+  - {name: "MinionPro-Regular", role: "digits", text_layer: "reliable"}
+  - name: "GESSTextUltraLight-UltraLight"
+    role: "other"
+    text_layer: "defective"
+    note: "page numbers of the running footer; no ToUnicode entries; each digit read from a 500 dpi render of the glyph alone (06/11/2026)"
+    glyph_repairs:
+      1: {text: "2", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٢"}
+      2: {text: "9", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٩"}
+      3: {text: "8", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٨"}
+      4: {text: "7", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٧"}
+      5: {text: "6", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٦"}
+      6: {text: "3", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٣"}
+      7: {text: "5", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٥"}
+      8: {text: "4", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٤"}
+      9: {text: "0", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ٠"}
+      10: {text: "1", role: "digit", basis: "glyph rendered alone on the index pages: Arabic-Indic ١"}
+
+# Titles of the volume's other indexes, printed as banner images (read by the reviewer on 06/11/2026).
+table_index_titles:
+  rulings: "فهرس الأحكام"
+  instruments: "فهرس مستند الحكم"
+
+ruling_reference_components: null  # meaning of (prefix letter / number / year) not asserted
+
+body_sections: {}  # established on the first principle file (Appendix B); none supplied yet
+
+source_anomalies: []
+
+decisions:
+  "65ed4cadfac7":
+    resolution: "keep"
+    decided_on: "06/11/2026"
+    note: "page[78]:r5:c0:L2: crop compared by the reviewer; the published text-layer reading matches the page; OCR misread «المرافعات»"

@@ -1,0 +1,12 @@
+volume_id: "Admin-principles-1439-1441"
+items:
+- item_id: "65ed4cadfac7"
+  issue_type: "other"
+  location: "config:decisions"
+  affected_ids: []
+  observed: "65ed4cadfac7"
+  note: "decision whose item no longer occurs"
+  options: []
+  status: "decided"
+  resolution: "keep"
+  decided_on: "06/11/2026"

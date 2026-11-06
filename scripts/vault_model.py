@@ -22,45 +22,88 @@ LETTER_SLUGS = {
     "ص": "s2", "ض": "d2", "ط": "t2", "ظ": "z2", "ع": "ain", "غ": "gh", "ف": "f", "ق": "q", "ك": "k", "ل": "l", "م": "m", "ن": "n",
     "هـ": "h2", "و": "w", "ي": "y",
 }
-RE_VOLUME_ID = re.compile(r"^[A-Z][a-z]*(-[a-z]+)*-principles-[0-9]{4}-v[0-9]+$")
-RE_PRINCIPLE_ID = re.compile(r"^[A-Z][a-z]*(-[a-z]+)*-principles-[0-9]{4}-v[0-9]+:p[0-9]{3,}(-dup[0-9]+)?$")
-RE_RULING_REF_ID = re.compile(r"^[A-Z][a-z]*(-[a-z]+)*-principles-[0-9]{4}-v[0-9]+:r-[a-z0-9]+-[0-9]+(-[0-9]+)?-[0-9]{3,4}$")
-RE_LETTER_ID = re.compile(r"^[A-Z][a-z]*(-[a-z]+)*-principles-[0-9]{4}-v[0-9]+:L-[a-z0-9]+$")
-RE_TOPIC_ID = re.compile(r"^[A-Z][a-z]*(-[a-z]+)*-principles-[0-9]{4}-v[0-9]+:L-[a-z0-9]+-[0-9]{2}$")
-RE_SUBTOPIC_ID = re.compile(r"^[A-Z][a-z]*(-[a-z]+)*-principles-[0-9]{4}-v[0-9]+:L-[a-z0-9]+-[0-9]{2}-[0-9]{2}$")
-RE_KEY = re.compile(r"^([0-9]+)(-dup([0-9]+))?$")
+# volume_id: <Collection>-principles-<year or first year-last year>[-v<volume ordinal>]; the ordinal is omitted when the
+# supplied source prints none (e.g. a collection of several years issued without a volume number)
+_VOL = r"[A-Z][a-z]*(-[a-z]+)*-principles-[0-9]{4}(-[0-9]{4})?(-v[0-9]+)?"
+RE_VOLUME_ID = re.compile(rf"^{_VOL}$")
+RE_PRINCIPLE_ID = re.compile(rf"^{_VOL}:[pd][0-9]{{3,}}(-dup[0-9]+)?$")
+RE_RULING_REF_ID = re.compile(rf"^{_VOL}:r-[a-z0-9]+-[0-9]+(-[0-9]+)?-[0-9]{{3,4}}$")
+RE_LETTER_ID = re.compile(rf"^{_VOL}:L-[a-z0-9]+$")
+RE_TOPIC_ID = re.compile(rf"^{_VOL}:L-[a-z0-9]+-[0-9]{{2}}$")
+RE_SUBTOPIC_ID = re.compile(rf"^{_VOL}:L-[a-z0-9]+-[0-9]{{2}}-[0-9]{{2}}$")
+# a key: the printed number ("364"), or a labelled number of another kind of entry listed in the index
+# ("d1" for «قرار (1)», a decision of the General Assembly), with "-dupN" after a decided split
+RE_KEY = re.compile(r"^(?P<kind>[a-z]?)(?P<n>[0-9]+)(?P<dup>-dup(?P<k>[0-9]+))?$")
+# number cells may print a labelled number «<word> (N)»: the word's code makes the key (Arabic vocabulary of the source)
+NUMBER_KINDS = {"قرار": "d"}
+KIND_WORDS = {code: word for word, code in NUMBER_KINDS.items()}
+KIND_EN = {"": "Principle", "d": "Decision"}
+RE_LABELLED_NUMBER = re.compile(r"^(?P<word>[ء-ي]+)\s*\(\s*(?P<n>[0-9]+)\s*\)$")
+
+
+def number_key(token: str) -> str | None:
+    """The key of a printed number cell token, or None when it is neither a number nor a known labelled number."""
+    t = token.strip()
+    if re.fullmatch(r"[0-9]+", t):
+        return t
+    m = RE_LABELLED_NUMBER.match(t)
+    if m and m.group("word") in NUMBER_KINDS:
+        return f"{NUMBER_KINDS[m.group('word')]}{int(m.group('n'))}"
+    return None
+
+
+def key_kind(key: str) -> str:
+    m = RE_KEY.match(key)
+    return m.group("kind") if m else ""
+
+
+def base_key(key: str) -> str:
+    """The key without a -dupN suffix."""
+    return key.split("-dup")[0]
 
 
 def letter_slug(letter: str) -> str | None:
-    """Slug of the fixed table, or None for a letter outside it (the caller flags it)."""
-    return LETTER_SLUGS.get(letter)
+    """Slug of the fixed table, or None for a letter outside it (the caller flags it). «ه» printed without the
+    tatweel is the same letter as «هـ»."""
+    return LETTER_SLUGS.get(letter) or (LETTER_SLUGS["هـ"] if letter == "ه" else None)
 
 
 def key_number(key: str) -> int:
     m = RE_KEY.match(key)
     if not m:
         raise ValueError(f"not a principle key: {key!r}")
-    return int(m.group(1))
+    return int(m.group("n"))
 
 
 def key_suffix(key: str) -> str:
     m = RE_KEY.match(key)
-    return (m.group(2) or "") if m else ""
+    return (m.group("dup") or "") if m else ""
 
 
-def key_sort(key: str) -> tuple[int, int]:
+def key_sort(key: str) -> tuple[int, int, int]:
+    """Principles first, then other kinds, each by number, then split copies."""
     m = RE_KEY.match(key)
     if not m:
         raise ValueError(f"not a principle key: {key!r}")
-    return (int(m.group(1)), int(m.group(3) or 0))
+    return (0 if not m.group("kind") else 1 + sorted(KIND_EN).index(m.group("kind")), int(m.group("n")), int(m.group("k") or 0))
+
+
+def _code(key: str) -> str:
+    return key_kind(key) or "p"
 
 
 def principle_id(volume_id: str, key: str) -> str:
-    return f"{volume_id}:p{key_number(key):03d}{key_suffix(key)}"
+    return f"{volume_id}:{_code(key)}{key_number(key):03d}{key_suffix(key)}"
 
 
 def principle_filename(key: str) -> str:
-    return f"p{key_number(key):03d}{key_suffix(key)}.md"
+    return f"{_code(key)}{key_number(key):03d}{key_suffix(key)}.md"
+
+
+def printed_number(key: str) -> str:
+    """The number as the index prints it (Western digits): "364", or «قرار (1)» for a decision."""
+    kind = key_kind(key)
+    return f"{KIND_WORDS[kind]} ({key_number(key)})" if kind else str(key_number(key))
 
 
 def skeleton(text: str) -> str:
@@ -79,7 +122,7 @@ def fallback_title(paragraphs: list[str]) -> str:
     truncated at its first «؛» or «.» (section 9 FIELD RULES, title_basis none)."""
     if not paragraphs:
         return ""
-    return re.split(r"[؛.]", paragraphs[0], maxsplit=1)[0].strip()
+    return re.split(r"[؛.]", re.sub(r"^\s*•\s*", "", paragraphs[0]), maxsplit=1)[0].strip()
 
 
 @dataclass
@@ -178,8 +221,15 @@ class Principle:
         return "\n".join(para for f in self.facets for para in f.wording_paragraphs)
 
 
+def letter_slug_of_prefix(prefix: str) -> str | None:
+    """Slug of a ruling-reference prefix: one letter («ب» → b) or several joined by «/» («د/س» → ds)."""
+    parts = [p for p in re.split(r"\s*/\s*", prefix.strip()) if p]
+    slugs = [letter_slug(p) for p in parts]
+    return "".join(slugs) if parts and all(slugs) else None
+
+
 def ruling_ref_id(volume_id: str, ref: RulingRef) -> str | None:
-    slug = letter_slug(ref.prefix_ar)
+    slug = letter_slug_of_prefix(ref.prefix_ar)
     if slug is None:
         return None
     return f"{volume_id}:r-{slug}-{ref.number}-{ref.year_hijri}"
@@ -207,6 +257,29 @@ def components_not_printed(parse: IndexParse) -> list[str]:
     return [name for name, has in present.items() if not has]
 
 
+def _pair_by_evidence(numbers: list[str], items: list, evidence: dict[str, set], wrap: bool = False) -> list[int]:
+    """For an entry listing several numbers and as many items (ruling references or page labels), the index of the
+    item each number takes. Positional by default; when the numbers' other listings name exactly one matching item
+    each, and those items are distinct, that evidence decides (a printed order of references may differ from the
+    order of the numbers)."""
+    positional = list(range(len(numbers)))
+    if len(numbers) < 2 or len(items) != len(numbers):
+        return positional
+    keys = [(it,) if wrap else it for it in items]
+    choice = []
+    for n in numbers:
+        hits = [i for i, k in enumerate(keys) if k in evidence.get(n, set())]
+        if len(hits) != 1:
+            return positional
+        choice.append(hits[0])
+    return choice if len(set(choice)) == len(choice) else positional
+
+
+def _evidence_agrees(numbers: list[str], block, evidence: dict[str, set]) -> bool:
+    return len(block.references) == len(numbers) and all(
+        (block.references[i].number, block.references[i].year_hijri) in evidence.get(n, set()) for i, n in enumerate(numbers))
+
+
 def build_principles(parse: IndexParse, volume_id: str) -> tuple[dict[str, Principle], list[dict]]:
     """Group the index blocks into principles (one per number) with facets.
 
@@ -214,15 +287,29 @@ def build_principles(parse: IndexParse, volume_id: str) -> tuple[dict[str, Princ
     principles: dict[str, Principle] = {}
     review: list[dict] = []
     label_of: dict[str, set[str]] = {}
+    # evidence for multi-number entries (project rule 1, best accurate result automatically): the ruling and the page
+    # label each number carries where the index lists it alone
+    ruling_evidence: dict[str, set[tuple[str, str]]] = {}
+    label_evidence: dict[str, set[str]] = {}
+    for block in parse.blocks:
+        nums = [k for k in (number_key(n) for n in block.numbers) if k]
+        if len(nums) == 1:
+            ruling_evidence.setdefault(nums[0], set()).update((r.number, r.year_hijri) for r in block.references)
+            label_evidence.setdefault(nums[0], set()).update(block.labels[:1])
     for bi, block in enumerate(parse.blocks):
-        numbers = [n for n in block.numbers if re.fullmatch(r"[0-9]+", n)]
+        numbers = [k for k in (number_key(n) for n in block.numbers) if k]
         for n in block.numbers:
-            if not re.fullmatch(r"[0-9]+", n):
+            if number_key(n) is None:
                 review.append({"issue_type": "number", "location": block.loc, "observed": n, "note": "non-numeric principle number"})
+        ref_order = _pair_by_evidence(numbers, [(r.number, r.year_hijri) for r in block.references], ruling_evidence)
+        label_order = _pair_by_evidence(numbers, list(block.labels), {n: {(l,) for l in v} for n, v in label_evidence.items()}, wrap=True)
         for pos, number in enumerate(numbers):
-            label = block.labels[pos] if len(block.labels) == len(numbers) else None
-            refs = [block.references[pos]] if len(block.references) == len(numbers) and len(numbers) > 1 else list(block.references)
-            pairing = "positional" if len(numbers) > 1 else None
+            label = block.labels[label_order[pos]] if len(block.labels) == len(numbers) else None
+            refs = [block.references[ref_order[pos]]] if len(block.references) == len(numbers) and len(numbers) > 1 else list(block.references)
+            pairing = None
+            if len(numbers) > 1:
+                by_evidence = ref_order != list(range(len(numbers))) or label_order != list(range(len(numbers)))
+                pairing = "confirmed_by_other_facets" if by_evidence or _evidence_agrees(numbers, block, ruling_evidence) else "positional"
             label_of.setdefault(number, set())
             if label:
                 label_of[number].add(label)
@@ -244,13 +331,13 @@ def build_principles(parse: IndexParse, volume_id: str) -> tuple[dict[str, Princ
             p.facets.append(facet)
         if len(numbers) > 1 and len(block.references) not in (len(numbers), 0):
             review.append({"issue_type": "reference", "location": block.loc, "observed": " ".join(r.ref_ar for r in block.references),
-                           "note": "reference count differs from the number count; references recorded unpaired",
+                           "note": "reference count differs from the number count; references recorded unpaired", "notice": True,
                            "affected_ids": [principle_id(volume_id, n) for n in numbers]})
     for number, labels in label_of.items():
         p = principles[number]
         if len(labels) > 1:
             item = {"issue_type": "number", "location": ", ".join(f.number_locations[0] for f in p.facets if f.number_locations),
-                    "observed": f"number {number} printed with page labels {sorted(labels)}", "note": "page label differs between facets",
+                    "observed": f"number {number} printed with page labels {sorted(labels)}", "note": "page label differs between facets", "notice": True,
                     "affected_ids": [principle_id(volume_id, number)]}
             review.append(item)
             p.open_issues.append(item)
@@ -259,7 +346,7 @@ def build_principles(parse: IndexParse, volume_id: str) -> tuple[dict[str, Princ
         if len(keys) > 1:
             item = {"issue_type": "identity", "location": ", ".join(f.reference_locations[0] for f in p.facets if f.reference_locations),
                     "observed": f"number {number} cited with rulings {sorted(keys)}",
-                    "note": "facets of one number disagree on the ruling number or year (decision split publishes them as pNNN and pNNN-dupN)",
+                    "note": "facets of one number disagree on the ruling number or year (decision split publishes them as pNNN and pNNN-dupN)", "notice": True,
                     "affected_ids": [principle_id(volume_id, number)], "options": ["keep (one principle)", "split (one principle per ruling)"]}
             review.append(item)
             p.open_issues.append(item)
@@ -270,13 +357,13 @@ def build_principles(parse: IndexParse, volume_id: str) -> tuple[dict[str, Princ
         if gaps:
             loc = p.facets[0].heading_locations[0] if p.facets and p.facets[0].heading_locations else parse.blocks[p.facets[0].block_index].loc
             item = {"issue_type": "other", "location": loc, "observed": ", ".join(gaps),
-                    "note": f"entry without a {' or '.join(gaps)}, although other entries of this index print one",
+                    "note": f"entry without a {' or '.join(gaps)}, although other entries of this index print one", "notice": True,
                     "affected_ids": [principle_id(volume_id, number)]}
             review.append(item)
             p.open_issues.append(item)
         for f in p.facets:
             for r in f.references:
-                if letter_slug(r.prefix_ar) is None:
+                if letter_slug_of_prefix(r.prefix_ar) is None:
                     item = {"issue_type": "reference", "location": r.loc, "observed": r.ref_ar,
                             "note": "ruling-reference prefix outside the fixed transliteration table; no ref_id minted",
                             "affected_ids": [principle_id(volume_id, number)]}

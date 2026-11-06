@@ -1,0 +1,2917 @@
+volume_id: "Admin-principles-1442"
+run_counter: 7
+principles:
+  Admin-principles-1442:p150:
+    first_run: 1
+    wording_sha256: "43fddeea4e1daa813914edf6705efcdf0bf8a6b37a09891030e8963104e21529"
+    facets: 7
+    held: false
+    page_labels:
+    - "807"
+    relations:
+    - "see_also:حرف أ/ أتعاب محاماة - المختص بالفصل في منازعاتها"
+    - "shared_index_entry:Admin-principles-1442:p240"
+    - "sibling_under_title:Admin-principles-1442:p240"
+  Admin-principles-1442:p240:
+    first_run: 1
+    wording_sha256: "9a59410adbb71def39e12cb38dcaa1fecfeb72a4c3ec6346d6d0a084e2861088"
+    facets: 8
+    held: false
+    page_labels:
+    - "1264"
+    relations:
+    - "see_also:حرف أ/ أتعاب محاماة - المختص بالفصل في منازعاتها"
+    - "shared_index_entry:Admin-principles-1442:p150"
+    - "sibling_under_title:Admin-principles-1442:p009"
+    - "sibling_under_title:Admin-principles-1442:p150"
+  Admin-principles-1442:p089:
+    first_run: 1
+    wording_sha256: "d2b0ac630682c23f875faeb8b7b5c487f3dc6f15b2c858776a58d465e12bf403"
+    facets: 2
+    held: false
+    page_labels:
+    - "489"
+    relations: []
+  Admin-principles-1442:p035:
+    first_run: 1
+    wording_sha256: "87462694a025c0c90d1dc512417073b9914c671cf605d35d0117aa569ae36f27"
+    facets: 4
+    held: false
+    page_labels:
+    - "212"
+    relations: []
+  Admin-principles-1442:p052:
+    first_run: 1
+    wording_sha256: "490656cece17a3d97b127974fbbf941f70dec37e4c1fb3aaa80b0995e6df3895"
+    facets: 4
+    held: false
+    page_labels:
+    - "300"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p231"
+    - "shared_index_entry:Admin-principles-1442:p238"
+    - "sibling_under_title:Admin-principles-1442:p113"
+  Admin-principles-1442:p231:
+    first_run: 1
+    wording_sha256: "aac61b3519d3227ee2418832eeb65328c80f3b3f2223574a5c1bc8dc4438eb4c"
+    facets: 4
+    held: false
+    page_labels:
+    - "1222"
+    relations:
+    - "see_also:حرف خ/ خدمة عسكرية - قرارات وظيفية - قرارات ديوان المحاكمات العسكرية - خروجها عن اختصاص المحاكم الإدارية"
+    - "shared_index_entry:Admin-principles-1442:p052"
+    - "sibling_under_title:Admin-principles-1442:p113"
+  Admin-principles-1442:p113:
+    first_run: 1
+    wording_sha256: "6620296a08f27c159d73c980f7037f99b60a49d217361f8ebad10f6d70a253c2"
+    facets: 6
+    held: false
+    page_labels:
+    - "608"
+    relations:
+    - "see_also:حرف م/ منازعات مرورية - الدعاوى الناشئة عن المخالفات المرورية وحوادث السير - المختص بنظرها"
+    - "shared_index_entry:Admin-principles-1442:p005"
+    - "shared_index_entry:Admin-principles-1442:p024"
+    - "sibling_under_title:Admin-principles-1442:p052"
+    - "sibling_under_title:Admin-principles-1442:p178"
+    - "sibling_under_title:Admin-principles-1442:p231"
+  Admin-principles-1442:p178:
+    first_run: 1
+    wording_sha256: "e0a7ed68f856bbae83bf8c60c27cfdeb17b10139998ca840c4e5e2ed1356f4be"
+    facets: 4
+    held: false
+    page_labels:
+    - "956"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p005"
+    - "sibling_under_title:Admin-principles-1442:p074"
+    - "sibling_under_title:Admin-principles-1442:p113"
+    - "sibling_under_title:Admin-principles-1442:p149"
+  Admin-principles-1442:p005:
+    first_run: 1
+    wording_sha256: "4584bd54bb0a86b010796ae16fe767fccf494a60d075ef2016c089c99ae070af"
+    facets: 12
+    held: false
+    page_labels:
+    - "33"
+    relations:
+    - "see_also:حرف م/ منازعات مرورية - الدعاوى الناشئة عن المخالفات المرورية وحوادث السير - المختص بنظرها"
+    - "shared_index_entry:Admin-principles-1442:p009"
+    - "shared_index_entry:Admin-principles-1442:p024"
+    - "shared_index_entry:Admin-principles-1442:p032"
+    - "shared_index_entry:Admin-principles-1442:p074"
+    - "shared_index_entry:Admin-principles-1442:p113"
+    - "sibling_under_title:Admin-principles-1442:p002"
+    - "sibling_under_title:Admin-principles-1442:p007"
+    - "sibling_under_title:Admin-principles-1442:p012"
+    - "sibling_under_title:Admin-principles-1442:p024"
+    - "sibling_under_title:Admin-principles-1442:p057"
+    - "sibling_under_title:Admin-principles-1442:p178"
+  Admin-principles-1442:p032:
+    first_run: 1
+    wording_sha256: "ce449df427632a3e52347b7f0e55999e543b298aad4de0ecc7886a5bb0dedc63"
+    facets: 6
+    held: false
+    page_labels:
+    - "197"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p005"
+    - "sibling_under_title:Admin-principles-1442:p057"
+    - "sibling_under_title:Admin-principles-1442:p190"
+    - "sibling_under_title:Admin-principles-1442:p220"
+    history:
+    - run: 5
+      previous_wording_sha256: "0907eacd44185523f74234781c1038d1af937bbf3c01415253bfdafec3669581"
+  Admin-principles-1442:p057:
+    first_run: 1
+    wording_sha256: "599fb879dd86fe3104cbce4b4b004efd196f4cdd683745fa5d059c434b54934a"
+    facets: 6
+    held: false
+    page_labels:
+    - "323"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p220"
+    - "sibling_under_title:Admin-principles-1442:p005"
+    - "sibling_under_title:Admin-principles-1442:p032"
+  Admin-principles-1442:p036:
+    first_run: 1
+    wording_sha256: "052d6925f95ffa9e95862859b6445bb2ec32b0f8cd86398c170c6bed2cb75942"
+    facets: 4
+    held: false
+    page_labels:
+    - "217"
+    relations: []
+  Admin-principles-1442:p024:
+    first_run: 1
+    wording_sha256: "06955ec6765f34589656754082a5a8aadae15d310f6c1be608800176de4d7405"
+    facets: 10
+    held: false
+    page_labels:
+    - "160"
+    relations:
+    - "see_also:حرف م/ منازعات مرورية - الدعاوى الناشئة عن المخالفات المرورية وحوادث السير - المختص بنظرها"
+    - "shared_index_entry:Admin-principles-1442:p005"
+    - "shared_index_entry:Admin-principles-1442:p008"
+    - "shared_index_entry:Admin-principles-1442:p113"
+    - "sibling_under_title:Admin-principles-1442:p005"
+    - "sibling_under_title:Admin-principles-1442:p008"
+    - "sibling_under_title:Admin-principles-1442:p165"
+  Admin-principles-1442:p016:
+    first_run: 1
+    wording_sha256: "b0fbd3ff37d255e00ef5527ed60f79a7529f25a4193e178604826a7c35b9c3d1"
+    facets: 6
+    held: false
+    page_labels:
+    - "106"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p128"
+  Admin-principles-1442:p220:
+    first_run: 1
+    wording_sha256: "e904b0b3acb832cd004d1f0f39d4e44dbff36408b41f349bfb90021cc922c1f9"
+    facets: 8
+    held: false
+    page_labels:
+    - "1171"
+    relations:
+    - "see_also:حرف أ/ أوقاف - الدعاوى المتعلقة بالأوقاف التي تقوم بنظارتها الهيئة العامة للأوقاف - خروجها عن اختصاص المحاكم الإدارية"
+    - "see_also:حرف أ/ أوقاف - نوع شخصية الأوقاف الاعتبارية"
+    - "shared_index_entry:Admin-principles-1442:p057"
+    - "sibling_under_title:Admin-principles-1442:p032"
+  Admin-principles-1442:p238:
+    first_run: 1
+    wording_sha256: "bf42da9449174c6f7a97e8b42bc3e514dd791e94fe29c8b2e0c871d25fcb93ea"
+    facets: 5
+    held: false
+    page_labels:
+    - "1255"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p052"
+  Admin-principles-1442:p009:
+    first_run: 1
+    wording_sha256: "8e749be1aab86a638d87c87e75ea665439991f7e98100dd7f68805e17e6c1288"
+    facets: 6
+    held: false
+    page_labels:
+    - "61"
+    relations:
+    - "see_also:حرف ع/ عقد - الدعاوى المتعلقة بالعقود الإدارية - نطاق اختصاص المحاكم الإدارية بالفصل فيها) (د/854/1440هـ"
+    - "shared_index_entry:Admin-principles-1442:p005"
+    - "sibling_under_title:Admin-principles-1442:p240"
+  Admin-principles-1442:p007:
+    first_run: 1
+    wording_sha256: "e686316c2adce1b35b2be943532a78f5b952754e4a42cc9e8937bc5a2653f048"
+    facets: 6
+    held: false
+    page_labels:
+    - "50"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p002"
+    - "shared_index_entry:Admin-principles-1442:p012"
+    - "sibling_under_title:Admin-principles-1442:p005"
+    - "sibling_under_title:Admin-principles-1442:p074"
+  Admin-principles-1442:p092:
+    first_run: 1
+    wording_sha256: "ef14364a741ab8adaa9f2bb389a716a98da1d8fb93dcec6b04c291822e4e5fce"
+    facets: 2
+    held: false
+    page_labels:
+    - "503"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p114"
+    - "shared_index_entry:Admin-principles-1442:p144"
+  Admin-principles-1442:p114:
+    first_run: 1
+    wording_sha256: "2d871ae2431c7c792397a198023bd965d8f31f52963ebb9b5c88579d12d77d6f"
+    facets: 3
+    held: false
+    page_labels:
+    - "614"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p092"
+    - "shared_index_entry:Admin-principles-1442:p144"
+  Admin-principles-1442:p144:
+    first_run: 1
+    wording_sha256: "9f74351816381723e59567cd9eca11d1368427fbfe35dc611cf866f5f8de9240"
+    facets: 4
+    held: false
+    page_labels:
+    - "778"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p092"
+    - "shared_index_entry:Admin-principles-1442:p114"
+  Admin-principles-1442:p020:
+    first_run: 1
+    wording_sha256: "3823956d107d87d17200ce654f44d51a81000c9decbae2c9c1f440e550007610"
+    facets: 3
+    held: false
+    page_labels:
+    - "134"
+    relations: []
+  Admin-principles-1442:p118:
+    first_run: 1
+    wording_sha256: "3c068f0df697df9a1d95b5f5df15c8040886f0825498d4eccc8a8cc119e87e92"
+    facets: 2
+    held: false
+    page_labels:
+    - "635"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p107"
+    - "shared_index_entry:Admin-principles-1442:p108"
+    - "shared_index_entry:Admin-principles-1442:p109"
+    - "shared_index_entry:Admin-principles-1442:p112"
+    - "shared_index_entry:Admin-principles-1442:p115"
+    - "shared_index_entry:Admin-principles-1442:p121"
+    - "shared_index_entry:Admin-principles-1442:p133"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "shared_index_entry:Admin-principles-1442:p148"
+    - "shared_index_entry:Admin-principles-1442:p156"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p165"
+    - "shared_index_entry:Admin-principles-1442:p172"
+    - "shared_index_entry:Admin-principles-1442:p226"
+    - "sibling_under_title:Admin-principles-1442:p183"
+  Admin-principles-1442:p190:
+    first_run: 1
+    wording_sha256: "d91954cef992271fe99a80b76c40fe7212589e02a598db8507ef28d79d9eeda1"
+    facets: 10
+    held: false
+    page_labels:
+    - "1019"
+    relations:
+    - "see_also:حرف ش/ شركات - إدارة شركة لمرفق عام - انتفاء وصف الجهة الإدارية) (و/3147، 2554/1441"
+    - "sibling_under_title:Admin-principles-1442:p029"
+    - "sibling_under_title:Admin-principles-1442:p032"
+    - "sibling_under_title:Admin-principles-1442:p055"
+    - "sibling_under_title:Admin-principles-1442:p106"
+    - "sibling_under_title:Admin-principles-1442:p125"
+    - "sibling_under_title:Admin-principles-1442:p157"
+  Admin-principles-1442:p128:
+    first_run: 1
+    wording_sha256: "8b1d21dad243ab483d3d80887c1cec08ea63b080ba32d6710640af65b48f4047"
+    facets: 1
+    held: false
+    page_labels:
+    - "686"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p016"
+  Admin-principles-1442:p050:
+    first_run: 1
+    wording_sha256: "f1f39c9c517f738e5cd0de9759c36ce897648ac3a1d22c24b5aac0796af39346"
+    facets: 4
+    held: false
+    page_labels:
+    - "284"
+    relations: []
+  Admin-principles-1442:p182:
+    first_run: 1
+    wording_sha256: "8653cec1d4b0a22a1445374be71558a888a7135c3a403e2e7d718a89efb93d4a"
+    facets: 2
+    held: false
+    page_labels:
+    - "972"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p227"
+    - "shared_index_entry:Admin-principles-1442:p239"
+    - "sibling_under_title:Admin-principles-1442:p227"
+  Admin-principles-1442:p227:
+    first_run: 1
+    wording_sha256: "d93d074ef43bdf8705efd4daddd74f4a559f64f93b9fb2e84f866da1070cd8ad"
+    facets: 2
+    held: false
+    page_labels:
+    - "1206"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p182"
+    - "shared_index_entry:Admin-principles-1442:p239"
+    - "sibling_under_title:Admin-principles-1442:p182"
+  Admin-principles-1442:p239:
+    first_run: 1
+    wording_sha256: "f510ab000bbd99ed6511e0f2cb680a2c7b7f31cd283c9b070350d7afc1dc3fad"
+    facets: 2
+    held: false
+    page_labels:
+    - "1260"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p182"
+    - "shared_index_entry:Admin-principles-1442:p227"
+  Admin-principles-1442:p060:
+    first_run: 1
+    wording_sha256: "3b172e8eec8df66860e08e873dbaba02d2941f46561d99f00a0345ccc59e27c5"
+    facets: 2
+    held: false
+    page_labels:
+    - "338"
+    - "341"
+    relations: []
+  Admin-principles-1442:p103:
+    first_run: 1
+    wording_sha256: "26a5bc1fe22c9ab4dfe55b8cbaaad3127b40e4b6b663b430a268e9c1a5e8579e"
+    facets: 4
+    held: false
+    page_labels:
+    - "558"
+    relations: []
+  Admin-principles-1442:p184:
+    first_run: 1
+    wording_sha256: "ea1be16fefd29ce7ce144d105ce39c4dfb4780c81db9b92b0309eb2145811932"
+    facets: 2
+    held: false
+    page_labels:
+    - "979"
+    relations: []
+  Admin-principles-1442:p159:
+    first_run: 1
+    wording_sha256: "1dfc9a64fe9958257e1bac680e035bb90ea5288b1918fbb4b331347dde0c54d4"
+    facets: 3
+    held: false
+    page_labels:
+    - "852"
+    relations: []
+  Admin-principles-1442:p078:
+    first_run: 1
+    wording_sha256: "60c1e4a216e669dd441c0276922fb06973d8b5e7be03e7a741f952e98f54e251"
+    facets: 2
+    held: false
+    page_labels:
+    - "422"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p139"
+  Admin-principles-1442:p167:
+    first_run: 1
+    wording_sha256: "bf00f9801474aab23f66d8133d356e2244b3fde216c346a6f32c8ec68b31c552"
+    facets: 2
+    held: false
+    page_labels:
+    - "895"
+    relations: []
+  Admin-principles-1442:p073:
+    first_run: 1
+    wording_sha256: "67af7e2194913f0c9e2511aed8b9bc1c2e976dc2d94ddc11994a09d08134f91b"
+    facets: 6
+    held: false
+    page_labels:
+    - "399"
+    relations: []
+  Admin-principles-1442:p234:
+    first_run: 1
+    wording_sha256: "e84bfa879c1441161d9ae0162f9f7db86be533041abc5d982ea18666360b6323"
+    facets: 1
+    held: false
+    page_labels:
+    - "1238"
+    relations: []
+  Admin-principles-1442:p222:
+    first_run: 1
+    wording_sha256: "01a53908a01b6624e40f9f7b72e50703400a5897a96d065143b539dc38365767"
+    facets: 1
+    held: false
+    page_labels:
+    - "1185"
+    relations: []
+  Admin-principles-1442:p058:
+    first_run: 1
+    wording_sha256: "7487f2ff58253e616adc8b9b7829259441951fca0de29e732c9f53a15e852e33"
+    facets: 5
+    held: false
+    page_labels:
+    - "328"
+    relations: []
+  Admin-principles-1442:p158:
+    first_run: 1
+    wording_sha256: "9b0a53466ea87c9dfaded8c12c2193c1064d797ff8ea0f8a46f27e8c361d0385"
+    facets: 9
+    held: false
+    page_labels:
+    - "844"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p122"
+    - "sibling_under_title:Admin-principles-1442:p157"
+    - "sibling_under_title:Admin-principles-1442:p181"
+    - "sibling_under_title:Admin-principles-1442:p212"
+  Admin-principles-1442:p082:
+    first_run: 1
+    wording_sha256: "f0f26726fc945957ff4f1354dd96d3354ba4cdbc32d34d8b08374df2df98fd39"
+    facets: 7
+    held: false
+    page_labels:
+    - "444"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p004"
+    - "sibling_under_title:Admin-principles-1442:p015"
+    - "sibling_under_title:Admin-principles-1442:p022"
+    - "sibling_under_title:Admin-principles-1442:p041"
+    - "sibling_under_title:Admin-principles-1442:p053"
+    - "sibling_under_title:Admin-principles-1442:p069"
+    - "sibling_under_title:Admin-principles-1442:p072"
+    - "sibling_under_title:Admin-principles-1442:p083"
+    - "sibling_under_title:Admin-principles-1442:p123"
+    - "sibling_under_title:Admin-principles-1442:p135"
+    - "sibling_under_title:Admin-principles-1442:p191"
+    - "sibling_under_title:Admin-principles-1442:p225"
+  Admin-principles-1442:p161:
+    first_run: 1
+    wording_sha256: "b7cd65b95e97bc84a46d38a4cccfb2446aed609778eb36dd8b5b4f5da436c23a"
+    facets: 2
+    held: false
+    page_labels:
+    - "861"
+    relations: []
+  Admin-principles-1442:p195:
+    first_run: 1
+    wording_sha256: "873e383795291f6400ab4566c8de83b94b9e3274b93777d7c4503df585b96cfa"
+    facets: 1
+    held: false
+    page_labels:
+    - "1047"
+    relations: []
+  Admin-principles-1442:p094:
+    first_run: 1
+    wording_sha256: "e0563377d2678f0a7b3ae06e47da4615768bda8c5d9f1fe5b68ea2d7b0d2392f"
+    facets: 2
+    held: false
+    page_labels:
+    - "511"
+    relations: []
+  Admin-principles-1442:p136:
+    first_run: 1
+    wording_sha256: "974a7827327b3d5fbc9753d0a67901b0f7419226f26d08fff60036c2ac38eb76"
+    facets: 8
+    held: false
+    page_labels:
+    - "735"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p017"
+    - "sibling_under_title:Admin-principles-1442:p021"
+    - "sibling_under_title:Admin-principles-1442:p031"
+    - "sibling_under_title:Admin-principles-1442:p185"
+  Admin-principles-1442:p017:
+    first_run: 1
+    wording_sha256: "edbc1e3abc34bc3f2fb27420bc7317b65d5b3b4ff591a235d9d1b1b607a7329a"
+    facets: 3
+    held: false
+    page_labels:
+    - "116"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p021"
+    - "shared_index_entry:Admin-principles-1442:p031"
+    - "sibling_under_title:Admin-principles-1442:p125"
+    - "sibling_under_title:Admin-principles-1442:p136"
+  Admin-principles-1442:p157:
+    first_run: 1
+    wording_sha256: "56e82db31032d589e11d62c37415f53b031389c34fc7e4058fc367850584c7da"
+    facets: 5
+    held: false
+    page_labels:
+    - "838"
+    relations:
+    - "see_also:حرف ت/ تعويض - الصفة في دعوى التعويض - الاعتداء على أرض حكومية - انعقاد الصفة للمؤجر والمستأجر"
+    - "sibling_under_title:Admin-principles-1442:p158"
+    - "sibling_under_title:Admin-principles-1442:p190"
+  Admin-principles-1442:p169:
+    first_run: 1
+    wording_sha256: "c888ab510345b2d8ad34df9515a9f1decc5aad5967cf4749175103ae903b46ca"
+    facets: 7
+    held: false
+    page_labels:
+    - "906"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p211"
+  Admin-principles-1442:p022:
+    first_run: 1
+    wording_sha256: "9d0557a0fbc9934d26ee359b18074b6eca341eb1a99dd1458168d151f0c2216a"
+    facets: 5
+    held: false
+    page_labels:
+    - "148"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p041"
+    - "shared_index_entry:Admin-principles-1442:p191"
+    - "sibling_under_title:Admin-principles-1442:p011"
+    - "sibling_under_title:Admin-principles-1442:p082"
+  Admin-principles-1442:p031:
+    first_run: 1
+    wording_sha256: "e83677dc385d141c8599f6c972990965f3592ceb4bc55aff356c19adc4aa54c2"
+    facets: 6
+    held: false
+    page_labels:
+    - "191"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p017"
+    - "shared_index_entry:Admin-principles-1442:p021"
+    - "sibling_under_title:Admin-principles-1442:p125"
+    - "sibling_under_title:Admin-principles-1442:p136"
+  Admin-principles-1442:p018:
+    first_run: 1
+    wording_sha256: "29f593c39d0292d033eabe132222d536c4711b4a608bfc61f3db377b49d4233d"
+    facets: 5
+    held: false
+    page_labels:
+    - "120"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p014"
+  Admin-principles-1442:p034:
+    first_run: 1
+    wording_sha256: "121a1d70e958f8e040d94682666ceb3cb965c3308b70e0394d62799fe20973ad"
+    facets: 4
+    held: false
+    page_labels:
+    - "207"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p043"
+  Admin-principles-1442:p043:
+    first_run: 1
+    wording_sha256: "a5504fc0c3067014d3dcef35f34299b645c7d6c080dd2c56f0f9962179f3cf12"
+    facets: 7
+    held: false
+    page_labels:
+    - "249"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p012"
+    - "sibling_under_title:Admin-principles-1442:p033"
+    - "sibling_under_title:Admin-principles-1442:p034"
+    - "sibling_under_title:Admin-principles-1442:p130"
+    - "sibling_under_title:Admin-principles-1442:p131"
+    - "sibling_under_title:Admin-principles-1442:p143"
+    - "sibling_under_title:Admin-principles-1442:p185"
+    - "sibling_under_title:Admin-principles-1442:p215"
+    - "sibling_under_title:Admin-principles-1442:p221"
+    - "sibling_under_title:Admin-principles-1442:p230"
+  Admin-principles-1442:p186:
+    first_run: 1
+    wording_sha256: "cfae467d03ffcc3e738367f3e75af306c296d555d2e5557d0cf4084dc5a83f90"
+    facets: 4
+    held: false
+    page_labels:
+    - "993"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p221"
+    - "sibling_under_title:Admin-principles-1442:p028"
+    - "sibling_under_title:Admin-principles-1442:p064"
+    - "sibling_under_title:Admin-principles-1442:p086"
+  Admin-principles-1442:p141:
+    first_run: 1
+    wording_sha256: "bb6214a113e6a23c41cc1d4ca89246232bd375cdd24e646271bb1171178cdb0c"
+    facets: 5
+    held: false
+    page_labels:
+    - "763"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p122"
+    - "shared_index_entry:Admin-principles-1442:p129"
+    - "shared_index_entry:Admin-principles-1442:p153"
+    - "shared_index_entry:Admin-principles-1442:p160"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p181"
+    - "shared_index_entry:Admin-principles-1442:p193"
+    - "shared_index_entry:Admin-principles-1442:p224"
+    - "sibling_under_title:Admin-principles-1442:p048"
+    - "sibling_under_title:Admin-principles-1442:p116"
+    - "sibling_under_title:Admin-principles-1442:p218"
+    - "sibling_under_title:Admin-principles-1442:p230"
+  Admin-principles-1442:p204:
+    first_run: 1
+    wording_sha256: "71638da5043d842cac08990cf1ee6843ba8e6edc6b3aa23545986e4e9f4462ae"
+    facets: 2
+    held: false
+    page_labels:
+    - "1090"
+    relations: []
+  Admin-principles-1442:p021:
+    first_run: 1
+    wording_sha256: "414d1ebbe0b18fef9ac6427f188539065d71d8739ac805981b900dcea586e799"
+    facets: 8
+    held: false
+    page_labels:
+    - "139"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p017"
+    - "shared_index_entry:Admin-principles-1442:p031"
+    - "sibling_under_title:Admin-principles-1442:p008"
+    - "sibling_under_title:Admin-principles-1442:p125"
+    - "sibling_under_title:Admin-principles-1442:p136"
+  Admin-principles-1442:p125:
+    first_run: 1
+    wording_sha256: "88ee434a16308c17770b96166b004fb4ece27370358958d3df1d3bed7793cb2f"
+    facets: 5
+    held: false
+    page_labels:
+    - "667"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p065"
+    - "sibling_under_title:Admin-principles-1442:p017"
+    - "sibling_under_title:Admin-principles-1442:p021"
+    - "sibling_under_title:Admin-principles-1442:p031"
+    - "sibling_under_title:Admin-principles-1442:p190"
+  Admin-principles-1442:p090:
+    first_run: 1
+    wording_sha256: "d832449a5998795dbd3cceac9a78ac9603e4cf8df6f0b0302a08a4b741a54d39"
+    facets: 6
+    held: false
+    page_labels:
+    - "494"
+    relations:
+    - "see_also:راجع: (حرف د/ دعوى - الحكم في الدعوى - الخطأ في تطبيق المسؤولية دون خطأ)."
+  Admin-principles-1442:p185:
+    first_run: 1
+    wording_sha256: "8429f4d742f866123284b314011a959748063cb98c7eb56b949d94c7713a2946"
+    facets: 7
+    held: false
+    page_labels:
+    - "985"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p043"
+    - "sibling_under_title:Admin-principles-1442:p106"
+    - "sibling_under_title:Admin-principles-1442:p136"
+  Admin-principles-1442:p126:
+    first_run: 1
+    wording_sha256: "a88d7b5685dbef6a343a4956b12322307145e86a97aa25dd027b095b2d9838e2"
+    facets: 5
+    held: false
+    page_labels:
+    - "675"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p011"
+  Admin-principles-1442:p006:
+    first_run: 1
+    wording_sha256: "beb43849007312d0ba2ee713ec7242599bdf26520a126410d78210fab29add2c"
+    facets: 2
+    held: false
+    page_labels:
+    - "44"
+    relations: []
+  Admin-principles-1442:p037:
+    first_run: 1
+    wording_sha256: "969f2ae7a7dcf5f50643454d743fa4a5f1d0ab012a9bd1d501f1b25149361c38"
+    facets: 4
+    held: false
+    page_labels:
+    - "222"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p095"
+    - "sibling_under_title:Admin-principles-1442:p216"
+  Admin-principles-1442:p081:
+    first_run: 1
+    wording_sha256: "e8c28674130538955a078c31619f3c786ea3223905aa783f4beceb22f1818aab"
+    facets: 4
+    held: false
+    page_labels:
+    - "439"
+    relations:
+    - "see_also:حرف ت/ تعويض - التعويض عن الوعد بالتعاقد - التعويض عن الإنشاءات الثابتة إثراء للموعود بلا سبب مشروع"
+  Admin-principles-1442:p066:
+    first_run: 1
+    wording_sha256: "3cd69e8959aff27c2b9ca30949f0d6a721deaca3e30fa97a9dc78edee069488b"
+    facets: 5
+    held: false
+    page_labels:
+    - "362"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p068"
+  Admin-principles-1442:p068:
+    first_run: 1
+    wording_sha256: "894985b662c103c8b0149901c658dc9cd86166299c407f08d36a928c17b818bb"
+    facets: 4
+    held: false
+    page_labels:
+    - "373"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p066"
+  Admin-principles-1442:p109:
+    first_run: 1
+    wording_sha256: "4b227cc6c65143e92bac719ad897995f55693a45b376d2e0cb5791828b895a84"
+    facets: 3
+    held: false
+    page_labels:
+    - "590"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p107"
+    - "shared_index_entry:Admin-principles-1442:p108"
+    - "shared_index_entry:Admin-principles-1442:p112"
+    - "shared_index_entry:Admin-principles-1442:p115"
+    - "shared_index_entry:Admin-principles-1442:p118"
+    - "shared_index_entry:Admin-principles-1442:p121"
+    - "shared_index_entry:Admin-principles-1442:p133"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "shared_index_entry:Admin-principles-1442:p148"
+    - "shared_index_entry:Admin-principles-1442:p156"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p165"
+    - "shared_index_entry:Admin-principles-1442:p172"
+    - "shared_index_entry:Admin-principles-1442:p226"
+    - "sibling_under_title:Admin-principles-1442:p183"
+  Admin-principles-1442:p229:
+    first_run: 1
+    wording_sha256: "230b1470c0a0ac590aa7acea5abb1158b3e0affb95d09346b8e05e29dd573d95"
+    facets: 1
+    held: false
+    page_labels:
+    - "1214"
+    relations: []
+  Admin-principles-1442:p067:
+    first_run: 1
+    wording_sha256: "1f595534d679893ba99c17936b2174fdcdacafa6055764cf974adf9d40820ca3"
+    facets: 1
+    held: false
+    page_labels:
+    - "368"
+    relations: []
+  Admin-principles-1442:p173:
+    first_run: 1
+    wording_sha256: "b9f709e379db5504c7b08c4450754b8b4c21439bbf8bad658324fa07c3896b3d"
+    facets: 1
+    held: false
+    page_labels:
+    - "927"
+    relations: []
+  Admin-principles-1442:p030:
+    first_run: 1
+    wording_sha256: "6c8168d2c9a11213ae4079b2fafeb1fc9be45e344912a1206fa9c1bcdec316dd"
+    facets: 4
+    held: false
+    page_labels:
+    - "187"
+    relations: []
+  Admin-principles-1442:p023:
+    first_run: 1
+    wording_sha256: "414a4447f8e0d7687c48d5e320ec14c3eb72fce591a3053c4e9548054b1a71f0"
+    facets: 7
+    held: false
+    page_labels:
+    - "152"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p027"
+  Admin-principles-1442:p164:
+    first_run: 1
+    wording_sha256: "3fdaa325055ec28c62057f798674e63a632dc02d8e0be27dd4bb48d43f2781ee"
+    facets: 7
+    held: false
+    page_labels:
+    - "880"
+    relations:
+    - "see_also:حرف د/ دعوى - الحكم في الدعوى - مخالفة طرق الإثبات"
+    - "shared_index_entry:Admin-principles-1442:p189"
+    - "shared_index_entry:Admin-principles-1442:p205"
+    - "shared_index_entry:Admin-principles-1442:p215"
+    - "sibling_under_title:Admin-principles-1442:p064"
+    - "sibling_under_title:Admin-principles-1442:p189"
+    - "sibling_under_title:Admin-principles-1442:p192"
+    - "sibling_under_title:Admin-principles-1442:p221"
+  Admin-principles-1442:p189:
+    first_run: 1
+    wording_sha256: "1ebaa907c659100c4c07da626f530a79d1be679245e3746c233ff05c6bdca39c"
+    facets: 5
+    held: false
+    page_labels:
+    - "1012"
+    relations:
+    - "see_also:حرف د/ دعوى - الحكم في الدعوى - مخالفة طرق الإثبات"
+    - "shared_index_entry:Admin-principles-1442:p164"
+    - "shared_index_entry:Admin-principles-1442:p205"
+    - "sibling_under_title:Admin-principles-1442:p164"
+    - "sibling_under_title:Admin-principles-1442:p205"
+  Admin-principles-1442:p205:
+    first_run: 1
+    wording_sha256: "af94e63701d360f10d48fa26bf5006608dac980a53e73ae1a8ba04b498c38dd7"
+    facets: 4
+    held: false
+    page_labels:
+    - "1095"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p164"
+    - "shared_index_entry:Admin-principles-1442:p189"
+    - "sibling_under_title:Admin-principles-1442:p189"
+  Admin-principles-1442:p091:
+    first_run: 1
+    wording_sha256: "c74baaccaa537829459cd9a63dbcd2ae6da18149743077dd170153d4565c1517"
+    facets: 2
+    held: false
+    page_labels:
+    - "499"
+    relations: []
+  Admin-principles-1442:p236:
+    first_run: 1
+    wording_sha256: "dd5b76aee9795c4a8a6abe61c5aa5ba84ae116b6e03f2dff7108c1f9a853d812"
+    facets: 3
+    held: false
+    page_labels:
+    - "1246"
+    relations: []
+  Admin-principles-1442:p183:
+    first_run: 1
+    wording_sha256: "1ffd8c14ac5b8a73946355985efd715b1d742e64dcc40f720c6478af433affff"
+    facets: 2
+    held: false
+    page_labels:
+    - "976"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p107"
+    - "sibling_under_title:Admin-principles-1442:p108"
+    - "sibling_under_title:Admin-principles-1442:p109"
+    - "sibling_under_title:Admin-principles-1442:p112"
+    - "sibling_under_title:Admin-principles-1442:p115"
+    - "sibling_under_title:Admin-principles-1442:p118"
+    - "sibling_under_title:Admin-principles-1442:p121"
+    - "sibling_under_title:Admin-principles-1442:p133"
+    - "sibling_under_title:Admin-principles-1442:p138"
+    - "sibling_under_title:Admin-principles-1442:p148"
+    - "sibling_under_title:Admin-principles-1442:p156"
+    - "sibling_under_title:Admin-principles-1442:p162"
+    - "sibling_under_title:Admin-principles-1442:p165"
+    - "sibling_under_title:Admin-principles-1442:p172"
+    - "sibling_under_title:Admin-principles-1442:p226"
+  Admin-principles-1442:p145:
+    first_run: 1
+    wording_sha256: "ba87ff862a77d5063ed7101cac2429f6e92d6f6465d36a1586051412e3edf1c2"
+    facets: 2
+    held: false
+    page_labels:
+    - "784"
+    relations: []
+  Admin-principles-1442:p108:
+    first_run: 1
+    wording_sha256: "13e390317d3ed2ce61ae6db51dc428bc0b4389e7b44f9776e7c8c81bff0783f9"
+    facets: 2
+    held: false
+    page_labels:
+    - "586"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p107"
+    - "shared_index_entry:Admin-principles-1442:p109"
+    - "shared_index_entry:Admin-principles-1442:p112"
+    - "shared_index_entry:Admin-principles-1442:p115"
+    - "shared_index_entry:Admin-principles-1442:p118"
+    - "shared_index_entry:Admin-principles-1442:p121"
+    - "shared_index_entry:Admin-principles-1442:p133"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "shared_index_entry:Admin-principles-1442:p148"
+    - "shared_index_entry:Admin-principles-1442:p156"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p165"
+    - "shared_index_entry:Admin-principles-1442:p172"
+    - "shared_index_entry:Admin-principles-1442:p226"
+    - "sibling_under_title:Admin-principles-1442:p183"
+  Admin-principles-1442:p148:
+    first_run: 1
+    wording_sha256: "6769565a5fc5cd2426fc43dbd9504dc7582bc9e818e41b0f0a4257b1eb0b05ef"
+    facets: 2
+    held: false
+    page_labels:
+    - "797"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p107"
+    - "shared_index_entry:Admin-principles-1442:p108"
+    - "shared_index_entry:Admin-principles-1442:p109"
+    - "shared_index_entry:Admin-principles-1442:p112"
+    - "shared_index_entry:Admin-principles-1442:p115"
+    - "shared_index_entry:Admin-principles-1442:p118"
+    - "shared_index_entry:Admin-principles-1442:p121"
+    - "shared_index_entry:Admin-principles-1442:p133"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "shared_index_entry:Admin-principles-1442:p156"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p165"
+    - "shared_index_entry:Admin-principles-1442:p172"
+    - "shared_index_entry:Admin-principles-1442:p226"
+    - "sibling_under_title:Admin-principles-1442:p183"
+  Admin-principles-1442:p162:
+    first_run: 1
+    wording_sha256: "a3683afcb2683074ceef7a014a6b5e50477a431f10f411bb686a3266fceadced"
+    facets: 6
+    held: false
+    page_labels:
+    - "867"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p107"
+    - "shared_index_entry:Admin-principles-1442:p108"
+    - "shared_index_entry:Admin-principles-1442:p109"
+    - "shared_index_entry:Admin-principles-1442:p112"
+    - "shared_index_entry:Admin-principles-1442:p115"
+    - "shared_index_entry:Admin-principles-1442:p118"
+    - "shared_index_entry:Admin-principles-1442:p121"
+    - "shared_index_entry:Admin-principles-1442:p122"
+    - "shared_index_entry:Admin-principles-1442:p129"
+    - "shared_index_entry:Admin-principles-1442:p133"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "shared_index_entry:Admin-principles-1442:p141"
+    - "shared_index_entry:Admin-principles-1442:p148"
+    - "shared_index_entry:Admin-principles-1442:p153"
+    - "shared_index_entry:Admin-principles-1442:p156"
+    - "shared_index_entry:Admin-principles-1442:p160"
+    - "shared_index_entry:Admin-principles-1442:p165"
+    - "shared_index_entry:Admin-principles-1442:p172"
+    - "shared_index_entry:Admin-principles-1442:p181"
+    - "shared_index_entry:Admin-principles-1442:p193"
+    - "shared_index_entry:Admin-principles-1442:p224"
+    - "shared_index_entry:Admin-principles-1442:p226"
+    - "sibling_under_title:Admin-principles-1442:p048"
+    - "sibling_under_title:Admin-principles-1442:p116"
+    - "sibling_under_title:Admin-principles-1442:p119"
+    - "sibling_under_title:Admin-principles-1442:p183"
+    - "sibling_under_title:Admin-principles-1442:p218"
+    - "sibling_under_title:Admin-principles-1442:p230"
+  Admin-principles-1442:p115:
+    first_run: 1
+    wording_sha256: "32d81b1ee10c5a0b08861487c33a37042a3220400a77894de1be1da9c22dd00b"
+    facets: 2
+    held: false
+    page_labels:
+    - "620"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p107"
+    - "shared_index_entry:Admin-principles-1442:p108"
+    - "shared_index_entry:Admin-principles-1442:p109"
+    - "shared_index_entry:Admin-principles-1442:p112"
+    - "shared_index_entry:Admin-principles-1442:p118"
+    - "shared_index_entry:Admin-principles-1442:p121"
+    - "shared_index_entry:Admin-principles-1442:p133"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "shared_index_entry:Admin-principles-1442:p148"
+    - "shared_index_entry:Admin-principles-1442:p156"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p165"
+    - "shared_index_entry:Admin-principles-1442:p172"
+    - "shared_index_entry:Admin-principles-1442:p226"
+    - "sibling_under_title:Admin-principles-1442:p183"
+  Admin-principles-1442:p151:
+    first_run: 1
+    wording_sha256: "9d51f47385f937453a8bbb381c67c1ea276539f8f58b7ef84d0ec2389042a56e"
+    facets: 1
+    held: false
+    page_labels:
+    - "814"
+    relations: []
+  Admin-principles-1442:p133:
+    first_run: 1
+    wording_sha256: "fbbbf13ce4af8b08f50a4b159cb06a02ae8836d9e7735b03feacce42677d1ebf"
+    facets: 2
+    held: false
+    page_labels:
+    - "714"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p107"
+    - "shared_index_entry:Admin-principles-1442:p108"
+    - "shared_index_entry:Admin-principles-1442:p109"
+    - "shared_index_entry:Admin-principles-1442:p112"
+    - "shared_index_entry:Admin-principles-1442:p115"
+    - "shared_index_entry:Admin-principles-1442:p118"
+    - "shared_index_entry:Admin-principles-1442:p121"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "shared_index_entry:Admin-principles-1442:p148"
+    - "shared_index_entry:Admin-principles-1442:p156"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p165"
+    - "shared_index_entry:Admin-principles-1442:p172"
+    - "shared_index_entry:Admin-principles-1442:p226"
+    - "sibling_under_title:Admin-principles-1442:p183"
+  Admin-principles-1442:p121:
+    first_run: 1
+    wording_sha256: "0c9fbb23b0a71b5a2e4f08c2cb51cd40ae4732041d315cd64b076f061f5689a8"
+    facets: 2
+    held: false
+    page_labels:
+    - "648"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p107"
+    - "shared_index_entry:Admin-principles-1442:p108"
+    - "shared_index_entry:Admin-principles-1442:p109"
+    - "shared_index_entry:Admin-principles-1442:p112"
+    - "shared_index_entry:Admin-principles-1442:p115"
+    - "shared_index_entry:Admin-principles-1442:p118"
+    - "shared_index_entry:Admin-principles-1442:p133"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "shared_index_entry:Admin-principles-1442:p148"
+    - "shared_index_entry:Admin-principles-1442:p156"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p165"
+    - "shared_index_entry:Admin-principles-1442:p172"
+    - "shared_index_entry:Admin-principles-1442:p226"
+    - "sibling_under_title:Admin-principles-1442:p183"
+    history:
+    - run: 5
+      previous_wording_sha256: "d5bbae9f81ab5c251a187a2a85797212e6e4a41e98659fcde4715c7ccb9b4859"
+  Admin-principles-1442:p193:
+    first_run: 1
+    wording_sha256: "0645291170278c259f3899b3609ee02c83474308a8d8cda4c71112b149b63f64"
+    facets: 2
+    held: false
+    page_labels:
+    - "1038"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p122"
+    - "shared_index_entry:Admin-principles-1442:p129"
+    - "shared_index_entry:Admin-principles-1442:p141"
+    - "shared_index_entry:Admin-principles-1442:p153"
+    - "shared_index_entry:Admin-principles-1442:p160"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p181"
+    - "shared_index_entry:Admin-principles-1442:p224"
+    - "sibling_under_title:Admin-principles-1442:p048"
+    - "sibling_under_title:Admin-principles-1442:p116"
+    - "sibling_under_title:Admin-principles-1442:p218"
+    - "sibling_under_title:Admin-principles-1442:p230"
+  Admin-principles-1442:p100:
+    first_run: 1
+    wording_sha256: "2bec3da68070fc38e14a8df7069f1504e382e3bbc9cdcdf322d9ce5f62b532a4"
+    facets: 5
+    held: false
+    page_labels:
+    - "544"
+    relations:
+    - "see_also:حرف د/ دعوى - الحكم في الدعوى - الخطأ في تكييف الدعوى"
+    - "sibling_under_title:Admin-principles-1442:p095"
+    - "sibling_under_title:Admin-principles-1442:p110"
+  Admin-principles-1442:p097:
+    first_run: 1
+    wording_sha256: "ee6a7f8b12b7ccd0e4e2e44ee91de7ec8eaeb54600dab117238e78462c5529d2"
+    facets: 2
+    held: false
+    page_labels:
+    - "528"
+    relations: []
+  Admin-principles-1442:p063:
+    first_run: 1
+    wording_sha256: "2f55c5aa7fa164f38746b6636ccd5b287fdd7a65f6e23aa1471419673d06201c"
+    facets: 1
+    held: false
+    page_labels:
+    - "349"
+    relations: []
+  Admin-principles-1442:p025:
+    first_run: 1
+    wording_sha256: "31f711bb1a183c6c4872a23440192d22df8fc508bf56e6fed4dd93050b19401b"
+    facets: 2
+    held: false
+    page_labels:
+    - "168"
+    relations: []
+  Admin-principles-1442:p046:
+    first_run: 1
+    wording_sha256: "10a8b2f18fb8d90ecbada9e1ac6d7c7ef37da10655f8a94e4a3504c8bc601450"
+    facets: 3
+    held: false
+    page_labels:
+    - "267"
+    relations: []
+  Admin-principles-1442:p232:
+    first_run: 1
+    wording_sha256: "82d95e63be1ff953fda30c4e5d3882d6b10542c8afb7a4738e9eb9d43ca52a5a"
+    facets: 1
+    held: false
+    page_labels:
+    - "1226"
+    relations: []
+  Admin-principles-1442:p102:
+    first_run: 1
+    wording_sha256: "277c0b180a14d2755a4e0c0899d6e54c98979509df42cb0cff04ee86f7e36792"
+    facets: 4
+    held: false
+    page_labels:
+    - "553"
+    relations: []
+  Admin-principles-1442:p088:
+    first_run: 1
+    wording_sha256: "ff98ccc0ff1aea622daf93f19a4658beb15daa3a7c999ba7e40b6c37e0d4c923"
+    facets: 3
+    held: false
+    page_labels:
+    - "484"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p074"
+    - "sibling_under_title:Admin-principles-1442:p070"
+    - "sibling_under_title:Admin-principles-1442:p071"
+    - "sibling_under_title:Admin-principles-1442:p076"
+    - "sibling_under_title:Admin-principles-1442:p079"
+    - "sibling_under_title:Admin-principles-1442:p119"
+    - "sibling_under_title:Admin-principles-1442:p122"
+    - "sibling_under_title:Admin-principles-1442:p181"
+  Admin-principles-1442:p166:
+    first_run: 1
+    wording_sha256: "ceeb224ec31b6ad96e8adace6e8e331b23bea26110cdb95d7456e87fd84a95c6"
+    facets: 2
+    held: false
+    page_labels:
+    - "891"
+    relations: []
+  Admin-principles-1442:d001:
+    first_run: 1
+    wording_sha256: "adaa9874c74a70d1ef03e290ab5b86d1eb3b38273a5b7dce47a5ed10658f7bb2"
+    facets: 5
+    held: false
+    page_labels:
+    - "1"
+    relations: []
+  Admin-principles-1442:p175:
+    first_run: 1
+    wording_sha256: "34a652c9dbccdf29256bae7dd1b4f6320c9101cbeecd244bda05e8e3fb82cf1b"
+    facets: 9
+    held: false
+    page_labels:
+    - "937"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p055"
+    - "sibling_under_title:Admin-principles-1442:p012"
+    - "sibling_under_title:Admin-principles-1442:p055"
+    - "sibling_under_title:Admin-principles-1442:p149"
+    - "sibling_under_title:Admin-principles-1442:p210"
+  Admin-principles-1442:p074:
+    first_run: 1
+    wording_sha256: "494cbe771884c334f559f27728a84492821b9efe569f745715b293dfa3b87313"
+    facets: 5
+    held: false
+    page_labels:
+    - "404"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p005"
+    - "shared_index_entry:Admin-principles-1442:p088"
+    - "sibling_under_title:Admin-principles-1442:p002"
+    - "sibling_under_title:Admin-principles-1442:p007"
+    - "sibling_under_title:Admin-principles-1442:p012"
+    - "sibling_under_title:Admin-principles-1442:p178"
+  Admin-principles-1442:p233:
+    first_run: 1
+    wording_sha256: "82339c8921b7bbdde628daa6548fa1ffaa040e94a714a52b07594ce8e2543886"
+    facets: 5
+    held: false
+    page_labels:
+    - "1229"
+    relations:
+    - "see_also:حرف ع/ عقد - سحب العمل والتنفيذ على الحساب - التعميد على الحساب - توصيفه - انتفاء صفة المنفذ عليه في الادعاء ببطلانه والمنازعة في انعقاده"
+    - "sibling_under_title:Admin-principles-1442:p168"
+  Admin-principles-1442:p235:
+    first_run: 1
+    wording_sha256: "90ecd19ed0c5c27f310ec26bb434f262cfaa34e447c12cea542fc0d752e27b04"
+    facets: 1
+    held: false
+    page_labels:
+    - "1242"
+    relations: []
+  Admin-principles-1442:p096:
+    first_run: 1
+    wording_sha256: "6cccd5a1819ab492f7a4b29314bb1d36d417391fddeece55e0bacb22caecdc40"
+    facets: 4
+    held: false
+    page_labels:
+    - "522"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p180"
+  Admin-principles-1442:p095:
+    first_run: 1
+    wording_sha256: "8d4b0e8d5284aa10fa0d66a86e97ed99d9e62c8ee2ea954cc543854582c8e984"
+    facets: 4
+    held: false
+    page_labels:
+    - "516"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p037"
+    - "sibling_under_title:Admin-principles-1442:p099"
+    - "sibling_under_title:Admin-principles-1442:p100"
+    - "sibling_under_title:Admin-principles-1442:p111"
+    - "sibling_under_title:Admin-principles-1442:p120"
+    - "sibling_under_title:Admin-principles-1442:p179"
+  Admin-principles-1442:p099:
+    first_run: 1
+    wording_sha256: "c62a31896029095fb1e6472af811a3a3492d6d164ccc6c2e59cc0fcd84e98900"
+    facets: 2
+    held: false
+    page_labels:
+    - "539"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p111"
+    - "shared_index_entry:Admin-principles-1442:p120"
+    - "shared_index_entry:Admin-principles-1442:p179"
+    - "sibling_under_title:Admin-principles-1442:p095"
+  Admin-principles-1442:p111:
+    first_run: 1
+    wording_sha256: "ab3429aa4191baecb1b4bf8ef8a72999cd340929dd0cc80022ebceab97ced283"
+    facets: 3
+    held: false
+    page_labels:
+    - "597"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p099"
+    - "shared_index_entry:Admin-principles-1442:p120"
+    - "shared_index_entry:Admin-principles-1442:p179"
+    - "sibling_under_title:Admin-principles-1442:p095"
+    - "sibling_under_title:Admin-principles-1442:p112"
+  Admin-principles-1442:p120:
+    first_run: 1
+    wording_sha256: "2ead8b419bea59699206a3b4db33500226129a39b887ae9d20aab199248b2d5d"
+    facets: 2
+    held: false
+    page_labels:
+    - "644"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p099"
+    - "shared_index_entry:Admin-principles-1442:p111"
+    - "shared_index_entry:Admin-principles-1442:p179"
+    - "sibling_under_title:Admin-principles-1442:p095"
+    - "sibling_under_title:Admin-principles-1442:p110"
+    - "sibling_under_title:Admin-principles-1442:p146"
+  Admin-principles-1442:p179:
+    first_run: 1
+    wording_sha256: "bd89c351a18a6c8bc648303e5f19ac84ff052abb19914f977962653703f074fc"
+    facets: 2
+    held: false
+    page_labels:
+    - "960"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p099"
+    - "shared_index_entry:Admin-principles-1442:p111"
+    - "shared_index_entry:Admin-principles-1442:p120"
+    - "sibling_under_title:Admin-principles-1442:p095"
+    - "sibling_under_title:Admin-principles-1442:p146"
+    - "sibling_under_title:Admin-principles-1442:p180"
+  Admin-principles-1442:p180:
+    first_run: 1
+    wording_sha256: "35f4cae1b40e0a406677ef98335be12b4bed9354883101710074adc899e28ed7"
+    facets: 2
+    held: false
+    page_labels:
+    - "966"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p096"
+    - "sibling_under_title:Admin-principles-1442:p179"
+    - "sibling_under_title:Admin-principles-1442:p223"
+  Admin-principles-1442:p154:
+    first_run: 1
+    wording_sha256: "e02de45390170c4f08702c547f161d049c2aa1b4853e26876896675022f80c94"
+    facets: 1
+    held: false
+    page_labels:
+    - "826"
+    relations: []
+  Admin-principles-1442:p008:
+    first_run: 1
+    wording_sha256: "dff0035522b806b007d6e364018809f5f2407c5044dc6b41da163f5fecf1db61"
+    facets: 6
+    held: false
+    page_labels:
+    - "56"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p024"
+    - "shared_index_entry:Admin-principles-1442:p165"
+    - "sibling_under_title:Admin-principles-1442:p021"
+    - "sibling_under_title:Admin-principles-1442:p024"
+    history:
+    - run: 5
+      previous_wording_sha256: "c0f1324f93ec76f479ad66e7a039859d5410b0d322497c74a1e57468ce3125bb"
+  Admin-principles-1442:p044:
+    first_run: 1
+    wording_sha256: "a0463bd2ba78199267877de74686f2d4b2ec6eaab979c858f831d0f9bacdec0a"
+    facets: 5
+    held: false
+    page_labels:
+    - "257"
+    relations: []
+  Admin-principles-1442:p209:
+    first_run: 1
+    wording_sha256: "32c32beaae7dfd89d3936eaf0ebfc42e0a7a18d97ff6e751f59c88c37f52c105"
+    facets: 2
+    held: false
+    page_labels:
+    - "1114"
+    relations: []
+  Admin-principles-1442:p101:
+    first_run: 1
+    wording_sha256: "04c1be477fcc1b9aeddc16e5a024d3f8c7d9bee6c1b45292e56404ad2aada699"
+    facets: 4
+    held: false
+    page_labels:
+    - "548"
+    relations: []
+  Admin-principles-1442:p080:
+    first_run: 1
+    wording_sha256: "7d9dc7e3fe25c105365b57cd1d5d27e3492ddd46a2e822934501bf0d062a104e"
+    facets: 2
+    held: false
+    page_labels:
+    - "432"
+    relations: []
+  Admin-principles-1442:p084:
+    first_run: 1
+    wording_sha256: "0def9af05645b67f987af3b698e23a32c90da6560b5b7d7d5d066ba851eb354c"
+    facets: 4
+    held: false
+    page_labels:
+    - "455"
+    relations: []
+  Admin-principles-1442:p197:
+    first_run: 1
+    wording_sha256: "d21aa85931e1ed771ac823371e8e7147de3bf36852315ea5b305593194e87360"
+    facets: 3
+    held: false
+    page_labels:
+    - "1055"
+    relations: []
+  Admin-principles-1442:p004:
+    first_run: 1
+    wording_sha256: "38b7b8cfdfb4e13f81753b51ccd5d36a3be16e03a0c2cd41f4a36df18aacf984"
+    facets: 3
+    held: false
+    page_labels:
+    - "28"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p015"
+    - "shared_index_entry:Admin-principles-1442:p053"
+    - "shared_index_entry:Admin-principles-1442:p069"
+    - "shared_index_entry:Admin-principles-1442:p072"
+    - "shared_index_entry:Admin-principles-1442:p123"
+    - "shared_index_entry:Admin-principles-1442:p135"
+    - "shared_index_entry:Admin-principles-1442:p225"
+    - "sibling_under_title:Admin-principles-1442:p053"
+    - "sibling_under_title:Admin-principles-1442:p072"
+    - "sibling_under_title:Admin-principles-1442:p082"
+    - "sibling_under_title:Admin-principles-1442:p135"
+  Admin-principles-1442:p053:
+    first_run: 1
+    wording_sha256: "c9765efa8c344909282f39846383ded65f2b5e96049a68dc942bf7f1612d2ac1"
+    facets: 3
+    held: false
+    page_labels:
+    - "305"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p004"
+    - "shared_index_entry:Admin-principles-1442:p015"
+    - "shared_index_entry:Admin-principles-1442:p069"
+    - "shared_index_entry:Admin-principles-1442:p072"
+    - "shared_index_entry:Admin-principles-1442:p123"
+    - "shared_index_entry:Admin-principles-1442:p135"
+    - "shared_index_entry:Admin-principles-1442:p225"
+    - "sibling_under_title:Admin-principles-1442:p004"
+    - "sibling_under_title:Admin-principles-1442:p082"
+  Admin-principles-1442:p069:
+    first_run: 1
+    wording_sha256: "6a0de7e888dc41dc472eff2d32e3030b1888f3064657e9346c013c768ef6cac2"
+    facets: 4
+    held: false
+    page_labels:
+    - "379"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p004"
+    - "shared_index_entry:Admin-principles-1442:p015"
+    - "shared_index_entry:Admin-principles-1442:p053"
+    - "shared_index_entry:Admin-principles-1442:p072"
+    - "shared_index_entry:Admin-principles-1442:p123"
+    - "shared_index_entry:Admin-principles-1442:p135"
+    - "shared_index_entry:Admin-principles-1442:p225"
+    - "sibling_under_title:Admin-principles-1442:p015"
+    - "sibling_under_title:Admin-principles-1442:p082"
+  Admin-principles-1442:p072:
+    first_run: 1
+    wording_sha256: "c9765efa8c344909282f39846383ded65f2b5e96049a68dc942bf7f1612d2ac1"
+    facets: 3
+    held: false
+    page_labels:
+    - "394"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p004"
+    - "shared_index_entry:Admin-principles-1442:p015"
+    - "shared_index_entry:Admin-principles-1442:p053"
+    - "shared_index_entry:Admin-principles-1442:p069"
+    - "shared_index_entry:Admin-principles-1442:p123"
+    - "shared_index_entry:Admin-principles-1442:p135"
+    - "shared_index_entry:Admin-principles-1442:p225"
+    - "sibling_under_title:Admin-principles-1442:p004"
+    - "sibling_under_title:Admin-principles-1442:p082"
+  Admin-principles-1442:p123:
+    first_run: 1
+    wording_sha256: "6a0de7e888dc41dc472eff2d32e3030b1888f3064657e9346c013c768ef6cac2"
+    facets: 4
+    held: false
+    page_labels:
+    - "657"
+    - "653"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p004"
+    - "shared_index_entry:Admin-principles-1442:p015"
+    - "shared_index_entry:Admin-principles-1442:p053"
+    - "shared_index_entry:Admin-principles-1442:p069"
+    - "shared_index_entry:Admin-principles-1442:p072"
+    - "shared_index_entry:Admin-principles-1442:p135"
+    - "shared_index_entry:Admin-principles-1442:p225"
+    - "sibling_under_title:Admin-principles-1442:p015"
+    - "sibling_under_title:Admin-principles-1442:p082"
+  Admin-principles-1442:p135:
+    first_run: 1
+    wording_sha256: "c9765efa8c344909282f39846383ded65f2b5e96049a68dc942bf7f1612d2ac1"
+    facets: 3
+    held: false
+    page_labels:
+    - "729"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p004"
+    - "shared_index_entry:Admin-principles-1442:p015"
+    - "shared_index_entry:Admin-principles-1442:p053"
+    - "shared_index_entry:Admin-principles-1442:p069"
+    - "shared_index_entry:Admin-principles-1442:p072"
+    - "shared_index_entry:Admin-principles-1442:p123"
+    - "shared_index_entry:Admin-principles-1442:p225"
+    - "sibling_under_title:Admin-principles-1442:p004"
+    - "sibling_under_title:Admin-principles-1442:p082"
+  Admin-principles-1442:p225:
+    first_run: 1
+    wording_sha256: "6a0de7e888dc41dc472eff2d32e3030b1888f3064657e9346c013c768ef6cac2"
+    facets: 4
+    held: false
+    page_labels:
+    - "1196"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p004"
+    - "shared_index_entry:Admin-principles-1442:p015"
+    - "shared_index_entry:Admin-principles-1442:p053"
+    - "shared_index_entry:Admin-principles-1442:p069"
+    - "shared_index_entry:Admin-principles-1442:p072"
+    - "shared_index_entry:Admin-principles-1442:p123"
+    - "shared_index_entry:Admin-principles-1442:p135"
+    - "sibling_under_title:Admin-principles-1442:p015"
+    - "sibling_under_title:Admin-principles-1442:p082"
+  Admin-principles-1442:p065:
+    first_run: 1
+    wording_sha256: "f01e3445ea94ac49a04b68053c0eed4cb72351890768590b5af5c4b6f302e444"
+    facets: 2
+    held: false
+    page_labels:
+    - "357"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p125"
+  Admin-principles-1442:p170:
+    first_run: 1
+    wording_sha256: "d6967709faab0859153eaedc3f6f943c658471d2cbfd566b002c0a25a6b8be77"
+    facets: 5
+    held: false
+    page_labels:
+    - "911"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p105"
+    - "sibling_under_title:Admin-principles-1442:p086"
+    - "sibling_under_title:Admin-principles-1442:p137"
+    - "sibling_under_title:Admin-principles-1442:p174"
+    - "sibling_under_title:Admin-principles-1442:p177"
+  Admin-principles-1442:p001:
+    first_run: 1
+    wording_sha256: "b494f24ca9b429856ff9057056375c121969dfe345fc2958223ab11deb979ab9"
+    facets: 5
+    held: false
+    page_labels:
+    - "7"
+    relations:
+    - "see_also:حرف د/ دعوى - الحكم في الدعوى - مخالفة أحكام النظام) (ب/183/1441هـ"
+  Admin-principles-1442:p002:
+    first_run: 1
+    wording_sha256: "4e7badab26dfb600e340d250b607c1f59109096fb07e00b5e53ab324400d99f6"
+    facets: 6
+    held: false
+    page_labels:
+    - "13"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p007"
+    - "shared_index_entry:Admin-principles-1442:p012"
+    - "sibling_under_title:Admin-principles-1442:p005"
+    - "sibling_under_title:Admin-principles-1442:p074"
+  Admin-principles-1442:p014:
+    first_run: 1
+    wording_sha256: "b376635abb48de4df76f303e9931d8db0a344ce14853c0f299427357cacda8aa"
+    facets: 10
+    held: false
+    page_labels:
+    - "89"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p019"
+    - "shared_index_entry:Admin-principles-1442:p134"
+    - "sibling_under_title:Admin-principles-1442:p018"
+    - "sibling_under_title:Admin-principles-1442:p214"
+  Admin-principles-1442:p012:
+    first_run: 1
+    wording_sha256: "a45b1f4c285b4633676ee3746c0cd9e2d9a000b1352e591a8dd6fbf5e0236cb6"
+    facets: 7
+    held: false
+    page_labels:
+    - "76"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p002"
+    - "shared_index_entry:Admin-principles-1442:p007"
+    - "shared_index_entry:Admin-principles-1442:p033"
+    - "sibling_under_title:Admin-principles-1442:p005"
+    - "sibling_under_title:Admin-principles-1442:p043"
+    - "sibling_under_title:Admin-principles-1442:p054"
+    - "sibling_under_title:Admin-principles-1442:p074"
+    - "sibling_under_title:Admin-principles-1442:p163"
+    - "sibling_under_title:Admin-principles-1442:p175"
+    - "sibling_under_title:Admin-principles-1442:p212"
+  Admin-principles-1442:p087:
+    first_run: 1
+    wording_sha256: "e868da3fefca371044e8086cf55c929ecaf2197c3332b4c884cbf7944edacb66"
+    facets: 4
+    held: false
+    page_labels:
+    - "477"
+    relations: []
+  Admin-principles-1442:p149:
+    first_run: 1
+    wording_sha256: "b06faf60e7416b54c398ed159427ec1fbecb3e45ddf0a9f4e2b60cc1d6266a40"
+    facets: 4
+    held: false
+    page_labels:
+    - "802"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p132"
+    - "sibling_under_title:Admin-principles-1442:p175"
+    - "sibling_under_title:Admin-principles-1442:p178"
+  Admin-principles-1442:p071:
+    first_run: 1
+    wording_sha256: "5ce9afe8efdcb882dc6bc4af70c9fe03c9b0deff92d46d3d7761561bc87f3e35"
+    facets: 2
+    held: false
+    page_labels:
+    - "390"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p070"
+    - "shared_index_entry:Admin-principles-1442:p075"
+    - "shared_index_entry:Admin-principles-1442:p076"
+    - "shared_index_entry:Admin-principles-1442:p079"
+    - "shared_index_entry:Admin-principles-1442:p119"
+    - "sibling_under_title:Admin-principles-1442:p027"
+    - "sibling_under_title:Admin-principles-1442:p088"
+  Admin-principles-1442:p075:
+    first_run: 1
+    wording_sha256: "d7b497b2be5ef1a083d72dae76b48ebe24e5b0ec9b77ba4809cd5dbf8dc51927"
+    facets: 2
+    held: false
+    page_labels:
+    - "408"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p071"
+    - "shared_index_entry:Admin-principles-1442:p079"
+    - "shared_index_entry:Admin-principles-1442:p119"
+  Admin-principles-1442:p079:
+    first_run: 1
+    wording_sha256: "5ce9afe8efdcb882dc6bc4af70c9fe03c9b0deff92d46d3d7761561bc87f3e35"
+    facets: 2
+    held: false
+    page_labels:
+    - "428"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p070"
+    - "shared_index_entry:Admin-principles-1442:p071"
+    - "shared_index_entry:Admin-principles-1442:p075"
+    - "shared_index_entry:Admin-principles-1442:p076"
+    - "shared_index_entry:Admin-principles-1442:p119"
+    - "sibling_under_title:Admin-principles-1442:p027"
+    - "sibling_under_title:Admin-principles-1442:p088"
+  Admin-principles-1442:p119:
+    first_run: 1
+    wording_sha256: "852822e0257af9ea42488e2cb0c66426b16f14ba8394581e9ce9099ee8b13b11"
+    facets: 3
+    held: false
+    page_labels:
+    - "639"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p070"
+    - "shared_index_entry:Admin-principles-1442:p071"
+    - "shared_index_entry:Admin-principles-1442:p075"
+    - "shared_index_entry:Admin-principles-1442:p076"
+    - "shared_index_entry:Admin-principles-1442:p079"
+    - "sibling_under_title:Admin-principles-1442:p027"
+    - "sibling_under_title:Admin-principles-1442:p088"
+    - "sibling_under_title:Admin-principles-1442:p162"
+  Admin-principles-1442:p143:
+    first_run: 1
+    wording_sha256: "5a75a31abc262f01a31d7191d4ee45532e4f92322984ce184b9f32bbcb46e43d"
+    facets: 8
+    held: false
+    page_labels:
+    - "772"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p130"
+    - "shared_index_entry:Admin-principles-1442:p131"
+    - "shared_index_entry:Admin-principles-1442:p215"
+    - "shared_index_entry:Admin-principles-1442:p221"
+    - "sibling_under_title:Admin-principles-1442:p043"
+  Admin-principles-1442:p130:
+    first_run: 1
+    wording_sha256: "9eaac5de086070f208a6bc97687778b5ffb9cd5df342e4390d755078dca7dae3"
+    facets: 4
+    held: false
+    page_labels:
+    - "694"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p131"
+    - "shared_index_entry:Admin-principles-1442:p143"
+    - "shared_index_entry:Admin-principles-1442:p215"
+    - "shared_index_entry:Admin-principles-1442:p221"
+    - "sibling_under_title:Admin-principles-1442:p043"
+  Admin-principles-1442:p165:
+    first_run: 1
+    wording_sha256: "d02c4882a4d720f4119158cf5ad09273191201debeff1f361327741d662d993b"
+    facets: 6
+    held: false
+    page_labels:
+    - "886"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p008"
+    - "shared_index_entry:Admin-principles-1442:p107"
+    - "shared_index_entry:Admin-principles-1442:p108"
+    - "shared_index_entry:Admin-principles-1442:p109"
+    - "shared_index_entry:Admin-principles-1442:p112"
+    - "shared_index_entry:Admin-principles-1442:p115"
+    - "shared_index_entry:Admin-principles-1442:p118"
+    - "shared_index_entry:Admin-principles-1442:p121"
+    - "shared_index_entry:Admin-principles-1442:p133"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "shared_index_entry:Admin-principles-1442:p148"
+    - "shared_index_entry:Admin-principles-1442:p156"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p172"
+    - "shared_index_entry:Admin-principles-1442:p226"
+    - "sibling_under_title:Admin-principles-1442:p024"
+    - "sibling_under_title:Admin-principles-1442:p183"
+  Admin-principles-1442:p156:
+    first_run: 1
+    wording_sha256: "6474898f85d78939e19c27e951d2c0f29dc3a4fcefbb35439a67235918879c5b"
+    facets: 5
+    held: false
+    page_labels:
+    - "833"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p107"
+    - "shared_index_entry:Admin-principles-1442:p108"
+    - "shared_index_entry:Admin-principles-1442:p109"
+    - "shared_index_entry:Admin-principles-1442:p112"
+    - "shared_index_entry:Admin-principles-1442:p115"
+    - "shared_index_entry:Admin-principles-1442:p118"
+    - "shared_index_entry:Admin-principles-1442:p121"
+    - "shared_index_entry:Admin-principles-1442:p133"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "shared_index_entry:Admin-principles-1442:p148"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p165"
+    - "shared_index_entry:Admin-principles-1442:p172"
+    - "shared_index_entry:Admin-principles-1442:p226"
+    - "sibling_under_title:Admin-principles-1442:p183"
+  Admin-principles-1442:p142:
+    first_run: 1
+    wording_sha256: "81547c13dfcab9963f607443c503d4705c809b89ebf60a2a0ecd52cee85cc58d"
+    facets: 4
+    held: false
+    page_labels:
+    - "768"
+    relations: []
+  Admin-principles-1442:p056:
+    first_run: 1
+    wording_sha256: "cd8dfa0a5c7f5e12ab957e23c0ec85acac5f6ff62335fb4ddeb6597e40620f55"
+    facets: 2
+    held: false
+    page_labels:
+    - "320"
+    relations: []
+  Admin-principles-1442:p110:
+    first_run: 1
+    wording_sha256: "bbbe89e8a10cda3aea1b7619ae0a76333628c8060b2aca196559ee6d4c39d174"
+    facets: 1
+    held: false
+    page_labels:
+    - "594"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p100"
+    - "sibling_under_title:Admin-principles-1442:p120"
+  Admin-principles-1442:p146:
+    first_run: 1
+    wording_sha256: "7c723e9945d27e9c0d0c0decc8b09488c87a2a1555495192077f561cb47d89bb"
+    facets: 1
+    held: false
+    page_labels:
+    - "788"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p120"
+    - "sibling_under_title:Admin-principles-1442:p179"
+  Admin-principles-1442:p223:
+    first_run: 1
+    wording_sha256: "4410f4481160a1e9a616cefbd26446c9b4e2b6265352ff2bf4a1f95312c3e35d"
+    facets: 1
+    held: false
+    page_labels:
+    - "1189"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p180"
+    - "sibling_under_title:Admin-principles-1442:p230"
+  Admin-principles-1442:p230:
+    first_run: 1
+    wording_sha256: "9c8e5e74de10d2dedf76ff7d1a0a510a4fcefed0d1e33307971e54d7582cb6d9"
+    facets: 3
+    held: false
+    page_labels:
+    - "1217"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p048"
+    - "shared_index_entry:Admin-principles-1442:p218"
+    - "sibling_under_title:Admin-principles-1442:p039"
+    - "sibling_under_title:Admin-principles-1442:p040"
+    - "sibling_under_title:Admin-principles-1442:p043"
+    - "sibling_under_title:Admin-principles-1442:p122"
+    - "sibling_under_title:Admin-principles-1442:p129"
+    - "sibling_under_title:Admin-principles-1442:p141"
+    - "sibling_under_title:Admin-principles-1442:p153"
+    - "sibling_under_title:Admin-principles-1442:p160"
+    - "sibling_under_title:Admin-principles-1442:p162"
+    - "sibling_under_title:Admin-principles-1442:p181"
+    - "sibling_under_title:Admin-principles-1442:p193"
+    - "sibling_under_title:Admin-principles-1442:p223"
+    - "sibling_under_title:Admin-principles-1442:p224"
+    - "sibling_under_title:Admin-principles-1442:p228"
+  Admin-principles-1442:p124:
+    first_run: 1
+    wording_sha256: "fa3a5a4a4d0b901f0f635a42b314e043cba7c6a705d94fb740e1270d9bb49d7e"
+    facets: 2
+    held: false
+    page_labels:
+    - "663"
+    relations: []
+  Admin-principles-1442:p039:
+    first_run: 1
+    wording_sha256: "ea7d7fc565bf9aab7092f97820daea3c00219dadb2add5b5e820e819a63e7f4c"
+    facets: 3
+    held: false
+    page_labels:
+    - "231"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p040"
+    - "sibling_under_title:Admin-principles-1442:p048"
+    - "sibling_under_title:Admin-principles-1442:p218"
+    - "sibling_under_title:Admin-principles-1442:p230"
+  Admin-principles-1442:p040:
+    first_run: 1
+    wording_sha256: "3982019a1fee1e9cb631000cbacb6389008844eaaa16c00c581a73cbdd08982d"
+    facets: 2
+    held: false
+    page_labels:
+    - "234"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p039"
+    - "sibling_under_title:Admin-principles-1442:p048"
+    - "sibling_under_title:Admin-principles-1442:p218"
+    - "sibling_under_title:Admin-principles-1442:p230"
+  Admin-principles-1442:p048:
+    first_run: 1
+    wording_sha256: "e8ade906cf1bf5724a11dcd76146bcf6518ec7a8251db8158a0f6d54819a69a7"
+    facets: 2
+    held: false
+    page_labels:
+    - "276"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p218"
+    - "shared_index_entry:Admin-principles-1442:p230"
+    - "sibling_under_title:Admin-principles-1442:p039"
+    - "sibling_under_title:Admin-principles-1442:p040"
+    - "sibling_under_title:Admin-principles-1442:p122"
+    - "sibling_under_title:Admin-principles-1442:p129"
+    - "sibling_under_title:Admin-principles-1442:p141"
+    - "sibling_under_title:Admin-principles-1442:p153"
+    - "sibling_under_title:Admin-principles-1442:p160"
+    - "sibling_under_title:Admin-principles-1442:p162"
+    - "sibling_under_title:Admin-principles-1442:p181"
+    - "sibling_under_title:Admin-principles-1442:p193"
+    - "sibling_under_title:Admin-principles-1442:p224"
+  Admin-principles-1442:p218:
+    first_run: 1
+    wording_sha256: "56ce749917d89498d740f253d9756f57c3cdc3b84677d30b9d983788d49498a9"
+    facets: 2
+    held: false
+    page_labels:
+    - "1160"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p048"
+    - "shared_index_entry:Admin-principles-1442:p230"
+    - "sibling_under_title:Admin-principles-1442:p039"
+    - "sibling_under_title:Admin-principles-1442:p040"
+    - "sibling_under_title:Admin-principles-1442:p122"
+    - "sibling_under_title:Admin-principles-1442:p129"
+    - "sibling_under_title:Admin-principles-1442:p141"
+    - "sibling_under_title:Admin-principles-1442:p153"
+    - "sibling_under_title:Admin-principles-1442:p160"
+    - "sibling_under_title:Admin-principles-1442:p162"
+    - "sibling_under_title:Admin-principles-1442:p181"
+    - "sibling_under_title:Admin-principles-1442:p193"
+    - "sibling_under_title:Admin-principles-1442:p224"
+  Admin-principles-1442:p122:
+    first_run: 1
+    wording_sha256: "642c78e0f3c5b4fc97d9ad2cbc17b24a2e75dfe92d9fa05f469b5bd3d466f80b"
+    facets: 2
+    held: false
+    page_labels:
+    - "653"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p129"
+    - "shared_index_entry:Admin-principles-1442:p141"
+    - "shared_index_entry:Admin-principles-1442:p153"
+    - "shared_index_entry:Admin-principles-1442:p160"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p181"
+    - "shared_index_entry:Admin-principles-1442:p193"
+    - "shared_index_entry:Admin-principles-1442:p224"
+    - "sibling_under_title:Admin-principles-1442:p048"
+    - "sibling_under_title:Admin-principles-1442:p088"
+    - "sibling_under_title:Admin-principles-1442:p116"
+    - "sibling_under_title:Admin-principles-1442:p158"
+    - "sibling_under_title:Admin-principles-1442:p218"
+    - "sibling_under_title:Admin-principles-1442:p230"
+  Admin-principles-1442:p129:
+    first_run: 1
+    wording_sha256: "967ff1b2cb45eebdf98d045b509acc18672a5fb551d7aed0d441fadd64daee71"
+    facets: 2
+    held: false
+    page_labels:
+    - "690"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p122"
+    - "shared_index_entry:Admin-principles-1442:p141"
+    - "shared_index_entry:Admin-principles-1442:p153"
+    - "shared_index_entry:Admin-principles-1442:p160"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p181"
+    - "shared_index_entry:Admin-principles-1442:p193"
+    - "shared_index_entry:Admin-principles-1442:p224"
+    - "sibling_under_title:Admin-principles-1442:p048"
+    - "sibling_under_title:Admin-principles-1442:p116"
+    - "sibling_under_title:Admin-principles-1442:p218"
+    - "sibling_under_title:Admin-principles-1442:p230"
+  Admin-principles-1442:p153:
+    first_run: 1
+    wording_sha256: "a41572ce813f2fb5358f543cbeaf54b051a9790b62b651280bb44d2a500c46e8"
+    facets: 2
+    held: false
+    page_labels:
+    - "822"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p122"
+    - "shared_index_entry:Admin-principles-1442:p129"
+    - "shared_index_entry:Admin-principles-1442:p141"
+    - "shared_index_entry:Admin-principles-1442:p160"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p181"
+    - "shared_index_entry:Admin-principles-1442:p193"
+    - "shared_index_entry:Admin-principles-1442:p224"
+    - "sibling_under_title:Admin-principles-1442:p048"
+    - "sibling_under_title:Admin-principles-1442:p116"
+    - "sibling_under_title:Admin-principles-1442:p218"
+    - "sibling_under_title:Admin-principles-1442:p230"
+  Admin-principles-1442:p160:
+    first_run: 1
+    wording_sha256: "9f163b0e02b698e9cac76a4eaffe7030b1e7950e00715b3cfa04caae0a8d7c13"
+    facets: 2
+    held: false
+    page_labels:
+    - "857"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p122"
+    - "shared_index_entry:Admin-principles-1442:p129"
+    - "shared_index_entry:Admin-principles-1442:p141"
+    - "shared_index_entry:Admin-principles-1442:p153"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p181"
+    - "shared_index_entry:Admin-principles-1442:p193"
+    - "shared_index_entry:Admin-principles-1442:p224"
+    - "sibling_under_title:Admin-principles-1442:p048"
+    - "sibling_under_title:Admin-principles-1442:p116"
+    - "sibling_under_title:Admin-principles-1442:p218"
+    - "sibling_under_title:Admin-principles-1442:p230"
+  Admin-principles-1442:p181:
+    first_run: 1
+    wording_sha256: "642c78e0f3c5b4fc97d9ad2cbc17b24a2e75dfe92d9fa05f469b5bd3d466f80b"
+    facets: 2
+    held: false
+    page_labels:
+    - "969"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p122"
+    - "shared_index_entry:Admin-principles-1442:p129"
+    - "shared_index_entry:Admin-principles-1442:p141"
+    - "shared_index_entry:Admin-principles-1442:p153"
+    - "shared_index_entry:Admin-principles-1442:p160"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p193"
+    - "shared_index_entry:Admin-principles-1442:p224"
+    - "sibling_under_title:Admin-principles-1442:p048"
+    - "sibling_under_title:Admin-principles-1442:p088"
+    - "sibling_under_title:Admin-principles-1442:p116"
+    - "sibling_under_title:Admin-principles-1442:p158"
+    - "sibling_under_title:Admin-principles-1442:p218"
+    - "sibling_under_title:Admin-principles-1442:p230"
+  Admin-principles-1442:p224:
+    first_run: 1
+    wording_sha256: "6fa5e72c016c0dbb9c0e67f2d88681c1084e930fe0efe15530d751ee1c5889d2"
+    facets: 2
+    held: false
+    page_labels:
+    - "1192"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p122"
+    - "shared_index_entry:Admin-principles-1442:p129"
+    - "shared_index_entry:Admin-principles-1442:p141"
+    - "shared_index_entry:Admin-principles-1442:p153"
+    - "shared_index_entry:Admin-principles-1442:p160"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p181"
+    - "shared_index_entry:Admin-principles-1442:p193"
+    - "sibling_under_title:Admin-principles-1442:p048"
+    - "sibling_under_title:Admin-principles-1442:p116"
+    - "sibling_under_title:Admin-principles-1442:p216"
+    - "sibling_under_title:Admin-principles-1442:p218"
+    - "sibling_under_title:Admin-principles-1442:p228"
+    - "sibling_under_title:Admin-principles-1442:p230"
+  Admin-principles-1442:p116:
+    first_run: 1
+    wording_sha256: "d0236610f16d91deac3aee64e35ff739eda8ede7607a05a5acdab1fda5a5bbb9"
+    facets: 4
+    held: false
+    page_labels:
+    - "626"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p106"
+    - "sibling_under_title:Admin-principles-1442:p117"
+    - "sibling_under_title:Admin-principles-1442:p122"
+    - "sibling_under_title:Admin-principles-1442:p129"
+    - "sibling_under_title:Admin-principles-1442:p141"
+    - "sibling_under_title:Admin-principles-1442:p153"
+    - "sibling_under_title:Admin-principles-1442:p160"
+    - "sibling_under_title:Admin-principles-1442:p162"
+    - "sibling_under_title:Admin-principles-1442:p181"
+    - "sibling_under_title:Admin-principles-1442:p192"
+    - "sibling_under_title:Admin-principles-1442:p193"
+    - "sibling_under_title:Admin-principles-1442:p214"
+    - "sibling_under_title:Admin-principles-1442:p224"
+  Admin-principles-1442:p192:
+    first_run: 1
+    wording_sha256: "fa49ca062ea95482337579a7d8a60376f9048b3e0d74ebbad7306768ece7cc4f"
+    facets: 2
+    held: false
+    page_labels:
+    - "1034"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p214"
+    - "sibling_under_title:Admin-principles-1442:p116"
+    - "sibling_under_title:Admin-principles-1442:p164"
+    - "sibling_under_title:Admin-principles-1442:p212"
+  Admin-principles-1442:p214:
+    first_run: 1
+    wording_sha256: "25df53730eddea51f509ea6c80ea63c2e4c77f44d027df0ca8fa28164561246a"
+    facets: 2
+    held: false
+    page_labels:
+    - "1139"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p192"
+    - "sibling_under_title:Admin-principles-1442:p011"
+    - "sibling_under_title:Admin-principles-1442:p014"
+    - "sibling_under_title:Admin-principles-1442:p116"
+    - "sibling_under_title:Admin-principles-1442:p134"
+    - "sibling_under_title:Admin-principles-1442:p212"
+  Admin-principles-1442:p212:
+    first_run: 1
+    wording_sha256: "32a962b64034f6daceba76a1afadee7caec25249d1256aa16fd3b4d39eaa9f5b"
+    facets: 3
+    held: false
+    page_labels:
+    - "1129"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p012"
+    - "sibling_under_title:Admin-principles-1442:p106"
+    - "sibling_under_title:Admin-principles-1442:p158"
+    - "sibling_under_title:Admin-principles-1442:p192"
+    - "sibling_under_title:Admin-principles-1442:p214"
+    - "sibling_under_title:Admin-principles-1442:p216"
+  Admin-principles-1442:p076:
+    first_run: 1
+    wording_sha256: "91d4121e6d88956e64664ad51044f727e597c8f63435a359b28bf31b140c0547"
+    facets: 4
+    held: false
+    page_labels:
+    - "413"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p070"
+    - "shared_index_entry:Admin-principles-1442:p071"
+    - "shared_index_entry:Admin-principles-1442:p079"
+    - "shared_index_entry:Admin-principles-1442:p119"
+    - "sibling_under_title:Admin-principles-1442:p027"
+    - "sibling_under_title:Admin-principles-1442:p088"
+  Admin-principles-1442:p132:
+    first_run: 1
+    wording_sha256: "3eca8cc693dabde1d2660d9dc3a305bbcd34fb711c41b6970987da638421d93b"
+    facets: 3
+    held: false
+    page_labels:
+    - "709"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p149"
+  Admin-principles-1442:p134:
+    first_run: 1
+    wording_sha256: "0e5b8c1b8d58de07bd44fc683f3e2d1213b10fb2904c7c06ef07c8a5beede44a"
+    facets: 11
+    held: false
+    page_labels:
+    - "719"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p014"
+    - "shared_index_entry:Admin-principles-1442:p019"
+    - "sibling_under_title:Admin-principles-1442:p214"
+  Admin-principles-1442:p011:
+    first_run: 1
+    wording_sha256: "47006ccd4f4d5a64125c278664fa0dca62d00a0c69883b0e1eac206a17706c47"
+    facets: 3
+    held: false
+    page_labels:
+    - "72"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p022"
+    - "sibling_under_title:Admin-principles-1442:p041"
+    - "sibling_under_title:Admin-principles-1442:p126"
+    - "sibling_under_title:Admin-principles-1442:p191"
+    - "sibling_under_title:Admin-principles-1442:p214"
+  Admin-principles-1442:p041:
+    first_run: 1
+    wording_sha256: "b302df17bb4333a4499f5ae18f844c9ca8cafceb2ed6176a1a6833bfa09fa2d6"
+    facets: 5
+    held: false
+    page_labels:
+    - "238"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p022"
+    - "shared_index_entry:Admin-principles-1442:p191"
+    - "sibling_under_title:Admin-principles-1442:p011"
+    - "sibling_under_title:Admin-principles-1442:p082"
+  Admin-principles-1442:p191:
+    first_run: 1
+    wording_sha256: "db2a5870e07b042750b8fcda1864a4c373269ae0a5a1278250a0492c1ac399b3"
+    facets: 3
+    held: false
+    page_labels:
+    - "1029"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p022"
+    - "shared_index_entry:Admin-principles-1442:p041"
+    - "sibling_under_title:Admin-principles-1442:p011"
+    - "sibling_under_title:Admin-principles-1442:p082"
+  Admin-principles-1442:p083:
+    first_run: 1
+    wording_sha256: "cde5f8d0763d11b9446768fda39fd93b3a606e4904b4088264dfa3b24dcfb824"
+    facets: 5
+    held: false
+    page_labels:
+    - "449"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p082"
+  Admin-principles-1442:p216:
+    first_run: 1
+    wording_sha256: "8c82b717fa3d6c035690830bcb7f57164961f592a6b4717e5c09346a2b184bbd"
+    facets: 3
+    held: false
+    page_labels:
+    - "1149"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p037"
+    - "sibling_under_title:Admin-principles-1442:p212"
+    - "sibling_under_title:Admin-principles-1442:p224"
+  Admin-principles-1442:p163:
+    first_run: 1
+    wording_sha256: "f516c33e1b42c16612b3042743ac318ae0dd85f93a722731d3c3acb8f40fd18f"
+    facets: 6
+    held: false
+    page_labels:
+    - "873"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p054"
+    - "sibling_under_title:Admin-principles-1442:p012"
+    - "sibling_under_title:Admin-principles-1442:p054"
+  Admin-principles-1442:p219:
+    first_run: 1
+    wording_sha256: "9a8fa3fbc9bb0727a32e05c22bf7f7d56bacec24e04d7a115774e926a042694e"
+    facets: 1
+    held: false
+    page_labels:
+    - "1167"
+    relations: []
+  Admin-principles-1442:p019:
+    first_run: 1
+    wording_sha256: "ad8f4e27b7d07427a72a7fe6de384f794220da2fca59b380fdc3277de40cf82d"
+    facets: 10
+    held: false
+    page_labels:
+    - "126"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p014"
+    - "shared_index_entry:Admin-principles-1442:p134"
+  Admin-principles-1442:p093:
+    first_run: 1
+    wording_sha256: "9596cc9020e553013831837f14010fc82a8108d5908109436deb756fb08a39c7"
+    facets: 1
+    held: false
+    page_labels:
+    - "508"
+    relations: []
+  Admin-principles-1442:p107:
+    first_run: 1
+    wording_sha256: "de3ed7e7d1c683229231dad0192113ddfb45994d3c60eaefe65933aa130441ec"
+    facets: 3
+    held: false
+    page_labels:
+    - "582"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p108"
+    - "shared_index_entry:Admin-principles-1442:p109"
+    - "shared_index_entry:Admin-principles-1442:p112"
+    - "shared_index_entry:Admin-principles-1442:p115"
+    - "shared_index_entry:Admin-principles-1442:p118"
+    - "shared_index_entry:Admin-principles-1442:p121"
+    - "shared_index_entry:Admin-principles-1442:p133"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "shared_index_entry:Admin-principles-1442:p148"
+    - "shared_index_entry:Admin-principles-1442:p156"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p165"
+    - "shared_index_entry:Admin-principles-1442:p172"
+    - "shared_index_entry:Admin-principles-1442:p226"
+    - "sibling_under_title:Admin-principles-1442:p183"
+  Admin-principles-1442:p112:
+    first_run: 1
+    wording_sha256: "fe8fd950b1643a2caaf7707f7227a7262c85b9edf25260a59d6d153113a11815"
+    facets: 2
+    held: false
+    page_labels:
+    - "602"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p107"
+    - "shared_index_entry:Admin-principles-1442:p108"
+    - "shared_index_entry:Admin-principles-1442:p109"
+    - "shared_index_entry:Admin-principles-1442:p115"
+    - "shared_index_entry:Admin-principles-1442:p118"
+    - "shared_index_entry:Admin-principles-1442:p121"
+    - "shared_index_entry:Admin-principles-1442:p133"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "shared_index_entry:Admin-principles-1442:p148"
+    - "shared_index_entry:Admin-principles-1442:p156"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p165"
+    - "shared_index_entry:Admin-principles-1442:p172"
+    - "shared_index_entry:Admin-principles-1442:p226"
+    - "sibling_under_title:Admin-principles-1442:p111"
+    - "sibling_under_title:Admin-principles-1442:p183"
+  Admin-principles-1442:p138:
+    first_run: 1
+    wording_sha256: "0375355630e4f5c2fc8bfff95a3b5aa1480151994f0b06d75d7cb20fd3fb19ab"
+    facets: 9
+    held: false
+    page_labels:
+    - "747"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p107"
+    - "shared_index_entry:Admin-principles-1442:p108"
+    - "shared_index_entry:Admin-principles-1442:p109"
+    - "shared_index_entry:Admin-principles-1442:p112"
+    - "shared_index_entry:Admin-principles-1442:p115"
+    - "shared_index_entry:Admin-principles-1442:p118"
+    - "shared_index_entry:Admin-principles-1442:p121"
+    - "shared_index_entry:Admin-principles-1442:p131"
+    - "shared_index_entry:Admin-principles-1442:p133"
+    - "shared_index_entry:Admin-principles-1442:p148"
+    - "shared_index_entry:Admin-principles-1442:p156"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p165"
+    - "shared_index_entry:Admin-principles-1442:p168"
+    - "shared_index_entry:Admin-principles-1442:p172"
+    - "shared_index_entry:Admin-principles-1442:p226"
+    - "sibling_under_title:Admin-principles-1442:p027"
+    - "sibling_under_title:Admin-principles-1442:p177"
+    - "sibling_under_title:Admin-principles-1442:p183"
+  Admin-principles-1442:p172:
+    first_run: 1
+    wording_sha256: "46020a6f96f9f9f462d4fa3d062c1362478c4eccdb16e85ce342efd61c948dad"
+    facets: 3
+    held: false
+    page_labels:
+    - "923"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p107"
+    - "shared_index_entry:Admin-principles-1442:p108"
+    - "shared_index_entry:Admin-principles-1442:p109"
+    - "shared_index_entry:Admin-principles-1442:p112"
+    - "shared_index_entry:Admin-principles-1442:p115"
+    - "shared_index_entry:Admin-principles-1442:p118"
+    - "shared_index_entry:Admin-principles-1442:p121"
+    - "shared_index_entry:Admin-principles-1442:p133"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "shared_index_entry:Admin-principles-1442:p148"
+    - "shared_index_entry:Admin-principles-1442:p156"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p165"
+    - "shared_index_entry:Admin-principles-1442:p226"
+    - "sibling_under_title:Admin-principles-1442:p183"
+  Admin-principles-1442:p226:
+    first_run: 1
+    wording_sha256: "c1b56a7119cfe9385f9314e4b704bdb66489b2189235d0061a980ac6516c8ed8"
+    facets: 2
+    held: false
+    page_labels:
+    - "1202"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p107"
+    - "shared_index_entry:Admin-principles-1442:p108"
+    - "shared_index_entry:Admin-principles-1442:p109"
+    - "shared_index_entry:Admin-principles-1442:p112"
+    - "shared_index_entry:Admin-principles-1442:p115"
+    - "shared_index_entry:Admin-principles-1442:p118"
+    - "shared_index_entry:Admin-principles-1442:p121"
+    - "shared_index_entry:Admin-principles-1442:p133"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "shared_index_entry:Admin-principles-1442:p148"
+    - "shared_index_entry:Admin-principles-1442:p156"
+    - "shared_index_entry:Admin-principles-1442:p162"
+    - "shared_index_entry:Admin-principles-1442:p165"
+    - "shared_index_entry:Admin-principles-1442:p172"
+    - "sibling_under_title:Admin-principles-1442:p183"
+  Admin-principles-1442:p139:
+    first_run: 1
+    wording_sha256: "fabde312a67d8b03ccc0ff55594ab66f490955fae956a8ab4109cec6bbe45383"
+    facets: 2
+    held: false
+    page_labels:
+    - "755"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p078"
+  Admin-principles-1442:p206:
+    first_run: 1
+    wording_sha256: "f6c4a8aa787377627bc81379652d5b87181078efe8ddf85299a2254c90fb17ad"
+    facets: 2
+    held: false
+    page_labels:
+    - "1102"
+    relations: []
+  Admin-principles-1442:p059:
+    first_run: 1
+    wording_sha256: "9f5070bfd33e9c86cf61f459fa4723c4a04e897e00955f843bc87cd279cfc392"
+    facets: 2
+    held: false
+    page_labels:
+    - "334"
+    relations: []
+  Admin-principles-1442:p196:
+    first_run: 1
+    wording_sha256: "42c078c4e98d626d0793ef99ef29c1223ce291bcd7370b50b59145a70775de5d"
+    facets: 1
+    held: false
+    page_labels:
+    - "1050"
+    relations: []
+  Admin-principles-1442:p140:
+    first_run: 1
+    wording_sha256: "4f6a788123c13a77b7c740174f664d2bc6124cf54265cfb048c92ebc9dd59656"
+    facets: 1
+    held: false
+    page_labels:
+    - "759"
+    relations: []
+  Admin-principles-1442:p051:
+    first_run: 1
+    wording_sha256: "2022283a49a9480f0e7eca46e469fa826e17c881a5af3a3215b37a723017c5ad"
+    facets: 2
+    held: false
+    page_labels:
+    - "290"
+    relations: []
+  Admin-principles-1442:p033:
+    first_run: 1
+    wording_sha256: "bf7d5706e9cc2c7bde097d4e2897c0d7f4500d4d3f49f80273906f2e1133add9"
+    facets: 4
+    held: false
+    page_labels:
+    - "202"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p012"
+    - "sibling_under_title:Admin-principles-1442:p043"
+  Admin-principles-1442:p131:
+    first_run: 1
+    wording_sha256: "cea5f1ed3edd584081d4d47080c6e70469db67c4099dfee1f2c098872a6d6d79"
+    facets: 7
+    held: false
+    page_labels:
+    - "700"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p130"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "shared_index_entry:Admin-principles-1442:p143"
+    - "shared_index_entry:Admin-principles-1442:p168"
+    - "shared_index_entry:Admin-principles-1442:p215"
+    - "shared_index_entry:Admin-principles-1442:p221"
+    - "sibling_under_title:Admin-principles-1442:p043"
+  Admin-principles-1442:p085:
+    first_run: 1
+    wording_sha256: "a6c5a534cb6b1eefe5f095316348e408404169acddb8516bca9943ef3b4f379c"
+    facets: 5
+    held: false
+    page_labels:
+    - "461"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p086"
+    - "sibling_under_title:Admin-principles-1442:p086"
+  Admin-principles-1442:p086:
+    first_run: 1
+    wording_sha256: "62259cd70115d409707f0e82e23b9246580d86bde8b4334b574badf6b9eeaff5"
+    facets: 5
+    held: false
+    page_labels:
+    - "468"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p028"
+    - "shared_index_entry:Admin-principles-1442:p085"
+    - "sibling_under_title:Admin-principles-1442:p085"
+    - "sibling_under_title:Admin-principles-1442:p105"
+    - "sibling_under_title:Admin-principles-1442:p170"
+    - "sibling_under_title:Admin-principles-1442:p186"
+  Admin-principles-1442:p106:
+    first_run: 1
+    wording_sha256: "9f39f8a93293d674087517beef29c6a8a752e125d2c01e2e88a2385b469fe978"
+    facets: 8
+    held: false
+    page_labels:
+    - "576"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p029"
+    - "shared_index_entry:Admin-principles-1442:p055"
+    - "sibling_under_title:Admin-principles-1442:p116"
+    - "sibling_under_title:Admin-principles-1442:p185"
+    - "sibling_under_title:Admin-principles-1442:p190"
+    - "sibling_under_title:Admin-principles-1442:p212"
+    history:
+    - run: 2
+      previous_wording_sha256: "4a5507c4f4da65f7cf146529931cd6ad793cfa03252f985ff0c1b87d05ac18c1"
+  Admin-principles-1442:p117:
+    first_run: 1
+    wording_sha256: "c8aebdbcdf2ae531ec7a0d0910ccc7256f5fc0bb1f7338fd72d56b420fec0aa1"
+    facets: 2
+    held: false
+    page_labels:
+    - "632"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p116"
+    - "sibling_under_title:Admin-principles-1442:p208"
+  Admin-principles-1442:p208:
+    first_run: 1
+    wording_sha256: "0b1aabd461ebb6aee4a77ee79f0dd4d2fa8555948a884b488fc3129d856b115c"
+    facets: 2
+    held: false
+    page_labels:
+    - "1109"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p117"
+  Admin-principles-1442:p127:
+    first_run: 1
+    wording_sha256: "7d619ed9fe6d913d97e0fc9ccfbf0e213526ac097e274c9f583c2687f0648977"
+    facets: 1
+    held: false
+    page_labels:
+    - "681"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p200"
+  Admin-principles-1442:p200:
+    first_run: 1
+    wording_sha256: "7d619ed9fe6d913d97e0fc9ccfbf0e213526ac097e274c9f583c2687f0648977"
+    facets: 1
+    held: false
+    page_labels:
+    - "1071"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p127"
+  Admin-principles-1442:p176:
+    first_run: 1
+    wording_sha256: "3accb96a26a0eb79ba189f52bdbdbb1b1dfe9e94fcc968432b5f0d1754ddf5db"
+    facets: 3
+    held: false
+    page_labels:
+    - "944"
+    relations: []
+  Admin-principles-1442:p049:
+    first_run: 1
+    wording_sha256: "7e7e656b0b9a20717aba2a55b3705cd79a900ca501ce6c68b2c45890b259faa9"
+    facets: 1
+    held: false
+    page_labels:
+    - "280"
+    relations: []
+  Admin-principles-1442:p077:
+    first_run: 1
+    wording_sha256: "d9b0fdb1f22755c66950851a23b892ffbdf06e170b4888dc6ef77ae29e1a8fdc"
+    facets: 1
+    held: false
+    page_labels:
+    - "418"
+    relations: []
+  Admin-principles-1442:p028:
+    first_run: 1
+    wording_sha256: "abc7b831d95a9f490860b43832db045b77517d88ac7a8507e9953c7f625c8160"
+    facets: 1
+    held: false
+    page_labels:
+    - "180"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p086"
+    - "sibling_under_title:Admin-principles-1442:p186"
+  Admin-principles-1442:p064:
+    first_run: 1
+    wording_sha256: "53a8944dad625d333bbdb3f599d84c871399b719755fcce767d071a6c88b173e"
+    facets: 1
+    held: false
+    page_labels:
+    - "353"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p164"
+    - "sibling_under_title:Admin-principles-1442:p186"
+    - "sibling_under_title:Admin-principles-1442:p215"
+  Admin-principles-1442:p215:
+    first_run: 1
+    wording_sha256: "ce76e781346e1cd67e827d75f75dcb19ae1ab3be632522203b8e335e8de1747d"
+    facets: 4
+    held: false
+    page_labels:
+    - "1142"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p130"
+    - "shared_index_entry:Admin-principles-1442:p131"
+    - "shared_index_entry:Admin-principles-1442:p143"
+    - "shared_index_entry:Admin-principles-1442:p164"
+    - "shared_index_entry:Admin-principles-1442:p221"
+    - "sibling_under_title:Admin-principles-1442:p043"
+    - "sibling_under_title:Admin-principles-1442:p064"
+    - "sibling_under_title:Admin-principles-1442:p221"
+  Admin-principles-1442:p221:
+    first_run: 1
+    wording_sha256: "edf62e1865208e2116b1abaac130094f678f518699190ab31dc52b74a5640d26"
+    facets: 3
+    held: false
+    page_labels:
+    - "1178"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p130"
+    - "shared_index_entry:Admin-principles-1442:p131"
+    - "shared_index_entry:Admin-principles-1442:p143"
+    - "shared_index_entry:Admin-principles-1442:p186"
+    - "shared_index_entry:Admin-principles-1442:p215"
+    - "sibling_under_title:Admin-principles-1442:p043"
+    - "sibling_under_title:Admin-principles-1442:p164"
+    - "sibling_under_title:Admin-principles-1442:p215"
+  Admin-principles-1442:p027:
+    first_run: 1
+    wording_sha256: "3fdf695ddb2a30b696c6912b6aa55f4c7d67dd6c2d009c6d12927557168f7d50"
+    facets: 4
+    held: false
+    page_labels:
+    - "175"
+    relations:
+    - "see_also:حرف د/ دعوى - الحكم في الدعوى - اطراح نصوص العقد"
+    - "sibling_under_title:Admin-principles-1442:p023"
+    - "sibling_under_title:Admin-principles-1442:p070"
+    - "sibling_under_title:Admin-principles-1442:p071"
+    - "sibling_under_title:Admin-principles-1442:p076"
+    - "sibling_under_title:Admin-principles-1442:p079"
+    - "sibling_under_title:Admin-principles-1442:p119"
+    - "sibling_under_title:Admin-principles-1442:p138"
+  Admin-principles-1442:p070:
+    first_run: 1
+    wording_sha256: "ca9dcf7a949c5861e706df6627fc16c70b618ef43bb9775882fea3c53186e6c2"
+    facets: 1
+    held: false
+    page_labels:
+    - "385"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p071"
+    - "shared_index_entry:Admin-principles-1442:p076"
+    - "shared_index_entry:Admin-principles-1442:p079"
+    - "shared_index_entry:Admin-principles-1442:p119"
+    - "sibling_under_title:Admin-principles-1442:p027"
+    - "sibling_under_title:Admin-principles-1442:p088"
+  Admin-principles-1442:p228:
+    first_run: 1
+    wording_sha256: "e2be1c792465d36857e169d42f7d97b2c310dce7e7fb3e18407ff919ba2e29bd"
+    facets: 1
+    held: false
+    page_labels:
+    - "1210"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p224"
+    - "sibling_under_title:Admin-principles-1442:p230"
+  Admin-principles-1442:p062:
+    first_run: 1
+    wording_sha256: "bdfe8c93bc56c3b0d48f08a35d7b823eba0498f2e1312e642682f7a2a65c600c"
+    facets: 1
+    held: false
+    page_labels:
+    - "345"
+    relations: []
+  Admin-principles-1442:p211:
+    first_run: 1
+    wording_sha256: "776a4fb27058a9ee5e6b81e39307eeb1932f1f17ea942e7454c9f7050e115aa9"
+    facets: 2
+    held: false
+    page_labels:
+    - "1124"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p169"
+  Admin-principles-1442:p194:
+    first_run: 1
+    wording_sha256: "a23e7e9c149f68d80eb9a4de7484a8390e6440750f79188fe5ce81c3dd1e13ce"
+    facets: 2
+    held: false
+    page_labels:
+    - "1043"
+    relations: []
+  Admin-principles-1442:p188:
+    first_run: 1
+    wording_sha256: "d1c58a8f883df8f8f2cbf60005692d2a4a1e4ee7a057f84b2d9b29aeed1d7da8"
+    facets: 3
+    held: false
+    page_labels:
+    - "1008"
+    relations: []
+  Admin-principles-1442:p198:
+    first_run: 1
+    wording_sha256: "3d5bc70a83580394310f9e5f37cfeeaea6b32dcf1c5ceb14249b1b24b0e93c35"
+    facets: 5
+    held: false
+    page_labels:
+    - "1060"
+    relations:
+    - "see_also:حرف ع/ عقد - عقد استثمار - سلطة محكمة الموضوع في تحديد الإخلال الجسيم بالتزامات العقد"
+    - "see_also:حرف ع/ عقد - عقد استثمار - شرط فسخ العقد للإخلال بالالتزامات"
+  Admin-principles-1442:p199:
+    first_run: 1
+    wording_sha256: "9fb7cad893f1d5175ae6a2fd9d3765fb82c9006ca20f6acefe1da962fd037d04"
+    facets: 2
+    held: false
+    page_labels:
+    - "1067"
+    relations: []
+  Admin-principles-1442:p168:
+    first_run: 1
+    wording_sha256: "52fa88f45fc2e20ededff540438176e3f822c1eb1b6357f69d938d91792db994"
+    facets: 9
+    held: false
+    page_labels:
+    - "899"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p131"
+    - "shared_index_entry:Admin-principles-1442:p138"
+    - "sibling_under_title:Admin-principles-1442:p233"
+  Admin-principles-1442:p210:
+    first_run: 1
+    wording_sha256: "fcf1bda9af1d19183a6849d4b322990d8f4ec66acc1c780f034cd57f6e87d05a"
+    facets: 7
+    held: false
+    page_labels:
+    - "1117"
+    relations:
+    - "see_also:حرف ع/ عقد - سحب العمل والتنفيذ على الحساب - سلطة الجهة الإدارية في سحب العمل وفسخ العقد"
+    - "see_also:حرف ع/ عقد - سحب العمل والتنفيذ على الحساب - سلطة الجهة الإدارية فيه"
+    - "sibling_under_title:Admin-principles-1442:p055"
+    - "sibling_under_title:Admin-principles-1442:p175"
+  Admin-principles-1442:p054:
+    first_run: 1
+    wording_sha256: "26a5b992b07a68cc98744fc6d7c5b4b870c01b3d2771834fa4d54293947cae2a"
+    facets: 3
+    held: false
+    page_labels:
+    - "309"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p163"
+    - "sibling_under_title:Admin-principles-1442:p012"
+    - "sibling_under_title:Admin-principles-1442:p163"
+  Admin-principles-1442:p155:
+    first_run: 1
+    wording_sha256: "7a01bfccbeaea427d84dc870e09ad420a994071a4e1608f3038e7e37d424536d"
+    facets: 1
+    held: false
+    page_labels:
+    - "829"
+    relations: []
+  Admin-principles-1442:p045:
+    first_run: 1
+    wording_sha256: "64216cb90fc9e3aa1d690ec79cc8dc84445f91cfbd7c7dad93f3b0184a01d618"
+    facets: 1
+    held: false
+    page_labels:
+    - "263"
+    relations: []
+  Admin-principles-1442:p042:
+    first_run: 1
+    wording_sha256: "82d384874b53faba49114d09291ab7a3fb8e8ceb8d86e8d1a346190bcb0bf121"
+    facets: 1
+    held: false
+    page_labels:
+    - "245"
+    relations: []
+  Admin-principles-1442:p055:
+    first_run: 1
+    wording_sha256: "30763dd56aef4d8858686ac026642ff2a28680a079fd696a8b2df83d163461d4"
+    facets: 6
+    held: false
+    page_labels:
+    - "314"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p029"
+    - "shared_index_entry:Admin-principles-1442:p106"
+    - "shared_index_entry:Admin-principles-1442:p175"
+    - "sibling_under_title:Admin-principles-1442:p175"
+    - "sibling_under_title:Admin-principles-1442:p190"
+    - "sibling_under_title:Admin-principles-1442:p210"
+  Admin-principles-1442:p015:
+    first_run: 1
+    wording_sha256: "1ce05a56f502b52ec190e53341aafdb49a55ed3e71c2fcd868a725d4c39f50ac"
+    facets: 4
+    held: false
+    page_labels:
+    - "101"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p004"
+    - "shared_index_entry:Admin-principles-1442:p053"
+    - "shared_index_entry:Admin-principles-1442:p069"
+    - "shared_index_entry:Admin-principles-1442:p072"
+    - "shared_index_entry:Admin-principles-1442:p123"
+    - "shared_index_entry:Admin-principles-1442:p135"
+    - "shared_index_entry:Admin-principles-1442:p225"
+    - "sibling_under_title:Admin-principles-1442:p038"
+    - "sibling_under_title:Admin-principles-1442:p069"
+    - "sibling_under_title:Admin-principles-1442:p082"
+    - "sibling_under_title:Admin-principles-1442:p123"
+    - "sibling_under_title:Admin-principles-1442:p225"
+  Admin-principles-1442:p207:
+    first_run: 1
+    wording_sha256: "08cb71643618457c03442cf429e06b493557007b117c5c6896a96b9330d41b49"
+    facets: 1
+    held: false
+    page_labels:
+    - "1106"
+    relations: []
+  Admin-principles-1442:p177:
+    first_run: 1
+    wording_sha256: "b559a01781b31c2ba0c93350950995251c28b1f514ed130e67a1aedbae92d940"
+    facets: 4
+    held: false
+    page_labels:
+    - "949"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p137"
+    - "shared_index_entry:Admin-principles-1442:p174"
+    - "sibling_under_title:Admin-principles-1442:p105"
+    - "sibling_under_title:Admin-principles-1442:p138"
+    - "sibling_under_title:Admin-principles-1442:p170"
+    - "sibling_under_title:Admin-principles-1442:p174"
+  Admin-principles-1442:p105:
+    first_run: 1
+    wording_sha256: "3ab1d1551e8562ce4d33957ad2c228f342ab046f59b77f6247d1c3694273e999"
+    facets: 4
+    held: false
+    page_labels:
+    - "571"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p170"
+    - "sibling_under_title:Admin-principles-1442:p086"
+    - "sibling_under_title:Admin-principles-1442:p137"
+    - "sibling_under_title:Admin-principles-1442:p174"
+    - "sibling_under_title:Admin-principles-1442:p177"
+  Admin-principles-1442:p010:
+    first_run: 1
+    wording_sha256: "567316db4f59ead797b653f6dce316bc27c8334ec2ba06a1dc7d6c73869977ad"
+    facets: 1
+    held: false
+    page_labels:
+    - "69"
+    relations: []
+  Admin-principles-1442:p202:
+    first_run: 1
+    wording_sha256: "beb1066397ec81a5e7773c40c36be4c1c99ea30d896cc6d9bebc7ee62acf6d38"
+    facets: 1
+    held: false
+    page_labels:
+    - "1082"
+    relations: []
+  Admin-principles-1442:p038:
+    first_run: 1
+    wording_sha256: "5c6277f0466a0b238bdfaaff3e38488036faa50ae15caf5ff3e426e1329c7ff5"
+    facets: 2
+    held: false
+    page_labels:
+    - "226"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p015"
+    - "sibling_under_title:Admin-principles-1442:p217"
+  Admin-principles-1442:p217:
+    first_run: 1
+    wording_sha256: "ff3a4c8e3e608f40a4b528364cc04a02951f7c81a4710a945116eebc8a7355ec"
+    facets: 3
+    held: false
+    page_labels:
+    - "1155"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p038"
+  Admin-principles-1442:p003:
+    first_run: 1
+    wording_sha256: "0696b4eb2c57574f7d3df94e3d44e8d936abddbdbc6a67e4f8e69c7a3c13374b"
+    facets: 6
+    held: false
+    page_labels:
+    - "21"
+    relations: []
+  Admin-principles-1442:p174:
+    first_run: 1
+    wording_sha256: "fdaf70db3038883918f95bc9e4250064c0d8e4b677f6c6f7d8b655384dd74aaf"
+    facets: 5
+    held: false
+    page_labels:
+    - "931"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p137"
+    - "shared_index_entry:Admin-principles-1442:p177"
+    - "sibling_under_title:Admin-principles-1442:p105"
+    - "sibling_under_title:Admin-principles-1442:p137"
+    - "sibling_under_title:Admin-principles-1442:p170"
+    - "sibling_under_title:Admin-principles-1442:p177"
+  Admin-principles-1442:p029:
+    first_run: 1
+    wording_sha256: "8762605528b37b5b25da458d1f50ffa3ce564b9e322306ab743f5460ebb17efe"
+    facets: 3
+    held: false
+    page_labels:
+    - "183"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p055"
+    - "shared_index_entry:Admin-principles-1442:p106"
+    - "sibling_under_title:Admin-principles-1442:p190"
+  Admin-principles-1442:p137:
+    first_run: 1
+    wording_sha256: "d7accd7a287d32684f96202abe6335beafa7d48e659dfa36c0ddb6c5e49665fd"
+    facets: 3
+    held: false
+    page_labels:
+    - "740"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p174"
+    - "shared_index_entry:Admin-principles-1442:p177"
+    - "sibling_under_title:Admin-principles-1442:p105"
+    - "sibling_under_title:Admin-principles-1442:p170"
+    - "sibling_under_title:Admin-principles-1442:p174"
+  Admin-principles-1442:p013:
+    first_run: 1
+    wording_sha256: "4300cc7ba0feba53753b9430f5f16ee8f146b942b194745f8da5d0c0abb0d7cb"
+    facets: 2
+    held: false
+    page_labels:
+    - "84"
+    relations: []
+  Admin-principles-1442:p203:
+    first_run: 1
+    wording_sha256: "5484422ec7c6f26a0bc9f9fc976b9da2948b34660185ea8f872d0748e54af5ab"
+    facets: 2
+    held: false
+    page_labels:
+    - "1086"
+    relations: []
+  Admin-principles-1442:p026:
+    first_run: 1
+    wording_sha256: "cb5367a6de2fa27022016e529aeb2f2008b463737b80699bf42cb662b15b81d6"
+    facets: 2
+    held: false
+    page_labels:
+    - "172"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p187"
+    - "sibling_under_title:Admin-principles-1442:p201"
+  Admin-principles-1442:p147:
+    first_run: 1
+    wording_sha256: "d5ab31734208f4101a5e20e760bcd11c6848d8ba0ee9fcfd32d8bb8aebd9510a"
+    facets: 1
+    held: false
+    page_labels:
+    - "791"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p201"
+  Admin-principles-1442:p201:
+    first_run: 1
+    wording_sha256: "b606a6928cdf83538488441346c4ad41135d52c927f8d79e191b7b624a99bfa8"
+    facets: 1
+    held: false
+    page_labels:
+    - "1075"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p026"
+    - "sibling_under_title:Admin-principles-1442:p147"
+  Admin-principles-1442:p187:
+    first_run: 1
+    wording_sha256: "6e97cc212cbedfc11063248cd6a072479a399d7ead84b8a39440434d8cd24d91"
+    facets: 1
+    held: false
+    page_labels:
+    - "1002"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p026"
+    - "sibling_under_title:Admin-principles-1442:p213"
+  Admin-principles-1442:p213:
+    first_run: 1
+    wording_sha256: "e15c9ceb1cc798e5ce674301ff070c6744ba48cd9951adec52e681ee34530483"
+    facets: 1
+    held: false
+    page_labels:
+    - "1132"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p047"
+    - "sibling_under_title:Admin-principles-1442:p187"
+  Admin-principles-1442:p047:
+    first_run: 1
+    wording_sha256: "a354a047e76100280de22fadd4cb296acfd7f616d80d99b16228d0bbbf01b630"
+    facets: 2
+    held: false
+    page_labels:
+    - "272"
+    relations:
+    - "sibling_under_title:Admin-principles-1442:p213"
+  Admin-principles-1442:p152:
+    first_run: 1
+    wording_sha256: "765cf0327b1d1d5ff65b8e00f4fe240733fdcb25c5150e3b390bce0c80f299f6"
+    facets: 4
+    held: false
+    page_labels:
+    - "817"
+    relations: []
+  Admin-principles-1442:p237:
+    first_run: 1
+    wording_sha256: "262a891e605806e1e12cb981ad97547a21c76efda66fcba8b291f0ce40b22684"
+    facets: 3
+    held: false
+    page_labels:
+    - "1250"
+    relations: []
+  Admin-principles-1442:p171:
+    first_run: 1
+    wording_sha256: "a34388825235e23c2ac03e70052f8d137865527290b8171bb81ae692f7ab76c5"
+    facets: 1
+    held: false
+    page_labels:
+    - "918"
+    relations: []
+  Admin-principles-1442:p098:
+    first_run: 1
+    wording_sha256: "c37a4acbe4fd36ff9740f0085212ff29f17be446d7e88d7c687df0bbf7240439"
+    facets: 4
+    held: false
+    page_labels:
+    - "534"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p104"
+  Admin-principles-1442:p104:
+    first_run: 1
+    wording_sha256: "8993b790e8fa1e640f21627574401ecf8adf79643953a4c6d239fd0f8e9293b4"
+    facets: 5
+    held: false
+    page_labels:
+    - "564"
+    relations:
+    - "shared_index_entry:Admin-principles-1442:p098"
+sources:
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1442.pdf"
+  sha256: "f3fecc9c4d43e611907f2ecec82f44c8d381516a1a5b24cd765064907ae813f1"
