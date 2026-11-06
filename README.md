@@ -1,4 +1,4 @@
-# Admin-Pr
+# Admin-Arabic_Laws
 
 A memory vault of the judicial principles decided by the Saudi Supreme Administrative Court, as published by the Board of Grievances («مجموعة المبادئ التي قررتها المحكمة الإدارية العليا»), built from the published PDF files by a reproducible pipeline.
 
