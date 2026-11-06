@@ -15,6 +15,8 @@ A memory vault of the judicial principles decided by the Saudi Supreme Administr
 
 ## Running the pipeline
 
+Step-by-step instructions with command examples: `USAGE.md` (also `USAGE.pdf`, regenerated with `scripts/render_usage_pdf.py`).
+
 Create the project environment once (existing Python and uv; the prompt's section 3):
 
 ```bash
