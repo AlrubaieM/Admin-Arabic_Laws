@@ -1,6 +1,6 @@
-"""Render USAGE.md to USAGE.pdf with PyMuPDF Story (HarfBuzz shaping for Arabic; fonts from C:WindowsFonts).
+r"""Render USAGE.md to USAGE.pdf with PyMuPDF Story (HarfBuzz shaping for Arabic; fonts from C:\Windows\Fonts).
 
-Usage: uv run --no-project --no-managed-python --no-python-downloads --python .venvScriptspython.exe scriptsender_usage_pdf.py USAGE.md USAGE.pdf
+Usage: uv run --no-project --no-managed-python --no-python-downloads --python .venv\Scripts\python.exe scripts\render_usage_pdf.py USAGE.md USAGE.pdf
 """
 import html
 import re
