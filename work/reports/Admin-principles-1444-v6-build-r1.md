@@ -1,0 +1,72 @@
+# Build report — Admin-principles-1444-v6 (run 1)
+
+- source files: pr year 1444 orginal export.pdf, Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf
+- principle files: 23; held: 0; facets: 29; vault files: 25
+- page classes: {'cataloging': 2, 'cover': 1, 'divider': 1, 'half_title': 2, 'index_detailed': 6, 'index_summary': 1}
+- line classes: {'apparatus:hidden_folio': 4, 'apparatus:page_number': 7, 'cataloging_text': 14, 'header_row': 24, 'index_wording': 107, 'letter': 1, 'number': 29, 'outline': 9, 'page_label': 29, 'subtopic_opener': 8, 'summary_letter': 13, 'summary_topics': 15, 'title': 28, 'topic': 7}
+- apparatus excluded per page (images, non-ruling drawings): {'1': {'images': 3, 'drawings': 0}, '2': {'images': 0, 'drawings': 4}, '3': {'images': 0, 'drawings': 5}, '4': {'images': 4, 'drawings': 0}, '5': {'images': 3, 'drawings': 0}, '6': {'images': 5, 'drawings': 0}, '7': {'images': 3, 'drawings': 29}, '8': {'images': 5, 'drawings': 0}, '9': {'images': 2, 'drawings': 0}, '10': {'images': 3, 'drawings': 0}, '11': {'images': 2, 'drawings': 0}, '12': {'images': 3, 'drawings': 0}, '13': {'images': 2, 'drawings': 0}}
+- glyphs by status: {'cmap': 5932, 'cmap_reference': 10, 'cmap_shared': 188, 'compose': 237, 'drop:duplicate_space': 2, 'drop:hamza_mark': 237, 'drop:ligature_continuation': 365, 'drop:tail': 302, 'repair': 1109, 'space': 1429, 'symbol_digit': 72}
+- wrap joins: 78; reference separations: 0; geometry-inserted spaces: 0; tatweel runs removed: 0; duplicate space glyphs dropped: 2
+- summary-index coverage: {'complete': [], 'partial': [], 'absent_from_summary': []}
+- fonts identified by identical outlines in other verified sources: Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf: CIDFont+F1 = Admin-principles-1443-v6/Indexes-1443-v6.pdf:HacenTunisiaLt (11/11 identical outlines), Admin-principles-1444-v6/pr year 1444 orginal export.pdf:HacenTunisiaLt (11/11 identical outlines) (10 texts, 0 repairs); Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf: CIDFont+F2 = Admin-principles-1443-v6/Indexes-1443-v6.pdf:AXtManalBold (62/62 identical outlines), Admin-principles-1444-v6/pr year 1444 orginal export.pdf:AXtManalBold (62/62 identical outlines) (41 texts, 11 repairs); Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf: CIDFont+F3 = Admin-principles-1443-v6/Indexes-1443-v6.pdf:AXtManalBold (110/110 identical outlines), Admin-principles-1444-v6/pr year 1444 orginal export.pdf:AXtManalBold (110/110 identical outlines) (98 texts, 12 repairs); Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf: CIDFont+F4 = Admin-principles-1443-v6/Indexes-1443-v6.pdf:AXtManal (150/150 identical outlines), Admin-principles-1444-v6/pr year 1444 orginal export.pdf:AXtManal (150/150 identical outlines) (138 texts, 12 repairs); pr year 1444 orginal export.pdf: HacenTunisiaLt = Admin-principles-1443-v6/Indexes-1443-v6.pdf:HacenTunisiaLt (11/11 identical outlines), Admin-principles-1444-v6/Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:CIDFont+F1 (11/11 identical outlines) (10 texts, 0 repairs); pr year 1444 orginal export.pdf: AXtManalBold = Admin-principles-1443-v6/Indexes-1443-v6.pdf:AXtManalBold (153/153 identical outlines), Admin-principles-1444-v6/Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:CIDFont+F2 (62/62 identical outlines), Admin-principles-1444-v6/Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:CIDFont+F3 (110/110 identical outlines) (128 texts, 15 repairs); pr year 1444 orginal export.pdf: AXtManal = Admin-principles-1443-v6/Indexes-1443-v6.pdf:AXtManal (169/169 identical outlines), Admin-principles-1444-v6/Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:CIDFont+F4 (150/150 identical outlines) (157 texts, 12 repairs)
+- review items: 53 (open: 53)
+- anomalies: 0
+- OCR confirmation: not run yet (pipeline.py ocr-confirm)
+- active execution profile: windows-local
+
+## Review items
+
+- 55b83525987d [glyph] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[10] x=399.4 y=326.0: font CIDFont+F3 gid 127 (unresolved:tail_without_head) — glyph without a resolved text; its line and principle are held (open)
+- b15e3b1c690b [boundary] page[7]:r0:c1: إجراءات إدارية — topic listed in the summary index under «حرف (أ)» but absent from the detailed index (open)
+- 7f87969bd788 [other] page[8]:r2:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- e033d3d0ff4c [other] page[8]:r3:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 33489220c665 [other] page[8]:r5:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- ec67cad292eb [other] page[9]:r2:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 71f35992388a [other] page[9]:r4:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- b0409c1b4495 [other] page[9]:r6:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- bd22262abc8a [other] page[9]:r8:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 7ad36df9aaf9 [other] page[9]:r9:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 490059b28060 [other] page[10]:r2:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 65f0b1966396 [other] page[10]:r3:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 84d63194d144 [other] page[10]:r4:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 40f8329cc696 [other] page[10]:r5:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 82aaa1e0e280 [other] page[11]:r1:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- a3c20353823a [other] page[11]:r2:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 31e80e68519f [other] page[11]:r3:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 945290ec9357 [other] page[11]:r5:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 90adeeef588e [other] page[11]:r6:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 3cbf9b360aca [other] page[12]:r1:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- f3d7bcce55f2 [other] page[12]:r3:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 2ea2c745c983 [other] page[12]:r4:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 3e887a337e5d [other] page[13]:r1:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- dd49d6649fb3 [other] page[13]:r2:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 7e889663cc11 [other] page[13]:r4:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 99abb1b5f2f6 [boundary] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[7]:r0:c1: إجراءات إدارية — topic listed in the summary index under «حرف (أ)» but absent from the detailed index (open)
+- a7474c490eab [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[8]:r2:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 7b0d948e651f [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[8]:r3:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 26c005e07a8a [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[8]:r5:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 614e905e3f7a [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[9]:r2:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- d84e3892c357 [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[9]:r4:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 0e583b0bffb3 [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[9]:r6:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- b10066dc7094 [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[9]:r8:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- bf2e5ccdfa09 [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[9]:r9:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- ae114901960d [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[10]:r2:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 9088ead66da5 [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[10]:r3:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 4be1d1a1dcc7 [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[10]:r4:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 80c38d717482 [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[10]:r5:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 300e5aaad68b [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[11]:r1:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- cc6775cc89c7 [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[11]:r2:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- a5a90de1d5ea [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[11]:r3:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 368019e5452b [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[11]:r5:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 6253e7fe1321 [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[11]:r6:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 37c987960bdb [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[12]:r1:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- c34f77ee6512 [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[12]:r3:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- aba2d7808549 [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[12]:r4:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 1dd642ec95c9 [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[13]:r1:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 3f8efa5d2cc3 [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[13]:r2:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 47e2b7aa5b39 [other] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[13]:r4:c0:L0: ruling reference — citation clause omitted: component missing in the source (open)
+- 8ef414632323 [wording] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[9]:r8: القواعد المنظمة للاختصاص الولائي تعد من النظام العام.
+إقامة الدعوى على الجهة الإ — wording differs between the supplied index files; the first-ranked file's wording is published and the variant is shown (open)
+- 25fe05664a31 [wording] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[10]:r2: محاكم ديوان ا الم لا تختص بنظر التظلم على العقوبة المقررة لمخالفي حظر التجول وال — wording differs between the supplied index files; the first-ranked file's wording is published and the variant is shown (open)
+- 8b2b0feec775 [wording] Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:page[13]:r1: صدور أمر سامٍ بإيقاف منح الأراضي الزراعية، واستبدال منح مالية بمنح الأراضي الزرا — wording differs between the supplied index files; the first-ranked file's wording is published and the variant is shown (open)
+- 3602c3aa2119 [other] page[2]:r2:c0:L0: رقم الإيداع : 9634/1447 — the deposit number prints 1447 left and 9634 right (nearest the colon); the vault reads the groups right to left like the ruling references (9634/1447); the serial/year order the library intends is not stated on the page (open)

@@ -1,0 +1,49 @@
+volume_id: "Admin-principles-1444-v6"
+basis: "values derived by the pipeline on 06/11/2026 from the original export; every principle was found on its page by the second reader (pdftotext cross-check), and the re-printed copy of the same pages gave the same wording except at three glyphs its print driver dropped"
+page_classes:
+  '1': "cover"
+  '2': "cataloging"
+  '3': "basmala"
+  '4': "half_title"
+  '5': "divider"
+  '6': "half_title"
+  '7': "index_summary"
+  '8': "index_detailed"
+  '9': "index_detailed"
+  '10': "index_detailed"
+  '11': "index_detailed"
+  '12': "index_detailed"
+  '13': "index_detailed"
+page_labels:
+  '7': "3"
+  '8': "4"
+  '9': "5"
+  '10': "6"
+  '11': "7"
+  '12': "8"
+  '13': "9"
+principle_numbers:
+- 5
+- 28
+- 30
+- 57
+- 58
+- 78
+- 106
+- 121
+- 126
+- 149
+- 168
+- 179
+- 183
+- 188
+- 212
+- 214
+- 215
+- 228
+- 283
+- 284
+- 360
+- 369
+- 381
+held: []

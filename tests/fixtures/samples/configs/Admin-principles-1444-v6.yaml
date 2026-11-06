@@ -1,0 +1,109 @@
+# Volume configuration: identity, source files, reader calibration, and decisions.
+# Read by scripts/pipeline.py; nothing volume-specific is hard-coded in the scripts.
+volume_id: "Admin-principles-1444-v6"
+collection_name_ar: "مجموعة المبادئ التي قررتها المحكمة الإدارية العليا"
+collection_name_en: "Principles Decided by the Supreme Administrative Court"
+collection_name_en_basis: "descriptive"
+volume_ordinal_ar: "المجلد السادس"
+volume_number: "6"
+year_hijri: "1444"
+publisher_ar: "ديوان المظالم"
+publisher_en: "Board of Grievances"
+publisher_en_basis: "descriptive"
+publisher_unit_ar: "مكتب الشؤون الفنية"
+publisher_unit_basis: "cover image read by the reviewer on 06/11/2026; the cover carries no text layer"
+folder_name: "Admin-principles-1444-v6"
+name_source_location: "page[2]:L2-L4 (cataloging block; the cover title is an image)"
+identity_basis: "cataloging_page"
+
+# Cataloging block of page[2], as printed (reader output of 06/11/2026). The deposit number is read as the
+# page prints it right to left (9634 beside the colon, then 1447), the same convention as the ruling references.
+cataloging:
+  deposit_number: "9634/1447"
+  isbn: "978-603-8286-79-1"
+  extent_ar: "151 ص ؛ ..سم"
+
+# Cover text lines, read by the reviewer from the cover image on 06/11/2026 (the cover has no text layer).
+cover_lines_ar:
+  - "المملكة العربية السعودية"
+  - "ديوان المظالم"
+  - "مكتب الشؤون الفنية"
+  - "مجموعة المبادئ"
+  - "التي قررتها المحكمة الإدارية العليا"
+  - "لعام 1444هـ"
+  - "المجلد السادس"
+
+# Reading questions the reviewer could not settle from the page (open review items until decided).
+reading_questions:
+  - location: "page[2]:r2:c0:L0"
+    observed: "رقم الإيداع : 9634/1447"
+    note: "the deposit number prints 1447 left and 9634 right (nearest the colon); the vault reads the groups right to left like the ruling references (9634/1447); the serial/year order the library intends is not stated on the page"
+    options: ["keep 9634/1447 (as read right to left)", "decision: read as one left-to-right string 1447/9634"]
+
+# Pages without a text layer take their class from this declaration (master prompt section 5, PAGE CLASSES).
+page_classes:
+  "1": "cover"
+  "3": "basmala"
+  "4": "half_title"
+  "5": "divider"
+  "6": "half_title"
+
+source_files:
+  - original_name: "pr year 1444 orginal export.pdf"
+    supplied_as: "samples/ (user upload of 06/11/2026); copied byte for byte into Input/Admin-principles-1444-v6/"
+    note: "the volume's index pages exported from the original (Foxit), with the original fonts; ranked first"
+    sha256: "c7aaace1f0ad98ff702b38519f17f1f68395f84996a195ddd05aedf3d6ce33c9"
+    kind: "index"
+    rank: 1
+    page_label_offset: 4
+  - original_name: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf"
+    supplied_as: "samples/ (user upload of 06/11/2026); copied byte for byte into Input/Admin-principles-1444-v6/"
+    note: "the same index pages re-printed by the user with Microsoft Print To PDF to shorten the file"
+    sha256: "772ed0795f241689939a6f78eb2e105d9e33e4ee056582a87015e07100c03a8c"
+    kind: "derived_copy"
+    derived_from: "pr year 1444 orginal export.pdf"
+    not_read_basis: "the print driver dropped glyphs that the original draws (page[10] «ديوان المظالم» drawn «ديوان ا الم»; «الحالات» drawn «ا الات»; «تنفيذية» drawn «تنفيذي»; 400 dpi renders compared on 06/11/2026); read as a second index file it would publish those gaps as variant wordings"
+    page_label_offset: 4
+
+# Reader calibration (master prompt section 5, TEXT LAYER PROTOCOL).
+# The re-print renames the fonts (CIDFont+F1 ... F4) and keeps almost none of their ToUnicode entries. The reader
+# identifies each font by byte-identical glyph outlines in the other verified sources of the vault
+# (pdf_source.discover_references; reported in work/records and the build report) and takes the text and glyph
+# repairs established there; repairs listed here would override them. None are needed for this file.
+reader:
+  space_gap_ratio: 0.3
+  baseline_tolerance_ratio: 0.25
+  digit_run_joiners: []
+  page_overrides:
+    - pages: [2]
+      digit_run_joiners: ["-"]
+      reason: "ISBN on the cataloging page is one left-to-right string"
+  hamza_x_tolerance: 0.6
+  head_tail_tolerance: 0.8
+  reference_fonts: true
+
+fonts:
+  - name: "CIDFont+F1"
+    role: "other"
+    text_layer: "defective"
+    note: "page numbers of the running footer; identical outlines to HacenTunisiaLt"
+  - name: "CIDFont+F2"
+    role: "heading"
+    text_layer: "defective"
+    note: "cataloging page; identical outlines to AXtManalBold"
+  - name: "CIDFont+F3"
+    role: "heading"
+    text_layer: "defective"
+    note: "titles, sub-topic openers, letters; identical outlines to AXtManalBold"
+  - name: "CIDFont+F4"
+    role: "body"
+    text_layer: "defective"
+    note: "wording and digits; identical outlines to AXtManal"
+
+ruling_reference_components: null  # meaning of (prefix letter / number / year) not asserted
+
+body_sections: {}  # established on the first principle file (Appendix B); none supplied yet
+
+source_anomalies: []
+
+decisions: {}

@@ -1,0 +1,192 @@
+volume_id: "Admin-principles-1444-v6"
+run_counter: 13
+principles:
+  Admin-principles-1444-v6:p057:
+    first_run: 1
+    wording_sha256: "e6c9fd5499edbfd9bebe3d8b3f7e5130f59d9a371efe92a263f3e943e0eac57a"
+    facets: 2
+    held: false
+    page_labels:
+    - "278"
+    relations: []
+  Admin-principles-1444-v6:p228:
+    first_run: 1
+    wording_sha256: "4a8cd8857ad146dc9c8e42145a8121b053b7b6b192673a9d9afb0a9c800fc9b5"
+    facets: 1
+    held: false
+    page_labels:
+    - "1084"
+    relations: []
+  Admin-principles-1444-v6:p381:
+    first_run: 1
+    wording_sha256: "beb833c2c780c18fbacb21b9f06965e0c647874274e1e6a01cff3bd1ee271039"
+    facets: 2
+    held: false
+    page_labels:
+    - "1756"
+    relations: []
+  Admin-principles-1444-v6:p028:
+    first_run: 1
+    wording_sha256: "2d64a989942b3224dce5518088a7cbef57396f6652fbe4e75c1374236a0428a0"
+    facets: 1
+    held: false
+    page_labels:
+    - "140"
+    relations: []
+  Admin-principles-1444-v6:p284:
+    first_run: 1
+    wording_sha256: "3ad517a1b37be73a1f681b5246ee20a4b7323e815b946bd7f906140c64d1534f"
+    facets: 1
+    held: false
+    page_labels:
+    - "1350"
+    relations: []
+  Admin-principles-1444-v6:p188:
+    first_run: 1
+    wording_sha256: "238d046e11c5cbc6c2683f0a94d09790b51fbc9a9e81a578d8cd7491c319af55"
+    facets: 1
+    held: false
+    page_labels:
+    - "911"
+    relations: []
+  Admin-principles-1444-v6:p030:
+    first_run: 1
+    wording_sha256: "d9090c1121b9dcf82e8e34e6107198eab076b9e9fa71659dd2908a43761f16c4"
+    facets: 2
+    held: false
+    page_labels:
+    - "154"
+    relations: []
+  Admin-principles-1444-v6:p149:
+    first_run: 1
+    wording_sha256: "7cf3d1e6f736f5df7c6a72572c4ed5f3a7110f7615443ca12279f90972e4619f"
+    facets: 1
+    held: false
+    page_labels:
+    - "724"
+    relations: []
+  Admin-principles-1444-v6:p126:
+    first_run: 1
+    wording_sha256: "31dd0c023b76fc9bfcf20fe5c252c7476ebce1c5fe5051129b996d48b6821e1b"
+    facets: 1
+    held: false
+    page_labels:
+    - "610"
+    relations: []
+  Admin-principles-1444-v6:p058:
+    first_run: 1
+    wording_sha256: "be339ae381e7517fde01a9b2630952bb5dd346b24cf7c184abdc6b4a03b7dfa7"
+    facets: 1
+    held: false
+    page_labels:
+    - "285"
+    relations: []
+  Admin-principles-1444-v6:p215:
+    first_run: 1
+    wording_sha256: "e70f663b98802b5c971248003c82cc5b92251e68c68ad57cd7005aaf6dfeb158"
+    facets: 1
+    held: false
+    page_labels:
+    - "1025"
+    relations: []
+  Admin-principles-1444-v6:p121:
+    first_run: 1
+    wording_sha256: "097c05dc3820ccc10b8f3e791182ce65c04642bd9efa78f5619d2ae146beb627"
+    facets: 1
+    held: false
+    page_labels:
+    - "589"
+    relations: []
+  Admin-principles-1444-v6:p005:
+    first_run: 1
+    wording_sha256: "934f6c2af40dd57a62a34efcd49a2f9420650dff6bc94a24b2c5177608ed81a3"
+    facets: 1
+    held: false
+    page_labels:
+    - "20"
+    relations: []
+  Admin-principles-1444-v6:p183:
+    first_run: 1
+    wording_sha256: "d40f9ecf542b5659a9aca00158db7407dbfa6718040de750a407070f63fd8ea4"
+    facets: 1
+    held: false
+    page_labels:
+    - "887"
+    relations: []
+  Admin-principles-1444-v6:p168:
+    first_run: 1
+    wording_sha256: "5a73d8b1fd39e41883af0edb9ef8fbf1860db80e93ef4f46b9599e9f7228307a"
+    facets: 2
+    held: false
+    page_labels:
+    - "815"
+    relations: []
+  Admin-principles-1444-v6:p360:
+    first_run: 1
+    wording_sha256: "cf07d99b6049584aa04516003da1c376a0c1cedff033be7e124c23b056cd4f71"
+    facets: 1
+    held: false
+    page_labels:
+    - "1668"
+    relations: []
+  Admin-principles-1444-v6:p214:
+    first_run: 1
+    wording_sha256: "6f67730a4ba9a7675531e11e505ddcbd2fa67bdd6b35cbe1d71f7a016955ad35"
+    facets: 1
+    held: false
+    page_labels:
+    - "1022"
+    relations: []
+  Admin-principles-1444-v6:p179:
+    first_run: 1
+    wording_sha256: "42b924bb3f2addeca4185e077f06c511c3daa4ee75270dd8a7be4b079147cbf8"
+    facets: 2
+    held: false
+    page_labels:
+    - "872"
+    relations: []
+  Admin-principles-1444-v6:p106:
+    first_run: 1
+    wording_sha256: "48cf8830ba4e8e2de5a11627f466daced078566e65df7bf0cc26e8877d919f30"
+    facets: 1
+    held: false
+    page_labels:
+    - "517"
+    relations: []
+  Admin-principles-1444-v6:p078:
+    first_run: 1
+    wording_sha256: "ca8db10838da1c40dbd4c04982bb95b4a0610766237dbef0e6c52311a8bf7657"
+    facets: 1
+    held: false
+    page_labels:
+    - "384"
+    relations: []
+  Admin-principles-1444-v6:p283:
+    first_run: 1
+    wording_sha256: "2a4516628caacf71b7c876b91460200f59cb0d61cef9a47b99442dc871f4118b"
+    facets: 1
+    held: false
+    page_labels:
+    - "1345"
+    relations: []
+  Admin-principles-1444-v6:p369:
+    first_run: 1
+    wording_sha256: "c0ec64bb2a95a4bd38f13883265bdd95945309aa67dc83d13885ac2f926c7e68"
+    facets: 1
+    held: false
+    page_labels:
+    - "1702"
+    relations: []
+  Admin-principles-1444-v6:p212:
+    first_run: 1
+    wording_sha256: "ec7e7051a9ee9d5d6ca571fa6b7fb12fad75998a3f65f7998aee14380063c187"
+    facets: 2
+    held: false
+    page_labels:
+    - "1013"
+    relations: []
+sources:
+- file: "pr year 1444 orginal export.pdf"
+  sha256: "c7aaace1f0ad98ff702b38519f17f1f68395f84996a195ddd05aedf3d6ce33c9"
+- file: "Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf"
+  sha256: "772ed0795f241689939a6f78eb2e105d9e33e4ee056582a87015e07100c03a8c"

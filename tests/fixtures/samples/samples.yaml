@@ -1,0 +1,15 @@
+# Reviewed samples read by the tests (master prompt section 7). Paths are relative to the project root.
+# The sample PDF is the copy kept in samples/ (byte-identical to the Input/ copy; SHA-256 recorded in the configuration).
+# configs/ and expected/ are frozen copies of the reviewed sample's configuration and expected values, so later
+# decisions in config/volumes/ do not change the test.
+samples:
+  - volume_id: "Admin-principles-1443-v6"
+    source: "samples/Indexes-1443-v6.pdf"
+    stored_name: "Indexes-1443-v6.pdf"
+    config: "tests/fixtures/samples/configs/Admin-principles-1443-v6.yaml"
+    expected: "tests/fixtures/samples/expected/Admin-principles-1443-v6.expected.yaml"
+  - volume_id: "Admin-principles-1444-v6"
+    source: "samples/pr year 1444 orginal export.pdf"
+    stored_name: "pr year 1444 orginal export.pdf"
+    config: "tests/fixtures/samples/configs/Admin-principles-1444-v6.yaml"
+    expected: "tests/fixtures/samples/expected/Admin-principles-1444-v6.expected.yaml"

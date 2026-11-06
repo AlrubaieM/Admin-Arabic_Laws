@@ -1,0 +1,3240 @@
+volume_id: "Admin-principles-1444-v6"
+files:
+- "pr year 1444 orginal export.pdf"
+page_classes:
+  '1': "cover"
+  '2': "cataloging"
+  '3': "basmala"
+  '4': "half_title"
+  '5': "divider"
+  '6': "half_title"
+  '7': "index_summary"
+  '8': "index_detailed"
+  '9': "index_detailed"
+  '10': "index_detailed"
+  '11': "index_detailed"
+  '12': "index_detailed"
+  '13': "index_detailed"
+page_labels:
+  '7': "3"
+  '8': "4"
+  '9': "5"
+  '10': "6"
+  '11': "7"
+  '12': "8"
+  '13': "9"
+held_principles: []
+extraction:
+  reference_fonts:
+    pr year 1444 orginal export.pdf:
+    - font: "HacenTunisiaLt"
+      same_font_in:
+      - "Admin-principles-1443-v6/Indexes-1443-v6.pdf:HacenTunisiaLt (11/11 identical outlines)"
+      - "Admin-principles-1444-v6/Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:CIDFont+F1 (11/11 identical outlines)"
+      glyph_ids_with_text: 10
+      inherited_repairs: 0
+      conflicting_glyph_ids: []
+    - font: "AXtManalBold"
+      same_font_in:
+      - "Admin-principles-1443-v6/Indexes-1443-v6.pdf:AXtManalBold (153/153 identical outlines)"
+      - "Admin-principles-1444-v6/Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:CIDFont+F2 (62/62 identical outlines)"
+      - "Admin-principles-1444-v6/Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:CIDFont+F3 (110/110 identical outlines)"
+      glyph_ids_with_text: 128
+      inherited_repairs: 15
+      conflicting_glyph_ids: []
+    - font: "AXtManal"
+      same_font_in:
+      - "Admin-principles-1443-v6/Indexes-1443-v6.pdf:AXtManal (169/169 identical outlines)"
+      - "Admin-principles-1444-v6/Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:CIDFont+F4 (150/150 identical outlines)"
+      glyph_ids_with_text: 157
+      inherited_repairs: 12
+      conflicting_glyph_ids: []
+  glyphs_by_status:
+    cmap: 5932
+    cmap_reference: 5
+    cmap_shared: 94
+    compose: 235
+    drop:duplicate_space: 2
+    drop:hamza_mark: 235
+    drop:ligature_continuation: 365
+    drop:tail: 297
+    repair: 1082
+    space: 1402
+    symbol_digit: 36
+  wrap_joins: 78
+  reference_separations: 0
+  geometry_spaces: 0
+  tatweel_runs_removed: 0
+  duplicate_space_glyphs_dropped: 2
+  font_objects:
+  - xref: 11
+    name: "ECNBRQ+HacenTunisiaLt"
+    base: "HacenTunisiaLt"
+    encoding: "Identity-H"
+    kind: "identity"
+    cmap_entries: 10
+    pages:
+    - 1
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+  - xref: 47
+    name: "UMAZHK+AXtManalBold"
+    base: "AXtManalBold"
+    encoding: "Identity-H"
+    kind: "identity"
+    cmap_entries: 62
+    pages:
+    - 2
+    - 3
+  - xref: 81
+    name: "SJBIFO+AXtManalBold"
+    base: "AXtManalBold"
+    encoding: "Identity-H"
+    kind: "identity"
+    cmap_entries: 142
+    pages:
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+  - xref: 82
+    name: "USTKHK+AXtManal"
+    base: "AXtManal"
+    encoding: "Identity-H"
+    kind: "identity"
+    cmap_entries: 169
+    pages:
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+  - xref: 98
+    name: "IYOGVI+MinionPro-Regular"
+    base: "MinionPro-Regular"
+    encoding: "Identity-H"
+    kind: "identity"
+    cmap_entries: 2
+    pages:
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+  page_apparatus:
+    '1':
+      images:
+      - bbox:
+        - 0.0
+        - 0.0
+        - 481.6
+        - 680.3
+        band: "body"
+      - bbox:
+        - 0.0
+        - 0.0
+        - 481.9
+        - 680.3
+        band: "body"
+      - bbox:
+        - 126.6
+        - 199.8
+        - 355.3
+        - 480.6
+        band: "body"
+      drawings: 0
+      drawing_bands:
+        header: 0
+        footer: 0
+        body: 0
+    '2':
+      images: []
+      drawings: 4
+      drawing_bands:
+        header: 0
+        footer: 0
+        body: 4
+    '3':
+      images: []
+      drawings: 5
+      drawing_bands:
+        header: 0
+        footer: 0
+        body: 5
+      glyphs_outside_page: 198
+    '4':
+      images:
+      - bbox:
+        - 0.0
+        - 0.0
+        - 481.9
+        - 680.3
+        band: "body"
+      - bbox:
+        - 0.0
+        - 0.0
+        - 481.9
+        - 680.3
+        band: "body"
+      - bbox:
+        - -481.9
+        - 0.0
+        - 0.0
+        - 680.3
+        band: "body"
+      - bbox:
+        - 126.6
+        - 199.8
+        - 355.3
+        - 480.6
+        band: "body"
+      drawings: 0
+      drawing_bands:
+        header: 0
+        footer: 0
+        body: 0
+    '5':
+      images:
+      - bbox:
+        - 0.7
+        - 0.0
+        - 481.9
+        - 680.3
+        band: "body"
+      - bbox:
+        - 0.0
+        - 0.0
+        - 481.9
+        - 680.3
+        band: "body"
+      - bbox:
+        - 126.6
+        - 199.8
+        - 355.3
+        - 480.6
+        band: "body"
+      drawings: 0
+      drawing_bands:
+        header: 0
+        footer: 0
+        body: 0
+    '6':
+      images:
+      - bbox:
+        - 0.0
+        - 0.0
+        - 481.9
+        - 680.3
+        band: "body"
+      - bbox:
+        - -481.9
+        - 103.2
+        - 0.7
+        - 149.5
+        band: "body"
+      - bbox:
+        - 0.0
+        - 0.0
+        - 481.9
+        - 680.3
+        band: "body"
+      - bbox:
+        - -481.9
+        - 0.0
+        - 0.0
+        - 680.3
+        band: "body"
+      - bbox:
+        - 126.6
+        - 199.8
+        - 355.3
+        - 480.6
+        band: "body"
+      drawings: 0
+      drawing_bands:
+        header: 0
+        footer: 0
+        body: 0
+    '7':
+      images:
+      - bbox:
+        - 0.0
+        - 103.2
+        - 482.6
+        - 149.5
+        band: "header"
+      - bbox:
+        - 0.0
+        - 0.0
+        - 481.9
+        - 680.3
+        band: "body"
+      - bbox:
+        - 126.6
+        - 199.8
+        - 355.3
+        - 480.6
+        band: "body"
+      drawings: 29
+      drawing_bands:
+        header: 29
+        footer: 0
+        body: 0
+    '8':
+      images:
+      - bbox:
+        - 0.7
+        - 103.9
+        - 483.3
+        - 150.2
+        band: "header"
+      - bbox:
+        - 157.3
+        - 106.3
+        - 327.5
+        - 141.3
+        band: "header"
+      - bbox:
+        - 0.0
+        - 0.0
+        - 481.9
+        - 680.3
+        band: "body"
+      - bbox:
+        - -481.9
+        - 0.0
+        - 0.0
+        - 680.3
+        band: "body"
+      - bbox:
+        - 126.6
+        - 199.8
+        - 355.3
+        - 480.6
+        band: "body"
+      drawings: 0
+      drawing_bands:
+        header: 0
+        footer: 0
+        body: 0
+    '9':
+      images:
+      - bbox:
+        - 0.0
+        - 0.0
+        - 481.9
+        - 680.3
+        band: "body"
+      - bbox:
+        - 126.6
+        - 199.8
+        - 355.3
+        - 480.6
+        band: "body"
+      drawings: 0
+      drawing_bands:
+        header: 0
+        footer: 0
+        body: 0
+    '10':
+      images:
+      - bbox:
+        - 0.0
+        - 0.0
+        - 481.9
+        - 680.3
+        band: "body"
+      - bbox:
+        - -481.9
+        - 0.0
+        - 0.0
+        - 680.3
+        band: "body"
+      - bbox:
+        - 126.6
+        - 199.8
+        - 355.3
+        - 480.6
+        band: "body"
+      drawings: 0
+      drawing_bands:
+        header: 0
+        footer: 0
+        body: 0
+    '11':
+      images:
+      - bbox:
+        - 0.0
+        - 0.0
+        - 481.9
+        - 680.3
+        band: "body"
+      - bbox:
+        - 126.6
+        - 199.8
+        - 355.3
+        - 480.6
+        band: "body"
+      drawings: 0
+      drawing_bands:
+        header: 0
+        footer: 0
+        body: 0
+    '12':
+      images:
+      - bbox:
+        - 0.0
+        - 0.0
+        - 481.9
+        - 680.3
+        band: "body"
+      - bbox:
+        - -481.9
+        - 0.0
+        - 0.0
+        - 680.3
+        band: "body"
+      - bbox:
+        - 126.6
+        - 199.8
+        - 355.3
+        - 480.6
+        band: "body"
+      drawings: 0
+      drawing_bands:
+        header: 0
+        footer: 0
+        body: 0
+    '13':
+      images:
+      - bbox:
+        - 0.0
+        - 0.0
+        - 481.9
+        - 680.3
+        band: "body"
+      - bbox:
+        - 126.6
+        - 199.8
+        - 355.3
+        - 480.6
+        band: "body"
+      drawings: 0
+      drawing_bands:
+        header: 0
+        footer: 0
+        body: 0
+  summary_coverage:
+    complete: []
+    partial: []
+    absent_from_summary: []
+    notes:
+    - "page[7]:r0:c1: «حرف (أ)»: differ only by the article «ال»: «إجراءات إدارية» (summary) / «الإجراءات الإدارية» (detailed)، «إجراءات نظامية» (summary) / «الإجراءات النظامية» (detailed) (both kept as printed)"
+    differs:
+    - "أ"
+lines:
+- loc: "page[1]:L0"
+  class: "apparatus:hidden_folio"
+  text: "1001"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[2]:r0:c0:L0"
+  class: "cataloging_text"
+  text: "ديوان المظالم، 1447 هـ"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[2]:r0:c0:L1"
+  class: "cataloging_text"
+  text: "ديوان المظالم"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[2]:r0:c0:L2"
+  class: "cataloging_text"
+  text: "مجموعة المبادئ التي قررتها المحكمة الإدارية العليا لعام"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[2]:r0:c0:L3"
+  class: "cataloging_text"
+  text: "1444 هـ المجلد السادس./ ديوان المظالم .- الرياض 1447هـ"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[2]:r0:c0:L4"
+  class: "cataloging_text"
+  text: "151 ص ؛ ..سم"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[2]:r2:c0:L0"
+  class: "cataloging_text"
+  text: "رقم الإيداع : 9634/1447"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[2]:r2:c0:L1"
+  class: "cataloging_text"
+  text: "ردمك:978-603-8286-79-1"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[4]:L0"
+  class: "apparatus:hidden_folio"
+  text: "1004"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[5]:L0"
+  class: "apparatus:hidden_folio"
+  text: "1"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[6]:L0"
+  class: "apparatus:hidden_folio"
+  text: "2"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:L0"
+  class: "apparatus:page_number"
+  text: "3"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r0:c0:L0"
+  class: "summary_letter"
+  text: "حرف (أ)"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r0:c1:L0"
+  class: "summary_topics"
+  text: "أتعاب محاماة - أجانب - إجراءات إدارية - إجراءات نظامية -"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r0:c1:L1"
+  class: "summary_topics"
+  text: "اختصاص - الأراضي البور - أوقاف"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r1:c0:L0"
+  class: "summary_letter"
+  text: "حرف (ت)"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r1:c1:L0"
+  class: "summary_topics"
+  text: "تأديب - تدريب - تعليم - تقاعد - تخطيط عمراني - تراخيص -"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r1:c1:L1"
+  class: "summary_topics"
+  text: "تعويض - تنفيذ - توقيف"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r2:c0:L0"
+  class: "summary_letter"
+  text: "حرف (ج)"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r2:c1:L0"
+  class: "summary_topics"
+  text: "جامعات - جهات إدارية"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r3:c0:L0"
+  class: "summary_letter"
+  text: "حرف (خ)"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r3:c1:L0"
+  class: "summary_topics"
+  text: "خبرة - خدمة عسكرية - خدمة مدنية"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r4:c0:L0"
+  class: "summary_letter"
+  text: "حرف (د)"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r4:c1:L0"
+  class: "summary_topics"
+  text: "دعوى"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r5:c0:L0"
+  class: "summary_letter"
+  text: "حرف (ص)"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r5:c1:L0"
+  class: "summary_topics"
+  text: "صحة"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r6:c0:L0"
+  class: "summary_letter"
+  text: "حرف (ض)"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r6:c1:L0"
+  class: "summary_topics"
+  text: "ضبط جنائي"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r7:c0:L0"
+  class: "summary_letter"
+  text: "حرف (ط)"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r7:c1:L0"
+  class: "summary_topics"
+  text: "طلبات قضائية"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r8:c0:L0"
+  class: "summary_letter"
+  text: "حرف (ع)"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r8:c1:L0"
+  class: "summary_topics"
+  text: "عقار - عقد"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r9:c0:L0"
+  class: "summary_letter"
+  text: "حرف (غ)"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r9:c1:L0"
+  class: "summary_topics"
+  text: "غرامات"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r10:c0:L0"
+  class: "summary_letter"
+  text: "حرف (ق)"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r10:c1:L0"
+  class: "summary_topics"
+  text: "قرار إداري"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r11:c0:L0"
+  class: "summary_letter"
+  text: "حرف (م)"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r11:c1:L0"
+  class: "summary_topics"
+  text: "مبادئ قضائية - مصروفات الدعوى - ملكية فكرية - مهن حرة"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r12:c0:L0"
+  class: "summary_letter"
+  text: "حرف (ن)"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[7]:r12:c1:L0"
+  class: "summary_topics"
+  text: "نزع ملكية - نظام"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:L0"
+  class: "apparatus:page_number"
+  text: "4"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r0:c0:L0"
+  class: "header_row"
+  text: "المبدأ"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r0:c1:L0"
+  class: "header_row"
+  text: "الرقم"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r0:c2:L0"
+  class: "header_row"
+  text: "رقم"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r0:c2:L1"
+  class: "header_row"
+  text: "الصفحة"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r1:c0:L0"
+  class: "letter"
+  text: "حرف (أ)"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r1:c0:L1"
+  class: "topic"
+  text: "أتعاب محاماة"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r1:c0:L2"
+  class: "outline"
+  text: "أولاً/ عقد المحاماة."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r1:c0:L3"
+  class: "outline"
+  text: "ثانياً/ تقدير التعويض."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r2:c1:L0"
+  class: "number"
+  text: "57"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r2:c2:L0"
+  class: "page_label"
+  text: "278"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r2:c0:L0"
+  class: "subtopic_opener"
+  text: "أولاً/ عقد المحاماة:"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r2:c0:L1"
+  class: "title"
+  text: "• تكييف عقد المحاماة:"
+  bold: 0.94
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r2:c0:L2"
+  class: "index_wording"
+  text: "تلاقي إرادة أطراف عقد المحاماة على العمل، دون تحديد الأجرة فيه"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r2:c0:L3"
+  class: "index_wording"
+  text: "وجعلها جزءاً مشاعاً من العمل، لا ينفي لزومية العقد؛ باعتباره من عقود"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r2:c0:L4"
+  class: "index_wording"
+  text: "الإجارة على العمل لا من عقود الجعالة."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r3:c1:L0"
+  class: "number"
+  text: "228"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r3:c2:L0"
+  class: "page_label"
+  text: "1084"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r3:c0:L0"
+  class: "title"
+  text: "• استحقاق الأجرة المحُددة في عقد المحاماة:"
+  bold: 0.97
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r3:c0:L1"
+  class: "index_wording"
+  text: "ثبوت عقد المحاماة وتحديد الأجرة فيه لا يعني استحقاق الأجرة في كل"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r3:c0:L2"
+  class: "index_wording"
+  text: "الأحوال، وإنما تستحق عند المنازعة فيها عن الجهد المبذول والنتيجة التي"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r3:c0:L3"
+  class: "index_wording"
+  text: "تحققت بسببها، وكون هذه الأعمال تتعادل مع الأجرة المحددة مقابل أدائها."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r4:c1:L0"
+  class: "number"
+  text: "57"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r4:c2:L0"
+  class: "page_label"
+  text: "278"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r4:c0:L0"
+  class: "title"
+  text: "• المتعين على المحكمة حيال المنازعة في أجرة عقد المحاماة:"
+  bold: 0.98
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r4:c0:L1"
+  class: "index_wording"
+  text: "إذا كان الموكِل ينازع في صحة عقد المحاماة واشتماله على مبالغة وغبن في"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r4:c0:L2"
+  class: "index_wording"
+  text: "الأجرة؛ فإن على المحكمة أن تنظر في هذا النزاع، وتقدر الأتعاب بما يتناسب"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r4:c0:L3"
+  class: "index_wording"
+  text: "مع الجهد الذي بذله المحامي، والنفع الذي عاد على الموكِل."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r5:c1:L0"
+  class: "number"
+  text: "381"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r5:c2:L0"
+  class: "page_label"
+  text: "1756"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r5:c0:L0"
+  class: "subtopic_opener"
+  text: "ثانياً/ تقدير التعويض:"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r5:c0:L1"
+  class: "title"
+  text: "• الخطأ فيه:"
+  bold: 0.89
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r5:c0:L2"
+  class: "index_wording"
+  text: "الحكم بأتعاب المحاماة وفقاً للمدون بعقد أتعاب المحاماة؛ يعد مخالفةً"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r5:c0:L3"
+  class: "index_wording"
+  text: "للمستقر قضاءً."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r6:c1:L0"
+  class: "number"
+  text: "381"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r6:c2:L0"
+  class: "page_label"
+  text: "1756"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r6:c0:L0"
+  class: "index_wording"
+  text: "الحكم للمدعي بكامل أتعاب المحاماة دون مراعاة رفض بعض طلباته؛ يعد"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[8]:r6:c0:L1"
+  class: "index_wording"
+  text: "قصوراً في التسبيب."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:L0"
+  class: "apparatus:page_number"
+  text: "5"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r0:c0:L0"
+  class: "header_row"
+  text: "المبدأ"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r0:c1:L0"
+  class: "header_row"
+  text: "الرقم"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r0:c2:L0"
+  class: "header_row"
+  text: "رقم"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r0:c2:L1"
+  class: "header_row"
+  text: "الصفحة"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r1:c0:L0"
+  class: "topic"
+  text: "أجانب"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r2:c1:L0"
+  class: "number"
+  text: "28"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r2:c2:L0"
+  class: "page_label"
+  text: "140"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r2:c0:L0"
+  class: "title"
+  text: "• ترحيل العامل - سلطة الجهة الإدارية فيه:"
+  bold: 0.97
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r2:c0:L1"
+  class: "index_wording"
+  text: "الأصل أن ترحيل الأجنبي عن البلاد عند وجود سببه حق مقرر للجهة"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r2:c0:L2"
+  class: "index_wording"
+  text: "الإدارية؛ لأن بقاءه في البلاد بعد ذلك يعد مخالفاً للقواعد النظامية"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r2:c0:L3"
+  class: "index_wording"
+  text: "المنصوص عليها في نظام الإقامة، وقواعد تنظيم حركة انتقال الأيدي"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r2:c0:L4"
+  class: "index_wording"
+  text: "العاملة المنصوص عليها؛ وعليه فإن توقيف الأجنبي إلى حين سفره يعد"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r2:c0:L5"
+  class: "index_wording"
+  text: "متفقاً مع النظام، ولا يعد خطأ يوجب مسؤولية الجهة الإدارية."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r3:c0:L0"
+  class: "topic"
+  text: "الإجراءات الإدارية"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r4:c1:L0"
+  class: "number"
+  text: "284"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r4:c2:L0"
+  class: "page_label"
+  text: "1350"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r4:c0:L0"
+  class: "title"
+  text: "• عدم تأثر الصحيح من الإجراءات الإدارية بالحالات المغايرة:"
+  bold: 0.98
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r4:c0:L1"
+  class: "index_wording"
+  text: "الإجراء إذا كان موافقاً للنظام؛ فإنه لا يتأثر في صحته بوجود حالات مغايرة"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r4:c0:L2"
+  class: "index_wording"
+  text: "له."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r5:c0:L0"
+  class: "topic"
+  text: "الإجراءات النظامية"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r6:c1:L0"
+  class: "number"
+  text: "188"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r6:c2:L0"
+  class: "page_label"
+  text: "911"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r6:c0:L0"
+  class: "title"
+  text: "• المنوط بمتابعة الإجراءات النظامية:"
+  bold: 0.97
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r6:c0:L1"
+  class: "index_wording"
+  text: "متابعة شأن المستفيد لدى غير الجهة الإدارية المنوط بها اتخاذ الإجراء"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r6:c0:L2"
+  class: "index_wording"
+  text: "النظامي يقع بحسب الأصل على عاتق المستفيد، ولا تسأل عنه الجهة الإدارية"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r6:c0:L3"
+  class: "index_wording"
+  text: "إلا حين تكون هي الملزمة به نظاماً ويثبت تقصيرها فيه."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r7:c0:L0"
+  class: "topic"
+  text: "اختصاص"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r7:c0:L1"
+  class: "outline"
+  text: "أولاً/ الاختصاص الولائي."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r7:c0:L2"
+  class: "outline"
+  text: "ثانياً/ الاختصاص المكاني."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r8:c1:L0"
+  class: "number"
+  text: "30"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r8:c2:L0"
+  class: "page_label"
+  text: "154"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r8:c0:L0"
+  class: "subtopic_opener"
+  text: "أولاً/ الاختصاص الولائي:"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r8:c0:L1"
+  class: "title"
+  text: "• اعتبار القواعد المنظمة للاختصاص الولائي من النظام العام:"
+  bold: 0.98
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r8:c0:L2"
+  class: "index_wording"
+  text: "القواعد المنظمة للاختصاص الولائي تعد من النظام العام."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r9:c1:L0"
+  class: "number"
+  text: "149"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r9:c2:L0"
+  class: "page_label"
+  text: "724"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r9:c0:L0"
+  class: "title"
+  text: "• اعتبار القواعد المتعلقة بالاختصاص الولائي من النظام العام:"
+  bold: 0.98
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r9:c0:L1"
+  class: "index_wording"
+  text: "القواعد المتعلقة بالاختصاص الولائي تعد من النظام العام، وللمحكمة"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[9]:r9:c0:L2"
+  class: "index_wording"
+  text: "الإدارية العليا أن تتصدى لها ولو لم يتضمنها الاعتراض."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:L0"
+  class: "apparatus:page_number"
+  text: "6"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r0:c0:L0"
+  class: "header_row"
+  text: "المبدأ"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r0:c1:L0"
+  class: "header_row"
+  text: "الرقم"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r0:c2:L0"
+  class: "header_row"
+  text: "رقم"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r0:c2:L1"
+  class: "header_row"
+  text: "الصفحة"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r1:c1:L0"
+  class: "number"
+  text: "30"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r1:c2:L0"
+  class: "page_label"
+  text: "154"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r1:c0:L0"
+  class: "title"
+  text: "• الدعاوى المقامة على الجهات الإدارية - الاستثناء من عموم"
+  bold: 0.98
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r1:c0:L1"
+  class: "title"
+  text: "الاختصاص بنظرها:"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r1:c0:L2"
+  class: "index_wording"
+  text: "إقامة الدعوى على الجهة الإدارية لا يعني وبحكم اللزوم اختصاص المحاكم"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r1:c0:L3"
+  class: "index_wording"
+  text: "الإدارية بالفصل فيها إذا كان هناك نصٌّ نظاميٌّ خاصٌّ يخرج الفصل في"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r1:c0:L4"
+  class: "index_wording"
+  text: "تلك الدعوى من اختصاص المحاكم الإدارية، أو لم تكن طبيعة المنازعة ذاتها"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r1:c0:L5"
+  class: "index_wording"
+  text: "إدارية وناشئة عن نشاط الإدارة بوصفها سلطة تنفيذية في إدارة المرفق"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r1:c0:L6"
+  class: "index_wording"
+  text: "العام."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r2:c1:L0"
+  class: "number"
+  text: "126"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r2:c2:L0"
+  class: "page_label"
+  text: "610"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r2:c0:L0"
+  class: "title"
+  text: "• الدعاوى المتعلقة بالعقوبات على مخالفي الإجراءات والتدابير"
+  bold: 0.98
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r2:c0:L1"
+  class: "title"
+  text: "الوقائية لجائحة فيروس كورونا:"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r2:c0:L2"
+  class: "index_wording"
+  text: "محاكم ديوان المظالم لا تختص بنظر التظلم على العقوبة المقررة لمخالفي"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r2:c0:L3"
+  class: "index_wording"
+  text: "حظر التجول والصادرة بعد الأمر الملكي المتضمن تكوين لجنة تتولى النظر"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r2:c0:L4"
+  class: "index_wording"
+  text: "في التظلم من تلك العقوبات، ويكون قرارها نهائيّاً غير قابل للطعن."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r3:c1:L0"
+  class: "number"
+  text: "58"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r3:c2:L0"
+  class: "page_label"
+  text: "285"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r3:c0:L0"
+  class: "title"
+  text: "• الدعاوى المتعلقة بالتعويض عن تقصير الجهة الإدارية:"
+  bold: 0.98
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r3:c0:L1"
+  class: "index_wording"
+  text: "صدور الحكم المعترض عليه بعدم الاختصاص الولائي بنظر دعوى المدعي"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r3:c0:L2"
+  class: "index_wording"
+  text: "بإلزام البنك المركزي بتعويضه عن تعمد موظفيه إخفاء وقائع منتجة في"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r3:c0:L3"
+  class: "index_wording"
+  text: "منازعته المصرفية مع بنك تجاري - تقرير المحكمة الإدارية العليا بأن"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r3:c0:L4"
+  class: "index_wording"
+  text: "الدعوى مقامة ضد جهة إدارية للمطالبة بالتعويض عما نسب إليها من"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r3:c0:L5"
+  class: "index_wording"
+  text: "تقصير؛ ومن ثم تكون الدعوى حينئذٍ منازعة إدارية، وينعقد الاختصاص"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r3:c0:L6"
+  class: "index_wording"
+  text: "الولائي للمحكمة الإدارية وفق النظام."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r4:c1:L0"
+  class: "number"
+  text: "215"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r4:c2:L0"
+  class: "page_label"
+  text: "1025"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r4:c0:L0"
+  class: "title"
+  text: "• القرارات المتعلقة بالجمارك:"
+  bold: 0.96
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r4:c0:L1"
+  class: "index_wording"
+  text: "القرارات التي تختص اللجان الجمركية بنظرها محصورة بقرارات"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r4:c0:L2"
+  class: "index_wording"
+  text: "التحصيل وقرارات التغريم وفقاً للنظام، وما عدا تلك القرارات التي تصدر"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r4:c0:L3"
+  class: "index_wording"
+  text: "عن محافظ الهيئة تُعد من جملة القرارات الإدارية التي تختص محاكم"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r4:c0:L4"
+  class: "index_wording"
+  text: "ديوان المظالم بنظرها وفقاً للفقرة (ب) من المادة الثالثة عشرة من نظامه."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r5:c1:L0"
+  class: "number"
+  text: "121"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r5:c2:L0"
+  class: "page_label"
+  text: "589"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r5:c0:L0"
+  class: "title"
+  text: "• تسجيل بلاغ التغيب عن العمل:"
+  bold: 0.96
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r5:c0:L1"
+  class: "index_wording"
+  text: "تسجيل بلاغ التغيب عن العمل ليس انعكاساً للالتزام التعاقدي بين العامل"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r5:c0:L2"
+  class: "index_wording"
+  text: "وصاحب العمل، ولا جزءاً منه، ولا يخرج عن كونه من القرارات الإدارية التي"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[10]:r5:c0:L3"
+  class: "index_wording"
+  text: "يختص ديوان المظالم بنظر الطعن فيها."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:L0"
+  class: "apparatus:page_number"
+  text: "7"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r0:c0:L0"
+  class: "header_row"
+  text: "المبدأ"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r0:c1:L0"
+  class: "header_row"
+  text: "الرقم"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r0:c2:L0"
+  class: "header_row"
+  text: "رقم"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r0:c2:L1"
+  class: "header_row"
+  text: "الصفحة"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r1:c1:L0"
+  class: "number"
+  text: "5"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r1:c2:L0"
+  class: "page_label"
+  text: "20"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r1:c0:L0"
+  class: "title"
+  text: "• إثبات الخطأ بالسجل الائتماني:"
+  bold: 0.96
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r1:c0:L1"
+  class: "index_wording"
+  text: "الحكم بعدم اختصاص لجنة النظر في مخالفات نظام المعلومات الائتمانية"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r1:c0:L2"
+  class: "index_wording"
+  text: "بالفصل في إثبات الخطأ بالسجل الائتماني؛ يعد مخالفةً للنظام."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r2:c1:L0"
+  class: "number"
+  text: "183"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r2:c2:L0"
+  class: "page_label"
+  text: "887"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r2:c0:L0"
+  class: "title"
+  text: "• العقود المتعلقة بمعهد الملك سلمان للدراسات والخدمات الاستشارية:"
+  bold: 0.98
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r2:c0:L1"
+  class: "index_wording"
+  text: "إذا كان المعهد يباشر عمله وفق الأسس التجارية، ولجامعة المجمعة سجل"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r2:c0:L2"
+  class: "index_wording"
+  text: "تجاري لهذه الأغراض؛ فإن ذلك لا يخرج الدعوى العقدية المتعلقة بهما عن"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r2:c0:L3"
+  class: "index_wording"
+  text: "اختصاص المحاكم الإدارية لعموم النص النظامي الذي يقضي باختصاص"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r2:c0:L4"
+  class: "index_wording"
+  text: "المحاكم الإدارية بالفصل في الدعاوى المتعلقة بالعقود التي تكون جهة الإدارة"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r2:c0:L5"
+  class: "index_wording"
+  text: "طرفاً فيها، وتنظر المحاكم الإدارية في المنازعات الناشئة عن هذه العقود"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r2:c0:L6"
+  class: "index_wording"
+  text: "وفق القواعد المنظمة والحاكمة لكل عقد."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r3:c1:L0"
+  class: "number"
+  text: "168"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r3:c2:L0"
+  class: "page_label"
+  text: "815"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r3:c0:L0"
+  class: "subtopic_opener"
+  text: "ثانياً/ الاختصاص المكاني:"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r3:c0:L1"
+  class: "title"
+  text: "• اختصاص المحكمة الإدارية بالدمام:"
+  bold: 0.96
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r3:c0:L2"
+  class: "index_wording"
+  text: "المحكمة الإدارية بمدينة الدمام تختص مكانياً بالفصل في الدعاوى إذا"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r3:c0:L3"
+  class: "index_wording"
+  text: "اتصلت بجهة إدارية في النطاق الإداري للمنطقة الشرقية، ويستثنى من ذلك"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r3:c0:L4"
+  class: "index_wording"
+  text: "النطاق الإداري للمحافظات التي أنشأ فيها محكمة إدارية، مثل المحكمة"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r3:c0:L5"
+  class: "index_wording"
+  text: "الإدارية بالأحساء والمحكمة الإدارية بحفر الباطن، فتختص كل محكمة"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r3:c0:L6"
+  class: "index_wording"
+  text: "مكانياً بالنطاق الإداري للمحافظة التي تقع فيها."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r4:c1:L0"
+  class: "number"
+  text: "168"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r4:c2:L0"
+  class: "page_label"
+  text: "815"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r4:c0:L0"
+  class: "title"
+  text: "•  انعقاد الاختصاص المكاني - الدعاوى المتعلقة بمركز البطحاء:"
+  bold: 0.98
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r4:c0:L1"
+  class: "index_wording"
+  text: "تضمن دليل الترميز الموحد للمناطق والمحافظات والمراكز الإدارية الصادر"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r4:c0:L2"
+  class: "index_wording"
+  text: "عن مركز الوثائق والمحفوظات بتبعية مركز البطحاء لمحافظة العديد التي"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r4:c0:L3"
+  class: "index_wording"
+  text: "تتبع إمارة المنطقة الشرقية؛ ومن ثم يكون الاختصاص المكاني للدعاوى"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r4:c0:L4"
+  class: "index_wording"
+  text: "المتعلقة بمركز البطحاء منعقداً للمحكمة الإدارية بالدمام."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r5:c1:L0"
+  class: "number"
+  text: "360"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r5:c2:L0"
+  class: "page_label"
+  text: "1668"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r5:c0:L0"
+  class: "title"
+  text: "• انعقاد الاختصاص المكاني - الدعاوى المقامة ضد الشركات:"
+  bold: 0.98
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r5:c0:L1"
+  class: "index_wording"
+  text: "الأصل أن تقام الدعوى على الشركة أمام المحكمة التي يقع في نطاق"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r5:c0:L2"
+  class: "index_wording"
+  text: "اختصاصها مركز إدارتها، وعلى سبيل الجواز يمكن إقامة الدعوى على فرع"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r5:c0:L3"
+  class: "index_wording"
+  text: "الشركة، وذلك حصراً في المسائل المتعلقة بالفرع."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r6:c1:L0"
+  class: "number"
+  text: "214"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r6:c2:L0"
+  class: "page_label"
+  text: "1022"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r6:c0:L0"
+  class: "title"
+  text: "• انعقاد الاختصاص المكاني - الدعاوى الوظيفية للموظف المنقول:"
+  bold: 0.98
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r6:c0:L1"
+  class: "index_wording"
+  text: "إذا كان مقر عمل الموظف في منطقة الجوف؛ فإن المحكمة المختصة مكانياً"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[11]:r6:c0:L2"
+  class: "index_wording"
+  text: "بنظر الدعوى الوظيفية هي المحكمة الإدارية بسكاكا."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:L0"
+  class: "apparatus:page_number"
+  text: "8"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r0:c0:L0"
+  class: "header_row"
+  text: "المبدأ"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r0:c1:L0"
+  class: "header_row"
+  text: "الرقم"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r0:c2:L0"
+  class: "header_row"
+  text: "رقم"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r0:c2:L1"
+  class: "header_row"
+  text: "الصفحة"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r1:c1:L0"
+  class: "number"
+  text: "179"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r1:c2:L0"
+  class: "page_label"
+  text: "872"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r1:c0:L0"
+  class: "title"
+  text: "• انعقاد الاختصاص المكاني - تعدد مكان تنفيذ العقد:"
+  bold: 0.97
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r1:c0:L1"
+  class: "index_wording"
+  text: "كون العقد ينفذ في أكثر من مدينة؛ فإن المحكمة المختصة مكانياً بنظر"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r1:c0:L2"
+  class: "index_wording"
+  text: "منازعات العقد هي التي ينفذ في نطاق اختصاصها أكثرية أعمال العقد."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r2:c1:L0"
+  class: "number"
+  text: "179"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r2:c2:L0"
+  class: "page_label"
+  text: "872"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r2:c0:L0"
+  class: "title"
+  text: "• توحيد نظر منازعات العقد أمام محكمة واحدة:"
+  bold: 0.97
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r2:c0:L1"
+  class: "index_wording"
+  text: "إذا تعدد مكان تنفيذ العقد في أكثر من منطقة أو مدينة، وانعقاد الاختصاص"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r2:c0:L2"
+  class: "index_wording"
+  text: "المكاني لأكثر من محكمة تبعاً لذلك؛ فإنه يجب توحيد نظر النزاع أمام"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r2:c0:L3"
+  class: "index_wording"
+  text: "محكمة واحدة؛ لئلا يتجزأ نظر النزاع في موضوع واحد، وينشأ عنه تعارض"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r2:c0:L4"
+  class: "index_wording"
+  text: "في الأحكام."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r3:c1:L0"
+  class: "number"
+  text: "106"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r3:c2:L0"
+  class: "page_label"
+  text: "517"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r3:c0:L0"
+  class: "title"
+  text: "• مخالفة المصلحة العامة - الحكم بعدم الاختصاص المكاني بعد"
+  bold: 0.98
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r3:c0:L1"
+  class: "title"
+  text: "الفصل في قبول الدعوى:"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r3:c0:L2"
+  class: "index_wording"
+  text: "قضاء حكم الاستئناف بإلغاء الحكم الابتدائي في قبول الدعوى لمخالفته"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r3:c0:L3"
+  class: "index_wording"
+  text: "قواعد الاختصاص المكاني، لا يتفق مع النظام الذي جعل الاختصاص"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r3:c0:L4"
+  class: "index_wording"
+  text: "المكاني للمحكمة التي يقع في نطاق اختصاصها محل إقامة المطلوب التنفيذ"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r3:c0:L5"
+  class: "index_wording"
+  text: "ضده أو مركزه الرئيسي، ولم يجعل وجود فرع للمنفذ ضده سبباً لنقل"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r3:c0:L6"
+  class: "index_wording"
+  text: "الاختصاص المكاني، وكذلك لا يتفق مع المصلحة العامة التي توجب إنهاء"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r3:c0:L7"
+  class: "index_wording"
+  text: "النزاعات والفصل في الدعاوى في آجال معقولة، ومراعاة الاقتصاد في"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r3:c0:L8"
+  class: "index_wording"
+  text: "الخصومة، وتفادي تكرار عمل الإجراءات القضائية إلا لضرورة حتمية لما"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r3:c0:L9"
+  class: "index_wording"
+  text: "يترتب عليه من إعادة نظر الدعوى من جديد، وإطالة أمد النزاع، وتكرار"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r3:c0:L10"
+  class: "index_wording"
+  text: "إجراءات نظرها دون ضرورة حتمية."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r4:c1:L0"
+  class: "number"
+  text: "78"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r4:c2:L0"
+  class: "page_label"
+  text: "384"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r4:c0:L0"
+  class: "title"
+  text: "• الخطأ في تقرير الاختصاص المكاني:"
+  bold: 0.96
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r4:c0:L1"
+  class: "index_wording"
+  text: "صدور الحكم بعدم اختصاص المحكمة الإدارية بالرياض مكانياً بنظر"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r4:c0:L2"
+  class: "index_wording"
+  text: "الدعوى تأسيساً على أن المدعي كان يعمل بالمنطقة الشرقية، في حين أن مقر"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r4:c0:L3"
+  class: "index_wording"
+  text: "عمله الفعلي في مدينة الرياض؛ مما يتعين معه نقض الحكم."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r5:c0:L0"
+  class: "topic"
+  text: "الأراضي البور"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r5:c0:L1"
+  class: "outline"
+  text: "أولاً/ منح الأراضي الزراعية."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[12]:r5:c0:L2"
+  class: "outline"
+  text: "ثانياً/ تشكيل لجنة النظر في منازعات نظام توزيع الأراضي البور."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:L0"
+  class: "apparatus:page_number"
+  text: "9"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r0:c0:L0"
+  class: "header_row"
+  text: "المبدأ"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r0:c1:L0"
+  class: "header_row"
+  text: "الرقم"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r0:c2:L0"
+  class: "header_row"
+  text: "رقم"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r0:c2:L1"
+  class: "header_row"
+  text: "الصفحة"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r1:c1:L0"
+  class: "number"
+  text: "283"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r1:c2:L0"
+  class: "page_label"
+  text: "1345"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r1:c0:L0"
+  class: "subtopic_opener"
+  text: "أولاً/ منح الأراضي الزراعية:"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r1:c0:L1"
+  class: "title"
+  text: "• إيقاف المنح ومعالجة وضع غير الممكنين من استثمارها:"
+  bold: 0.97
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r1:c0:L2"
+  class: "index_wording"
+  text: "صدور أمر سامٍ بإيقاف منح الأراضي الزراعية، واستبدال منح مالية بمنح"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r1:c0:L3"
+  class: "index_wording"
+  text: "الأراضي الزراعية لمن سبق أن صدرت لهم قرارات منح أراضي ولم يمكنوا"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r1:c0:L4"
+  class: "index_wording"
+  text: "من استثمارها لوجود إشكالات أو معارضات عليها - تقرير المحكمة الإدارية"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r1:c0:L5"
+  class: "index_wording"
+  text: "العليا بأن الأمر السامي أوقف منح الأراضي الزراعية، واستهدف معالجة"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r1:c0:L6"
+  class: "index_wording"
+  text: "الحالات التي لم يتسبب فيها أصحابها بعدم استثمار الأرض، ولا يقتصر"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r1:c0:L7"
+  class: "index_wording"
+  text: "تطبيقه على الحالات التي يوجد فيها معارضة على الأرض، وأن عبارة"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r1:c0:L8"
+  class: "index_wording"
+  text: "(إشكالات)  الواردة في الأمر تعد عامة وتشمل جميع الإشكالات."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r2:c1:L0"
+  class: "number"
+  text: "369"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r2:c2:L0"
+  class: "page_label"
+  text: "1702"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r2:c0:L0"
+  class: "subtopic_opener"
+  text: "ثانياً/ تشكيل لجنة النظر في منازعات نظام توزيع الأراضي البور:"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r2:c0:L1"
+  class: "index_wording"
+  text: "نظام توزيع الأراضي البور لم ينص على تشكيل اللجنة من عدد معين، وإنما"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r2:c0:L2"
+  class: "index_wording"
+  text: "سمى جهات معينة - إلغاء إحدى الجهات المسماة في تشكيل اللجنة بضمها"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r2:c0:L3"
+  class: "index_wording"
+  text: "إلى جهة أخرى؛ يجعل تشكيل اللجنة من أعضاء بقية الجهات صحيحاً من"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r2:c0:L4"
+  class: "index_wording"
+  text: "حيث الأعضاء الواجب توافرهم في اللجنة."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r3:c0:L0"
+  class: "topic"
+  text: "أوقاف"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r3:c0:L1"
+  class: "outline"
+  text: "أولاً/ تولي الهيئة العامة للأوقاف نظارة الوقف."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r3:c0:L2"
+  class: "outline"
+  text: "ثانياً/ نوع شخصية الأوقاف الاعتبارية والنظام الحاكم لها."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r3:c0:L3"
+  class: "outline"
+  text: "ثالثاً/ صرف مبالغ الأوقاف غير المستقرة."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r4:c1:L0"
+  class: "number"
+  text: "212"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r4:c2:L0"
+  class: "page_label"
+  text: "1013"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r4:c0:L0"
+  class: "subtopic_opener"
+  text: "أولاً/ تولي الهيئة العامة للأوقاف نظارة الوقف:"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r4:c0:L1"
+  class: "index_wording"
+  text: "إذا كانت الهيئة العامة للأوقاف تتولى نظارة الوقف؛ فإن ذلك لا يجعل الوقف"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r4:c0:L2"
+  class: "index_wording"
+  text: "من الأشخاص المعنوية العامة؛ لأن ما يصدر عن الهيئة من تصرفات بشأن"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r4:c0:L3"
+  class: "index_wording"
+  text: "الوقف لا يصدر بوصفها سلطة عامة، وإنما باعتبارها ناظرة للوقف، وتباشر"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r4:c0:L4"
+  class: "index_wording"
+  text: "أعمالها كأي ناظر من النظار على الأوقاف، وتلتزم بشروط الواقف، وتضع"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r4:c0:L5"
+  class: "index_wording"
+  text: "إيراداته في مصارف الوقف التي حددها الواقف، ولا تؤول للخزينة العامة،"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r4:c0:L6"
+  class: "index_wording"
+  text: "وليس من شأن هذه النظارة أن يضفي على أموال الوقف صفة المال العام."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r5:c1:L0"
+  class: "number"
+  text: "212"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r5:c2:L0"
+  class: "page_label"
+  text: "1013"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r5:c0:L0"
+  class: "subtopic_opener"
+  text: "ثانياً/ نوع شخصية الأوقاف الاعتبارية والنظام الحاكم لها:"
+  bold: 1.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r5:c0:L1"
+  class: "index_wording"
+  text: "الأوقاف تعد من الأشخاص المعنوية الخاصة التي تخضع في تسجيلها وإثبات"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r5:c0:L2"
+  class: "index_wording"
+  text: "وقفيتها وإقامة النظار عليها وعزلهم لنظام المرافعات الشرعية، ونظام"
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+- loc: "page[13]:r5:c0:L3"
+  class: "index_wording"
+  text: "الهيئة العامة للأوقاف."
+  bold: 0.0
+  gap_spaces: 0
+  unresolved: 0
+  tatweel_removed: 0
+blocks:
+- loc: "page[8]:r2"
+  kind: "entry"
+  numbers:
+  - "57"
+  labels:
+  - "278"
+  references: []
+  title_ar: "تكييف عقد المحاماة"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "أتعاب محاماة"
+    subtopic_label: "أولاً/"
+    subtopic_title: "عقد المحاماة"
+  paragraphs:
+  - "تلاقي إرادة أطراف عقد المحاماة على العمل، دون تحديد الأجرة فيه وجعلها جزءاً مشاعاً من العمل، لا ينفي لزومية العقد؛ باعتباره من عقود الإجارة على العمل لا من عقود الجعالة."
+  wrap_joins:
+  - "page[8]:r2:c0:L3 joined to previous line"
+  - "page[8]:r2:c0:L4 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[8]:r3"
+  kind: "entry"
+  numbers:
+  - "228"
+  labels:
+  - "1084"
+  references: []
+  title_ar: "استحقاق الأجرة المحُددة في عقد المحاماة"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "أتعاب محاماة"
+    subtopic_label: "أولاً/"
+    subtopic_title: "عقد المحاماة"
+  paragraphs:
+  - "ثبوت عقد المحاماة وتحديد الأجرة فيه لا يعني استحقاق الأجرة في كل الأحوال، وإنما تستحق عند المنازعة فيها عن الجهد المبذول والنتيجة التي تحققت بسببها، وكون هذه الأعمال تتعادل مع الأجرة المحددة مقابل أدائها."
+  wrap_joins:
+  - "page[8]:r3:c0:L2 joined to previous line"
+  - "page[8]:r3:c0:L3 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[8]:r4"
+  kind: "entry"
+  numbers:
+  - "57"
+  labels:
+  - "278"
+  references: []
+  title_ar: "المتعين على المحكمة حيال المنازعة في أجرة عقد المحاماة"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "أتعاب محاماة"
+    subtopic_label: "أولاً/"
+    subtopic_title: "عقد المحاماة"
+  paragraphs:
+  - "إذا كان الموكِل ينازع في صحة عقد المحاماة واشتماله على مبالغة وغبن في الأجرة؛ فإن على المحكمة أن تنظر في هذا النزاع، وتقدر الأتعاب بما يتناسب مع الجهد الذي بذله المحامي، والنفع الذي عاد على الموكِل."
+  wrap_joins:
+  - "page[8]:r4:c0:L2 joined to previous line"
+  - "page[8]:r4:c0:L3 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[8]:r5"
+  kind: "entry"
+  numbers:
+  - "381"
+  labels:
+  - "1756"
+  references: []
+  title_ar: "الخطأ فيه"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "أتعاب محاماة"
+    subtopic_label: "ثانياً/"
+    subtopic_title: "تقدير التعويض"
+  paragraphs:
+  - "الحكم بأتعاب المحاماة وفقاً للمدون بعقد أتعاب المحاماة؛ يعد مخالفةً للمستقر قضاءً."
+  wrap_joins:
+  - "page[8]:r5:c0:L3 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[8]:r6"
+  kind: "sibling"
+  numbers:
+  - "381"
+  labels:
+  - "1756"
+  references: []
+  title_ar: "الخطأ فيه"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "أتعاب محاماة"
+    subtopic_label: "ثانياً/"
+    subtopic_title: "تقدير التعويض"
+  paragraphs:
+  - "الحكم للمدعي بكامل أتعاب المحاماة دون مراعاة رفض بعض طلباته؛ يعد قصوراً في التسبيب."
+  wrap_joins:
+  - "page[8]:r6:c0:L1 joined to previous line"
+  reference_separations: []
+  continues_block: 3
+- loc: "page[9]:r2"
+  kind: "entry"
+  numbers:
+  - "28"
+  labels:
+  - "140"
+  references: []
+  title_ar: "ترحيل العامل - سلطة الجهة الإدارية فيه"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "أجانب"
+    subtopic_label: null
+    subtopic_title: null
+  paragraphs:
+  - "الأصل أن ترحيل الأجنبي عن البلاد عند وجود سببه حق مقرر للجهة الإدارية؛ لأن بقاءه في البلاد بعد ذلك يعد مخالفاً للقواعد النظامية المنصوص عليها في نظام الإقامة، وقواعد تنظيم حركة انتقال الأيدي العاملة المنصوص عليها؛ وعليه فإن توقيف الأجنبي إلى حين سفره يعد متفقاً مع النظام، ولا يعد خطأ يوجب مسؤولية الجهة الإدارية."
+  wrap_joins:
+  - "page[9]:r2:c0:L2 joined to previous line"
+  - "page[9]:r2:c0:L3 joined to previous line"
+  - "page[9]:r2:c0:L4 joined to previous line"
+  - "page[9]:r2:c0:L5 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[9]:r4"
+  kind: "entry"
+  numbers:
+  - "284"
+  labels:
+  - "1350"
+  references: []
+  title_ar: "عدم تأثر الصحيح من الإجراءات الإدارية بالحالات المغايرة"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "الإجراءات الإدارية"
+    subtopic_label: null
+    subtopic_title: null
+  paragraphs:
+  - "الإجراء إذا كان موافقاً للنظام؛ فإنه لا يتأثر في صحته بوجود حالات مغايرة له."
+  wrap_joins:
+  - "page[9]:r4:c0:L2 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[9]:r6"
+  kind: "entry"
+  numbers:
+  - "188"
+  labels:
+  - "911"
+  references: []
+  title_ar: "المنوط بمتابعة الإجراءات النظامية"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "الإجراءات النظامية"
+    subtopic_label: null
+    subtopic_title: null
+  paragraphs:
+  - "متابعة شأن المستفيد لدى غير الجهة الإدارية المنوط بها اتخاذ الإجراء النظامي يقع بحسب الأصل على عاتق المستفيد، ولا تسأل عنه الجهة الإدارية إلا حين تكون هي الملزمة به نظاماً ويثبت تقصيرها فيه."
+  wrap_joins:
+  - "page[9]:r6:c0:L2 joined to previous line"
+  - "page[9]:r6:c0:L3 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[9]:r8"
+  kind: "entry"
+  numbers:
+  - "30"
+  labels:
+  - "154"
+  references: []
+  title_ar: "اعتبار القواعد المنظمة للاختصاص الولائي من النظام العام"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "أولاً/"
+    subtopic_title: "الاختصاص الولائي"
+  paragraphs:
+  - "القواعد المنظمة للاختصاص الولائي تعد من النظام العام."
+  wrap_joins: []
+  reference_separations: []
+  continues_block: null
+- loc: "page[9]:r9"
+  kind: "entry"
+  numbers:
+  - "149"
+  labels:
+  - "724"
+  references: []
+  title_ar: "اعتبار القواعد المتعلقة بالاختصاص الولائي من النظام العام"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "أولاً/"
+    subtopic_title: "الاختصاص الولائي"
+  paragraphs:
+  - "القواعد المتعلقة بالاختصاص الولائي تعد من النظام العام، وللمحكمة الإدارية العليا أن تتصدى لها ولو لم يتضمنها الاعتراض."
+  wrap_joins:
+  - "page[9]:r9:c0:L2 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[10]:r1"
+  kind: "entry"
+  numbers:
+  - "30"
+  labels:
+  - "154"
+  references: []
+  title_ar: "الدعاوى المقامة على الجهات الإدارية - الاستثناء من عموم الاختصاص بنظرها"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "أولاً/"
+    subtopic_title: "الاختصاص الولائي"
+  paragraphs:
+  - "إقامة الدعوى على الجهة الإدارية لا يعني وبحكم اللزوم اختصاص المحاكم الإدارية بالفصل فيها إذا كان هناك نصٌّ نظاميٌّ خاصٌّ يخرج الفصل في تلك الدعوى من اختصاص المحاكم الإدارية، أو لم تكن طبيعة المنازعة ذاتها إدارية وناشئة عن نشاط الإدارة بوصفها سلطة تنفيذية في إدارة المرفق العام."
+  wrap_joins:
+  - "page[10]:r1:c0:L3 joined to previous line"
+  - "page[10]:r1:c0:L4 joined to previous line"
+  - "page[10]:r1:c0:L5 joined to previous line"
+  - "page[10]:r1:c0:L6 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[10]:r2"
+  kind: "entry"
+  numbers:
+  - "126"
+  labels:
+  - "610"
+  references: []
+  title_ar: "الدعاوى المتعلقة بالعقوبات على مخالفي الإجراءات والتدابير الوقائية لجائحة فيروس كورونا"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "أولاً/"
+    subtopic_title: "الاختصاص الولائي"
+  paragraphs:
+  - "محاكم ديوان المظالم لا تختص بنظر التظلم على العقوبة المقررة لمخالفي حظر التجول والصادرة بعد الأمر الملكي المتضمن تكوين لجنة تتولى النظر في التظلم من تلك العقوبات، ويكون قرارها نهائيّاً غير قابل للطعن."
+  wrap_joins:
+  - "page[10]:r2:c0:L3 joined to previous line"
+  - "page[10]:r2:c0:L4 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[10]:r3"
+  kind: "entry"
+  numbers:
+  - "58"
+  labels:
+  - "285"
+  references: []
+  title_ar: "الدعاوى المتعلقة بالتعويض عن تقصير الجهة الإدارية"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "أولاً/"
+    subtopic_title: "الاختصاص الولائي"
+  paragraphs:
+  - "صدور الحكم المعترض عليه بعدم الاختصاص الولائي بنظر دعوى المدعي بإلزام البنك المركزي بتعويضه عن تعمد موظفيه إخفاء وقائع منتجة في منازعته المصرفية مع بنك تجاري - تقرير المحكمة الإدارية العليا بأن الدعوى مقامة ضد جهة إدارية للمطالبة بالتعويض عما نسب إليها من تقصير؛ ومن ثم تكون الدعوى حينئذٍ منازعة إدارية، وينعقد الاختصاص الولائي للمحكمة الإدارية وفق النظام."
+  wrap_joins:
+  - "page[10]:r3:c0:L2 joined to previous line"
+  - "page[10]:r3:c0:L3 joined to previous line"
+  - "page[10]:r3:c0:L4 joined to previous line"
+  - "page[10]:r3:c0:L5 joined to previous line"
+  - "page[10]:r3:c0:L6 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[10]:r4"
+  kind: "entry"
+  numbers:
+  - "215"
+  labels:
+  - "1025"
+  references: []
+  title_ar: "القرارات المتعلقة بالجمارك"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "أولاً/"
+    subtopic_title: "الاختصاص الولائي"
+  paragraphs:
+  - "القرارات التي تختص اللجان الجمركية بنظرها محصورة بقرارات التحصيل وقرارات التغريم وفقاً للنظام، وما عدا تلك القرارات التي تصدر عن محافظ الهيئة تُعد من جملة القرارات الإدارية التي تختص محاكم ديوان المظالم بنظرها وفقاً للفقرة (ب) من المادة الثالثة عشرة من نظامه."
+  wrap_joins:
+  - "page[10]:r4:c0:L2 joined to previous line"
+  - "page[10]:r4:c0:L3 joined to previous line"
+  - "page[10]:r4:c0:L4 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[10]:r5"
+  kind: "entry"
+  numbers:
+  - "121"
+  labels:
+  - "589"
+  references: []
+  title_ar: "تسجيل بلاغ التغيب عن العمل"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "أولاً/"
+    subtopic_title: "الاختصاص الولائي"
+  paragraphs:
+  - "تسجيل بلاغ التغيب عن العمل ليس انعكاساً للالتزام التعاقدي بين العامل وصاحب العمل، ولا جزءاً منه، ولا يخرج عن كونه من القرارات الإدارية التي يختص ديوان المظالم بنظر الطعن فيها."
+  wrap_joins:
+  - "page[10]:r5:c0:L2 joined to previous line"
+  - "page[10]:r5:c0:L3 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[11]:r1"
+  kind: "entry"
+  numbers:
+  - "5"
+  labels:
+  - "20"
+  references: []
+  title_ar: "إثبات الخطأ بالسجل الائتماني"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "أولاً/"
+    subtopic_title: "الاختصاص الولائي"
+  paragraphs:
+  - "الحكم بعدم اختصاص لجنة النظر في مخالفات نظام المعلومات الائتمانية بالفصل في إثبات الخطأ بالسجل الائتماني؛ يعد مخالفةً للنظام."
+  wrap_joins:
+  - "page[11]:r1:c0:L2 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[11]:r2"
+  kind: "entry"
+  numbers:
+  - "183"
+  labels:
+  - "887"
+  references: []
+  title_ar: "العقود المتعلقة بمعهد الملك سلمان للدراسات والخدمات الاستشارية"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "أولاً/"
+    subtopic_title: "الاختصاص الولائي"
+  paragraphs:
+  - "إذا كان المعهد يباشر عمله وفق الأسس التجارية، ولجامعة المجمعة سجل تجاري لهذه الأغراض؛ فإن ذلك لا يخرج الدعوى العقدية المتعلقة بهما عن اختصاص المحاكم الإدارية لعموم النص النظامي الذي يقضي باختصاص المحاكم الإدارية بالفصل في الدعاوى المتعلقة بالعقود التي تكون جهة الإدارة طرفاً فيها، وتنظر المحاكم الإدارية في المنازعات الناشئة عن هذه العقود وفق القواعد المنظمة والحاكمة لكل عقد."
+  wrap_joins:
+  - "page[11]:r2:c0:L2 joined to previous line"
+  - "page[11]:r2:c0:L3 joined to previous line"
+  - "page[11]:r2:c0:L4 joined to previous line"
+  - "page[11]:r2:c0:L5 joined to previous line"
+  - "page[11]:r2:c0:L6 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[11]:r3"
+  kind: "entry"
+  numbers:
+  - "168"
+  labels:
+  - "815"
+  references: []
+  title_ar: "اختصاص المحكمة الإدارية بالدمام"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "ثانياً/"
+    subtopic_title: "الاختصاص المكاني"
+  paragraphs:
+  - "المحكمة الإدارية بمدينة الدمام تختص مكانياً بالفصل في الدعاوى إذا اتصلت بجهة إدارية في النطاق الإداري للمنطقة الشرقية، ويستثنى من ذلك النطاق الإداري للمحافظات التي أنشأ فيها محكمة إدارية، مثل المحكمة الإدارية بالأحساء والمحكمة الإدارية بحفر الباطن، فتختص كل محكمة مكانياً بالنطاق الإداري للمحافظة التي تقع فيها."
+  wrap_joins:
+  - "page[11]:r3:c0:L3 joined to previous line"
+  - "page[11]:r3:c0:L4 joined to previous line"
+  - "page[11]:r3:c0:L5 joined to previous line"
+  - "page[11]:r3:c0:L6 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[11]:r4"
+  kind: "entry"
+  numbers:
+  - "168"
+  labels:
+  - "815"
+  references: []
+  title_ar: "انعقاد الاختصاص المكاني - الدعاوى المتعلقة بمركز البطحاء"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "ثانياً/"
+    subtopic_title: "الاختصاص المكاني"
+  paragraphs:
+  - "تضمن دليل الترميز الموحد للمناطق والمحافظات والمراكز الإدارية الصادر عن مركز الوثائق والمحفوظات بتبعية مركز البطحاء لمحافظة العديد التي تتبع إمارة المنطقة الشرقية؛ ومن ثم يكون الاختصاص المكاني للدعاوى المتعلقة بمركز البطحاء منعقداً للمحكمة الإدارية بالدمام."
+  wrap_joins:
+  - "page[11]:r4:c0:L2 joined to previous line"
+  - "page[11]:r4:c0:L3 joined to previous line"
+  - "page[11]:r4:c0:L4 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[11]:r5"
+  kind: "entry"
+  numbers:
+  - "360"
+  labels:
+  - "1668"
+  references: []
+  title_ar: "انعقاد الاختصاص المكاني - الدعاوى المقامة ضد الشركات"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "ثانياً/"
+    subtopic_title: "الاختصاص المكاني"
+  paragraphs:
+  - "الأصل أن تقام الدعوى على الشركة أمام المحكمة التي يقع في نطاق اختصاصها مركز إدارتها، وعلى سبيل الجواز يمكن إقامة الدعوى على فرع الشركة، وذلك حصراً في المسائل المتعلقة بالفرع."
+  wrap_joins:
+  - "page[11]:r5:c0:L2 joined to previous line"
+  - "page[11]:r5:c0:L3 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[11]:r6"
+  kind: "entry"
+  numbers:
+  - "214"
+  labels:
+  - "1022"
+  references: []
+  title_ar: "انعقاد الاختصاص المكاني - الدعاوى الوظيفية للموظف المنقول"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "ثانياً/"
+    subtopic_title: "الاختصاص المكاني"
+  paragraphs:
+  - "إذا كان مقر عمل الموظف في منطقة الجوف؛ فإن المحكمة المختصة مكانياً بنظر الدعوى الوظيفية هي المحكمة الإدارية بسكاكا."
+  wrap_joins:
+  - "page[11]:r6:c0:L2 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[12]:r1"
+  kind: "entry"
+  numbers:
+  - "179"
+  labels:
+  - "872"
+  references: []
+  title_ar: "انعقاد الاختصاص المكاني - تعدد مكان تنفيذ العقد"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "ثانياً/"
+    subtopic_title: "الاختصاص المكاني"
+  paragraphs:
+  - "كون العقد ينفذ في أكثر من مدينة؛ فإن المحكمة المختصة مكانياً بنظر منازعات العقد هي التي ينفذ في نطاق اختصاصها أكثرية أعمال العقد."
+  wrap_joins:
+  - "page[12]:r1:c0:L2 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[12]:r2"
+  kind: "entry"
+  numbers:
+  - "179"
+  labels:
+  - "872"
+  references: []
+  title_ar: "توحيد نظر منازعات العقد أمام محكمة واحدة"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "ثانياً/"
+    subtopic_title: "الاختصاص المكاني"
+  paragraphs:
+  - "إذا تعدد مكان تنفيذ العقد في أكثر من منطقة أو مدينة، وانعقاد الاختصاص المكاني لأكثر من محكمة تبعاً لذلك؛ فإنه يجب توحيد نظر النزاع أمام محكمة واحدة؛ لئلا يتجزأ نظر النزاع في موضوع واحد، وينشأ عنه تعارض في الأحكام."
+  wrap_joins:
+  - "page[12]:r2:c0:L2 joined to previous line"
+  - "page[12]:r2:c0:L3 joined to previous line"
+  - "page[12]:r2:c0:L4 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[12]:r3"
+  kind: "entry"
+  numbers:
+  - "106"
+  labels:
+  - "517"
+  references: []
+  title_ar: "مخالفة المصلحة العامة - الحكم بعدم الاختصاص المكاني بعد الفصل في قبول الدعوى"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "ثانياً/"
+    subtopic_title: "الاختصاص المكاني"
+  paragraphs:
+  - "قضاء حكم الاستئناف بإلغاء الحكم الابتدائي في قبول الدعوى لمخالفته قواعد الاختصاص المكاني، لا يتفق مع النظام الذي جعل الاختصاص المكاني للمحكمة التي يقع في نطاق اختصاصها محل إقامة المطلوب التنفيذ ضده أو مركزه الرئيسي، ولم يجعل وجود فرع للمنفذ ضده سبباً لنقل الاختصاص المكاني، وكذلك لا يتفق مع المصلحة العامة التي توجب إنهاء النزاعات والفصل في الدعاوى في آجال معقولة، ومراعاة الاقتصاد في الخصومة، وتفادي تكرار عمل الإجراءات القضائية إلا لضرورة حتمية لما يترتب عليه من إعادة نظر الدعوى من جديد، وإطالة أمد النزاع، وتكرار إجراءات نظرها دون ضرورة حتمية."
+  wrap_joins:
+  - "page[12]:r3:c0:L3 joined to previous line"
+  - "page[12]:r3:c0:L4 joined to previous line"
+  - "page[12]:r3:c0:L5 joined to previous line"
+  - "page[12]:r3:c0:L6 joined to previous line"
+  - "page[12]:r3:c0:L7 joined to previous line"
+  - "page[12]:r3:c0:L8 joined to previous line"
+  - "page[12]:r3:c0:L9 joined to previous line"
+  - "page[12]:r3:c0:L10 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[12]:r4"
+  kind: "entry"
+  numbers:
+  - "78"
+  labels:
+  - "384"
+  references: []
+  title_ar: "الخطأ في تقرير الاختصاص المكاني"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "اختصاص"
+    subtopic_label: "ثانياً/"
+    subtopic_title: "الاختصاص المكاني"
+  paragraphs:
+  - "صدور الحكم بعدم اختصاص المحكمة الإدارية بالرياض مكانياً بنظر الدعوى تأسيساً على أن المدعي كان يعمل بالمنطقة الشرقية، في حين أن مقر عمله الفعلي في مدينة الرياض؛ مما يتعين معه نقض الحكم."
+  wrap_joins:
+  - "page[12]:r4:c0:L2 joined to previous line"
+  - "page[12]:r4:c0:L3 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[13]:r1"
+  kind: "entry"
+  numbers:
+  - "283"
+  labels:
+  - "1345"
+  references: []
+  title_ar: "إيقاف المنح ومعالجة وضع غير الممكنين من استثمارها"
+  title_basis: "bullet_title"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "الأراضي البور"
+    subtopic_label: "أولاً/"
+    subtopic_title: "منح الأراضي الزراعية"
+  paragraphs:
+  - "صدور أمر سامٍ بإيقاف منح الأراضي الزراعية، واستبدال منح مالية بمنح الأراضي الزراعية لمن سبق أن صدرت لهم قرارات منح أراضي ولم يمكنوا من استثمارها لوجود إشكالات أو معارضات عليها - تقرير المحكمة الإدارية العليا بأن الأمر السامي أوقف منح الأراضي الزراعية، واستهدف معالجة الحالات التي لم يتسبب فيها أصحابها بعدم استثمار الأرض، ولا يقتصر تطبيقه على الحالات التي يوجد فيها معارضة على الأرض، وأن عبارة (إشكالات)  الواردة في الأمر تعد عامة وتشمل جميع الإشكالات."
+  wrap_joins:
+  - "page[13]:r1:c0:L3 joined to previous line"
+  - "page[13]:r1:c0:L4 joined to previous line"
+  - "page[13]:r1:c0:L5 joined to previous line"
+  - "page[13]:r1:c0:L6 joined to previous line"
+  - "page[13]:r1:c0:L7 joined to previous line"
+  - "page[13]:r1:c0:L8 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[13]:r2"
+  kind: "entry"
+  numbers:
+  - "369"
+  labels:
+  - "1702"
+  references: []
+  title_ar: "تشكيل لجنة النظر في منازعات نظام توزيع الأراضي البور"
+  title_basis: "subtopic_line"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "الأراضي البور"
+    subtopic_label: "ثانياً/"
+    subtopic_title: "تشكيل لجنة النظر في منازعات نظام توزيع الأراضي البور"
+  paragraphs:
+  - "نظام توزيع الأراضي البور لم ينص على تشكيل اللجنة من عدد معين، وإنما سمى جهات معينة - إلغاء إحدى الجهات المسماة في تشكيل اللجنة بضمها إلى جهة أخرى؛ يجعل تشكيل اللجنة من أعضاء بقية الجهات صحيحاً من حيث الأعضاء الواجب توافرهم في اللجنة."
+  wrap_joins:
+  - "page[13]:r2:c0:L2 joined to previous line"
+  - "page[13]:r2:c0:L3 joined to previous line"
+  - "page[13]:r2:c0:L4 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[13]:r4"
+  kind: "entry"
+  numbers:
+  - "212"
+  labels:
+  - "1013"
+  references: []
+  title_ar: "تولي الهيئة العامة للأوقاف نظارة الوقف"
+  title_basis: "subtopic_line"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "أوقاف"
+    subtopic_label: "أولاً/"
+    subtopic_title: "تولي الهيئة العامة للأوقاف نظارة الوقف"
+  paragraphs:
+  - "إذا كانت الهيئة العامة للأوقاف تتولى نظارة الوقف؛ فإن ذلك لا يجعل الوقف من الأشخاص المعنوية العامة؛ لأن ما يصدر عن الهيئة من تصرفات بشأن الوقف لا يصدر بوصفها سلطة عامة، وإنما باعتبارها ناظرة للوقف، وتباشر أعمالها كأي ناظر من النظار على الأوقاف، وتلتزم بشروط الواقف، وتضع إيراداته في مصارف الوقف التي حددها الواقف، ولا تؤول للخزينة العامة، وليس من شأن هذه النظارة أن يضفي على أموال الوقف صفة المال العام."
+  wrap_joins:
+  - "page[13]:r4:c0:L2 joined to previous line"
+  - "page[13]:r4:c0:L3 joined to previous line"
+  - "page[13]:r4:c0:L4 joined to previous line"
+  - "page[13]:r4:c0:L5 joined to previous line"
+  - "page[13]:r4:c0:L6 joined to previous line"
+  reference_separations: []
+  continues_block: null
+- loc: "page[13]:r5"
+  kind: "entry"
+  numbers:
+  - "212"
+  labels:
+  - "1013"
+  references: []
+  title_ar: "نوع شخصية الأوقاف الاعتبارية والنظام الحاكم لها"
+  title_basis: "subtopic_line"
+  hierarchy:
+    letter: "أ"
+    letter_label: "حرف (أ)"
+    topic: "أوقاف"
+    subtopic_label: "ثانياً/"
+    subtopic_title: "نوع شخصية الأوقاف الاعتبارية والنظام الحاكم لها"
+  paragraphs:
+  - "الأوقاف تعد من الأشخاص المعنوية الخاصة التي تخضع في تسجيلها وإثبات وقفيتها وإقامة النظار عليها وعزلهم لنظام المرافعات الشرعية، ونظام الهيئة العامة للأوقاف."
+  wrap_joins:
+  - "page[13]:r5:c0:L2 joined to previous line"
+  - "page[13]:r5:c0:L3 joined to previous line"
+  reference_separations: []
+  continues_block: null
+summary_rows:
+- page: 7
+  row: 0
+  letter_label: "حرف (أ)"
+  topics_text: "أتعاب محاماة - أجانب - إجراءات إدارية - إجراءات نظامية - اختصاص - الأراضي البور - أوقاف"
+  locs:
+  - "page[7]:r0:c0"
+  - "page[7]:r0:c1"
+- page: 7
+  row: 1
+  letter_label: "حرف (ت)"
+  topics_text: "تأديب - تدريب - تعليم - تقاعد - تخطيط عمراني - تراخيص - تعويض - تنفيذ - توقيف"
+  locs:
+  - "page[7]:r1:c0"
+  - "page[7]:r1:c1"
+- page: 7
+  row: 2
+  letter_label: "حرف (ج)"
+  topics_text: "جامعات - جهات إدارية"
+  locs:
+  - "page[7]:r2:c0"
+  - "page[7]:r2:c1"
+- page: 7
+  row: 3
+  letter_label: "حرف (خ)"
+  topics_text: "خبرة - خدمة عسكرية - خدمة مدنية"
+  locs:
+  - "page[7]:r3:c0"
+  - "page[7]:r3:c1"
+- page: 7
+  row: 4
+  letter_label: "حرف (د)"
+  topics_text: "دعوى"
+  locs:
+  - "page[7]:r4:c0"
+  - "page[7]:r4:c1"
+- page: 7
+  row: 5
+  letter_label: "حرف (ص)"
+  topics_text: "صحة"
+  locs:
+  - "page[7]:r5:c0"
+  - "page[7]:r5:c1"
+- page: 7
+  row: 6
+  letter_label: "حرف (ض)"
+  topics_text: "ضبط جنائي"
+  locs:
+  - "page[7]:r6:c0"
+  - "page[7]:r6:c1"
+- page: 7
+  row: 7
+  letter_label: "حرف (ط)"
+  topics_text: "طلبات قضائية"
+  locs:
+  - "page[7]:r7:c0"
+  - "page[7]:r7:c1"
+- page: 7
+  row: 8
+  letter_label: "حرف (ع)"
+  topics_text: "عقار - عقد"
+  locs:
+  - "page[7]:r8:c0"
+  - "page[7]:r8:c1"
+- page: 7
+  row: 9
+  letter_label: "حرف (غ)"
+  topics_text: "غرامات"
+  locs:
+  - "page[7]:r9:c0"
+  - "page[7]:r9:c1"
+- page: 7
+  row: 10
+  letter_label: "حرف (ق)"
+  topics_text: "قرار إداري"
+  locs:
+  - "page[7]:r10:c0"
+  - "page[7]:r10:c1"
+- page: 7
+  row: 11
+  letter_label: "حرف (م)"
+  topics_text: "مبادئ قضائية - مصروفات الدعوى - ملكية فكرية - مهن حرة"
+  locs:
+  - "page[7]:r11:c0"
+  - "page[7]:r11:c1"
+- page: 7
+  row: 12
+  letter_label: "حرف (ن)"
+  topics_text: "نزع ملكية - نظام"
+  locs:
+  - "page[7]:r12:c0"
+  - "page[7]:r12:c1"
+relations:
+  Admin-principles-1444-v6:p057: []
+  Admin-principles-1444-v6:p228: []
+  Admin-principles-1444-v6:p381: []
+  Admin-principles-1444-v6:p028: []
+  Admin-principles-1444-v6:p284: []
+  Admin-principles-1444-v6:p188: []
+  Admin-principles-1444-v6:p030: []
+  Admin-principles-1444-v6:p149: []
+  Admin-principles-1444-v6:p126: []
+  Admin-principles-1444-v6:p058: []
+  Admin-principles-1444-v6:p215: []
+  Admin-principles-1444-v6:p121: []
+  Admin-principles-1444-v6:p005: []
+  Admin-principles-1444-v6:p183: []
+  Admin-principles-1444-v6:p168: []
+  Admin-principles-1444-v6:p360: []
+  Admin-principles-1444-v6:p214: []
+  Admin-principles-1444-v6:p179: []
+  Admin-principles-1444-v6:p106: []
+  Admin-principles-1444-v6:p078: []
+  Admin-principles-1444-v6:p283: []
+  Admin-principles-1444-v6:p369: []
+  Admin-principles-1444-v6:p212: []

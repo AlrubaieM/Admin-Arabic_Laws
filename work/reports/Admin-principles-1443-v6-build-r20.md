@@ -1,0 +1,74 @@
+# Build report — Admin-principles-1443-v6 (run 20)
+
+- source files: Indexes-1443-v6.pdf
+- principle files: 37; held: 0; facets: 54; vault files: 39
+- page classes: {'basmala': 1, 'blank': 1, 'cataloging': 1, 'cover': 1, 'divider': 1, 'half_title': 2, 'index_detailed': 9, 'index_summary': 1}
+- line classes: {'apparatus:hidden_folio': 4, 'apparatus:page_number': 10, 'cataloging_text': 7, 'header_row': 27, 'index_wording': 155, 'letter': 2, 'number': 49, 'outline': 12, 'page_label': 51, 'ruling_reference': 13, 'subtopic_opener': 10, 'summary_letter': 14, 'summary_topics': 14, 'title': 50, 'topic': 5}
+- apparatus excluded per page (images, non-ruling drawings): {'1': {'images': 3, 'drawings': 0}, '2': {'images': 0, 'drawings': 4}, '3': {'images': 0, 'drawings': 1}, '4': {'images': 4, 'drawings': 0}, '5': {'images': 3, 'drawings': 0}, '6': {'images': 5, 'drawings': 0}, '7': {'images': 3, 'drawings': 29}, '8': {'images': 5, 'drawings': 0}, '9': {'images': 2, 'drawings': 0}, '10': {'images': 3, 'drawings': 0}, '11': {'images': 2, 'drawings': 0}, '12': {'images': 3, 'drawings': 0}, '13': {'images': 2, 'drawings': 0}, '14': {'images': 3, 'drawings': 0}, '15': {'images': 2, 'drawings': 0}, '16': {'images': 3, 'drawings': 0}}
+- glyphs by status: {'cmap': 8993, 'cmap_shared': 99, 'compose': 312, 'drop:duplicate_space': 2, 'drop:hamza_mark': 312, 'drop:ligature_continuation': 476, 'drop:tail': 428, 'repair': 1567, 'space': 2010, 'symbol_digit': 36}
+- wrap joins: 106; reference separations: 39; geometry-inserted spaces: 0; tatweel runs removed: 0; duplicate space glyphs dropped: 2
+- summary-index coverage: {'complete': ['أ'], 'partial': [{'letter': 'ت', 'detailed_topics': ['تأديب'], 'summary_topics': ['تأديب', 'تدريب', 'تراخيص', 'تعويض', 'تقاعد', 'تنفيذ', 'توقيف']}], 'absent_from_summary': []}
+- configured files not read for wording: none
+- entry components the index prints for no entry: none
+- fonts identified by identical outlines in other verified sources: Indexes-1443-v6.pdf: HacenTunisiaLt = Admin-principles-1444-v6/pr year 1444 orginal export.pdf:HacenTunisiaLt (11/11 identical outlines), Admin-principles-1444-v6/Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:CIDFont+F1 (11/11 identical outlines) (10 texts, 0 repairs); Indexes-1443-v6.pdf: AXtManalBold = Admin-principles-1444-v6/pr year 1444 orginal export.pdf:AXtManalBold (153/153 identical outlines), Admin-principles-1444-v6/Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:CIDFont+F2 (62/62 identical outlines), Admin-principles-1444-v6/Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:CIDFont+F3 (110/110 identical outlines) (130 texts, 0 repairs); Indexes-1443-v6.pdf: AXtManal = Admin-principles-1444-v6/pr year 1444 orginal export.pdf:AXtManal (169/169 identical outlines), Admin-principles-1444-v6/Indexes-مجموعة مبادئ و قرارات المحكمة الادارية العليا أعوام 1444 (2).pdf:CIDFont+F4 (150/150 identical outlines) (161 texts, 0 repairs)
+- review items: 54 (open: 54)
+- anomalies: 2
+- OCR confirmation: recorded in work\review\ocr-Admin-principles-1443-v6.yaml
+- active execution profile: windows-local
+
+## Review items
+
+- 33919ba61fcf [link] page[10]:r5:c0:L1: حرف م/ ملكية فكرية - علامة تجارية - المختص بنظر الدعاوى المتعلقة بالعلامات التجارية — see-also target not found among the supplied index pages (left unresolved) (open)
+- 106ac6939a0e [link] page[10]:r6:c0:L1: حرف م/ ملكية فكرية - حقوق المؤلف - المختص بنظر الدعاوى المتعلقة بحماية حقوق المؤلف — see-also target not found among the supplied index pages (left unresolved) (open)
+- 67487797d899 [link] page[10]:r1:c0:L1: حرف ص/ صحة - الأخطاء الصحية - الأخطاء المهنية - المختص بنظر دعوى التعويض عنها — see-also target not found among the supplied index pages (left unresolved) (open)
+- 6754e698d7fe [link] page[10]:r2:c0:L1: حرف ص/ صحة - الأخطاء الصحية - الأخطاء غير المهنية - المختص بنظر دعوى التعويض عنها — see-also target not found among the supplied index pages (left unresolved) (open)
+- 26338956a777 [link] page[10]:r3:c0:L2: حرف ع/ عقد - الدعاوى المتعلقة بالعقود التي تبرمها الهيئة السعودية للتخصصات الصحية — see-also target not found among the supplied index pages (left unresolved) (open)
+- c275fdb64ae9 [link] page[10]:r7:c0:L1: حرف ع/ عقار - الدعاوى المتعلقة بالعقار - ولاية المحاكم الإدارية حيال الدعاوى المتعلقة بالعقار — see-also target not found among the supplied index pages (left unresolved) (open)
+- 3a6496a9cf46 [link] page[10]:r8:c0:L1: حرف ع/ عقار - النزاع حول ملكية العقارات - خروج النزاع حول ملكية العقارات عن ولاية المحاكم الإدارية — see-also target not found among the supplied index pages (left unresolved) (open)
+- 90ee80d19e88 [link] page[11]:r1:c0:L1: حرف ع/ عقار - النزاع حول صحة صك الملكية - خروج النزاع حول صحة صك الملكية عن ولاية المحاكم الإدارية — see-also target not found among the supplied index pages (left unresolved) (open)
+- 15fa6338ae8a [link] page[11]:r2:c0:L1: حرف ع/ عقار - المنازعة في حق الارتفاق - المختص بنظر المنازعة في حق الارتفاق — see-also target not found among the supplied index pages (left unresolved) (open)
+- c2fa97d556c0 [link] page[11]:r3:c0:L1: حرف ع/ عقار - منح الأراضي - استبدال المنح - ولاية المحاكم الإدارية حياله — see-also target not found among the supplied index pages (left unresolved) (open)
+- 90baaa584318 [link] page[11]:r4:c0:L1: حرف ت/ تعويض - التعويض عن عدم اتخاذ الإجراءات النظامية لإيقاف المدين ومنعه من السفر — see-also target not found among the supplied index pages (left unresolved) (open)
+- 66ec367f745d [link] page[11]:r6:c0:L1: حرف خ/ خدمة مدنية - الشؤون الوظيفية - المختص بنظر الدعوى الوظيفية للمتعاقدين غير السعوديين على الوظائف العامة — see-also target not found among the supplied index pages (left unresolved) (open)
+- 6ae18c624947 [link] page[13]:r2:c0:L1: حرف ت/ تنفيذ - تنفيذ الأحكام القضائية - المختص بإجراءات التنفيذ — see-also target not found among the supplied index pages (left unresolved) (open)
+- 36170252cea6 [link] page[13]:r4:c0:L1: حرف ط/ طلبات قضائية - التماس إعادة النظر -  المختص بنظر التماس إعادة النظر — see-also target not found among the supplied index pages (left unresolved) (open)
+- 9d17cb2e51ba [other] page[2]:r2:c0:L0: رقم الإيداع : 1440/1447 — the deposit number prints 1447 left and 1440 right (nearest the colon); the vault reads the groups right to left like the ruling references (1440/1447); the serial/year order the library intends is not stated on the page (open)
+- 699b69bcb8a4 [wording] page[8]:r2:c0:L4: (ب/1752/1443) — OCR disagrees: '0 | 00522--5)' (open)
+- ea02c821e0de [wording] page[8]:r3:c0:L9: (ب/3011/1442) — OCR disagrees: ')1 1/1 زب/اد | 00000' (open)
+- 21f6f243444b [wording] page[9]:r2:c0:L5: (أ/411/1442) — OCR disagrees: ')1؟ة؟/غططر[( | 000' (open)
+- 94235eb2eea6 [wording] page[9]:r3:c0:L4: جهة القضاء وحدها. (أ/2948/1442) — OCR disagrees: 'جهة القضاء وحدها. (أ//94؟/54:51) | اجهة القضاء وحدها. (أ//54؟/؟441)' (open)
+- bd3f442ce6a1 [wording] page[9]:r4:c0:L1: القواعد المنظمة للاختصاص الولائي تعد من النظام العام. (أ/2054/1442) — OCR disagrees: 'القواعد المنظمة للاختصاص الولائي تعد من النظام العام. )1547/5104/1( | القواعد المنظمة للاختصاص الولائي تعد من النظام العام. .)1445/5104/1(' (open)
+- fc4049856bce [wording] page[9]:r4:c0:L2: (أ/4424/1441) — OCR disagrees: ')1؟؛1//؛ة5؟غ/أ( | 0000' (open)
+- fad5ce5487ad [wording] page[9]:r5:c0:L2: الإدارية العليا أن تتصدى لها ولو لم يتضمنها الاعتراض. (أ/422/1442) — OCR disagrees: 'الإدارية العليا أن تتصدى لها ولو لم يتضمنها الاعتراض. )1547/177/1( | الإدارية العليا أن تتصدى لها ولولم يتضمنها الاعتراض. (1445/457/1)' (open)
+- 414be2cc53e9 [wording] page[9]:r5:c0:L3: (أ/4196/1442) — OCR disagrees: ')1؟:؟/غدححرل( | 000' (open)
+- e2bc041f5378 [wording] page[10]:r1:c0:L2: بنظر دعوى التعويض عنها) (هـ/2280/1442) — OCR disagrees: 'بنظر دعوى التعويض عنها ) (ه/0107>175/7::1) | بنظر دعوى التعويض عنها) (ه/ )144/910' (open)
+- e28bc1cbb33c [wording] page[10]:r2:c0:L2: المختص بنظر دعوى التعويض عنها) (و/2280/1442) — OCR disagrees: 'المختص بنظر دعوى التعويض عنها ) (و/007؟17/7::1) | المختص ينظر دعوى التعويض عنها) (و/ )1449/580' (open)
+- c0a82021ade0 [wording] page[10]:r3:c0:L3: السعودية للتخصصات الصحية) (أ/2771-2893/1442) — OCR disagrees: 'السعودية للتخصصات الصحية) (1/1/ا/ا؟ -؟55/؟/145:1) | السعودية للتخصصات الصحية) (5-001/1؟كل؟/ 1145  )' (open)
+- 2ed7172d5eeb [wording] page[10]:r4:c0:L4: فيروس كوفيد (19). (أ/3966/1442) — OCR disagrees: 'فيروس كوفيد .)19( (577/1؟/45:1) | فيروس كوفيد (19). (1/تجك/؟ 4:4  )1' (open)
+- 87ada066debb [wording] page[10]:r5:c0:L2: المتعلقة بالعلامات التجارية) (د/2054/1442) — OCR disagrees: 'المتعلقة بالعلامات التجارية) (د/غ010/5::71) | المتعلقة بالعلامات التجارية) (د/ 4ه 1؟/1447).' (open)
+- 39a8ade5ca0a [wording] page[10]:r6:c0:L2: المتعلقة بحماية حقوق المؤلف) (د/4424/1441) — OCR disagrees: 'المتعلقة بحماية حقوق المؤلف) (د/غ541/1171) | المتعلقة بحماية حقوق المؤلف) (د/4؟1441/44)/' (open)
+- 43769e65536f [wording] page[10]:r7:c0:L2: حيال الدعاوى المتعلقة بالعقار) (أ/855/1443) — OCR disagrees: 'حيال الدعاوى المتعلقة بالعقار) (آ/5//06؟541) | حيال الدعاوى المتعلقة بالعقار) (1أ/449/606011)-' (open)
+- 9a350327ab4b [wording] page[10]:r8:c0:L2: حول ملكية العقارات عن ولاية المحاكم الإدارية) (أ/4527/1441) — OCR disagrees: 'حول ملكية العقارات عن ولاية المحاكم الإدارية) (1/ا44/14411) | حول ملكية العقارات عن ولاية المحاكم الإدارية) (أ/1441/4657)' (open)
+- 339efc2824da [wording] page[10]:r8:c0:L3: (د/4805/1442) — OCR disagrees: '(د//رة 1ل غ//؟::؟1) | (درة ططق' (open)
+- 8f1b33ac50bf [wording] page[11]:r1:c0:L2: صحة صك الملكية عن ولاية المحاكم الإدارية) (ز/1749/1442) — OCR disagrees: 'صحة صك الملكية عن ولاية المحاكم الادارية) (ز/11745/؟ )144' (open)
+- f20986fc70e0 [wording] page[11]:r2:c0:L2: في حق الارتفاق) (ب/3641/1442) — OCR disagrees: 'ذحق الارتفاق) (ب/1741؟/47:1) | ل حق الارتفاق) (ب/ )1445/5541' (open)
+- 26a9f964b567 [wording] page[11]:r4:c0:L2: لإيقاف المدين ومنعه من السفر) (ج/534/1442) — OCR disagrees: 'لإيقاف المدين ومنعه من السفر) (ج/117/0551) | لإيقاف المدين ومنعه من السفر) (ج/1447/054)-' (open)
+- b1b6fe8b0685 [wording] page[11]:r5:c0:L6: الإدارية بديوان المظالم.(أ/4546/1442) — OCR disagrees: 'الإدارية بديوان المظالم. (أ/547/40471) | الإدارية بديوان المظالم. (أ/14450/404) .' (open)
+- 29236fc760e4 [wording] page[12]:r1:c0:L3: ومستخدمي المؤسسة العامة للتدريب التقني والمهني. (ب/1378/1442) — OCR disagrees: 'ومستخدمي المؤسسة العامة للتدريب التقني والمهني. (ب/7؟ )1 5/11 | ومستخدمي المؤسسة العامة للتدريب التقني والمهني. (ب/1447/159/1).' (open)
+- 104e2d2bc7b9 [wording] page[12]:r2:c0:L6: (ج/1378/1442) — OCR disagrees: '(ج/1707/ 3 ؟1) | 00' (open)
+- 7b4c15d253ea [wording] page[12]:r3:c0:L4: (ب/411/1442) — OCR disagrees: ')1::؟/غاطا/ب( | 0000' (open)
+- 9a7253fe6077 [wording] page[12]:r4:c0:L2: محاكم ديوان المظالم. (ب/2948/1442) — OCR disagrees: 'محاكم ديوان المظالم. (ب/1::3/55181) | محاكم ديوان المظالم. (ب//1447/144).' (open)
+- 20defc92eda3 [wording] page[12]:r5:c0:L1: قرار رئاسة الحرس الملكي يعد قراراً إدارياً يخضع لرقابة ديوان المظالم وفقاً — OCR disagrees: 'قراررتاسة الحرس الملكي يعد قراراً إدارياً بخضع لرقابة ديوان المظالم وفقاً' (open)
+- 95a14bf02187 [wording] page[13]:r1:c0:L2: نهائياً ولا يقبل الاعتراض عليه أو مخالفته. (أ/3994/1442) — OCR disagrees: 'نهائياً ولا يقبل الاعتراض عليه أو مخالفته. )1447/9954/1( | نهائياً ولا يقبل الاعتراض عليه أو مخالفته. (أ/غ5ة؟/؟ )144' (open)
+- 812d1c448436 [wording] page[13]:r2:c0:L2: التنفيذ) (ج/3042/1442) — OCR disagrees: 'التنفين) (ج/7:1445/51) | التنفين) (ج/1447/5045)/' (open)
+- 6b16cf290a0d [wording] page[13]:r3:c0:L3: إثارتها من تلقاء نفسها. (أ/3887/1442) — OCR disagrees: 'اثارتها من تلقاء نفسها. (1410/1/؟/475:1) | اثارتها من تلقاء نفسها. (0/1ل؟/ )144' (open)
+- 9f7d575ff357 [wording] page[13]:r4:c0:L2: التماس إعادة النظر) (ب/3887/1442) — OCR disagrees: 'التماس اعادة النظر) (ب/7/5//17::1) | التماس اعادة النظر) (ب/140؟/؟ )144' (open)
+- 7e7f3e9882a5 [wording] page[13]:r5:c0:L5: بحسب أماكنها. (أ/1424/1442) — OCR disagrees: 'بحسب أماكتها. (أ/غ471/5:51) | بحسب أماكتها. (أ/ )1445/144' (open)
+- 83321fba7b4b [wording] page[13]:r6:c0:L10: ورغباتهم ودفوعهم في هذا الشأن. (أ/2678/1442) — OCR disagrees: 'ورغباتهم ودفوعهم 2# هذا الشأن. (37378/1؟/1443)) | ورغباتهم ودفوعهم 2 هذا الشأن. (آ/1447/9501) .' (open)
+- ff5cc4d03e97 [wording] page[14]:r2:c0:L5: الخروج عن قواعد الاختصاص المكاني في حال تحققها. (ب/2678/1442) — OCR disagrees: 'الخروج عن قواعد الاختصاص المكاني # حال تحققها. (ب/517/771781) | الخروج عن قواعد الاختصاص المكاني 2# حال تحققها. (ب/1447/7504).' (open)
+- 4c0b5c6e7dcb [wording] page[14]:r3:c0:L4: في موضوع واحد، وينشأ عنه تعارض في الأحكام. (ب/1817/1442) — OCR disagrees: 'ج موضوع واحدء وينشأ عنه تعارض 3 الأحكام. (ب/171547/1/11) | .4 موضوء واحد؛ وينشأ عنه تعارض ف الأحكام. (ب/1447/14110)-' (open)
+- bc5672fc2bd0 [wording] page[14]:r4:c0:L4: مكانياً بنظر منازعات العقد هي التي يقع في دائرة اختصاصها مقر المدعى — OCR disagrees: 'مكانياً بنظر منازعات العقد هي التي يقع 4 دائرة اختصاصها مقر المدعى | مكانياً بنظر منازعات العقد هي التي يقع # دائرة اختصاصها مقر المدعى' (open)
+- b2643b84f3c0 [wording] page[14]:r4:c0:L5: عليه، ولو لم يتم تنفيذ العقد في دائرة اختصاصها. (ج/1817/1442) — OCR disagrees: 'عليه ولولم يتم تنفيذ العقد 2 دائرة اختصاصها. (ج/517/141171) | اعليه. ولولم يتم تنفيذ العقد ب دائرة اختصاصها. (ج/1447/1411)/' (open)
+- 8278be6a4417 [wording] page[15]:r1:c0:L1: صلاحية منوطة به لتمثيل الجهة الإدارية الأم في المنطقة. (ب/1424/1442) — OCR disagrees: 'صلاحية منوطة به لتمثيل الجهة الإدارية الأم 3 المنطقة. (ب/غ471/5471) | صلاحية منوطة به لتمثيل الجهة الادارية الأه 2 المنطقة. (ب/ 4/1474 14).' (open)
+- 18aae29f8b9d [wording] page[15]:r4:c0:L4: دون ضرورة حتمية. (ج/2678/1442) — OCR disagrees: 'دون ضرورة حتمية. (ج/ 13/1 )1 | ادون ضرورة حتمية. (ج/1445/70/1)/' (open)
+- d45a7747d297 [wording] page[16]:r2:c0:L4: (ج/1001/1442) — OCR disagrees: ')1 5/0011 | 000' (open)
